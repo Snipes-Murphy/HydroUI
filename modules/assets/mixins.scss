@@ -1,0 +1,48 @@
+// Border Radius Mixins
+
+@mixin box-small-border {
+  border-radius: 2px;
+}
+
+@mixin box-medium-border {
+  border-radius: 4px;
+}
+
+@mixin box-large-border {
+  border-radius: 12px;
+}
+
+@mixin box-full-border {
+  border-radius: 50px;
+}
+
+// Button Mixins
+
+@mixin btn($btn-bg, $text-lightdark, $btn-box-bg) {
+  transition: background-color 150ms, box-shadow 200ms;
+  cursor: pointer;
+  @include box-medium-border;
+  background-color: $btn-bg;
+  color: $text-lightdark;
+  box-shadow: 0 0 0 $btn-box-min $btn-box-bg;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  padding: 10px 25px;
+  margin: 0.4em 0.2em;
+  border: none;
+}
+@mixin btn-hvr($btn-hvr-bg) {
+  background-color: $btn-hvr-bg;
+}
+@mixin btn-atv($btn-atv-bg, $btn-box-bg) {
+  box-shadow: 0 0 0 $btn-box-size $btn-box-bg;
+  background-color: $btn-atv-bg;
+}
+
+// Heading Mixins
+
+@mixin heading {
+  margin: $heading-margin;
+  color: $text-dark;
+  font-weight: 500;
+}

@@ -1,0 +1,73 @@
+// Default Button
+
+button {
+  @include btn($btn-bg, $text-lightdark, $btn-box-bg);
+}
+
+button:hover {
+  @include btn-hvr($btn-hvr-bg);
+}
+
+button:focus {
+  @include btn-atv($btn-atv-bg, $btn-box-bg);
+}
+
+.btn {
+  @include btn($btn-bg-prm, white, $btn-box-bg-prm);
+
+  &:hover {
+    @include btn-hvr($btn-hvr-bg-prm);
+  }
+
+  &:focus {
+    @include btn-atv($btn-atv-bg-prm, $btn-box-bg-prm);
+  }
+
+  &-sec {
+    @include btn($btn-bg-sec, white, $btn-box-bg-sec);
+
+    &:hover {
+      @include btn-hvr($btn-hvr-bg-sec);
+    }
+
+    &:focus {
+      @include btn-atv($btn-atv-bg-sec, $btn-box-bg-sec);
+    }
+  }
+
+  &-succ {
+    @include btn($btn-bg-succ, white, $btn-box-bg-succ);
+
+    &:hover {
+      @include btn-hvr($btn-hvr-bg-succ);
+    }
+
+    &:focus {
+      @include btn-atv($btn-atv-bg-succ, $btn-box-bg-succ);
+    }
+  }
+
+  &-err {
+    @include btn($btn-bg-err, white, $btn-box-bg-err);
+
+    &:hover {
+      @include btn-hvr($btn-hvr-bg-err);
+    }
+
+    &:focus {
+      @include btn-atv($btn-atv-bg-err, $btn-box-bg-err);
+    }
+  }
+
+  &-info {
+    @include btn($btn-bg-info, white, $btn-box-bg-info);
+
+    &:hover {
+      @include btn-hvr($btn-hvr-bg-info);
+    }
+
+    &:focus {
+      @include btn-atv($btn-atv-bg-info, $btn-box-bg-info);
+    }
+  }
+}

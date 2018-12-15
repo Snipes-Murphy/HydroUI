@@ -1,0 +1,144 @@
+// Base font, you can change this by defining it in your custom css
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Source+Sans+Pro:200,300,400,600,700,900');
+
+// Defaults
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// Default Fonts
+
+body a, p, li, ul, cite, .cite, i, .i, b, .b, strong, .strong, sub, .sub, span, del, .del, abbr, .abbr, u, .u, sup, .sup, s, .s, em, .em, mark, .mark  {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body h1, h2, h3, h4, h5, h6 {
+font-family: 'Montserrat', sans-serif;
+}
+
+small {
+  font-size: .75em;
+  padding: .15em .3em;
+  background-color: #ebedf2;
+  color: $text-lightdark;
+  @include box-small-border;
+}
+
+h1, .h1 {
+  @include heading;
+  font-size: 40px;
+}
+
+h2, .h2 {
+  @include heading;
+  font-size: 32px;
+}
+
+h3, .h3 {
+  @include heading;
+  font-size: 28px;
+}
+
+h4, .h4 {
+  @include heading;
+  font-size: 24px;
+}
+
+h5, .h5 {
+  @include heading;
+  font-size: 20px;
+}
+
+h6, .h6 {
+  @include heading;
+  font-size: 18px;
+}
+
+code, .code {
+  @include box-small-border;
+  font-size: 1.1em;
+  padding: .1em .4em;
+  color: rgb(191, 34, 34);
+  background-color: rgb(246, 225, 235);
+}
+
+abbr, .abbr {
+  cursor: help;
+}
+
+cite {
+  color: $text-light;
+}
+
+blockquote {
+  color: $text-dark;
+  border-left: 2px solid #d4d4d4;
+  padding: 1em 1em 1em 1.5em;
+  margin: 16px 0;
+
+  & p {
+    color: $text-dark;
+    margin: 0 0 25px 0;
+  }
+
+  & cite {
+    color: $text-light;
+  }
+}
+
+kbd, .kbd {
+  @include box-small-border;
+  padding: .2em .8em;
+  background-color: rgb(41, 54, 59);
+  color: white;
+}
+
+i, .i {
+
+}
+
+sup, .sup {
+  margin-left: .2em;
+}
+
+b, strong, .b, .strong {
+}
+
+em, .em {
+  color: $text-lightdark;
+}
+
+em, .em {
+  color: $text-lightdark;
+}
+
+mark, .mark {
+  @include box-small-border;
+  padding: .1em .4em;
+  background-color: rgb(238, 219, 170);
+}
+
+pre {
+  @include box-medium-border;
+  padding: 25px;
+  border: 2px solid rgb(181, 207, 210);
+  color: white;
+  background-color: rgb(27, 41, 40);
+}
+
+// Text margins
+
+.ml {
+  &-s {margin-left: .5em;}
+  &-m {margin-left: .9em;}
+  &-l {margin-left: 1.3em;}
+}
+
+.mr {
+  &-s {margin-right: .5em;}
+  &-m {margin-right: .9em;}
+  &-l {margin-right: 1.3em;}
+}
