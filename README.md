@@ -10,6 +10,6 @@ Add this into your head for a quick integration.
 It should look like this:
 ```html
 <head>
-	<link rel="stylesheet" type="text/css" href="https://vaporizestudios.github.io/HydroUI/hydroui.css">
+  <link rel="stylesheet" type="text/css" href="https://vaporizestudios.github.io/HydroUI/hydroui.css">
 </head>
 ```
