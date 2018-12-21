@@ -13,3 +13,5 @@ It should look like this:
   <link rel="stylesheet" type="text/css" href="https://vaporizestudios.github.io/HydroUI/hydroui.css">
 </head>
 ```
+
+Checkout our demo page [Here](https://vaporizestudios.github.io/HydroUI/demo.html "Demonstration Page")

@@ -13,11 +13,12 @@ body {
 
 // Main entries
 
-@import "modules/assets/variables";
-@import "modules/assets/mixins";
+@import "modules/assets/variables/_master";
+@import "modules/assets/variables/_theme";
+@import "modules/assets/_mixins";
 
 // Modules
 
-@import "modules/typography";
-@import "modules/buttons";
-@import "modules/grid";
+@import "modules/_typography";
+@import "modules/_buttons";
+@import "modules/_grid";
