@@ -9,3 +9,49 @@ $cyan: #32aa9f;
 $blue: #1e8ecf;
 $indigo: #791ba4;
 $violet: #f12d91;
+
+// Greys
+
+$white: #fff;
+$grey-1: #dfe4e8;
+$grey-2: #bdc2c6;
+$grey-3: #9ba0a3;
+$grey-4: #7d8285;
+$grey-5: #696e70;
+$grey-6: #535759;
+$grey-7: #3f4244;
+$grey-8: #2a2d2e;
+$grey-9: #191a1b;
+$black: #000;
+
+// Color Map
+
+$grey-map: ();
+$grey-map: (
+  (
+    "1": $grey-1,
+    "2": $grey-2,
+    "3": $grey-3,
+    "4": $grey-4,
+    "5": $grey-5,
+    "6": $grey-6,
+    "7": $grey-7,
+    "8": $grey-8,
+    "9": $grey-9
+  )
+);
+
+$colors-map: ();
+$colors-map: (
+  (
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "blue": $blue,
+    "indigo": $indigo,
+    "violet": $violet
+  )
+);

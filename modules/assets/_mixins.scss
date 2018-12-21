@@ -18,25 +18,19 @@
 
 // Button Mixins
 
-@mixin btn($btn-bg, $text-lightdark, $btn-box-bg) {
-  transition: background-color 150ms, box-shadow 200ms;
-  cursor: pointer;
+@mixin mx-btn($value) {
   @include box-medium-border;
-  background-color: $btn-bg;
-  color: $text-lightdark;
-  box-shadow: 0 0 0 $btn-box-min $btn-box-bg;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  padding: 10px 25px;
+  letter-spacing: 0.01em;
+  outline: none;
+  color: white;
+  transition: background-color 150ms, box-shadow 150ms;
+  cursor: pointer;
+  border: 1px solid $value;
+  box-shadow: 0 0 0 0px $value;
+  font-weight: 400;
+  padding: 9px 20px;
   margin: 0.4em 0.2em;
-  border: none;
-}
-@mixin btn-hvr($btn-hvr-bg) {
-  background-color: $btn-hvr-bg;
-}
-@mixin btn-atv($btn-atv-bg, $btn-box-bg) {
-  box-shadow: 0 0 0 $btn-box-size $btn-box-bg;
-  background-color: $btn-atv-bg;
+  font-size: 14px;
 }
 
 // Heading Mixins

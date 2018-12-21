@@ -1,73 +1,75 @@
+// Main Buttons
+
+$primary: $blue;
+$secondary: $grey-4;
+$success: $green;
+$error: $red;
+$warning: $orange;
+$info: $cyan;
+$light: $grey-1;
+$dark: $grey-8;
+
+$buttons-map: ();
+$buttons-map: (
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "error": $error,
+    "warning": $warning,
+    "info": $info,
+    "light": $light,
+    "dark": $dark
+  )
+);
+
+$buttons-text-invert: (
+  "warning",
+  "light"
+);
+
 // Default Buttons
 
-button {
-  @include btn($btn-bg, $text-lightdark, $btn-box-bg);
-}
+@each $class, $value in $buttons-map {
+  .btn {
+    &-outline-#{$class} {
+      @include mx-btn($value);
+      background-color: transparent;
+      color: $value;
+      border-color: $value;
 
-button:hover {
-  @include btn-hvr($btn-hvr-bg);
-}
+      &:hover {
+        color: white;
+        background-color: darken($value, $color-set-hover-intensity);
+      }
+      &:active {
+        background-color: darken($value, $color-set-click-intensity);
+      }
+      &:focus {
+        box-shadow: 0 0 0 3px rgba($value, 0.5);
+      }
+    }
 
-button:focus {
-  @include btn-atv($btn-atv-bg, $btn-box-bg);
-}
+    &-#{$class} {
+      @include mx-btn($value);
+      background-color: $value;
+      &:hover {
+        background-color: darken($value, $color-set-hover-intensity);
+      }
+      &:active {
+        background-color: darken($value, $color-set-click-intensity);
+      }
+      &:focus {
+        box-shadow: 0 0 0 3px rgba($value, 0.5);
+      }
+    }
 
-.btn {
-  @include btn($btn-bg-prm, white, $btn-box-bg-prm);
-
-  &:hover {
-    @include btn-hvr($btn-hvr-bg-prm);
   }
 
-  &:focus {
-    @include btn-atv($btn-atv-bg-prm, $btn-box-bg-prm);
-  }
-
-  &-sec {
-    @include btn($btn-bg-sec, white, $btn-box-bg-sec);
-
-    &:hover {
-      @include btn-hvr($btn-hvr-bg-sec);
-    }
-
-    &:focus {
-      @include btn-atv($btn-atv-bg-sec, $btn-box-bg-sec);
-    }
-  }
-
-  &-succ {
-    @include btn($btn-bg-succ, white, $btn-box-bg-succ);
-
-    &:hover {
-      @include btn-hvr($btn-hvr-bg-succ);
-    }
-
-    &:focus {
-      @include btn-atv($btn-atv-bg-succ, $btn-box-bg-succ);
-    }
-  }
-
-  &-err {
-    @include btn($btn-bg-err, white, $btn-box-bg-err);
-
-    &:hover {
-      @include btn-hvr($btn-hvr-bg-err);
-    }
-
-    &:focus {
-      @include btn-atv($btn-atv-bg-err, $btn-box-bg-err);
-    }
-  }
-
-  &-info {
-    @include btn($btn-bg-info, white, $btn-box-bg-info);
-
-    &:hover {
-      @include btn-hvr($btn-hvr-bg-info);
-    }
-
-    &:focus {
-      @include btn-atv($btn-atv-bg-info, $btn-box-bg-info);
+  // Color Invert check
+  @if index($buttons-text-invert, $class) {
+    .btn-#{$class}, .btn-outline-#{$class}:hover {
+      color: black;
     }
   }
 }

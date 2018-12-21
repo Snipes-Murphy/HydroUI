@@ -60,8 +60,8 @@ h6, .h6 {
 
 code, .code {
   @include box-small-border;
-  font-size: 1.1em;
-  padding: .1em .4em;
+  font-size: 1em;
+  padding: 0em .4em;
   color: rgb(191, 34, 34);
   background-color: rgb(246, 225, 235);
 }
