@@ -1,33 +1,3 @@
-// Main Buttons
-
-$primary: $blue;
-$secondary: $grey-4;
-$success: $green;
-$error: $red;
-$warning: $orange;
-$info: $cyan;
-$light: $grey-1;
-$dark: $grey-8;
-
-$buttons-map: ();
-$buttons-map: (
-  (
-    "primary": $primary,
-    "secondary": $secondary,
-    "success": $success,
-    "error": $error,
-    "warning": $warning,
-    "info": $info,
-    "light": $light,
-    "dark": $dark
-  )
-);
-
-$buttons-text-invert: (
-  "warning",
-  "light"
-);
-
 // Default Buttons
 
 @each $class, $value in $buttons-map {
@@ -72,4 +42,9 @@ $buttons-text-invert: (
       color: black;
     }
   }
+}
+
+
+.btn-round {
+  border-radius: 100em;
 }

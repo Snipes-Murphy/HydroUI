@@ -55,3 +55,37 @@ $colors-map: (
     "violet": $violet
   )
 );
+
+// Main Buttons
+
+$primary: $blue;
+$secondary: $grey-4;
+$success: $green;
+$error: $red;
+$warning: $orange;
+$info: $cyan;
+$light: $grey-1;
+$dark: $grey-8;
+
+$buttons-map: ();
+$buttons-map: (
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "error": $error,
+    "warning": $warning,
+    "info": $info,
+    "light": $light,
+    "dark": $dark
+  )
+);
+
+$buttons-text-invert: (
+  "warning",
+  "light"
+);
+
+// Shadows
+
+$shadow: rgba($grey-1, 0.5);
