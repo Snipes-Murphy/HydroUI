@@ -1,3 +1,7 @@
+// Base font, you can change this by defining it in your custom css
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900|Cabin:200,300,400,600,700,900');
+
 // Colors
 
 $red: #b53b42;
@@ -70,6 +74,8 @@ $dark: $grey-8;
 $buttons-map: ();
 $buttons-map: (
   (
+    // Main buttons
+
     "primary": $primary,
     "secondary": $secondary,
     "success": $success,
@@ -77,7 +83,18 @@ $buttons-map: (
     "warning": $warning,
     "info": $info,
     "light": $light,
-    "dark": $dark
+    "dark": $dark,
+
+    // Color buttons
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "blue": $blue,
+    "purple": $indigo,
+    "pink": $violet
   )
 );
 
