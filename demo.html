@@ -1,7 +1,6 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="hydroui.css">
   <script src="https://unpkg.com/feather-icons"></script>
-	<script src="scripts/azurecs.js"></script>
 </head>
 
 <body>
@@ -148,11 +147,26 @@
 			</div>
 		</div>
 
+		<div id="modals">
+
+			<h4>Modal</h4>
+
+			<button class="btn-primary" id="btn-modal">Modal Button</button>
+
+			<div class="overlay" id="overlay"></div>
+			<div class="modal" id="modal">
+				<button class="modal-close-btn" id="close-btn">x</button>
+				Test message
+			</div>
+
+		</div>
+
 	</div>
 
 </body>
 
 <footer>
+<script src="hydroui.js"></script>
 	<script>
 		feather.replace()
 	</script>

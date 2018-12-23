@@ -27,7 +27,7 @@ When using SCSS, make sure that you use a precompiler. I recommend using [Koala]
 ```
 3. Set your precompiler to **ONLY** precompile the **hydroui.scss** file, as compiling the other files is deemed unnecessary.
 
-### Adding SCSS
+### Adding SCSS Files
 1. Create a file called **_customscssfilename.scss** in *modules/extensions/..*. Make sure to keep the _ before the file name.
 2. Open hydroui.scss in the main folder and add your custom scss file. It should look like this.
 ```scss
