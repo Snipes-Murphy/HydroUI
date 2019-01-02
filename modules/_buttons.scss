@@ -67,5 +67,13 @@
 }
 
 .btn-round {
-  border-radius: 100em;
+  @include box-full-border;
+}
+
+.btn-sm {
+  padding: 5px 14px;
+}
+
+.btn-lg {
+  padding: 15px 24px;
 }

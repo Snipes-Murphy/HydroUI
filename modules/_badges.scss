@@ -1,0 +1,13 @@
+.badge {
+  @include box-full-border;
+  padding: 2px 7px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@each $color, $hex in $main-colors {
+  .badge-#{$color} {
+    background-color: rgba($hex, 0.2);
+    color: darken($hex, 10%);
+  }
+}

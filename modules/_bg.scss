@@ -1,11 +1,11 @@
 @each $color, $hex in $colors-map {
   .bg-#{$color} {
-    background-color: $hex;
+    background-color: $hex !important;
   }
 }
 
 @each $item, $gradient in $gradient-map {
   .bg-#{$item}-grad {
-    background: linear-gradient(45deg, $gradient);
+    background: linear-gradient(45deg, $gradient) !important;
   }
 }

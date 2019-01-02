@@ -24,11 +24,9 @@ body {
 @import "modules/_grid";
 @import "modules/_pills";
 @import "modules/_modal";
+@import "modules/_feathericon"; // Feather Icon Intergration
 @import "modules/_bg";
-
-// Feather Icon Intergration
-
-@import "modules/_feathericon";
+@import "modules/_badges";
 
 // Extensions
 // Custom SCSS files goes here, read documentation for details.

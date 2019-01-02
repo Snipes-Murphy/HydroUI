@@ -60,6 +60,18 @@
   font-family: 'Cabin', sans-serif;
 }
 
+@mixin font-weight-bold {
+  font-weight: 700;
+}
+
+@mixin font-weight-normal {
+  font-weight: 400;
+}
+
+@mixin font-weight-light {
+  font-weight: 300;
+}
+
 // Heading Mixins
 
 @mixin heading {

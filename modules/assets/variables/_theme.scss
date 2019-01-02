@@ -55,9 +55,20 @@ $info: $cyan !default;
 $light: $grey-1 !default;
 $dark: $grey-8 !default;
 
+$main-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "error": $error,
+  "warning": $warning,
+  "info": $info,
+  "light": $light,
+  "dark": $dark
+);
+
 $colors-map: (
   (
-    // Main buttons
+    // Main
 
     "primary": $primary,
     "secondary": $secondary,
@@ -68,7 +79,7 @@ $colors-map: (
     "light": $light,
     "dark": $dark,
 
-    // Color buttons
+    // Colors
     "red": $red,
     "orange": $orange,
     "yellow": $yellow,
