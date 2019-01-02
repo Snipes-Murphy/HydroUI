@@ -1,0 +1,41 @@
+.text-nowrap {
+  white-space: nowrap;
+}
+.text-upcase {
+  text-transform: uppercase;
+}
+.text-lowcase {
+  text-transform: lowercase;
+}
+.text-capcase {
+  text-transform: capitalize;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-bold {
+  @include font-weight-bold;
+}
+.text-normal {
+  @include font-weight-normal;
+}
+.text-light {
+  @include font-weight-light;
+}
+.text-italic {
+  font-style: italic;
+}
