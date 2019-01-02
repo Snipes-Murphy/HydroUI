@@ -1,6 +1,6 @@
 // Default Buttons
 
-@each $class, $value in $buttons-map {
+@each $class, $value in $colors-map {
   .btn {
     &-outline-#{$class} {
       @include mx-btn($value);
@@ -16,6 +16,22 @@
       &:active {
         background-color: darken($value, $color-set-click-intensity);
         border-color: darken($value, $color-set-hover-intensity);
+      }
+      &:focus {
+        box-shadow: 0 0 0 3px rgba($value, 0.5);
+      }
+    }
+
+    &-link-#{$class} {
+      @include mx-btn($value);
+      background-color: transparent;
+      color: $value;
+      border-color: transparent;
+      &:hover {
+        color: darken($value, $color-set-hover-intensity);
+      }
+      &:active {
+        color: darken($value, $color-set-click-intensity);
       }
       &:focus {
         box-shadow: 0 0 0 3px rgba($value, 0.5);

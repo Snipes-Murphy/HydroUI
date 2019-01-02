@@ -1,6 +1,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="hydroui.css">
   <script src="https://unpkg.com/feather-icons"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -10,22 +11,22 @@
 		<h4>Flex-box Responsive Grid</h4>
 		<div class="row">
 
-			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: red;">
+			<div class="col-lg-3 col-md-4 col-sm-6 bg-red">
 				<div>
 					<h1>1</h1>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: orange;">
+			<div class="col-lg-3 col-md-4 col-sm-6 bg-warning">
 				<div>
 					<h1>2</h1>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6" style="background-color: dodgerblue;">
+			<div class="col-lg-3 col-md-4 col-sm-6 bg-primary">
 				<div>
 					<h1>3</h1>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-12 col-sm-6" style="background-color: pink;">
+			<div class="col-lg-3 col-md-12 col-sm-6 bg-success">
 				<div>
 					<h1>4</h1>
 				</div>
@@ -63,17 +64,7 @@
 				<button class="btn-dark">Dark</button>
 			</div>
 			<div>
-				<h5>Color Based Buttons</h5>
-				<button class="btn-red">Red</button>
-				<button class="btn-orange">Orange</button>
-				<button class="btn-yellow">Yellow</button>
-				<button class="btn-green">Green</button>
-				<button class="btn-blue">Blue</button>
-				<button class="btn-purple">Purple</button>
-				<button class="btn-pink">Pink</button>
-			</div>
-			<div>
-				<h5>Outlined Button</h5>
+				<h5>Outlined Buttons</h5>
 				<button class="btn-outline-primary">Primary</button>
 				<button class="btn-outline-secondary">Secondary</button>
 				<button class="btn-outline-success">Success</button>
@@ -84,14 +75,15 @@
 				<button class="btn-outline-dark">Dark</button>
 			</div>
 			<div>
-				<h5>Color Based Outline Buttons</h5>
-				<button class="btn-outline-red">Red</button>
-				<button class="btn-outline-orange">Orange</button>
-				<button class="btn-outline-yellow">Yellow</button>
-				<button class="btn-outline-green">Green</button>
-				<button class="btn-outline-blue">Blue</button>
-				<button class="btn-outline-purple">Purple</button>
-				<button class="btn-outline-pink">Pink</button>
+				<h5>Link Buttons</h5>
+				<button class="btn-link-primary">Primary</button>
+				<button class="btn-link-secondary">Secondary</button>
+				<button class="btn-link-success">Success</button>
+				<button class="btn-link-error">Error</button>
+				<button class="btn-link-warning">Warning</button>
+				<button class="btn-link-info">Info</button>
+				<button class="btn-link-light">Light</button>
+				<button class="btn-link-dark">Dark</button>
 			</div>
 		</div>
 
@@ -162,7 +154,28 @@
     </div>
 
 		<div id="bubbles" style="padding: 25px 0;">
-			<div class="icon-bubble">
+			<h4>Icon Pills</h4>
+			<h6>Display Pill</h6>
+			<div class="icon-pill">
+				<i data-feather="git-branch" style="height: 28px; width: 28px;"></i>
+			</div>
+			<h6>Display Pill</h6>
+			<div class="icon-pill bg-primary-grad">
+				<i data-feather="git-branch" style="height: 28px; width: 28px;"></i>
+			</div>
+			<div class="icon-pill bg-secondary-grad">
+				<i data-feather="git-branch" style="height: 28px; width: 28px;"></i>
+			</div>
+			<div class="icon-pill bg-success-grad">
+				<i data-feather="git-branch" style="height: 28px; width: 28px;"></i>
+			</div>
+			<div class="icon-pill bg-error-grad">
+				<i data-feather="git-branch" style="height: 28px; width: 28px;"></i>
+			</div>
+			<div class="icon-pill bg-warning-grad">
+				<i data-feather="git-branch" style="height: 28px; width: 28px;"></i>
+			</div>
+			<div class="icon-pill bg-info-grad">
 				<i data-feather="git-branch" style="height: 28px; width: 28px;"></i>
 			</div>
 		</div>
@@ -171,12 +184,37 @@
 
 			<h4>Modal</h4>
 
-			<button class="btn-primary" id="btn-modal">Modal Button</button>
+			<div class="modal-wrapper">
+				<button class="btn-primary" id="btn-modal">Modal 1</button>
 
-			<div class="overlay" id="overlay"></div>
-			<div class="modal" id="modal">
-				<button class="modal-close-btn" id="close-btn">x</button>
-				Test message
+				<div class="modal-wrapper-inner">
+					<div class="modal" id="modal">
+						<div class="modal-header">
+							<h1 class="title">Your basic modal</h1>
+							<button class="close-btn" id="close-btn"><i data-feather="x" class="f-icon f-small f-stroke-3"></i></button>
+						</div>
+						<div class="modal-content">
+							<p>
+								Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. <br>
+								A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+							</p>
+						</div>
+						<div class="modal-options">
+							<button class="btn-primary">Save Changes</button>
+							<button class="btn-link-secondary" id="close-modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-wrapper">
+				<button class="btn-warning" id="btn-modal">Modal 2</button>
+
+				<div class="overlay" id="overlay"></div>
+				<div class="modal" id="modal">
+					<button class="close-btn" id="close-btn"></button>
+					Modal 2 Message
+				</div>
 			</div>
 
 		</div>

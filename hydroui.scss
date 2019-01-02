@@ -22,8 +22,13 @@ body {
 @import "modules/_typography";
 @import "modules/_buttons";
 @import "modules/_grid";
-@import "modules/_bubbles";
+@import "modules/_pills";
 @import "modules/_modal";
+@import "modules/_bg";
+
+// Feather Icon Intergration
+
+@import "modules/_feathericon";
 
 // Extensions
 // Custom SCSS files goes here, read documentation for details.

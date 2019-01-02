@@ -20,6 +20,12 @@
   border-radius: 50px;
 }
 
+// Shadows
+
+@mixin shadow-small {
+  box-shadow: 0 6px 10px 1px $shadow;
+}
+
 // Button Mixins
 
 @mixin mx-btn($value) {
@@ -35,6 +41,23 @@
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
+}
+
+@mixin btn-reset {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+// Fonts
+
+@mixin font-heading {
+  font-family: 'Poppins', sans-serif;
+}
+
+@mixin font-content {
+  font-family: 'Cabin', sans-serif;
 }
 
 // Heading Mixins

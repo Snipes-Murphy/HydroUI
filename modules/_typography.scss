@@ -9,11 +9,11 @@ a {
 
 body a, p, li, ul, cite, .cite, i, .i, b, .b, strong, .strong, sub, .sub, span, del, .del, abbr, .abbr, u, .u, sup, .sup, s, .s, em, .em, mark, .mark {
   line-height: 1.5em;
-  font-family: 'Cabin', sans-serif;
+  @include font-content;
 }
 
 body h1, h2, h3, h4, h5, h6 {
-font-family: 'Poppins', sans-serif;
+  @include font-heading;
 }
 
 small {

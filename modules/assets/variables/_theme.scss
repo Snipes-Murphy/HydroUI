@@ -4,33 +4,32 @@
 
 // Colors
 
-$red: #b53b42;
-$orange: #cf7a17;
-$yellow: #d5c42c;
-$green: #238530;
-$teal: #39ab7b;
-$cyan: #32aa9f;
-$blue: #1e8ecf;
-$indigo: #791ba4;
-$violet: #f12d91;
+$red: #fb5962 !default;
+$orange: #fbb258 !default;
+$yellow: #d5c42c !default;
+$green: #4ed69c !default;
+$teal: #39ab7b !default;
+$cyan: #36d5f2 !default;
+$blue: #5f8cee !default;
+$indigo: #791ba4 !default;
+$violet: #f12d91 !default;
 
 // Greys
 
-$white: #fff;
-$grey-1: #dfe4e8;
-$grey-2: #bdc2c6;
-$grey-3: #9ba0a3;
-$grey-4: #7d8285;
-$grey-5: #696e70;
-$grey-6: #535759;
-$grey-7: #3f4244;
-$grey-8: #2a2d2e;
-$grey-9: #191a1b;
-$black: #000;
+$white: #fff !default;
+$grey-1: #dfe4e8 !default;
+$grey-2: #bdc2c6 !default;
+$grey-3: #9ba0a3 !default;
+$grey-4: #7d8285 !default;
+$grey-5: #696e70 !default;
+$grey-6: #535759 !default;
+$grey-7: #3f4244 !default;
+$grey-8: #2a2d2e !default;
+$grey-9: #191a1b !default;
+$black: #000 !default;
 
 // Color Map
 
-$grey-map: ();
 $grey-map: (
   (
     "1": $grey-1,
@@ -45,34 +44,18 @@ $grey-map: (
   )
 );
 
-$colors-map: ();
-$colors-map: (
-  (
-    "red": $red,
-    "orange": $orange,
-    "yellow": $yellow,
-    "green": $green,
-    "teal": $teal,
-    "cyan": $cyan,
-    "blue": $blue,
-    "indigo": $indigo,
-    "violet": $violet
-  )
-);
-
 // Main Buttons
 
-$primary: $blue;
-$secondary: $grey-4;
-$success: $green;
-$error: $red;
-$warning: $orange;
-$info: $cyan;
-$light: $grey-1;
-$dark: $grey-8;
+$primary: $blue !default;
+$secondary: $grey-4 !default;
+$success: $green !default;
+$error: $red !default;
+$warning: $orange !default;
+$info: $cyan !default;
+$light: $grey-1 !default;
+$dark: $grey-8 !default;
 
-$buttons-map: ();
-$buttons-map: (
+$colors-map: (
   (
     // Main buttons
 
@@ -98,6 +81,15 @@ $buttons-map: (
   )
 );
 
+$gradient-map: (
+    "primary": ($blue, $teal),
+    "secondary": ($secondary, $grey-8),
+    "success": ($success, darken($teal, 10%)),
+    "error": (lighten($red, 5%), darken($red, 15%)),
+    "warning": ($red, $orange),
+    "info": ($info, $blue)
+);
+
 $buttons-text-invert: (
   "warning",
   "light"
@@ -105,4 +97,9 @@ $buttons-text-invert: (
 
 // Shadows
 
-$shadow: rgba($grey-1, 0.5);
+$shadow: rgba($grey-1, 0.5) !default;
+
+// Text Colors
+$text-dark: #222 !default;
+$text-lightdark: #444!default;
+$text-light: #666 !default;

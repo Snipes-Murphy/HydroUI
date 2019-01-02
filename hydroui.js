@@ -1,13 +1,24 @@
-document.getElementById('btn-modal').addEventListener('click', function() {
-  document.getElementById('overlay').classList.add('is-visible');
-  document.getElementById('modal').classList.add('is-visible');
-});
+$(document).on("click", "#btn-modal", function() {
+  $(this).closest(".modal-wrapper").find("#modal").addClass("visability");
+  $(this).closest(".modal-wrapper").find("#overlay").addClass("visability");
+})
 
-document.getElementById('close-btn').addEventListener('click', function() {
-  document.getElementById('overlay').classList.remove('is-visible');
-  document.getElementById('modal').classList.remove('is-visible');
-});
-document.getElementById('overlay').addEventListener('click', function() {
-  document.getElementById('overlay').classList.remove('is-visible');
-  document.getElementById('modal').classList.remove('is-visible');
-});
+$(document).on("click", "#overlay", function() {
+  $(this).closest(".modal-wrapper").find("#modal").removeClass("visability");
+  $(this).closest(".modal-wrapper").find("#overlay").removeClass("visability");
+})
+
+$(document).on("click", "#close-btn", function() {
+  $(this).closest(".modal-wrapper").find("#modal").removeClass("visability");
+  $(this).closest(".modal-wrapper").find("#overlay").removeClass("visability");
+})
+
+$(document).on("click", "#close-modal", function() {
+  $(this).closest(".modal-wrapper").find("#modal").removeClass("visability");
+  $(this).closest(".modal-wrapper").find("#overlay").removeClass("visability");
+})
+
+$(document).on("click", "#model", function() {
+  $(this).closest(".modal-wrapper").find("#modal").removeClass("visability");
+  $(this).closest(".modal-wrapper").find("#overlay").removeClass("visability");
+})
