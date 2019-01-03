@@ -62,6 +62,13 @@
   }
 }
 
+.btn-no-highlight {
+  @include shadow-none;
+  &:focus {
+    @include shadow-none;
+  }
+}
+
 .btn-square {
   @include box-none-border;
 }

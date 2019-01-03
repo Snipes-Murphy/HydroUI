@@ -17,6 +17,7 @@ $violet: #f12d91 !default;
 // Greys
 
 $white: #fff !default;
+$grey-0: #f6fbff !default;
 $grey-1: #dfe4e8 !default;
 $grey-2: #bdc2c6 !default;
 $grey-3: #9ba0a3 !default;
@@ -78,6 +79,7 @@ $colors-map: (
     "info": $info,
     "light": $light,
     "dark": $dark,
+    "neutral": $grey-0,
 
     // Colors
     "red": $red,
@@ -93,7 +95,7 @@ $colors-map: (
 );
 
 $gradient-map: (
-    "primary": ($blue, $teal),
+    "primary": (#6f97ef, #215de0),
     "secondary": ($secondary, $grey-8),
     "success": ($success, darken($teal, 10%)),
     "error": (lighten($red, 5%), darken($red, 15%)),
@@ -102,6 +104,7 @@ $gradient-map: (
 );
 
 $buttons-text-invert: (
+  "neutral",
   "warning",
   "light"
 );
@@ -111,6 +114,6 @@ $buttons-text-invert: (
 $shadow: rgba($grey-1, 0.5) !default;
 
 // Text Colors
-$text-dark: #222 !default;
-$text-lightdark: #444!default;
-$text-light: #666 !default;
+$text-dark: $grey-8 !default;
+$text-lightdark: $grey-6!default;
+$text-light: $grey-4 !default;

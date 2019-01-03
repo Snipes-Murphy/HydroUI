@@ -22,7 +22,15 @@
 
 // Shadows
 
+@mixin shadow-none {
+  box-shadow: none;
+}
+
 @mixin shadow-small {
+  box-shadow: 4px 4px 10px 1px $shadow;
+}
+
+@mixin shadow-small-float {
   box-shadow: 0 6px 10px 1px $shadow;
 }
 

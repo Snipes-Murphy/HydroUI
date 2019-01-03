@@ -1,10 +1,10 @@
 // Breakpoints
 $source-breakpoint: 1350px;
-$xlg-breakpoint: 1351px;
-$lg-breakpoint: 1051px;
-$md-breakpoint: 751px;
-$sm-breakpoint: 401px;
-$xsm-breakpoint: 321px;
+$xlg-breakpoint: 1350px;
+$lg-breakpoint: 1050px;
+$md-breakpoint: 750px;
+$sm-breakpoint: 400px;
+$xsm-breakpoint: 320px;
 // Page size on breakpoints, rs classes = smaller page margins used for smaller navbars, headers, carousel etc.
 $page-full: 1250px;
 $rs-page-full: 1000px;
@@ -81,7 +81,7 @@ $container-padding-xsm: 0;
 @media screen and (max-width: $lg-breakpoint) {
   @include containers($container-padding-md, $page-md, $rs-page-md);
 }
-@media screen and (min-width: $md-breakpoint) {
+@media screen and (min-width: calc(#{$md-breakpoint} + 1px)) {
   .row {
     & > .col {
       &-sm {
@@ -99,7 +99,7 @@ $container-padding-xsm: 0;
     }
   }
 }
-@media screen and (min-width: $lg-breakpoint) {
+@media screen and (min-width: calc(#{$lg-breakpoint} + 1px)) {
   .row {
     & > .col {
       &-md {
@@ -117,7 +117,7 @@ $container-padding-xsm: 0;
     }
   }
 }
-@media screen and (min-width: $xlg-breakpoint) {
+@media screen and (min-width: calc(#{$xlg-breakpoint} + 1px)) {
   .row {
     & > .col {
       &-lg {
@@ -135,7 +135,7 @@ $container-padding-xsm: 0;
     }
   }
 }
-@media screen and (min-width: $source-breakpoint) {
+@media screen and (min-width: calc($source-breakpoint + 1px)) {
   .row {
     & > .col {
       &-xlg {
@@ -159,7 +159,7 @@ $container-padding-xsm: 0;
 @media screen and (max-width: $sm-breakpoint) {
   @include containers($container-padding-xsm, $page-xsm, $rs-page-xsm);
 }
-@media screen and (min-width: $sm-breakpoint) {
+@media screen and (min-width: calc($sm-breakpoint + 1px)) {
   .row {
     & > .col {
       &-xsm {

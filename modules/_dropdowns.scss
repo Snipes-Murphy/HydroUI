@@ -1,0 +1,44 @@
+.dropdown {
+  position: relative;
+
+  .dropdown-content {
+    transition: 1s;
+    min-width: 100px; //12rem;
+    max-width: 1000px; //20rem;
+    background-color: $white;
+    @include shadow-small;
+    pointer-events: none;
+    opacity: 0;
+    white-space: nowrap;
+    background-color: red;
+
+    & {
+      pointer-events: auto;
+      opacity: 1;
+    }
+
+    & a {
+      font-weight: 400;
+      display: block;
+      clear: both;
+      padding: .25rem 1.5rem;
+      text-align: inherit;
+      white-space: nowrap;
+      color: #212529;
+      border: 0;
+      background-color: orange;
+    }
+  }
+  .dropdown-item {
+    @include mx-btn($shadow);
+    border: none;
+    background-color: transparent;
+    color: $text-lightdark;
+    margin: 0;
+
+    & + .dropdown-content {
+      pointer-events: auto;
+      opacity: 1;
+    }
+  }
+}
