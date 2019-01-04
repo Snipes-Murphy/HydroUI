@@ -2,23 +2,44 @@
   position: relative;
 
   .dropdown-content {
-    transition: 1s;
-    min-width: 100px; //12rem;
-    max-width: 1000px; //20rem;
+    padding: 5px 0;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 3.2em;
+    display: inline-block;
+    transition: 200ms;
+    min-width: 12rem;
+    max-width: 20rem;
     background-color: $white;
-    @include shadow-small;
+    box-shadow: 2px 4px 10px 1px $shadow;
     pointer-events: none;
     opacity: 0;
     white-space: nowrap;
-    background-color: red;
+    @include box-medium-border;
 
-    & {
+    &::before {
+      position: absolute;
+      z-index: -1;
+      bottom: 100%;
+      left: 20px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      content: '';
+      transform: rotate(-45deg) translateY(1rem);
+      @include box-medium-border;
+      background: #fff;
+      box-shadow: 4px -4px 10px -5px $shadow;
+    }
+
+    &:hover {
       pointer-events: auto;
       opacity: 1;
     }
 
     & a {
-      font-weight: 400;
+      transition: 100ms;
       display: block;
       clear: both;
       padding: .25rem 1.5rem;
@@ -26,7 +47,11 @@
       white-space: nowrap;
       color: #212529;
       border: 0;
-      background-color: orange;
+      background-color: transparent;
+
+      &:hover {
+        background-color: $grey-1;
+      }
     }
   }
   .dropdown-item {
@@ -35,8 +60,9 @@
     background-color: transparent;
     color: $text-lightdark;
     margin: 0;
+    padding: 17px 0.2em;
 
-    & + .dropdown-content {
+    &:hover + .dropdown-content {
       pointer-events: auto;
       opacity: 1;
     }
