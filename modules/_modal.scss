@@ -2,6 +2,7 @@
   display: inline-block;
 
   .overlay {
+    z-index: 100;
     pointer-events: none;
     transition: opacity 200ms;
     opacity: 0;
@@ -14,6 +15,7 @@
   }
 
   .modal {
+    z-index: 100;
     pointer-events: none;
     opacity: 0;
     transition: opacity 200ms;
