@@ -27,11 +27,15 @@
 }
 
 @mixin shadow-small {
-  box-shadow: 4px 4px 10px 1px $shadow;
+  box-shadow: 0 2px 6px 0 $shadow;
 }
 
 @mixin shadow-small-float {
-  box-shadow: 0 6px 10px 1px $shadow;
+  box-shadow: 0 6px 12px 0 $shadow;
+}
+
+@mixin shadow {
+  box-shadow: 0 4px 6px 0 $shadow;
 }
 
 // Button Mixins

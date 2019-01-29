@@ -52,6 +52,6 @@ If you don't already have it integrated add this to the top of your HTML Documen
 1. Create a file called **_customscssfilename.scss** in *modules/extensions/..*. Make sure to keep the _ before the file name.
 2. Open hydroui.scss in the main folder and add your custom scss file. It should look like this.
 ```scss
-@import "modules/_customscssfilename";
+@import "modules/extensions/_customscssfilename";
 ```
 Make sure you don't add the *.scss* on the end.

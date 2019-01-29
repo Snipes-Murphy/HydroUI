@@ -4,6 +4,7 @@
 
 // Colors
 
+$red-dark: #fd3a57 !default;
 $red: #fb5962 !default;
 $orange: #fbb258 !default;
 $yellow: #d5c42c !default;
@@ -17,7 +18,7 @@ $violet: #f12d91 !default;
 // Greys
 
 $white: #fff !default;
-$grey-0: #f6fbff !default;
+$grey-0: #f8f8f8 !default;
 $grey-1: #dfe4e8 !default;
 $grey-2: #bdc2c6 !default;
 $grey-3: #9ba0a3 !default;
@@ -33,6 +34,7 @@ $black: #000 !default;
 
 $grey-map: (
   (
+    "0": $grey-0,
     "1": $grey-1,
     "2": $grey-2,
     "3": $grey-3,
