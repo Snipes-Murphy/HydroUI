@@ -1,3 +1,5 @@
+// Modals
+
 $(document).on("click", "#btn-modal", function() {
   $(this).closest(".modal-wrapper").find("#modal").addClass("visability");
   $(this).closest(".modal-wrapper").find(".overlay").addClass("visability");

@@ -1,7 +1,7 @@
 # HydroUI
 A lightweight SCSS library with modularity to you only load what you use.
 
-## Quick Start
+## Quick Start (Implementation)
 Add this into your head for a quick integration.
 ```html
 <link rel="stylesheet" type="text/css" href="https://snipes-murphy.github.io/HydroUI/hydroui.css">
@@ -27,6 +27,32 @@ If you don't already have it integrated add this to the top of your HTML Documen
 ```
 
 Checkout our demo page [Here](https://snipes-murphy.github.io/HydroUI/demo.html "Demonstration Page")
+
+## Quick Start (Template)
+Code snippet:
+```html
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My HydroUI site</title>
+    <link rel="stylesheet" type="text/css" href="https://snipes-murphy.github.io/HydroUI/hydroui.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://snipes-murphy.github.io/HydroUI/hydroui.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  
+  <body>
+
+  </body>
+
+  <footer>
+  	<script>
+  		feather.replace()
+  	</script>
+  </footer>
+</html>
+```
 
 ## SCSS Integration
 When using SCSS, make sure that you use a precompiler. I recommend using [Koala](http://koala-app.com/ "Koala Precompiler App")
