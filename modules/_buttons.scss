@@ -34,7 +34,7 @@
         color: darken($value, $color-set-click-intensity);
       }
       &:focus {
-        box-shadow: 0 0 0 3px rgba($value, 0.5);
+        box-shadow: 0 0 0 0px rgba($value, 0.5);
       }
     }
 
