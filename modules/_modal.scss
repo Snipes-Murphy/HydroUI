@@ -11,10 +11,11 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.2);
   }
 
   .modal {
+    filter: blur(0%);
     z-index: 100;
     pointer-events: none;
     opacity: 0;
@@ -26,14 +27,14 @@
     max-width: 500px;
     width: 95vw;
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 0;
     background: #fff;
     @include box-medium-border;
 
     .modal-header {
-      padding: 0 $modal-margin 10px;
+      padding: 15px $modal-margin 10px;
       width: 100%;
-      border-bottom: 1px solid $grey-1;
+      //border-bottom: 1px solid $grey-1;
 
       .title {
         display: inline-block;
@@ -56,11 +57,12 @@
       color: $text-lightdark;
       font-weight: 300;
       padding: 0 $modal-margin;
-      border-bottom: 1px solid $grey-1;
+      //border-bottom: 1px solid $grey-1;
     }
 
     .modal-options {
-      padding: 15px $modal-margin 0;
+      background-color: #e6e6e6;
+      padding: 15px $modal-margin;
       text-align: right;
     }
   }
