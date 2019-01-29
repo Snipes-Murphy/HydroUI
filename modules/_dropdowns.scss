@@ -2,7 +2,8 @@
   position: relative;
 
   .dropdown-content {
-    padding: 5px 0;
+    overflow: hidden;
+    padding: 0px 0;
     z-index: 1;
     position: absolute;
     left: 0;
