@@ -66,7 +66,8 @@ $main-colors: (
   "warning": $warning,
   "info": $info,
   "light": $light,
-  "dark": $dark
+  "dark": $dark,
+  "neutral": $grey-0
 );
 
 $colors-map: (
@@ -109,6 +110,11 @@ $buttons-text-invert: (
   "neutral",
   "warning",
   "light"
+);
+
+$dark-colors: (
+  "dark",
+  "grey-9"
 );
 
 // Shadows

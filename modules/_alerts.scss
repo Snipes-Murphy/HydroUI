@@ -1,0 +1,32 @@
+@each $color, $value in $main-colors {
+  .alert-#{$color} {
+
+    @include alert-mixin;
+    background-color: lighten($value, 25%);
+    border: $value;
+
+    & p {
+      margin: 0;
+    }
+  }
+  @if index($dark-colors, $color) {
+    .alert-dark {
+      color: white;
+    }
+  }
+  @if $color == 'light' {
+    .alert-#{$color} {
+      background-color: lighten($value, 5%);
+    }
+  }
+}
+
+[class*="alert-"] {
+
+  .close-btn {
+    @include btn-reset;
+    float: right;
+    position: relative;
+    bottom: 22px;
+  }
+}

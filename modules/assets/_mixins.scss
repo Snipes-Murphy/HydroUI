@@ -91,3 +91,11 @@
   color: $text-dark;
   font-weight: 500;
 }
+
+// Alert Mixin
+
+@mixin alert-mixin {
+  margin: 8px 0;
+  padding: 10px 25px;
+  @include box-medium-border;
+}

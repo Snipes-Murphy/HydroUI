@@ -17,3 +17,10 @@ $(document).on("click", "#close-modal", function() {
   $(this).closest(".modal-wrapper").find("#modal").removeClass("visability");
   $(this).closest(".modal-wrapper").find(".overlay").removeClass("visability");
 })
+
+// Alerts
+
+$(document).on("click", ".close-btn", function() {
+  console.log("Testsas")
+  $(this).closest(".alert").remove();
+})
