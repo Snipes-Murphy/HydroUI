@@ -93,7 +93,19 @@ $colors-map: (
     "cyan": $cyan,
     "blue": $blue,
     "purple": $indigo,
-    "pink": $violet
+    "pink": $violet,
+
+    // Greys
+    "grey-0": $grey-0,
+    "grey-1": $grey-1,
+    "grey-2": $grey-2,
+    "grey-3": $grey-3,
+    "grey-4": $grey-4,
+    "grey-5": $grey-5,
+    "grey-6": $grey-6,
+    "grey-7": $grey-7,
+    "grey-8": $grey-8,
+    "grey-9": $grey-9
   )
 );
 
@@ -109,7 +121,10 @@ $gradient-map: (
 $buttons-text-invert: (
   "neutral",
   "warning",
-  "light"
+  "light",
+  "grey-7",
+  "grey-8",
+  "grey-9"
 );
 
 $dark-colors: (

@@ -21,11 +21,13 @@ $rs-page-xsm: 100%;
 
 .container {
   margin: auto;
+  position: relative;
   width: $page-full;
 }
 
 .container-rs {
   margin: auto;
+  position: relative;
   width: $rs-page-full;
 }
 $container-padding: 0;

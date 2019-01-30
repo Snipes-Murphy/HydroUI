@@ -23,6 +23,13 @@ $(document).on("click", "#close-modal", function() {
 // Alerts
 
 $(document).on("click", ".close-btn", function() {
-  console.log("Testsas")
+  console.log("Closed alert")
   $(this).closest(".alert").remove();
+})
+
+// Navbar
+
+$('.nav-btn-menu').click(function() {
+    $(this).closest(".navbar").find(".nav-content").toggle();
+    $(this).toggleClass('active');
 })
