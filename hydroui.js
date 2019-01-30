@@ -30,6 +30,5 @@ $(document).on("click", ".close-btn", function() {
 // Navbar
 
 $('.nav-btn-menu').click(function() {
-    $(this).closest(".navbar").find(".nav-content").toggle();
-    $(this).toggleClass('active');
+    $(this).closest(".navbar").find(".nav-content").toggleClass('active');
 })
