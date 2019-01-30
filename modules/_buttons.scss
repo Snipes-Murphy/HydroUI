@@ -55,7 +55,7 @@
   }
 
   // Color Invert check
-  @if index($buttons-text-invert, $class) {
+  @if index($color-text-invert, $class) {
     .btn-#{$class}, .btn-outline-#{$class}:hover {
       color: black;
     }
