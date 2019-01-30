@@ -41,7 +41,7 @@ Code snippet:
     <script src="https://snipes-murphy.github.io/HydroUI/hydroui.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
-  
+
   <body>
 
   </body>

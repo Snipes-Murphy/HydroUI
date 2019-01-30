@@ -95,6 +95,9 @@
 // Alert Mixin
 
 @mixin alert-mixin {
+  color: white;
+  position: relative;
+  display: flex;
   margin: 8px 0;
   padding: 10px 15px;
   @include box-medium-border;

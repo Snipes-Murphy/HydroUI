@@ -2,21 +2,17 @@
   .alert-#{$color} {
 
     @include alert-mixin;
-    background-color: lighten($value, 25%);
+    background-color: lighten($value, 0%);
     border: $value;
 
     & p {
+      display: inline-block;
       margin: 0;
     }
   }
-  @if index($dark-colors, $color) {
-    .alert-dark {
-      color: white;
-    }
-  }
-  @if $color == 'light' {
+  @if index($color-text-invert, $color) {
     .alert-#{$color} {
-      background-color: lighten($value, 5%);
+      color: black;
     }
   }
 }
@@ -25,8 +21,11 @@
 
   .close-btn {
     @include btn-reset;
-    float: right;
-    position: relative;
-    bottom: 22px;
+    margin-left: auto;
+    color: white;
+  }
+
+  .alert-icon {
+    margin-right: 14px;
   }
 }
