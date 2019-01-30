@@ -35,7 +35,7 @@ $container-padding-xlg: 0;
 $container-padding-lg: 0;
 $container-padding-md: 50px;
 $container-padding-sm: 15px;
-$container-padding-xsm: 0;
+$container-padding-xsm: 4px;
 @mixin containers($container-padding, $page-full, $rs-page-full) {
   .container {
     padding: 0 $container-padding;
