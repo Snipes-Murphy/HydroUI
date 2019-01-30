@@ -1,3 +1,4 @@
 .site-wrapper {
-  overflow-x: hidden;
+  overflow-x: hidden scroll;
+  -webkit-overflow-scrolling: touch;
 }
