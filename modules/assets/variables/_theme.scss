@@ -138,6 +138,11 @@ $dark-colors: (
 
 $shadow: rgba(#5d6367, 0.5) !default;
 
+$bg-shadow-angles: (
+  "top",
+  "bottom"
+);
+
 // Text Colors
 $text-dark: $grey-8 !default;
 $text-lightdark: $grey-6!default;

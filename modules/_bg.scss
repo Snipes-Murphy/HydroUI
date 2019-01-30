@@ -10,11 +10,6 @@
   }
 }
 
-$bg-shadow-angles: (
-  "top",
-  "bottom"
-);
-
 @each $angle in $bg-shadow-angles {
   .bg-shadow-#{$angle} {
     background: linear-gradient(to #{$angle}, rgba(0, 0, 0, 0.5), white);
