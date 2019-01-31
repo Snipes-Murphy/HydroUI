@@ -1,0 +1,20 @@
+.input-box {
+  border: none;
+  padding: 8px 15px;
+  @include box-medium-border;
+  @include shadow-small;
+}
+
+$input-sizes: (
+  "sm": 150px,
+  "md": 225px,
+  "lg": 300px,
+  "xlg": 350px,
+  "full": 100%
+);
+
+@each $size, $value in $input-sizes {
+  .input-size-#{$size} {
+    width: $value;
+  }
+}
