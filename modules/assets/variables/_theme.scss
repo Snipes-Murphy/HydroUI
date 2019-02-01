@@ -96,6 +96,7 @@ $colors-map: (
     "pink": $violet,
 
     // Greys
+    "white": $white,
     "grey-0": $grey-0,
     "grey-1": $grey-1,
     "grey-2": $grey-2,
@@ -144,6 +145,6 @@ $bg-shadow-angles: (
 );
 
 // Text Colors
-$text-dark: $grey-8 !default;
-$text-lightdark: $grey-6!default;
-$text-light: $grey-4 !default;
+$text-dark: rgb(60, 65, 68) !default;
+$text-lightdark: rgb(106, 115, 124)!default;
+$text-light: rgb(159, 165, 171) !default;
