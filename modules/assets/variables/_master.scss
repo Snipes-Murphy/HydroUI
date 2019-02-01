@@ -8,6 +8,9 @@ $color-set-click-intensity: 10%;
 // Easing
 
 $ease-swing: cubic-bezier(0.75, 0.25, 0, 1);
+$ease-glide: cubic-bezier(.43,.61,.47,.98);
+$ease-in: cubic-bezier(.35,.69,.49,.93);
+$ease-out: cubic-bezier(.56,.24,.92,.6);
 
 // Breakpoints
 
