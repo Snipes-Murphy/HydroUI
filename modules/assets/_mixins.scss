@@ -66,6 +66,7 @@
 
 @mixin font-heading {
   font-family: 'Poppins', sans-serif;
+  color: $text-dark;
 }
 
 @mixin font-content {
