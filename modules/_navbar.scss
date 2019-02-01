@@ -32,71 +32,75 @@
   }
 }
 
-@media screen and (max-width: $md-breakpoint) {
-  .navbar {
-    .nav-btn-menu {
-      display: block;
-    }
+@each $breakpoint, $value in $breakpoints {
 
-    .nav-content {
-      transition: box-shadow 0ms;
-      display: none;
-      text-align: center;
-      z-index: 100;
-      width: 100%;
-      position: absolute;
-      left: 0;
-      top: 100%;
-      background-color: white;
-      padding: 20px 25px;
-
-      .nav-btn {
-        padding: 5px 0;
-        width: 100%;
-        box-sizing: border-box;
+  @media screen and (max-width: $value) {
+    .navbar-#{$breakpoint} {
+      .nav-btn-menu {
+        display: block;
       }
 
-      .dropdown {
+      .nav-content {
+        transition: box-shadow 0ms;
+        display: none;
+        text-align: center;
+        z-index: 100;
         width: 100%;
-      }
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: white;
+        padding: 20px 25px;
 
-      [class*="btn"] {
-        width: 100%;
-      }
+        .nav-btn {
+          padding: 5px 0;
+          width: 100%;
+          box-sizing: border-box;
+        }
 
-      .dropdown {
+        .dropdown {
+          width: 100%;
+        }
 
-        .dropdown-item:hover + .dropdown-content {
-          padding: 4px 0;
-          height: auto;
-          margin: 0 0 10px 0;
+        [class*="btn"] {
+          width: 100%;
+        }
+
+        .dropdown {
+
+          .dropdown-item:hover + .dropdown-content {
+            padding: 4px 0;
+            height: auto;
+            margin: 0 0 10px 0;
+          }
+        }
+
+        .dropdown-content {
+          padding: 0;
+          overflow: hidden;
+          transition: 0;
+          position: relative;
+          height: 0;
+          width: 100%;
+          max-width: 80%;
+
+          &:hover {
+            padding: 4px 0;
+            height: auto;
+            margin: 0 0 10px 0;
+          }
+
+          &::before {
+            display: none;
+          }
         }
       }
 
-      .dropdown-content {
-        padding: 0;
-        overflow: hidden;
-        transition: 0;
-        position: relative;
-        height: 0;
-        width: 100%;
-        max-width: 80%;
-
-        &:hover {
-          padding: 4px 0;
-          height: auto;
-          margin: 0 0 10px 0;
-        }
-
-        &::before {
-          display: none;
-        }
+      .active {
+        display: block;
       }
-    }
 
-    .active {
-      display: block;
     }
-
   }
+
 }
