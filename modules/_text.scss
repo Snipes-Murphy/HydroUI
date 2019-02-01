@@ -39,3 +39,9 @@
 .text-italic {
   font-style: italic;
 }
+
+@each $color, $value in $colors-map {
+  .color-#{$color} {
+    color: $value;
+  }
+}
