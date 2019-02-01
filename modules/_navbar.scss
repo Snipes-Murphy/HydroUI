@@ -11,9 +11,71 @@
   }
 
   .nav-btn {
+    position: relative;
     @include btn-reset;
     height: 100%;
     padding: 0 10px;
+  }
+
+  @each $color, $value in $colors-map {
+    .nav-line-ani-center-#{$color} {
+
+      &::before {
+        transition: 200ms transform $ease-in;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $value;
+        transform: scaleX(0);
+      }
+
+      &:hover::before {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  @each $color, $value in $colors-map {
+    .nav-line-ani-left-#{$color} {
+
+      &::before {
+        transition: 200ms width $ease-in;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background-color: $value;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+    }
+  }
+
+  @each $color, $value in $colors-map {
+    .nav-line-ani-right-#{$color} {
+
+      &::before {
+        transition: 200ms width $ease-in;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0%;
+        height: 4px;
+        background-color: $value;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+    }
   }
 
   .nav-icon {
