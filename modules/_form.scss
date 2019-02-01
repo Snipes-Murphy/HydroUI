@@ -1,8 +1,22 @@
 .input-box {
+  transition: 200ms box-shadow;
   border: none;
+  outline: none;
   padding: 8px 15px;
   @include box-medium-border;
-  @include shadow-small;
+  box-shadow: 0 2px 6px 0 $shadow;
+  color: $text-lightdark;
+
+  &::placeholder {
+  color: $text-light;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 10px 0 $shadow;
+  }
+
+  &:focus {
+  }
 }
 
 $input-sizes: (
@@ -10,6 +24,7 @@ $input-sizes: (
   "md": 225px,
   "lg": 300px,
   "xlg": 350px,
+  "half": 50%,
   "full": 100%
 );
 
