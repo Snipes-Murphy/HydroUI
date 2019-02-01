@@ -3104,7 +3104,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #5f8cee;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-primary:hover::before {
@@ -3116,7 +3116,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #7d8285;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-secondary:hover::before {
@@ -3128,7 +3128,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #4ed69c;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-success:hover::before {
@@ -3140,7 +3140,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #fb5962;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-error:hover::before {
@@ -3152,7 +3152,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #fbb258;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-warning:hover::before {
@@ -3164,7 +3164,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #36d5f2;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-info:hover::before {
@@ -3176,7 +3176,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #dfe4e8;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-light:hover::before {
@@ -3188,7 +3188,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #2a2d2e;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-dark:hover::before {
@@ -3200,7 +3200,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #f8f8f8;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-neutral:hover::before {
@@ -3212,7 +3212,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #fb5962;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-red:hover::before {
@@ -3224,7 +3224,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #fbb258;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-orange:hover::before {
@@ -3236,7 +3236,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #d5c42c;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-yellow:hover::before {
@@ -3248,7 +3248,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #4ed69c;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-green:hover::before {
@@ -3260,7 +3260,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #39ab7b;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-teal:hover::before {
@@ -3272,7 +3272,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #36d5f2;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-cyan:hover::before {
@@ -3284,7 +3284,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #5f8cee;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-blue:hover::before {
@@ -3296,7 +3296,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #791ba4;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-purple:hover::before {
@@ -3308,7 +3308,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #f12d91;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-pink:hover::before {
@@ -3320,7 +3320,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #fff;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-white:hover::before {
@@ -3332,7 +3332,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #f8f8f8;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-grey-0:hover::before {
@@ -3344,7 +3344,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #dfe4e8;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-grey-1:hover::before {
@@ -3356,7 +3356,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #bdc2c6;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-grey-2:hover::before {
@@ -3368,7 +3368,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #9ba0a3;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-grey-3:hover::before {
@@ -3380,7 +3380,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #7d8285;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-grey-4:hover::before {
@@ -3392,7 +3392,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #696e70;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-grey-5:hover::before {
@@ -3404,7 +3404,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #535759;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-grey-6:hover::before {
@@ -3416,7 +3416,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #3f4244;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-grey-7:hover::before {
@@ -3428,7 +3428,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #2a2d2e;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-grey-8:hover::before {
@@ -3440,7 +3440,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: #191a1b;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-grey-9:hover::before {
@@ -3452,7 +3452,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: transparent;
     transform: scaleX(0); }
   .navbar .nav-line-ani-center-transparent:hover::before {
@@ -3464,7 +3464,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #5f8cee; }
   .navbar .nav-line-ani-left-primary:hover::before {
     width: 100%; }
@@ -3475,7 +3475,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #7d8285; }
   .navbar .nav-line-ani-left-secondary:hover::before {
     width: 100%; }
@@ -3486,7 +3486,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #4ed69c; }
   .navbar .nav-line-ani-left-success:hover::before {
     width: 100%; }
@@ -3497,7 +3497,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #fb5962; }
   .navbar .nav-line-ani-left-error:hover::before {
     width: 100%; }
@@ -3508,7 +3508,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #fbb258; }
   .navbar .nav-line-ani-left-warning:hover::before {
     width: 100%; }
@@ -3519,7 +3519,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #36d5f2; }
   .navbar .nav-line-ani-left-info:hover::before {
     width: 100%; }
@@ -3530,7 +3530,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #dfe4e8; }
   .navbar .nav-line-ani-left-light:hover::before {
     width: 100%; }
@@ -3541,7 +3541,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #2a2d2e; }
   .navbar .nav-line-ani-left-dark:hover::before {
     width: 100%; }
@@ -3552,7 +3552,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #f8f8f8; }
   .navbar .nav-line-ani-left-neutral:hover::before {
     width: 100%; }
@@ -3563,7 +3563,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #fb5962; }
   .navbar .nav-line-ani-left-red:hover::before {
     width: 100%; }
@@ -3574,7 +3574,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #fbb258; }
   .navbar .nav-line-ani-left-orange:hover::before {
     width: 100%; }
@@ -3585,7 +3585,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #d5c42c; }
   .navbar .nav-line-ani-left-yellow:hover::before {
     width: 100%; }
@@ -3596,7 +3596,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #4ed69c; }
   .navbar .nav-line-ani-left-green:hover::before {
     width: 100%; }
@@ -3607,7 +3607,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #39ab7b; }
   .navbar .nav-line-ani-left-teal:hover::before {
     width: 100%; }
@@ -3618,7 +3618,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #36d5f2; }
   .navbar .nav-line-ani-left-cyan:hover::before {
     width: 100%; }
@@ -3629,7 +3629,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #5f8cee; }
   .navbar .nav-line-ani-left-blue:hover::before {
     width: 100%; }
@@ -3640,7 +3640,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #791ba4; }
   .navbar .nav-line-ani-left-purple:hover::before {
     width: 100%; }
@@ -3651,7 +3651,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #f12d91; }
   .navbar .nav-line-ani-left-pink:hover::before {
     width: 100%; }
@@ -3662,7 +3662,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #fff; }
   .navbar .nav-line-ani-left-white:hover::before {
     width: 100%; }
@@ -3673,7 +3673,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #f8f8f8; }
   .navbar .nav-line-ani-left-grey-0:hover::before {
     width: 100%; }
@@ -3684,7 +3684,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #dfe4e8; }
   .navbar .nav-line-ani-left-grey-1:hover::before {
     width: 100%; }
@@ -3695,7 +3695,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #bdc2c6; }
   .navbar .nav-line-ani-left-grey-2:hover::before {
     width: 100%; }
@@ -3706,7 +3706,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #9ba0a3; }
   .navbar .nav-line-ani-left-grey-3:hover::before {
     width: 100%; }
@@ -3717,7 +3717,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #7d8285; }
   .navbar .nav-line-ani-left-grey-4:hover::before {
     width: 100%; }
@@ -3728,7 +3728,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #696e70; }
   .navbar .nav-line-ani-left-grey-5:hover::before {
     width: 100%; }
@@ -3739,7 +3739,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #535759; }
   .navbar .nav-line-ani-left-grey-6:hover::before {
     width: 100%; }
@@ -3750,7 +3750,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #3f4244; }
   .navbar .nav-line-ani-left-grey-7:hover::before {
     width: 100%; }
@@ -3761,7 +3761,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #2a2d2e; }
   .navbar .nav-line-ani-left-grey-8:hover::before {
     width: 100%; }
@@ -3772,7 +3772,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #191a1b; }
   .navbar .nav-line-ani-left-grey-9:hover::before {
     width: 100%; }
@@ -3783,7 +3783,7 @@ pre {
     bottom: 0;
     left: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: transparent; }
   .navbar .nav-line-ani-left-transparent:hover::before {
     width: 100%; }
@@ -3794,7 +3794,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #5f8cee; }
   .navbar .nav-line-ani-right-primary:hover::before {
     width: 100%; }
@@ -3805,7 +3805,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #7d8285; }
   .navbar .nav-line-ani-right-secondary:hover::before {
     width: 100%; }
@@ -3816,7 +3816,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #4ed69c; }
   .navbar .nav-line-ani-right-success:hover::before {
     width: 100%; }
@@ -3827,7 +3827,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #fb5962; }
   .navbar .nav-line-ani-right-error:hover::before {
     width: 100%; }
@@ -3838,7 +3838,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #fbb258; }
   .navbar .nav-line-ani-right-warning:hover::before {
     width: 100%; }
@@ -3849,7 +3849,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #36d5f2; }
   .navbar .nav-line-ani-right-info:hover::before {
     width: 100%; }
@@ -3860,7 +3860,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #dfe4e8; }
   .navbar .nav-line-ani-right-light:hover::before {
     width: 100%; }
@@ -3871,7 +3871,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #2a2d2e; }
   .navbar .nav-line-ani-right-dark:hover::before {
     width: 100%; }
@@ -3882,7 +3882,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #f8f8f8; }
   .navbar .nav-line-ani-right-neutral:hover::before {
     width: 100%; }
@@ -3893,7 +3893,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #fb5962; }
   .navbar .nav-line-ani-right-red:hover::before {
     width: 100%; }
@@ -3904,7 +3904,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #fbb258; }
   .navbar .nav-line-ani-right-orange:hover::before {
     width: 100%; }
@@ -3915,7 +3915,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #d5c42c; }
   .navbar .nav-line-ani-right-yellow:hover::before {
     width: 100%; }
@@ -3926,7 +3926,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #4ed69c; }
   .navbar .nav-line-ani-right-green:hover::before {
     width: 100%; }
@@ -3937,7 +3937,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #39ab7b; }
   .navbar .nav-line-ani-right-teal:hover::before {
     width: 100%; }
@@ -3948,7 +3948,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #36d5f2; }
   .navbar .nav-line-ani-right-cyan:hover::before {
     width: 100%; }
@@ -3959,7 +3959,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #5f8cee; }
   .navbar .nav-line-ani-right-blue:hover::before {
     width: 100%; }
@@ -3970,7 +3970,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #791ba4; }
   .navbar .nav-line-ani-right-purple:hover::before {
     width: 100%; }
@@ -3981,7 +3981,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #f12d91; }
   .navbar .nav-line-ani-right-pink:hover::before {
     width: 100%; }
@@ -3992,7 +3992,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #fff; }
   .navbar .nav-line-ani-right-white:hover::before {
     width: 100%; }
@@ -4003,7 +4003,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #f8f8f8; }
   .navbar .nav-line-ani-right-grey-0:hover::before {
     width: 100%; }
@@ -4014,7 +4014,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #dfe4e8; }
   .navbar .nav-line-ani-right-grey-1:hover::before {
     width: 100%; }
@@ -4025,7 +4025,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #bdc2c6; }
   .navbar .nav-line-ani-right-grey-2:hover::before {
     width: 100%; }
@@ -4036,7 +4036,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #9ba0a3; }
   .navbar .nav-line-ani-right-grey-3:hover::before {
     width: 100%; }
@@ -4047,7 +4047,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #7d8285; }
   .navbar .nav-line-ani-right-grey-4:hover::before {
     width: 100%; }
@@ -4058,7 +4058,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #696e70; }
   .navbar .nav-line-ani-right-grey-5:hover::before {
     width: 100%; }
@@ -4069,7 +4069,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #535759; }
   .navbar .nav-line-ani-right-grey-6:hover::before {
     width: 100%; }
@@ -4080,7 +4080,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #3f4244; }
   .navbar .nav-line-ani-right-grey-7:hover::before {
     width: 100%; }
@@ -4091,7 +4091,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #2a2d2e; }
   .navbar .nav-line-ani-right-grey-8:hover::before {
     width: 100%; }
@@ -4102,7 +4102,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: #191a1b; }
   .navbar .nav-line-ani-right-grey-9:hover::before {
     width: 100%; }
@@ -4113,7 +4113,7 @@ pre {
     bottom: 0;
     right: 0;
     width: 0%;
-    height: 4px;
+    height: 3px;
     background-color: transparent; }
   .navbar .nav-line-ani-right-transparent:hover::before {
     width: 100%; }
