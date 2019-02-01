@@ -8,3 +8,43 @@ $color-set-click-intensity: 10%;
 // Easing
 
 $ease-swing: cubic-bezier(0.75, 0.25, 0, 1);
+
+// Breakpoints
+
+$source-breakpoint: 1350px;
+$xlg-breakpoint: 1350px;
+$lg-breakpoint: 1050px;
+$md-breakpoint: 750px;
+$sm-breakpoint: 400px;
+$xsm-breakpoint: 320px;
+
+$breakpoints: (
+  "xlg": $xlg-breakpoint,
+  "lg": $lg-breakpoint,
+  "md": $md-breakpoint,
+  "sm": $sm-breakpoint,
+  "xsm": $xsm-breakpoint
+);
+// Page size on breakpoints, rs classes = smaller page margins used for smaller navbars, headers, carousel etc.
+
+$page-full: 1250px;
+$rs-page-full: 1000px;
+$page-xlg: 1200px;
+$rs-page-xlg: 900px;
+$page-lg: 1000px;
+$rs-page-lg: 700px;
+$page-md: 100%; // From here there are no page margins as the screen is already small enough
+$rs-page-md: 500px;
+$page-sm: 100%;
+$rs-page-sm: 100%; // From here is where the rs margins end
+$page-xsm: 100%;
+$rs-page-xsm: 100%;
+
+// Container padding upon breakpoint
+
+$container-padding: 0;
+$container-padding-xlg: 0;
+$container-padding-lg: 0;
+$container-padding-md: 50px;
+$container-padding-sm: 15px;
+$container-padding-xsm: 4px;
