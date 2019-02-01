@@ -1,24 +1,3 @@
-// Breakpoints
-$source-breakpoint: 1350px;
-$xlg-breakpoint: 1350px;
-$lg-breakpoint: 1050px;
-$md-breakpoint: 750px;
-$sm-breakpoint: 400px;
-$xsm-breakpoint: 320px;
-// Page size on breakpoints, rs classes = smaller page margins used for smaller navbars, headers, carousel etc.
-$page-full: 1250px;
-$rs-page-full: 1000px;
-$page-xlg: 1200px;
-$rs-page-xlg: 900px;
-$page-lg: 1000px;
-$rs-page-lg: 700px;
-$page-md: 100%; // From here there are no page margins as the screen is already small enough
-$rs-page-md: 500px;
-$page-sm: 100%;
-$rs-page-sm: 100%; // From here is where the rs margins end
-$page-xsm: 100%;
-$rs-page-xsm: 100%;
-
 .container {
   margin: auto;
   position: relative;
@@ -30,12 +9,7 @@ $rs-page-xsm: 100%;
   position: relative;
   width: $rs-page-full;
 }
-$container-padding: 0;
-$container-padding-xlg: 0;
-$container-padding-lg: 0;
-$container-padding-md: 50px;
-$container-padding-sm: 15px;
-$container-padding-xsm: 4px;
+
 @mixin containers($container-padding, $page-full, $rs-page-full) {
   .container {
     padding: 0 $container-padding;
