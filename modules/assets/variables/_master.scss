@@ -51,3 +51,20 @@ $container-padding-lg: 0;
 $container-padding-md: 50px;
 $container-padding-sm: 15px;
 $container-padding-xsm: 4px;
+
+$margins: (
+  "xlg": 75px,
+  "lg": 50px,
+  "md": 25px,
+  "sm": 10px,
+  "xsm": 10px
+);
+
+$margin-sides: (
+  "t": "top",
+  "r": "right",
+  "b": "bottom",
+  "l": "left",
+  "x": "x-axis",
+  "y": "y-axis"
+);

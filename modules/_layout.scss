@@ -1,0 +1,28 @@
+@each $magin-side, $m-value in $margin-sides {
+  @each $margin, $margin-value in $margins {
+    @if $magin-side == "x" {
+      .m#{$magin-side}-#{$margin} {
+        margin: 0 $margin-value;
+      }
+    } @else if $magin-side == "y" {
+      .m#{$magin-side}-#{$margin} {
+        margin: $margin-value 0;
+      }
+    } @else {
+      .m#{$magin-side}-#{$margin} {
+        margin-#{$m-value}: $margin-value;
+      }
+    }
+  }
+}
+
+$pull-modes: (
+  "right",
+  "left"
+);
+
+@each $mode in $pull-modes {
+  .pull-#{$mode} {
+    float: $mode;
+  }
+}
