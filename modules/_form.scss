@@ -12,10 +12,11 @@
   }
 
   &:hover {
-    box-shadow: 0 4px 10px 0 $shadow;
+    box-shadow: 0 4px 8px 0 $shadow;
   }
 
   &:focus {
+    box-shadow: 0 4px 10px 0 $shadow;
   }
 }
 
