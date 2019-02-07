@@ -1,29 +1,8 @@
-.container {
-  margin: auto;
-  position: relative;
-  width: $page-full;
-}
-
-.container-rs {
-  margin: auto;
-  position: relative;
-  width: $rs-page-full;
-}
-
-@mixin containers($container-padding, $page-full, $rs-page-full) {
-  .container {
-    padding: 0 $container-padding;
-    width: $page-full;
-  }
-
-  .container-rs {
-    width: $rs-page-full;
-  }
-}
 @mixin columns {
   @for $col from 1 through 12 {
     &-#{$col} {
-      flex: 0 0 8.3333% * $col !important;
+      flex-grow: 1;
+      flex-basis: 8.3333% * $col !important;
     }
   }
 }
@@ -32,32 +11,26 @@
   display: flex;
   flex-wrap: wrap;
 
-  [class*="col-"] {
-    flex: 0 0 100%;
-  }
-
   & > .col {
+    &,
     &-lg,
     &-md,
     &-sm,
     &-xlg,
     &-xsm {
-      flex: 1 0 auto;
+      flex: 1 0 0px;
       float: left;
       padding: 0;
     }
   }
 }
-@media screen and (max-width: $xlg-breakpoint) {
-  @include containers($container-padding-xlg, $page-xlg, $rs-page-xlg);
-}
-@media screen and (max-width: $xlg-breakpoint) {
-  @include containers($container-padding-lg, $page-lg, $rs-page-lg);
-}
-@media screen and (max-width: $lg-breakpoint) {
-  @include containers($container-padding-md, $page-md, $rs-page-md);
-}
-@media screen and (min-width: calc(#{$md-breakpoint} + 1px)) {
+
+$grid-breakpoint-sm: map-get($breakpoints, sm) + 1px;
+$grid-breakpoint-md: map-get($breakpoints, md) + 1px;
+$grid-breakpoint-lg: map-get($breakpoints, lg) + 1px;
+$grid-breakpoint-xlg: map-get($breakpoints, xlg) + 1px;
+
+@media all and (min-width: $grid-breakpoint-sm) {
   .row {
     & > .col {
       &-sm {
@@ -68,14 +41,14 @@
     }
   }
 }
-@media screen and (max-width: $sm-breakpoint) {
+@media all and (max-width: map-get($breakpoints, sm)) {
   .row {
     [class*="col-sm"] {
       flex: 0 0 100%;
     }
   }
 }
-@media screen and (min-width: calc(#{$lg-breakpoint} + 1px)) {
+@media all and (min-width: $grid-breakpoint-lg) {
   .row {
     & > .col {
       &-md {
@@ -86,14 +59,14 @@
     }
   }
 }
-@media screen and (max-width: $md-breakpoint) {
+@media all and (max-width: map-get($breakpoints, md)) {
   .row {
     [class*="col-md"] {
       flex: 0 0 100%;
     }
   }
 }
-@media screen and (min-width: calc(#{$xlg-breakpoint} + 1px)) {
+@media all and (min-width: $grid-breakpoint-xlg) {
   .row {
     & > .col {
       &-lg {
@@ -104,14 +77,14 @@
     }
   }
 }
-@media screen and (max-width: $lg-breakpoint) {
+@media all and (max-width: map-get($breakpoints, lg)) {
   .row {
     [class*="col-lg"] {
       flex: 0 0 100%;
     }
   }
 }
-@media screen and (min-width: calc($source-breakpoint + 1px)) {
+@media all and (min-width: $grid-breakpoint-xlg) {
   .row {
     & > .col {
       &-xlg {
@@ -122,20 +95,14 @@
     }
   }
 }
-@media screen and (max-width: $xlg-breakpoint) {
+@media all and (max-width: map-get($breakpoints, xlg)) {
   .row {
     [class*="col-xlg"] {
       flex: 0 0 100%;
     }
   }
 }
-@media screen and (max-width: $md-breakpoint) {
-  @include containers($container-padding-sm, $page-sm, $rs-page-sm);
-}
-@media screen and (max-width: $sm-breakpoint) {
-  @include containers($container-padding-xsm, $page-xsm, $rs-page-xsm);
-}
-@media screen and (min-width: calc($sm-breakpoint + 1px)) {
+@media all and (min-width: $grid-breakpoint-sm) {
   .row {
     & > .col {
       &-xsm {

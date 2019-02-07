@@ -26,3 +26,44 @@ $pull-modes: (
     float: $mode;
   }
 }
+
+// Containers
+
+.container {
+  margin: auto;
+  position: relative;
+  width: $page-full;
+}
+
+.container-rs {
+  margin: auto;
+  position: relative;
+  width: $rs-page-full;
+}
+
+@mixin containers($container-padding, $page-full, $rs-page-full) {
+  .container {
+    padding: 0 $container-padding;
+    width: $page-full;
+  }
+
+  .container-rs {
+    width: $rs-page-full;
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints, xxlg)) {
+  @include containers($container-padding-xlg, $page-xlg, $rs-page-xlg);
+}
+@media screen and (max-width: map-get($breakpoints, xlg)) {
+  @include containers($container-padding-lg, $page-lg, $rs-page-lg);
+}
+@media screen and (max-width: map-get($breakpoints, lg)) {
+  @include containers($container-padding-md, $page-md, $rs-page-md);
+}
+@media screen and (max-width: map-get($breakpoints, md)) {
+  @include containers($container-padding-sm, $page-sm, $rs-page-sm);
+}
+@media screen and (max-width: map-get($breakpoints, sm)) {
+  @include containers($container-padding-xsm, $page-xsm, $rs-page-xsm);
+}

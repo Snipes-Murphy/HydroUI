@@ -14,20 +14,15 @@ $ease-out: cubic-bezier(.56,.24,.92,.6);
 
 // Breakpoints
 
-$source-breakpoint: 1350px;
-$xlg-breakpoint: 1350px;
-$lg-breakpoint: 1050px;
-$md-breakpoint: 750px;
-$sm-breakpoint: 400px;
-$xsm-breakpoint: 320px;
-
 $breakpoints: (
-  "xlg": $xlg-breakpoint,
-  "lg": $lg-breakpoint,
-  "md": $md-breakpoint,
-  "sm": $sm-breakpoint,
-  "xsm": $xsm-breakpoint
+  "xxlg": 1500px,
+  "xlg": 1350px,
+  "lg": 1050px,
+  "md": 750px,
+  "sm": 400px,
+  "xsm": 320px
 );
+
 // Page size on breakpoints, rs classes = smaller page margins used for smaller navbars, headers, carousel etc.
 
 $page-full: 1250px;
