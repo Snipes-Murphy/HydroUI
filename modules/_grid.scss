@@ -1,7 +1,6 @@
 @mixin columns {
   @for $col from 1 through 12 {
     &-#{$col} {
-      flex-grow: 1;
       flex-basis: 8.3333% * $col !important;
     }
   }
@@ -12,6 +11,7 @@
   flex-wrap: wrap;
 
   & > .col {
+    @include columns;
     &,
     &-lg,
     &-md,
@@ -30,7 +30,7 @@ $grid-breakpoint-md: map-get($breakpoints, md) + 1px;
 $grid-breakpoint-lg: map-get($breakpoints, lg) + 1px;
 $grid-breakpoint-xlg: map-get($breakpoints, xlg) + 1px;
 
-@media all and (min-width: $grid-breakpoint-sm) {
+@media all and (min-width: $grid-breakpoint-md) {
   .row {
     & > .col {
       &-sm {

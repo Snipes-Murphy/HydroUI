@@ -2243,207 +2243,171 @@ pre {
 .row {
   display: flex;
   flex-wrap: wrap; }
+  .row > .col-1 {
+    flex-basis: 8.3333% !important; }
+  .row > .col-2 {
+    flex-basis: 16.6666% !important; }
+  .row > .col-3 {
+    flex-basis: 24.9999% !important; }
+  .row > .col-4 {
+    flex-basis: 33.3332% !important; }
+  .row > .col-5 {
+    flex-basis: 41.6665% !important; }
+  .row > .col-6 {
+    flex-basis: 49.9998% !important; }
+  .row > .col-7 {
+    flex-basis: 58.3331% !important; }
+  .row > .col-8 {
+    flex-basis: 66.6664% !important; }
+  .row > .col-9 {
+    flex-basis: 74.9997% !important; }
+  .row > .col-10 {
+    flex-basis: 83.333% !important; }
+  .row > .col-11 {
+    flex-basis: 91.6663% !important; }
+  .row > .col-12 {
+    flex-basis: 99.9996% !important; }
   .row > .col, .row > .col-lg, .row > .col-md, .row > .col-sm, .row > .col-xlg, .row > .col-xsm {
     flex: 1 0 0px;
     float: left;
     padding: 0; }
 
-@media all and (min-width: 401px) {
+@media all and (min-width: 751px) {
   .row > .col-sm-1 {
-    flex-grow: 1;
     flex-basis: 8.3333% !important; }
   .row > .col-sm-2 {
-    flex-grow: 1;
     flex-basis: 16.6666% !important; }
   .row > .col-sm-3 {
-    flex-grow: 1;
     flex-basis: 24.9999% !important; }
   .row > .col-sm-4 {
-    flex-grow: 1;
     flex-basis: 33.3332% !important; }
   .row > .col-sm-5 {
-    flex-grow: 1;
     flex-basis: 41.6665% !important; }
   .row > .col-sm-6 {
-    flex-grow: 1;
     flex-basis: 49.9998% !important; }
   .row > .col-sm-7 {
-    flex-grow: 1;
     flex-basis: 58.3331% !important; }
   .row > .col-sm-8 {
-    flex-grow: 1;
     flex-basis: 66.6664% !important; }
   .row > .col-sm-9 {
-    flex-grow: 1;
     flex-basis: 74.9997% !important; }
   .row > .col-sm-10 {
-    flex-grow: 1;
     flex-basis: 83.333% !important; }
   .row > .col-sm-11 {
-    flex-grow: 1;
     flex-basis: 91.6663% !important; }
   .row > .col-sm-12 {
-    flex-grow: 1;
     flex-basis: 99.9996% !important; } }
 @media all and (max-width: 400px) {
   .row [class*="col-sm"] {
     flex: 0 0 100%; } }
 @media all and (min-width: 1051px) {
   .row > .col-md-1 {
-    flex-grow: 1;
     flex-basis: 8.3333% !important; }
   .row > .col-md-2 {
-    flex-grow: 1;
     flex-basis: 16.6666% !important; }
   .row > .col-md-3 {
-    flex-grow: 1;
     flex-basis: 24.9999% !important; }
   .row > .col-md-4 {
-    flex-grow: 1;
     flex-basis: 33.3332% !important; }
   .row > .col-md-5 {
-    flex-grow: 1;
     flex-basis: 41.6665% !important; }
   .row > .col-md-6 {
-    flex-grow: 1;
     flex-basis: 49.9998% !important; }
   .row > .col-md-7 {
-    flex-grow: 1;
     flex-basis: 58.3331% !important; }
   .row > .col-md-8 {
-    flex-grow: 1;
     flex-basis: 66.6664% !important; }
   .row > .col-md-9 {
-    flex-grow: 1;
     flex-basis: 74.9997% !important; }
   .row > .col-md-10 {
-    flex-grow: 1;
     flex-basis: 83.333% !important; }
   .row > .col-md-11 {
-    flex-grow: 1;
     flex-basis: 91.6663% !important; }
   .row > .col-md-12 {
-    flex-grow: 1;
     flex-basis: 99.9996% !important; } }
 @media all and (max-width: 750px) {
   .row [class*="col-md"] {
     flex: 0 0 100%; } }
 @media all and (min-width: 1351px) {
   .row > .col-lg-1 {
-    flex-grow: 1;
     flex-basis: 8.3333% !important; }
   .row > .col-lg-2 {
-    flex-grow: 1;
     flex-basis: 16.6666% !important; }
   .row > .col-lg-3 {
-    flex-grow: 1;
     flex-basis: 24.9999% !important; }
   .row > .col-lg-4 {
-    flex-grow: 1;
     flex-basis: 33.3332% !important; }
   .row > .col-lg-5 {
-    flex-grow: 1;
     flex-basis: 41.6665% !important; }
   .row > .col-lg-6 {
-    flex-grow: 1;
     flex-basis: 49.9998% !important; }
   .row > .col-lg-7 {
-    flex-grow: 1;
     flex-basis: 58.3331% !important; }
   .row > .col-lg-8 {
-    flex-grow: 1;
     flex-basis: 66.6664% !important; }
   .row > .col-lg-9 {
-    flex-grow: 1;
     flex-basis: 74.9997% !important; }
   .row > .col-lg-10 {
-    flex-grow: 1;
     flex-basis: 83.333% !important; }
   .row > .col-lg-11 {
-    flex-grow: 1;
     flex-basis: 91.6663% !important; }
   .row > .col-lg-12 {
-    flex-grow: 1;
     flex-basis: 99.9996% !important; } }
 @media all and (max-width: 1050px) {
   .row [class*="col-lg"] {
     flex: 0 0 100%; } }
 @media all and (min-width: 1351px) {
   .row > .col-xlg-1 {
-    flex-grow: 1;
     flex-basis: 8.3333% !important; }
   .row > .col-xlg-2 {
-    flex-grow: 1;
     flex-basis: 16.6666% !important; }
   .row > .col-xlg-3 {
-    flex-grow: 1;
     flex-basis: 24.9999% !important; }
   .row > .col-xlg-4 {
-    flex-grow: 1;
     flex-basis: 33.3332% !important; }
   .row > .col-xlg-5 {
-    flex-grow: 1;
     flex-basis: 41.6665% !important; }
   .row > .col-xlg-6 {
-    flex-grow: 1;
     flex-basis: 49.9998% !important; }
   .row > .col-xlg-7 {
-    flex-grow: 1;
     flex-basis: 58.3331% !important; }
   .row > .col-xlg-8 {
-    flex-grow: 1;
     flex-basis: 66.6664% !important; }
   .row > .col-xlg-9 {
-    flex-grow: 1;
     flex-basis: 74.9997% !important; }
   .row > .col-xlg-10 {
-    flex-grow: 1;
     flex-basis: 83.333% !important; }
   .row > .col-xlg-11 {
-    flex-grow: 1;
     flex-basis: 91.6663% !important; }
   .row > .col-xlg-12 {
-    flex-grow: 1;
     flex-basis: 99.9996% !important; } }
 @media all and (max-width: 1350px) {
   .row [class*="col-xlg"] {
     flex: 0 0 100%; } }
 @media all and (min-width: 401px) {
   .row > .col-xsm-1 {
-    flex-grow: 1;
     flex-basis: 8.3333% !important; }
   .row > .col-xsm-2 {
-    flex-grow: 1;
     flex-basis: 16.6666% !important; }
   .row > .col-xsm-3 {
-    flex-grow: 1;
     flex-basis: 24.9999% !important; }
   .row > .col-xsm-4 {
-    flex-grow: 1;
     flex-basis: 33.3332% !important; }
   .row > .col-xsm-5 {
-    flex-grow: 1;
     flex-basis: 41.6665% !important; }
   .row > .col-xsm-6 {
-    flex-grow: 1;
     flex-basis: 49.9998% !important; }
   .row > .col-xsm-7 {
-    flex-grow: 1;
     flex-basis: 58.3331% !important; }
   .row > .col-xsm-8 {
-    flex-grow: 1;
     flex-basis: 66.6664% !important; }
   .row > .col-xsm-9 {
-    flex-grow: 1;
     flex-basis: 74.9997% !important; }
   .row > .col-xsm-10 {
-    flex-grow: 1;
     flex-basis: 83.333% !important; }
   .row > .col-xsm-11 {
-    flex-grow: 1;
     flex-basis: 91.6663% !important; }
   .row > .col-xsm-12 {
-    flex-grow: 1;
     flex-basis: 99.9996% !important; } }
 .icon-pill {
   margin: 4px;
