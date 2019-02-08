@@ -23,6 +23,7 @@ body h1, h2, h3, h4, h5, h6 {
   padding: .15em .3em;
   background-color: #ebedf2;
   color: #6a737c;
+  font-family: 'Cabin', sans-serif;
   border-radius: 2px; }
 
 h1, .h1 {
