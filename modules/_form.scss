@@ -6,6 +6,7 @@
   @include box-medium-border;
   box-shadow: 0 2px 6px 0 $shadow;
   color: $text-lightdark;
+  box-sizing: border-box;
 
   &::placeholder {
   color: $text-light;
