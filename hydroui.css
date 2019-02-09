@@ -2273,6 +2273,34 @@ pre {
     float: left;
     padding: 0; }
 
+@media all and (min-width: 401px) {
+  .row > .col-xsm-1 {
+    flex-basis: 8.3333% !important; }
+  .row > .col-xsm-2 {
+    flex-basis: 16.6666% !important; }
+  .row > .col-xsm-3 {
+    flex-basis: 24.9999% !important; }
+  .row > .col-xsm-4 {
+    flex-basis: 33.3332% !important; }
+  .row > .col-xsm-5 {
+    flex-basis: 41.6665% !important; }
+  .row > .col-xsm-6 {
+    flex-basis: 49.9998% !important; }
+  .row > .col-xsm-7 {
+    flex-basis: 58.3331% !important; }
+  .row > .col-xsm-8 {
+    flex-basis: 66.6664% !important; }
+  .row > .col-xsm-9 {
+    flex-basis: 74.9997% !important; }
+  .row > .col-xsm-10 {
+    flex-basis: 83.333% !important; }
+  .row > .col-xsm-11 {
+    flex-basis: 91.6663% !important; }
+  .row > .col-xsm-12 {
+    flex-basis: 99.9996% !important; } }
+@media all and (max-width: 400px) {
+  .row [class*="col-xsm"] {
+    flex: 0 0 100%; } }
 @media all and (min-width: 751px) {
   .row > .col-sm-1 {
     flex-basis: 8.3333% !important; }
@@ -2298,7 +2326,7 @@ pre {
     flex-basis: 91.6663% !important; }
   .row > .col-sm-12 {
     flex-basis: 99.9996% !important; } }
-@media all and (max-width: 400px) {
+@media all and (max-width: 750px) {
   .row [class*="col-sm"] {
     flex: 0 0 100%; } }
 @media all and (min-width: 1051px) {
@@ -2326,7 +2354,7 @@ pre {
     flex-basis: 91.6663% !important; }
   .row > .col-md-12 {
     flex-basis: 99.9996% !important; } }
-@media all and (max-width: 750px) {
+@media all and (max-width: 1050px) {
   .row [class*="col-md"] {
     flex: 0 0 100%; } }
 @media all and (min-width: 1351px) {
@@ -2354,10 +2382,10 @@ pre {
     flex-basis: 91.6663% !important; }
   .row > .col-lg-12 {
     flex-basis: 99.9996% !important; } }
-@media all and (max-width: 1050px) {
+@media all and (max-width: 1350px) {
   .row [class*="col-lg"] {
     flex: 0 0 100%; } }
-@media all and (min-width: 1351px) {
+@media all and (min-width: 1501px) {
   .row > .col-xlg-1 {
     flex-basis: 8.3333% !important; }
   .row > .col-xlg-2 {
@@ -2382,34 +2410,9 @@ pre {
     flex-basis: 91.6663% !important; }
   .row > .col-xlg-12 {
     flex-basis: 99.9996% !important; } }
-@media all and (max-width: 1350px) {
+@media all and (max-width: 1500px) {
   .row [class*="col-xlg"] {
     flex: 0 0 100%; } }
-@media all and (min-width: 401px) {
-  .row > .col-xsm-1 {
-    flex-basis: 8.3333% !important; }
-  .row > .col-xsm-2 {
-    flex-basis: 16.6666% !important; }
-  .row > .col-xsm-3 {
-    flex-basis: 24.9999% !important; }
-  .row > .col-xsm-4 {
-    flex-basis: 33.3332% !important; }
-  .row > .col-xsm-5 {
-    flex-basis: 41.6665% !important; }
-  .row > .col-xsm-6 {
-    flex-basis: 49.9998% !important; }
-  .row > .col-xsm-7 {
-    flex-basis: 58.3331% !important; }
-  .row > .col-xsm-8 {
-    flex-basis: 66.6664% !important; }
-  .row > .col-xsm-9 {
-    flex-basis: 74.9997% !important; }
-  .row > .col-xsm-10 {
-    flex-basis: 83.333% !important; }
-  .row > .col-xsm-11 {
-    flex-basis: 91.6663% !important; }
-  .row > .col-xsm-12 {
-    flex-basis: 99.9996% !important; } }
 .icon-pill {
   margin: 4px;
   box-shadow: 0 6px 12px 0 rgba(93, 99, 103, 0.5);
