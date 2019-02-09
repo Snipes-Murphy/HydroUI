@@ -46,7 +46,7 @@ $widths: (
 );
 
 @each $width, $percent in $widths {
-  w-#{$width} {
+  .w-#{$width} {
     width: $percent;
   }
 }
