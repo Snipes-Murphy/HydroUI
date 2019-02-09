@@ -27,8 +27,8 @@
 }
 
 @each $breakpoint, $value in $breakpoints {
-
-  @include breakpoint-out($breakpoint) {
+  $breakpoint-value: $value + 1px;
+  @include breakpoint-out-raw($breakpoint-value) {
     .row {
       & > .col {
         &-#{$breakpoint} {
