@@ -5094,6 +5094,8 @@ pre {
     opacity: 1;
     visibility: visible; }
   .tooltip::before {
+    white-space: nowrap;
+    font-size: 14px;
     position: absolute;
     transition: 50ms;
     opacity: 0;

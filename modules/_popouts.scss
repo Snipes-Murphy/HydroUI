@@ -10,6 +10,8 @@ $tooltip-offset: 15px;
   }
 
   &::before {
+    white-space: nowrap;
+    font-size: 14px;
     position: absolute;
     transition: 50ms;
     opacity: 0;
