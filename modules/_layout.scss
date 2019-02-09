@@ -16,6 +16,33 @@
   }
 }
 
+@each $breakpoint, $break-value in $breakpoints {
+  @each $magin-side, $m-value in $margin-sides {
+    @each $margin, $margin-value in $margins {
+      @if $magin-side == "x" {
+        @include breakpoint-in($breakpoint) {
+          .m#{$magin-side}-#{$margin}-#{$breakpoint} {
+            margin: 0 $margin-value;
+          }
+        }
+      } @else if $magin-side == "y" {
+        @include breakpoint-in($breakpoint) {
+          .m#{$magin-side}-#{$margin}-#{$breakpoint} {
+            margin: $margin-value 0;
+          }
+        }
+      } @else {
+        @include breakpoint-in($breakpoint) {
+          .m#{$magin-side}-#{$margin}-#{$breakpoint} {
+            margin-#{$m-value}: $margin-value;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 $pull-modes: (
   "right",
   "left"
@@ -52,18 +79,18 @@ $pull-modes: (
   }
 }
 
-@media screen and (max-width: map-get($breakpoints, xxlg)) {
+@include breakpoint-in('xxlg') {
   @include containers($container-padding-xlg, $page-xlg, $rs-page-xlg);
 }
-@media screen and (max-width: map-get($breakpoints, xlg)) {
+@include breakpoint-in('xlg') {
   @include containers($container-padding-lg, $page-lg, $rs-page-lg);
 }
-@media screen and (max-width: map-get($breakpoints, lg)) {
+@include breakpoint-in('lg') {
   @include containers($container-padding-md, $page-md, $rs-page-md);
 }
-@media screen and (max-width: map-get($breakpoints, md)) {
+@include breakpoint-in('md') {
   @include containers($container-padding-sm, $page-sm, $rs-page-sm);
 }
-@media screen and (max-width: map-get($breakpoints, sm)) {
+@include breakpoint-in('sm') {
   @include containers($container-padding-xsm, $page-xsm, $rs-page-xsm);
 }
