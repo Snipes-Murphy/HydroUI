@@ -103,3 +103,19 @@
   padding: 10px 15px;
   @include box-medium-border;
 }
+
+@mixin breakpoint-in($breakpoint-nil) {
+  @if map-has-key($breakpoints, $breakpoint-nil) {
+    @media screen and (max-width: map-get($breakpoints, $breakpoint-nil)) {
+      @content;
+    }
+  }
+}
+
+@mixin breakpoint-out($breakpoint-nil) {
+  @if map-has-key($breakpoints, $breakpoint-nil) {
+    @media all and (min-width: map-get($breakpoints, $breakpoint-nil)) {
+      @content
+    }
+  }
+}

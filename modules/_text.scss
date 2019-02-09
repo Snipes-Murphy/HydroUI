@@ -45,3 +45,21 @@
     color: $value;
   }
 }
+
+$text-aligns: (
+  "l": left,
+  "c": center,
+  "r": right,
+  "j": justify
+);
+
+@each $text-align, $text-value in $text-aligns {
+  @each $breakpoint, $value in $breakpoints {
+    @include breakpoint-in ($breakpoint) {
+      .text-#{$text-align}-#{$breakpoint} {
+        text-align: $text-value;
+      }
+    }
+
+  }
+}

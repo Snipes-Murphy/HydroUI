@@ -17,6 +17,7 @@
     &-md,
     &-sm,
     &-xlg,
+    &-xxlg,
     &-xsm {
       flex: 1 0 0px;
       float: left;
@@ -25,98 +26,24 @@
   }
 }
 
-$grid-breakpoint-sm: map-get($breakpoints, sm) + 1px;
-$grid-breakpoint-md: map-get($breakpoints, md) + 1px;
-$grid-breakpoint-lg: map-get($breakpoints, lg) + 1px;
-$grid-breakpoint-xlg: map-get($breakpoints, xlg) + 1px;
-$grid-breakpoint-xxlg: map-get($breakpoints, xxlg) + 1px;
-@media all and (min-width: $grid-breakpoint-sm) {
-  .row {
-    & > .col {
-      &-xsm {
-        // Extra small column start
-        @include columns;
+@each $breakpoint, $value in $breakpoints {
+
+  @include breakpoint-out($breakpoint) {
+    .row {
+      & > .col {
+        &-#{$breakpoint} {
+          @include columns;
+        }
       }
-      // Extra small column end
     }
   }
-}
-@media all and (max-width: map-get($breakpoints, sm)) {
-  .row {
-    [class*="col-xsm"] {
-      flex: 0 0 100%;
-    }
-  }
-}
-@media all and (min-width: $grid-breakpoint-md) {
-  .row {
-    & > .col {
-      &-sm {
-        // Small column start
-        @include columns;
+
+  @include breakpoint-in($breakpoint) {
+    .row {
+      [class*="col-#{$breakpoint}"] {
+        flex: 0 0 100%;
       }
-      // Small column end
     }
   }
-}
-@media all and (max-width: map-get($breakpoints, md)) {
-  .row {
-    [class*="col-sm"] {
-      flex: 0 0 100%;
-    }
-  }
-}
-@media all and (min-width: $grid-breakpoint-lg) {
-  .row {
-    & > .col {
-      &-md {
-        // Medium column start
-        @include columns;
-      }
-      // Medium column end
-    }
-  }
-}
-@media all and (max-width: map-get($breakpoints, lg)) {
-  .row {
-    [class*="col-md"] {
-      flex: 0 0 100%;
-    }
-  }
-}
-@media all and (min-width: $grid-breakpoint-xlg) {
-  .row {
-    & > .col {
-      &-lg {
-        // Large column start
-        @include columns;
-      }
-      // Large column end
-    }
-  }
-}
-@media all and (max-width: map-get($breakpoints, xlg)) {
-  .row {
-    [class*="col-lg"] {
-      flex: 0 0 100%;
-    }
-  }
-}
-@media all and (min-width: $grid-breakpoint-xxlg) {
-  .row {
-    & > .col {
-      &-xlg {
-        // Extra large column start
-        @include columns;
-      }
-      // Extra large column end
-    }
-  }
-}
-@media all and (max-width: map-get($breakpoints, xxlg)) {
-  .row {
-    [class*="col-xlg"] {
-      flex: 0 0 100%;
-    }
-  }
+
 }
