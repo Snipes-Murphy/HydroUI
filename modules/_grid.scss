@@ -2,6 +2,7 @@
   @for $col from 1 through 12 {
     &-#{$col} {
       flex-basis: 8.3333% * $col !important;
+      width: 8.3333% * $col !important;
     }
   }
 }
