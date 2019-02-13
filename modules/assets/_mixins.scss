@@ -74,15 +74,15 @@
 }
 
 @mixin font-weight-bold {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 @mixin font-weight-normal {
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 @mixin font-weight-light {
-  font-weight: 300;
+  font-weight: 300 !important;
 }
 
 // Heading Mixins

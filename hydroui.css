@@ -3494,13 +3494,13 @@ pre {
   white-space: nowrap; }
 
 .text-bold {
-  font-weight: 700; }
+  font-weight: 700 !important; }
 
 .text-normal {
-  font-weight: 400; }
+  font-weight: 400 !important; }
 
 .text-light {
-  font-weight: 300; }
+  font-weight: 300 !important; }
 
 .text-italic {
   font-style: italic; }
