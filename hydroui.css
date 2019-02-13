@@ -3506,94 +3506,94 @@ pre {
   font-style: italic; }
 
 .color-primary {
-  color: #5f8cee; }
+  color: #5f8cee !important; }
 
 .color-secondary {
-  color: #7d8285; }
+  color: #7d8285 !important; }
 
 .color-success {
-  color: #4ed69c; }
+  color: #4ed69c !important; }
 
 .color-error {
-  color: #fb5962; }
+  color: #fb5962 !important; }
 
 .color-warning {
-  color: #fbb258; }
+  color: #fbb258 !important; }
 
 .color-info {
-  color: #36d5f2; }
+  color: #36d5f2 !important; }
 
 .color-light {
-  color: #dfe4e8; }
+  color: #dfe4e8 !important; }
 
 .color-dark {
-  color: #2a2d2e; }
+  color: #2a2d2e !important; }
 
 .color-neutral {
-  color: #f8f8f8; }
+  color: #f8f8f8 !important; }
 
 .color-red {
-  color: #fb5962; }
+  color: #fb5962 !important; }
 
 .color-orange {
-  color: #fbb258; }
+  color: #fbb258 !important; }
 
 .color-yellow {
-  color: #d5c42c; }
+  color: #d5c42c !important; }
 
 .color-green {
-  color: #4ed69c; }
+  color: #4ed69c !important; }
 
 .color-teal {
-  color: #39ab7b; }
+  color: #39ab7b !important; }
 
 .color-cyan {
-  color: #36d5f2; }
+  color: #36d5f2 !important; }
 
 .color-blue {
-  color: #5f8cee; }
+  color: #5f8cee !important; }
 
 .color-purple {
-  color: #791ba4; }
+  color: #791ba4 !important; }
 
 .color-pink {
-  color: #f12d91; }
+  color: #f12d91 !important; }
 
 .color-white {
-  color: #fff; }
+  color: #fff !important; }
 
 .color-grey-0 {
-  color: #f8f8f8; }
+  color: #f8f8f8 !important; }
 
 .color-grey-1 {
-  color: #dfe4e8; }
+  color: #dfe4e8 !important; }
 
 .color-grey-2 {
-  color: #bdc2c6; }
+  color: #bdc2c6 !important; }
 
 .color-grey-3 {
-  color: #9ba0a3; }
+  color: #9ba0a3 !important; }
 
 .color-grey-4 {
-  color: #7d8285; }
+  color: #7d8285 !important; }
 
 .color-grey-5 {
-  color: #696e70; }
+  color: #696e70 !important; }
 
 .color-grey-6 {
-  color: #535759; }
+  color: #535759 !important; }
 
 .color-grey-7 {
-  color: #3f4244; }
+  color: #3f4244 !important; }
 
 .color-grey-8 {
-  color: #2a2d2e; }
+  color: #2a2d2e !important; }
 
 .color-grey-9 {
-  color: #191a1b; }
+  color: #191a1b !important; }
 
 .color-transparent {
-  color: transparent; }
+  color: transparent !important; }
 
 @media screen and (max-width: 1500px) {
   .text-l-xxlg {
