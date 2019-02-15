@@ -39,7 +39,6 @@ Code snippet:
     <title>My HydroUI site</title>
     <link rel="stylesheet" type="text/css" href="https://snipes-murphy.github.io/HydroUI/hydroui.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://snipes-murphy.github.io/HydroUI/hydroui.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
 
@@ -48,6 +47,7 @@ Code snippet:
   </body>
 
   <footer>
+    <script src="https://snipes-murphy.github.io/HydroUI/hydroui.js"></script>
   	<script>
   		feather.replace()
   	</script>
