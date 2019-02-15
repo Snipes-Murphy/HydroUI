@@ -3888,6 +3888,8 @@ pre {
     justify-content: space-between;
     align-items: center;
     height: 100%; }
+  .navbar .nav-logo {
+    height: 100%; }
   .navbar .nav-btn {
     position: relative;
     border: none;
