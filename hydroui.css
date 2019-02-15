@@ -3886,7 +3886,8 @@ pre {
   .navbar .container, .navbar .container-rs {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    height: 100%; }
   .navbar .nav-btn {
     position: relative;
     border: none;
@@ -4934,6 +4935,7 @@ pre {
     text-align: center;
     z-index: 100;
     width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 100%;
@@ -4976,6 +4978,7 @@ pre {
     text-align: center;
     z-index: 100;
     width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 100%;
@@ -5018,6 +5021,7 @@ pre {
     text-align: center;
     z-index: 100;
     width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 100%;
@@ -5060,6 +5064,7 @@ pre {
     text-align: center;
     z-index: 100;
     width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 100%;
@@ -5102,6 +5107,7 @@ pre {
     text-align: center;
     z-index: 100;
     width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 100%;
@@ -5144,6 +5150,7 @@ pre {
     text-align: center;
     z-index: 100;
     width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 100%;
