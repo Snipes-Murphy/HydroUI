@@ -1,5 +1,5 @@
 # HydroUI
-A lightweight SCSS library with modularity to you only load what you use.
+A lightweight SCSS/CSS library with a seemless modularity implementation; with complex SCSS processes to make you're coding easy.
 
 ## Quick Start (Implementation)
 Add this into your head for a quick integration.
