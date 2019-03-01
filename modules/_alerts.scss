@@ -1,6 +1,7 @@
 @each $color, $value in $main-colors {
   .alert-#{$color} {
-
+    display: flex;
+    align-items: center;
     @include alert-mixin;
     background-color: lighten($value, 0%);
     border: $value;
