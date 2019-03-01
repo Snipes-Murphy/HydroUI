@@ -114,7 +114,7 @@
 
 @mixin breakpoint-out($breakpoint-nil) {
   @if map-has-key($breakpoints, $breakpoint-nil) {
-    @media all and (min-width: map-get($breakpoints, $breakpoint-nil)) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint-nil)) {
       @content
     }
   }
@@ -127,7 +127,7 @@
 }
 
 @mixin breakpoint-out-raw($breakpoint-nil) {
-  @media all and (min-width: $breakpoint-nil) {
+  @media screen and (min-width: $breakpoint-nil) {
     @content
   }
 }
