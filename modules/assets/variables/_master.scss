@@ -15,37 +15,44 @@ $ease-out: cubic-bezier(.56,.24,.92,.6);
 // Breakpoints
 
 $breakpoints: (
-  "xxlg": 1500px,
-  "xlg": 1350px,
-  "lg": 1050px,
-  "md": 750px,
+  "xsm": 375px,
   "sm": 500px,
-  "xsm": 375px
+  "md": 750px,
+  "lg": 1000px,
+  "xlg": 1350px,
+  "xxlg": 1500px,
+  "xxxlg": 1750px
 );
 
-// Page size on breakpoints, rs classes = smaller page margins used for smaller navbars, headers, carousel etc.
+$container-paddings: ( // Containers padding once size is 100%
+  'xsm': 6px,
+  'sm': 15px,
+  'md': 50px,
+  'lg': 0,
+  'xlg': 0,
+  'xxlg': 0,
+  'xxxlg': 0
+);
 
-$page-full: 1250px;
-$rs-page-full: 1000px;
-$page-xlg: 1200px;
-$rs-page-xlg: 900px;
-$page-lg: 1000px;
-$rs-page-lg: 700px;
-$page-md: 100%; // From here there are no page margins as the screen is already small enough
-$rs-page-md: 500px;
-$page-sm: 100%;
-$rs-page-sm: 100%; // From here is where the rs margins end
-$page-xsm: 100%;
-$rs-page-xsm: 100%;
+$container-widths: (
+  'xsm': 100%,
+  'sm': 100%,
+  'md': 100%,
+  'lg': 700px,
+  'xlg': 950px,
+  'xxlg': 1200px,
+  'xxxlg': 1350px
+);
 
-// Container padding upon breakpoint
-
-$container-padding: 0;
-$container-padding-xlg: 0;
-$container-padding-lg: 0;
-$container-padding-md: 50px;
-$container-padding-sm: 15px;
-$container-padding-xsm: 4px;
+$container-rs-widths: (
+  'xsm': 100%,
+  'sm': 100%,
+  'md': 500px,
+  'lg': 650px,
+  'xlg': 900px,
+  'xxlg': 1000px,
+  'xxxlg': 1150px
+);
 
 $margins: (
   "xlg": 75px,

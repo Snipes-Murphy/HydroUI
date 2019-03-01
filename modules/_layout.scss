@@ -67,38 +67,34 @@ $pull-modes: (
 .container {
   margin: auto;
   position: relative;
-  width: $page-full;
+  width: map-get($container-widths, 'xxxlg');
 }
 
 .container-rs {
   margin: auto;
   position: relative;
-  width: $rs-page-full;
+  width: map-get($container-rs-widths, 'xxxlg');
 }
 
-@mixin containers($container-padding, $page-full, $rs-page-full) {
-  .container {
-    padding: 0 $container-padding;
-    width: $page-full;
+$keys: map-keys($breakpoints);
+$map-reversed: ();
+
+@for $i from length($keys) through 1 {
+  $map-reversed: map-merge(
+    $map-reversed,
+    (nth($keys, $i): map-get($breakpoints, nth($keys, $i)))
+  );
+}
+
+@each $breakpoint, $value in $map-reversed {
+  @include breakpoint-in($breakpoint) {
+    .container {
+      padding: 0 map-get($container-paddings, $breakpoint);
+      width: map-get($container-widths, $breakpoint);
+    }
+
+    .container-rs {
+      width: map-get($container-rs-widths, $breakpoint);
+    }
   }
-
-  .container-rs {
-    width: $rs-page-full;
-  }
-}
-
-@include breakpoint-in('xxlg') {
-  @include containers($container-padding-xlg, $page-xlg, $rs-page-xlg);
-}
-@include breakpoint-in('xlg') {
-  @include containers($container-padding-lg, $page-lg, $rs-page-lg);
-}
-@include breakpoint-in('lg') {
-  @include containers($container-padding-md, $page-md, $rs-page-md);
-}
-@include breakpoint-in('md') {
-  @include containers($container-padding-sm, $page-sm, $rs-page-sm);
-}
-@include breakpoint-in('sm') {
-  @include containers($container-padding-xsm, $page-xsm, $rs-page-xsm);
 }
