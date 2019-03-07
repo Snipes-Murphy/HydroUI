@@ -4147,6 +4147,10 @@ pre {
     cursor: pointer;
     height: 100%;
     padding: 0 10px; }
+  .navbar .nav-content {
+    display: flex;
+    height: auto;
+    align-items: center; }
   .navbar .nav-line-ani-center-primary::before {
     transition: 200ms transform cubic-bezier(0.35, 0.69, 0.49, 0.93);
     content: '';
