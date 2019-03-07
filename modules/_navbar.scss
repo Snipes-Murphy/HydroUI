@@ -25,6 +25,10 @@
   .nav-content {
     display: flex;
     height: auto;
+  }
+
+  & a {
+    display: flex;
     align-items: center;
   }
 
