@@ -4138,6 +4138,7 @@ pre {
     align-items: center;
     height: 100%; }
   .navbar .nav-logo {
+    display: flex;
     height: 100%; }
   .navbar .nav-btn {
     position: relative;
