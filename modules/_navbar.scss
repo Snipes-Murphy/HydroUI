@@ -22,6 +22,12 @@
     padding: 0 10px;
   }
 
+  .nav-content {
+    display: flex;
+    height: auto;
+    align-items: center;
+  }
+
   @each $color, $value in $colors-map {
     .nav-line-ani-center-#{$color} {
 
