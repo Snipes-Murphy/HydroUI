@@ -4150,7 +4150,8 @@ pre {
     padding: 0 10px; }
   .navbar .nav-content {
     display: flex;
-    height: auto; }
+    height: auto;
+    align-items: baseline; }
   .navbar a {
     display: flex;
     align-items: center; }
