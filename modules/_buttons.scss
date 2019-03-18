@@ -3,6 +3,7 @@
 @each $class, $value in $colors-map {
   .btn {
     &-outline-#{$class} {
+      @include font-heading;
       @include mx-btn($value);
       background-color: transparent;
       color: $value;
@@ -24,6 +25,7 @@
     }
 
     &-link-#{$class} {
+      @include font-heading;
       @include mx-btn($value);
       background-color: transparent;
       color: $value;
@@ -40,6 +42,7 @@
     }
 
     &-#{$class} {
+      @include font-heading;
       @include mx-btn($value);
       background-color: $value;
       &:hover {
