@@ -32,3 +32,11 @@ $(document).on("click", ".close-btn", function() {
 $('.nav-btn-menu').click(function() {
     $(this).closest(".navbar").find(".nav-content").toggleClass('active');
 })
+
+// Dropdown Complex
+
+$('.dropdown-complex-item').hover(function() {
+    $(this).closest(".dropdown").find(".dropdown-complex").toggleClass('dropdown-complex-active');
+    $(this).closest(".dropdown").find(".complex-list").toggleClass('complex-list-active');
+    var complexitemid = $('.dropdown-complex-item').attr('id');
+})

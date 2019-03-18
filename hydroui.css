@@ -8,7 +8,8 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 body a, p, li, ul, cite, .cite, i, .i, b, .b, strong, .strong, sub, .sub, span, del, .del, abbr, .abbr, u, .u, sup, .sup, s, .s, em, .em, mark, .mark {
   line-height: 1.5em;
@@ -137,6 +138,8 @@ pre {
   font-size: 20px !important; }
 
 .btn-outline-primary {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -163,6 +166,8 @@ pre {
   .btn-outline-primary:focus {
     box-shadow: 0 0 0 3px rgba(95, 140, 238, 0.5); }
 .btn-link-primary {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -185,6 +190,8 @@ pre {
   .btn-link-primary:focus {
     box-shadow: 0 0 0 0px rgba(95, 140, 238, 0.5); }
 .btn-primary {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -206,6 +213,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(95, 140, 238, 0.5); }
 
 .btn-outline-secondary {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -232,6 +241,8 @@ pre {
   .btn-outline-secondary:focus {
     box-shadow: 0 0 0 3px rgba(125, 130, 133, 0.5); }
 .btn-link-secondary {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -254,6 +265,8 @@ pre {
   .btn-link-secondary:focus {
     box-shadow: 0 0 0 0px rgba(125, 130, 133, 0.5); }
 .btn-secondary {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -275,6 +288,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(125, 130, 133, 0.5); }
 
 .btn-outline-success {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -301,6 +316,8 @@ pre {
   .btn-outline-success:focus {
     box-shadow: 0 0 0 3px rgba(78, 214, 156, 0.5); }
 .btn-link-success {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -323,6 +340,8 @@ pre {
   .btn-link-success:focus {
     box-shadow: 0 0 0 0px rgba(78, 214, 156, 0.5); }
 .btn-success {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -344,6 +363,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(78, 214, 156, 0.5); }
 
 .btn-outline-error {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -370,6 +391,8 @@ pre {
   .btn-outline-error:focus {
     box-shadow: 0 0 0 3px rgba(251, 89, 98, 0.5); }
 .btn-link-error {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -392,6 +415,8 @@ pre {
   .btn-link-error:focus {
     box-shadow: 0 0 0 0px rgba(251, 89, 98, 0.5); }
 .btn-error {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -413,6 +438,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(251, 89, 98, 0.5); }
 
 .btn-outline-warning {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -439,6 +466,8 @@ pre {
   .btn-outline-warning:focus {
     box-shadow: 0 0 0 3px rgba(251, 178, 88, 0.5); }
 .btn-link-warning {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -461,6 +490,8 @@ pre {
   .btn-link-warning:focus {
     box-shadow: 0 0 0 0px rgba(251, 178, 88, 0.5); }
 .btn-warning {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -485,6 +516,8 @@ pre {
   color: black; }
 
 .btn-outline-info {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -511,6 +544,8 @@ pre {
   .btn-outline-info:focus {
     box-shadow: 0 0 0 3px rgba(54, 213, 242, 0.5); }
 .btn-link-info {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -533,6 +568,8 @@ pre {
   .btn-link-info:focus {
     box-shadow: 0 0 0 0px rgba(54, 213, 242, 0.5); }
 .btn-info {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -554,6 +591,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(54, 213, 242, 0.5); }
 
 .btn-outline-light {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -580,6 +619,8 @@ pre {
   .btn-outline-light:focus {
     box-shadow: 0 0 0 3px rgba(223, 228, 232, 0.5); }
 .btn-link-light {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -602,6 +643,8 @@ pre {
   .btn-link-light:focus {
     box-shadow: 0 0 0 0px rgba(223, 228, 232, 0.5); }
 .btn-light {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -626,6 +669,8 @@ pre {
   color: black; }
 
 .btn-outline-dark {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -652,6 +697,8 @@ pre {
   .btn-outline-dark:focus {
     box-shadow: 0 0 0 3px rgba(42, 45, 46, 0.5); }
 .btn-link-dark {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -674,6 +721,8 @@ pre {
   .btn-link-dark:focus {
     box-shadow: 0 0 0 0px rgba(42, 45, 46, 0.5); }
 .btn-dark {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -695,6 +744,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(42, 45, 46, 0.5); }
 
 .btn-outline-neutral {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -721,6 +772,8 @@ pre {
   .btn-outline-neutral:focus {
     box-shadow: 0 0 0 3px rgba(248, 248, 248, 0.5); }
 .btn-link-neutral {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -743,6 +796,8 @@ pre {
   .btn-link-neutral:focus {
     box-shadow: 0 0 0 0px rgba(248, 248, 248, 0.5); }
 .btn-neutral {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -767,6 +822,8 @@ pre {
   color: black; }
 
 .btn-outline-red {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -793,6 +850,8 @@ pre {
   .btn-outline-red:focus {
     box-shadow: 0 0 0 3px rgba(251, 89, 98, 0.5); }
 .btn-link-red {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -815,6 +874,8 @@ pre {
   .btn-link-red:focus {
     box-shadow: 0 0 0 0px rgba(251, 89, 98, 0.5); }
 .btn-red {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -836,6 +897,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(251, 89, 98, 0.5); }
 
 .btn-outline-orange {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -862,6 +925,8 @@ pre {
   .btn-outline-orange:focus {
     box-shadow: 0 0 0 3px rgba(251, 178, 88, 0.5); }
 .btn-link-orange {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -884,6 +949,8 @@ pre {
   .btn-link-orange:focus {
     box-shadow: 0 0 0 0px rgba(251, 178, 88, 0.5); }
 .btn-orange {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -905,6 +972,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(251, 178, 88, 0.5); }
 
 .btn-outline-yellow {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -931,6 +1000,8 @@ pre {
   .btn-outline-yellow:focus {
     box-shadow: 0 0 0 3px rgba(213, 196, 44, 0.5); }
 .btn-link-yellow {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -953,6 +1024,8 @@ pre {
   .btn-link-yellow:focus {
     box-shadow: 0 0 0 0px rgba(213, 196, 44, 0.5); }
 .btn-yellow {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -974,6 +1047,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(213, 196, 44, 0.5); }
 
 .btn-outline-green {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1000,6 +1075,8 @@ pre {
   .btn-outline-green:focus {
     box-shadow: 0 0 0 3px rgba(78, 214, 156, 0.5); }
 .btn-link-green {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1022,6 +1099,8 @@ pre {
   .btn-link-green:focus {
     box-shadow: 0 0 0 0px rgba(78, 214, 156, 0.5); }
 .btn-green {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1043,6 +1122,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(78, 214, 156, 0.5); }
 
 .btn-outline-teal {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1069,6 +1150,8 @@ pre {
   .btn-outline-teal:focus {
     box-shadow: 0 0 0 3px rgba(57, 171, 123, 0.5); }
 .btn-link-teal {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1091,6 +1174,8 @@ pre {
   .btn-link-teal:focus {
     box-shadow: 0 0 0 0px rgba(57, 171, 123, 0.5); }
 .btn-teal {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1112,6 +1197,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(57, 171, 123, 0.5); }
 
 .btn-outline-cyan {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1138,6 +1225,8 @@ pre {
   .btn-outline-cyan:focus {
     box-shadow: 0 0 0 3px rgba(54, 213, 242, 0.5); }
 .btn-link-cyan {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1160,6 +1249,8 @@ pre {
   .btn-link-cyan:focus {
     box-shadow: 0 0 0 0px rgba(54, 213, 242, 0.5); }
 .btn-cyan {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1181,6 +1272,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(54, 213, 242, 0.5); }
 
 .btn-outline-blue {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1207,6 +1300,8 @@ pre {
   .btn-outline-blue:focus {
     box-shadow: 0 0 0 3px rgba(95, 140, 238, 0.5); }
 .btn-link-blue {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1229,6 +1324,8 @@ pre {
   .btn-link-blue:focus {
     box-shadow: 0 0 0 0px rgba(95, 140, 238, 0.5); }
 .btn-blue {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1250,6 +1347,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(95, 140, 238, 0.5); }
 
 .btn-outline-purple {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1276,6 +1375,8 @@ pre {
   .btn-outline-purple:focus {
     box-shadow: 0 0 0 3px rgba(121, 27, 164, 0.5); }
 .btn-link-purple {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1298,6 +1399,8 @@ pre {
   .btn-link-purple:focus {
     box-shadow: 0 0 0 0px rgba(121, 27, 164, 0.5); }
 .btn-purple {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1319,6 +1422,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(121, 27, 164, 0.5); }
 
 .btn-outline-pink {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1345,6 +1450,8 @@ pre {
   .btn-outline-pink:focus {
     box-shadow: 0 0 0 3px rgba(241, 45, 145, 0.5); }
 .btn-link-pink {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1367,6 +1474,8 @@ pre {
   .btn-link-pink:focus {
     box-shadow: 0 0 0 0px rgba(241, 45, 145, 0.5); }
 .btn-pink {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1388,6 +1497,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(241, 45, 145, 0.5); }
 
 .btn-outline-white {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1414,6 +1525,8 @@ pre {
   .btn-outline-white:focus {
     box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); }
 .btn-link-white {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1436,6 +1549,8 @@ pre {
   .btn-link-white:focus {
     box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.5); }
 .btn-white {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1460,6 +1575,8 @@ pre {
   color: black; }
 
 .btn-outline-grey-0 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1486,6 +1603,8 @@ pre {
   .btn-outline-grey-0:focus {
     box-shadow: 0 0 0 3px rgba(248, 248, 248, 0.5); }
 .btn-link-grey-0 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1508,6 +1627,8 @@ pre {
   .btn-link-grey-0:focus {
     box-shadow: 0 0 0 0px rgba(248, 248, 248, 0.5); }
 .btn-grey-0 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1529,6 +1650,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(248, 248, 248, 0.5); }
 
 .btn-outline-grey-1 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1555,6 +1678,8 @@ pre {
   .btn-outline-grey-1:focus {
     box-shadow: 0 0 0 3px rgba(223, 228, 232, 0.5); }
 .btn-link-grey-1 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1577,6 +1702,8 @@ pre {
   .btn-link-grey-1:focus {
     box-shadow: 0 0 0 0px rgba(223, 228, 232, 0.5); }
 .btn-grey-1 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1598,6 +1725,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(223, 228, 232, 0.5); }
 
 .btn-outline-grey-2 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1624,6 +1753,8 @@ pre {
   .btn-outline-grey-2:focus {
     box-shadow: 0 0 0 3px rgba(189, 194, 198, 0.5); }
 .btn-link-grey-2 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1646,6 +1777,8 @@ pre {
   .btn-link-grey-2:focus {
     box-shadow: 0 0 0 0px rgba(189, 194, 198, 0.5); }
 .btn-grey-2 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1667,6 +1800,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(189, 194, 198, 0.5); }
 
 .btn-outline-grey-3 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1693,6 +1828,8 @@ pre {
   .btn-outline-grey-3:focus {
     box-shadow: 0 0 0 3px rgba(155, 160, 163, 0.5); }
 .btn-link-grey-3 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1715,6 +1852,8 @@ pre {
   .btn-link-grey-3:focus {
     box-shadow: 0 0 0 0px rgba(155, 160, 163, 0.5); }
 .btn-grey-3 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1736,6 +1875,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(155, 160, 163, 0.5); }
 
 .btn-outline-grey-4 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1762,6 +1903,8 @@ pre {
   .btn-outline-grey-4:focus {
     box-shadow: 0 0 0 3px rgba(125, 130, 133, 0.5); }
 .btn-link-grey-4 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1784,6 +1927,8 @@ pre {
   .btn-link-grey-4:focus {
     box-shadow: 0 0 0 0px rgba(125, 130, 133, 0.5); }
 .btn-grey-4 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1805,6 +1950,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(125, 130, 133, 0.5); }
 
 .btn-outline-grey-5 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1831,6 +1978,8 @@ pre {
   .btn-outline-grey-5:focus {
     box-shadow: 0 0 0 3px rgba(105, 110, 112, 0.5); }
 .btn-link-grey-5 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1853,6 +2002,8 @@ pre {
   .btn-link-grey-5:focus {
     box-shadow: 0 0 0 0px rgba(105, 110, 112, 0.5); }
 .btn-grey-5 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1874,6 +2025,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(105, 110, 112, 0.5); }
 
 .btn-outline-grey-6 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1900,6 +2053,8 @@ pre {
   .btn-outline-grey-6:focus {
     box-shadow: 0 0 0 3px rgba(83, 87, 89, 0.5); }
 .btn-link-grey-6 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1922,6 +2077,8 @@ pre {
   .btn-link-grey-6:focus {
     box-shadow: 0 0 0 0px rgba(83, 87, 89, 0.5); }
 .btn-grey-6 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1943,6 +2100,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(83, 87, 89, 0.5); }
 
 .btn-outline-grey-7 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1969,6 +2128,8 @@ pre {
   .btn-outline-grey-7:focus {
     box-shadow: 0 0 0 3px rgba(63, 66, 68, 0.5); }
 .btn-link-grey-7 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -1991,6 +2152,8 @@ pre {
   .btn-link-grey-7:focus {
     box-shadow: 0 0 0 0px rgba(63, 66, 68, 0.5); }
 .btn-grey-7 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -2015,6 +2178,8 @@ pre {
   color: black; }
 
 .btn-outline-grey-8 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -2041,6 +2206,8 @@ pre {
   .btn-outline-grey-8:focus {
     box-shadow: 0 0 0 3px rgba(42, 45, 46, 0.5); }
 .btn-link-grey-8 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -2063,6 +2230,8 @@ pre {
   .btn-link-grey-8:focus {
     box-shadow: 0 0 0 0px rgba(42, 45, 46, 0.5); }
 .btn-grey-8 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -2087,6 +2256,8 @@ pre {
   color: black; }
 
 .btn-outline-grey-9 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -2113,6 +2284,8 @@ pre {
   .btn-outline-grey-9:focus {
     box-shadow: 0 0 0 3px rgba(25, 26, 27, 0.5); }
 .btn-link-grey-9 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -2135,6 +2308,8 @@ pre {
   .btn-link-grey-9:focus {
     box-shadow: 0 0 0 0px rgba(25, 26, 27, 0.5); }
 .btn-grey-9 {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -2159,6 +2334,8 @@ pre {
   color: black; }
 
 .btn-outline-black {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -2185,6 +2362,8 @@ pre {
   .btn-outline-black:focus {
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5); }
 .btn-link-black {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -2207,6 +2386,8 @@ pre {
   .btn-link-black:focus {
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5); }
 .btn-black {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -2228,6 +2409,8 @@ pre {
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5); }
 
 .btn-outline-transparent {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -2254,6 +2437,8 @@ pre {
   .btn-outline-transparent:focus {
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5); }
 .btn-link-transparent {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -2276,6 +2461,8 @@ pre {
   .btn-link-transparent:focus {
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5); }
 .btn-transparent {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
   border-radius: 4px;
   letter-spacing: 0.01em;
   outline: none;
@@ -3906,13 +4093,14 @@ pre {
   display: inline-block; }
   .dropdown .dropdown-content {
     font-size: 16px;
-    padding: 4px 0;
+    padding: 0;
     z-index: 1;
+    margin-top: 20px;
     position: absolute;
     left: 0;
     top: 100%;
     display: inline-block;
-    transition: 200ms;
+    transition: 200ms, margin-top 200ms cubic-bezier(0.35, 0.69, 0.49, 0.93);
     min-width: 12rem;
     max-width: 20rem;
     background-color: #fff;
@@ -3935,6 +4123,7 @@ pre {
       background: #fff;
       box-shadow: 4px -4px 10px -5px rgba(93, 99, 103, 0.5); }
     .dropdown .dropdown-content:hover {
+      margin-top: 0;
       pointer-events: auto;
       opacity: 1; }
     .dropdown .dropdown-content a {
@@ -3951,6 +4140,59 @@ pre {
         background-color: #dfe4e8; }
       .dropdown .dropdown-content a:active {
         background-color: #bdc2c6; }
+      .dropdown .dropdown-content a:first-child {
+        border-radius: 4px 4px 0 0; }
+      .dropdown .dropdown-content a:last-child {
+        border-radius: 0 0 4px 4px; }
+  .dropdown .divider {
+    display: block;
+    background-color: #dfe4e8;
+    height: 1px;
+    margin: 10px 25px; }
+  .dropdown .dropdown-shown {
+    margin-top: 0;
+    pointer-events: auto;
+    opacity: 1; }
+  .dropdown .dropdown-rich {
+    min-width: 20rem;
+    max-width: 48rem; }
+    .dropdown .dropdown-rich a {
+      display: flex;
+      align-items: center; }
+      .dropdown .dropdown-rich a img {
+        flex-basis: 64px; }
+      .dropdown .dropdown-rich a div {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 40px 0 20px; }
+        .dropdown .dropdown-rich a div h1 {
+          margin: 15px 0 0;
+          font-size: 24px; }
+        .dropdown .dropdown-rich a div p {
+          flex-basis: 100%;
+          color: #7d8285;
+          margin: 6px 0; }
+  .dropdown .dropdown-complex {
+    min-height: 18rem;
+    width: 12rem; }
+    .dropdown .dropdown-complex a {
+      padding: 8px 25px; }
+    .dropdown .dropdown-complex .complex-list {
+      min-height: 18rem;
+      height: 100%;
+      width: 12rem;
+      display: inline-block; }
+    .dropdown .dropdown-complex .complex-list-active {
+      transition: 200ms; }
+      .dropdown .dropdown-complex .complex-list-active::before {
+        position: absolute;
+        width: 1px;
+        background-color: #dfe4e8;
+        height: 80%; }
+  .dropdown .dropdown-complex-active {
+    max-width: 28rem;
+    width: 28rem; }
   .dropdown .dropdown-item {
     border-radius: 4px;
     letter-spacing: 0.01em;
@@ -3970,6 +4212,7 @@ pre {
     margin: 0;
     padding: 17px 0.2em; }
     .dropdown .dropdown-item:hover + .dropdown-content {
+      margin-top: 0;
       pointer-events: auto;
       opacity: 1; }
 

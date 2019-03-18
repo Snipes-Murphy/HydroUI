@@ -4,13 +4,14 @@
 
   .dropdown-content {
     font-size: 16px;
-    padding: 4px 0;
+    padding: 0;
     z-index: 1;
+    margin-top: 20px;
     position: absolute;
     left: 0;
     top: 100%;
     display: inline-block;
-    transition: 200ms;
+    transition: 200ms, margin-top 200ms $ease-in;
     min-width: 12rem;
     max-width: 20rem;
     background-color: $white;
@@ -36,6 +37,7 @@
     }
 
     &:hover {
+      margin-top: 0;
       pointer-events: auto;
       opacity: 1;
     }
@@ -58,7 +60,96 @@
       &:active {
         background-color: $grey-2;
       }
+
+      &:first-child {
+        border-radius: 4px 4px 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 0 4px 4px;
+      }
     }
+  }
+  .divider {
+    display: block;
+    background-color: $grey-1;
+    height: 1px;
+    margin: 10px 25px;
+  }
+  .dropdown-shown {
+    margin-top: 0;
+    pointer-events: auto;
+    opacity: 1;
+  }
+  .dropdown-rich {
+    min-width: 20rem;
+    max-width: 48rem;
+
+    & a {
+      display: flex;
+      align-items: center;
+
+      & img {
+        flex-basis: 64px;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 40px 0 20px;
+
+        & h1 {
+            margin: 15px 0 0;
+            font-size: 24px;
+        }
+
+        & p {
+          flex-basis: 100%;
+          color: $grey-4;
+          margin: 6px 0;
+        }
+      }
+    }
+
+  }
+  .dropdown-complex {
+    min-height: 18rem;
+    width: 12rem;
+
+    & a {
+      padding: 8px 25px;
+    }
+
+    .complex-list {
+      min-height: 18rem;
+      height: 100%;
+      width: 12rem;
+      display: inline-block;
+    }
+
+    .complex-list-active {
+      transition: 200ms;
+
+      &::before {
+        position: absolute;
+        width: 1px;
+        background-color: $grey-1;
+        height: 80%;
+      }
+    }
+
+    .dropdown-complex-item {
+
+    }
+
+    .dropdown-complex-content {
+
+    }
+  }
+  .dropdown-complex-active {
+    max-width: 28rem;
+    width: 28rem;
   }
   .dropdown-item {
     @include mx-btn($shadow);
@@ -69,6 +160,7 @@
     padding: 17px 0.2em;
 
     &:hover + .dropdown-content {
+      margin-top: 0;
       pointer-events: auto;
       opacity: 1;
     }
