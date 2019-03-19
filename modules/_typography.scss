@@ -2,6 +2,7 @@
 
 body a, p, li, ul, cite, .cite, i, .i, b, .b, strong, .strong, sub, .sub, span, del, .del, abbr, .abbr, u, .u, sup, .sup, s, .s, em, .em, mark, .mark {
   line-height: 1.5em;
+  font-size: 16px;
   @include font-content;
 }
 

@@ -1,12 +1,20 @@
+.form-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .input-box {
   transition: 200ms box-shadow;
   border: none;
   outline: none;
   padding: 8px 15px;
+  font-size: 16px;
   @include box-medium-border;
   box-shadow: 0 2px 6px 0 $shadow;
   color: $text-lightdark;
   box-sizing: border-box;
+  margin: 5px 0;
 
   &::placeholder {
   color: $text-light;
@@ -22,16 +30,71 @@
 }
 
 $input-sizes: (
-  "sm": 150px,
-  "md": 225px,
-  "lg": 300px,
-  "xlg": 350px,
-  "half": 50%,
+  "sm": 140px,
+  "md": 210px,
+  "lg": 280px,
+  "xlg": 320px,
+  "half": 49%,
   "full": 100%
 );
 
 @each $size, $value in $input-sizes {
   .input-size-#{$size} {
     width: $value;
+  }
+}
+
+// Tap Switch
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  box-shadow: 0 4px 10px 0 $shadow;
+  margin: 5px 0;
+  border-radius: 200px;
+
+  & input {
+    display: none;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 300ms $ease-in;
+    @include box-full-border;
+
+    &::before {
+      @include box-full-border;
+    }
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 28px;
+    left: 3px;
+    bottom: 3px;
+    background-color: $white;
+    transition: 300ms $ease-in;
+  }
+
+  & input:checked + .slider {
+    background-color: $blue;
+  }
+
+  & input:focus + .slider {
+    box-shadow: 0 0 1px $blue;
+  }
+
+  & input:checked + .slider::before {
+    transform: translateX(Calc(100% - 2px));
   }
 }

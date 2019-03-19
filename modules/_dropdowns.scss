@@ -153,6 +153,7 @@
   }
   .dropdown-item {
     @include mx-btn($shadow);
+    font-size: 16px;
     border: none;
     background-color: transparent;
     color: $text-lightdark;

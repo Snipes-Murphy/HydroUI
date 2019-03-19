@@ -27,6 +27,7 @@
     &-link-#{$class} {
       @include font-heading;
       @include mx-btn($value);
+      font-size: 16px;
       background-color: transparent;
       color: $value;
       border-color: transparent;
