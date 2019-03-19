@@ -5914,7 +5914,7 @@ pre {
 .input-size-full {
   width: 100%; }
 
-.switch {
+.droplet {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -5922,34 +5922,197 @@ pre {
   box-shadow: 0 4px 10px 0 rgba(93, 99, 103, 0.5);
   margin: 5px 0;
   border-radius: 200px; }
-  .switch input {
+  .droplet input {
     display: none; }
-  .switch .slider {
+  .droplet .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #dfe4e8;
     transition: 300ms cubic-bezier(0.35, 0.69, 0.49, 0.93);
     border-radius: 50px; }
-    .switch .slider::before {
+    .droplet .slider::before {
       border-radius: 50px; }
-  .switch .slider:before {
+  .droplet .slider::before {
     position: absolute;
     content: "";
-    height: 28px;
-    width: 28px;
-    left: 3px;
-    bottom: 3px;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
     background-color: #fff;
     transition: 300ms cubic-bezier(0.35, 0.69, 0.49, 0.93); }
-  .switch input:checked + .slider {
-    background-color: #2182f4; }
-  .switch input:focus + .slider {
-    box-shadow: 0 0 1px #2182f4; }
-  .switch input:checked + .slider::before {
-    transform: translateX(Calc(100% - 2px)); }
+  .droplet .icon {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    transition: 300ms cubic-bezier(0.35, 0.69, 0.49, 0.93); }
+  .droplet input:checked + .slider {
+    background-color: #7d8285; }
+    .droplet input:checked + .slider .icon {
+      transform: translateX(100%);
+      left: 16px; }
+  .droplet input:focus + .slider {
+    box-shadow: 0 0 1px #7d8285; }
+  .droplet input:checked + .slider::before {
+    transform: translateX(100%); }
+
+.droplet-primary input:checked + .slider {
+  background-color: #2182f4; }
+.droplet-primary input:focus + .slider {
+  box-shadow: 0 0 1px #2182f4; }
+
+.droplet-secondary input:checked + .slider {
+  background-color: #7d8285; }
+.droplet-secondary input:focus + .slider {
+  box-shadow: 0 0 1px #7d8285; }
+
+.droplet-success input:checked + .slider {
+  background-color: #4ed69c; }
+.droplet-success input:focus + .slider {
+  box-shadow: 0 0 1px #4ed69c; }
+
+.droplet-error input:checked + .slider {
+  background-color: #fb5962; }
+.droplet-error input:focus + .slider {
+  box-shadow: 0 0 1px #fb5962; }
+
+.droplet-warning input:checked + .slider {
+  background-color: #fbb258; }
+.droplet-warning input:focus + .slider {
+  box-shadow: 0 0 1px #fbb258; }
+
+.droplet-info input:checked + .slider {
+  background-color: #36d5f2; }
+.droplet-info input:focus + .slider {
+  box-shadow: 0 0 1px #36d5f2; }
+
+.droplet-light input:checked + .slider {
+  background-color: #dfe4e8; }
+.droplet-light input:focus + .slider {
+  box-shadow: 0 0 1px #dfe4e8; }
+
+.droplet-dark input:checked + .slider {
+  background-color: #2a2d2e; }
+.droplet-dark input:focus + .slider {
+  box-shadow: 0 0 1px #2a2d2e; }
+
+.droplet-neutral input:checked + .slider {
+  background-color: #f8f8f8; }
+.droplet-neutral input:focus + .slider {
+  box-shadow: 0 0 1px #f8f8f8; }
+
+.droplet-red input:checked + .slider {
+  background-color: #fb5962; }
+.droplet-red input:focus + .slider {
+  box-shadow: 0 0 1px #fb5962; }
+
+.droplet-orange input:checked + .slider {
+  background-color: #fbb258; }
+.droplet-orange input:focus + .slider {
+  box-shadow: 0 0 1px #fbb258; }
+
+.droplet-yellow input:checked + .slider {
+  background-color: #d5c42c; }
+.droplet-yellow input:focus + .slider {
+  box-shadow: 0 0 1px #d5c42c; }
+
+.droplet-green input:checked + .slider {
+  background-color: #4ed69c; }
+.droplet-green input:focus + .slider {
+  box-shadow: 0 0 1px #4ed69c; }
+
+.droplet-teal input:checked + .slider {
+  background-color: #39ab7b; }
+.droplet-teal input:focus + .slider {
+  box-shadow: 0 0 1px #39ab7b; }
+
+.droplet-cyan input:checked + .slider {
+  background-color: #36d5f2; }
+.droplet-cyan input:focus + .slider {
+  box-shadow: 0 0 1px #36d5f2; }
+
+.droplet-blue input:checked + .slider {
+  background-color: #2182f4; }
+.droplet-blue input:focus + .slider {
+  box-shadow: 0 0 1px #2182f4; }
+
+.droplet-purple input:checked + .slider {
+  background-color: #791ba4; }
+.droplet-purple input:focus + .slider {
+  box-shadow: 0 0 1px #791ba4; }
+
+.droplet-pink input:checked + .slider {
+  background-color: #f12d91; }
+.droplet-pink input:focus + .slider {
+  box-shadow: 0 0 1px #f12d91; }
+
+.droplet-white input:checked + .slider {
+  background-color: #fff; }
+.droplet-white input:focus + .slider {
+  box-shadow: 0 0 1px #fff; }
+
+.droplet-grey-0 input:checked + .slider {
+  background-color: #f8f8f8; }
+.droplet-grey-0 input:focus + .slider {
+  box-shadow: 0 0 1px #f8f8f8; }
+
+.droplet-grey-1 input:checked + .slider {
+  background-color: #dfe4e8; }
+.droplet-grey-1 input:focus + .slider {
+  box-shadow: 0 0 1px #dfe4e8; }
+
+.droplet-grey-2 input:checked + .slider {
+  background-color: #bdc2c6; }
+.droplet-grey-2 input:focus + .slider {
+  box-shadow: 0 0 1px #bdc2c6; }
+
+.droplet-grey-3 input:checked + .slider {
+  background-color: #9ba0a3; }
+.droplet-grey-3 input:focus + .slider {
+  box-shadow: 0 0 1px #9ba0a3; }
+
+.droplet-grey-4 input:checked + .slider {
+  background-color: #7d8285; }
+.droplet-grey-4 input:focus + .slider {
+  box-shadow: 0 0 1px #7d8285; }
+
+.droplet-grey-5 input:checked + .slider {
+  background-color: #696e70; }
+.droplet-grey-5 input:focus + .slider {
+  box-shadow: 0 0 1px #696e70; }
+
+.droplet-grey-6 input:checked + .slider {
+  background-color: #535759; }
+.droplet-grey-6 input:focus + .slider {
+  box-shadow: 0 0 1px #535759; }
+
+.droplet-grey-7 input:checked + .slider {
+  background-color: #3f4244; }
+.droplet-grey-7 input:focus + .slider {
+  box-shadow: 0 0 1px #3f4244; }
+
+.droplet-grey-8 input:checked + .slider {
+  background-color: #2a2d2e; }
+.droplet-grey-8 input:focus + .slider {
+  box-shadow: 0 0 1px #2a2d2e; }
+
+.droplet-grey-9 input:checked + .slider {
+  background-color: #191a1b; }
+.droplet-grey-9 input:focus + .slider {
+  box-shadow: 0 0 1px #191a1b; }
+
+.droplet-black input:checked + .slider {
+  background-color: #000; }
+.droplet-black input:focus + .slider {
+  box-shadow: 0 0 1px #000; }
+
+.droplet-transparent input:checked + .slider {
+  background-color: transparent; }
+.droplet-transparent input:focus + .slider {
+  box-shadow: 0 0 1px transparent; }
 
 /*# sourceMappingURL=hydroui.css.map */
