@@ -5659,7 +5659,6 @@ pre {
     text-align: center;
     z-index: 100;
     width: 100%;
-    height: 100%;
     position: absolute;
     left: 0;
     top: 100%;
@@ -5680,7 +5679,7 @@ pre {
     .navbar-xsm .nav-content .dropdown-content {
       padding: 0;
       overflow: hidden;
-      transition: 0;
+      transition: 0s;
       position: relative;
       height: 0;
       width: 100%;
@@ -5702,7 +5701,6 @@ pre {
     text-align: center;
     z-index: 100;
     width: 100%;
-    height: 100%;
     position: absolute;
     left: 0;
     top: 100%;
@@ -5723,7 +5721,7 @@ pre {
     .navbar-sm .nav-content .dropdown-content {
       padding: 0;
       overflow: hidden;
-      transition: 0;
+      transition: 0s;
       position: relative;
       height: 0;
       width: 100%;
@@ -5745,7 +5743,6 @@ pre {
     text-align: center;
     z-index: 100;
     width: 100%;
-    height: 100%;
     position: absolute;
     left: 0;
     top: 100%;
@@ -5766,7 +5763,7 @@ pre {
     .navbar-md .nav-content .dropdown-content {
       padding: 0;
       overflow: hidden;
-      transition: 0;
+      transition: 0s;
       position: relative;
       height: 0;
       width: 100%;
@@ -5788,7 +5785,6 @@ pre {
     text-align: center;
     z-index: 100;
     width: 100%;
-    height: 100%;
     position: absolute;
     left: 0;
     top: 100%;
@@ -5809,7 +5805,7 @@ pre {
     .navbar-lg .nav-content .dropdown-content {
       padding: 0;
       overflow: hidden;
-      transition: 0;
+      transition: 0s;
       position: relative;
       height: 0;
       width: 100%;
@@ -5831,7 +5827,6 @@ pre {
     text-align: center;
     z-index: 100;
     width: 100%;
-    height: 100%;
     position: absolute;
     left: 0;
     top: 100%;
@@ -5852,7 +5847,7 @@ pre {
     .navbar-xlg .nav-content .dropdown-content {
       padding: 0;
       overflow: hidden;
-      transition: 0;
+      transition: 0s;
       position: relative;
       height: 0;
       width: 100%;
@@ -5874,7 +5869,6 @@ pre {
     text-align: center;
     z-index: 100;
     width: 100%;
-    height: 100%;
     position: absolute;
     left: 0;
     top: 100%;
@@ -5895,7 +5889,7 @@ pre {
     .navbar-xxlg .nav-content .dropdown-content {
       padding: 0;
       overflow: hidden;
-      transition: 0;
+      transition: 0s;
       position: relative;
       height: 0;
       width: 100%;
@@ -5917,7 +5911,6 @@ pre {
     text-align: center;
     z-index: 100;
     width: 100%;
-    height: 100%;
     position: absolute;
     left: 0;
     top: 100%;
@@ -5938,7 +5931,7 @@ pre {
     .navbar-xxxlg .nav-content .dropdown-content {
       padding: 0;
       overflow: hidden;
-      transition: 0;
+      transition: 0s;
       position: relative;
       height: 0;
       width: 100%;
