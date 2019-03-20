@@ -6384,4 +6384,10 @@ pre {
   background-color: white;
   border: 4px solid transparent; }
 
+.form-main-label, .col-form-label {
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
+  font-size: 18px;
+  font-weight: bold; }
+
 /*# sourceMappingURL=hydroui.css.map */

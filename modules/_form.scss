@@ -187,3 +187,9 @@ $input-sizes: (
     }
   }
 }
+
+.form-main-label, .col-form-label {
+  @include font-heading;
+  font-size: 18px;
+  font-weight: bold;
+}
