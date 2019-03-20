@@ -191,5 +191,10 @@ $input-sizes: (
 .form-main-label, .col-form-label {
   @include font-heading;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
+}
+
+.form-text {
+  @include font-content;
+  margin-top: .25rem;
 }
