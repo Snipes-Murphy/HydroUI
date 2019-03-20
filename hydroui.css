@@ -2536,7 +2536,8 @@ pre {
 
 .row {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  flex-basis: 100%; }
   .row > .col-1 {
     flex-basis: 8.3333% !important;
     width: 8.3333% !important; }
@@ -4142,7 +4143,8 @@ pre {
     pointer-events: none;
     opacity: 0;
     white-space: nowrap;
-    border-radius: 4px; }
+    border-radius: 4px;
+    font-family: 'Cabin', sans-serif; }
     .dropdown .dropdown-content::before {
       position: absolute;
       z-index: -1;
@@ -4425,7 +4427,9 @@ pre {
     outline: none;
     cursor: pointer;
     height: 100%;
-    padding: 0 10px; }
+    padding: 0 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #3c4144; }
   .navbar .nav-content {
     display: flex;
     height: auto;
@@ -5873,48 +5877,48 @@ pre {
   top: 50%;
   transform: translateY(-50%) rotate(-45deg); }
 
-.form-card {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-
-.input-box {
+.form-input-box {
   transition: 200ms box-shadow;
   border: none;
   outline: none;
-  padding: 8px 15px;
+  padding: 12px 15px;
   font-size: 16px;
   border-radius: 4px;
   box-shadow: 0 2px 6px 0 rgba(93, 99, 103, 0.5);
+  font-family: 'Cabin', sans-serif;
   color: #6a737c;
   box-sizing: border-box;
   margin: 5px 0; }
-  .input-box::placeholder {
+  .form-input-box::placeholder {
     color: #9fa5ab; }
-  .input-box:hover {
+  .form-input-box:hover {
     box-shadow: 0 4px 8px 0 rgba(93, 99, 103, 0.5); }
-  .input-box:focus {
+  .form-input-box:focus {
     box-shadow: 0 4px 10px 0 rgba(93, 99, 103, 0.5); }
 
 .input-size-sm {
   width: 140px; }
 
 .input-size-md {
-  width: 210px; }
-
-.input-size-lg {
   width: 280px; }
 
+.input-size-lg {
+  width: 360px; }
+
 .input-size-xlg {
-  width: 320px; }
+  width: 480px; }
 
 .input-size-half {
-  width: 49%; }
+  width: 50%; }
 
 .input-size-full {
   width: 100%; }
 
-.droplet {
+.form-item {
+  display: block;
+  padding: 3px 0; }
+
+.form-droplet {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -5922,9 +5926,9 @@ pre {
   box-shadow: 0 4px 10px 0 rgba(93, 99, 103, 0.5);
   margin: 5px 0;
   border-radius: 200px; }
-  .droplet input {
+  .form-droplet input {
     display: none; }
-  .droplet .slider {
+  .form-droplet .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -5934,9 +5938,9 @@ pre {
     background-color: #dfe4e8;
     transition: 300ms cubic-bezier(0.35, 0.69, 0.49, 0.93);
     border-radius: 50px; }
-    .droplet .slider::before {
+    .form-droplet .slider::before {
       border-radius: 50px; }
-  .droplet .slider::before {
+  .form-droplet .slider::before {
     position: absolute;
     content: "";
     height: 26px;
@@ -5945,19 +5949,19 @@ pre {
     bottom: 4px;
     background-color: #fff;
     transition: 300ms cubic-bezier(0.35, 0.69, 0.49, 0.93); }
-  .droplet .icon {
+  .form-droplet .icon {
     position: absolute;
     left: 8px;
     top: 8px;
     transition: 300ms cubic-bezier(0.35, 0.69, 0.49, 0.93); }
-  .droplet input:checked + .slider {
+  .form-droplet input:checked + .slider {
     background-color: #7d8285; }
-    .droplet input:checked + .slider .icon {
+    .form-droplet input:checked + .slider .icon {
       transform: translateX(100%);
       left: 16px; }
-  .droplet input:focus + .slider {
+  .form-droplet input:focus + .slider {
     box-shadow: 0 0 1px #7d8285; }
-  .droplet input:checked + .slider::before {
+  .form-droplet input:checked + .slider::before {
     transform: translateX(100%); }
 
 .droplet-primary input:checked + .slider {
@@ -6114,5 +6118,253 @@ pre {
   background-color: transparent; }
 .droplet-transparent input:focus + .slider {
   box-shadow: 0 0 1px transparent; }
+
+.form-check-label {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  color: #3c4144;
+  padding-left: 24px; }
+  .form-check-label:hover::before {
+    background-color: #bdc2c6; }
+  .form-check-label input::before {
+    position: absolute;
+    transition: 200ms cubic-bezier(0.75, 0.25, 0.1, 1);
+    bottom: -5px;
+    left: -22px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #dfe4e8;
+    border: 0px solid #dfe4e8;
+    border-radius: 50px; }
+  .form-check-label input:checked::before {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border: 4px solid #7d8285; }
+  .form-check-label .form-radio-button, .form-check-label .form-check-input {
+    height: 0px;
+    width: 0px;
+    margin: 0 10px 0 0;
+    position: relative;
+    top: 0; }
+
+.form-check-primary input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #2182f4; }
+
+.form-check-secondary input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #7d8285; }
+
+.form-check-success input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #4ed69c; }
+
+.form-check-error input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #fb5962; }
+
+.form-check-warning input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #fbb258; }
+
+.form-check-info input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #36d5f2; }
+
+.form-check-light input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #dfe4e8; }
+
+.form-check-dark input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #2a2d2e; }
+
+.form-check-neutral input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #f8f8f8; }
+
+.form-check-red input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #fb5962; }
+
+.form-check-orange input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #fbb258; }
+
+.form-check-yellow input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #d5c42c; }
+
+.form-check-green input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #4ed69c; }
+
+.form-check-teal input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #39ab7b; }
+
+.form-check-cyan input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #36d5f2; }
+
+.form-check-blue input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #2182f4; }
+
+.form-check-purple input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #791ba4; }
+
+.form-check-pink input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #f12d91; }
+
+.form-check-white input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #fff; }
+
+.form-check-grey-0 input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #f8f8f8; }
+
+.form-check-grey-1 input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #dfe4e8; }
+
+.form-check-grey-2 input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #bdc2c6; }
+
+.form-check-grey-3 input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #9ba0a3; }
+
+.form-check-grey-4 input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #7d8285; }
+
+.form-check-grey-5 input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #696e70; }
+
+.form-check-grey-6 input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #535759; }
+
+.form-check-grey-7 input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #3f4244; }
+
+.form-check-grey-8 input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #2a2d2e; }
+
+.form-check-grey-9 input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #191a1b; }
+
+.form-check-black input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid #000; }
+
+.form-check-transparent input:checked::before {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 4px solid transparent; }
 
 /*# sourceMappingURL=hydroui.css.map */
