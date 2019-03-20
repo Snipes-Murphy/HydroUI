@@ -6277,12 +6277,14 @@ pre {
   position: relative;
   font-family: 'Poppins', sans-serif;
   color: #3c4144;
-  padding-left: 24px; }
+  padding-left: 24px;
+  cursor: pointer; }
   .form-check-label:hover::before {
     background-color: #bdc2c6; }
   .form-check-label input {
     outline: none; }
     .form-check-label input::before {
+      cursor: pointer;
       position: absolute;
       transition: 200ms cubic-bezier(0.75, 0.25, 0.1, 1);
       bottom: -5px;
