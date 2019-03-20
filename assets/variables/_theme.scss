@@ -47,7 +47,7 @@ $grey-map: (
   )
 );
 
-// Main Buttons
+// Main Colors
 
 $primary: $blue !default;
 $secondary: $grey-4 !default;
@@ -57,6 +57,7 @@ $warning: $orange !default;
 $info: $cyan !default;
 $light: $grey-1 !default;
 $dark: $grey-8 !default;
+$muted: $grey-5 !default;
 
 $main-colors: (
   "primary": $primary,
@@ -67,6 +68,7 @@ $main-colors: (
   "info": $info,
   "light": $light,
   "dark": $dark,
+  "muted": $muted,
   "neutral": $grey-0
 );
 
@@ -82,6 +84,7 @@ $colors-map: (
     "info": $info,
     "light": $light,
     "dark": $dark,
+    "muted": $muted,
     "neutral": $grey-0,
 
     // Colors
