@@ -67,6 +67,27 @@
   }
 }
 
+.btn-bar-group {
+  display: flex;
+  padding: 4px 0;
+  button {
+    margin: 0;
+    border-radius: 0;
+  }
+  button:first-child {
+    border-radius: 4px 0 0 4px;
+  }
+  button:last-child {
+    border-radius: 0 4px 4px 0;
+  }
+  .btn-round:first-child {
+    border-radius: 100px 0 0 100px;
+  }
+  .btn-round:last-child {
+    border-radius: 0 100px 100px 0;
+  }
+}
+
 .btn-no-highlight {
   @include shadow-none;
   &:focus {

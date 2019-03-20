@@ -2515,6 +2515,21 @@ pre {
   .btn-transparent:focus {
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5); }
 
+.btn-bar-group {
+  display: flex;
+  padding: 4px 0; }
+  .btn-bar-group button {
+    margin: 0;
+    border-radius: 0; }
+  .btn-bar-group button:first-child {
+    border-radius: 4px 0 0 4px; }
+  .btn-bar-group button:last-child {
+    border-radius: 0 4px 4px 0; }
+  .btn-bar-group .btn-round:first-child {
+    border-radius: 100px 0 0 100px; }
+  .btn-bar-group .btn-round:last-child {
+    border-radius: 0 100px 100px 0; }
+
 .btn-no-highlight {
   box-shadow: none; }
   .btn-no-highlight:focus {
@@ -5877,7 +5892,7 @@ pre {
   top: 50%;
   transform: translateY(-50%) rotate(-45deg); }
 
-.form-input-box {
+.form-input-box, .form-control {
   transition: 200ms box-shadow;
   border: none;
   outline: none;
@@ -5889,11 +5904,11 @@ pre {
   color: #6a737c;
   box-sizing: border-box;
   margin: 5px 0; }
-  .form-input-box::placeholder {
+  .form-input-box::placeholder, .form-control::placeholder {
     color: #9fa5ab; }
-  .form-input-box:hover {
+  .form-input-box:hover, .form-control:hover {
     box-shadow: 0 4px 8px 0 rgba(93, 99, 103, 0.5); }
-  .form-input-box:focus {
+  .form-input-box:focus, .form-control:focus {
     box-shadow: 0 4px 10px 0 rgba(93, 99, 103, 0.5); }
 
 .input-size-sm {
