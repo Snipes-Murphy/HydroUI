@@ -11,7 +11,7 @@
     left: 0;
     top: 100%;
     display: inline-block;
-    transition: 200ms, margin-top 200ms $ease-in;
+    transition: opacity 200ms, margin-top 200ms $ease-in;
     min-width: 12rem;
     max-width: 20rem;
     background-color: $white;

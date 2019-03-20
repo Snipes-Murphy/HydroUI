@@ -151,6 +151,7 @@
           .dropdown-item:hover + .dropdown-content {
             padding: 4px 0;
             height: auto;
+            position: relative;
             margin: 0 0 10px 0;
           }
         }
@@ -159,7 +160,6 @@
           padding: 0;
           overflow: hidden;
           transition: 0s;
-          position: relative;
           height: 0;
           width: 100%;
           max-width: 80%;
@@ -167,6 +167,7 @@
           &:hover {
             padding: 4px 0;
             height: auto;
+            position: relative;
             margin: 0 0 10px 0;
           }
 
