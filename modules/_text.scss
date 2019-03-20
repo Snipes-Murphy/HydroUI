@@ -41,7 +41,7 @@
 }
 
 @each $color, $value in $colors-map {
-  .color-#{$color} {
+  .color-#{$color}, .text-#{$color} {
     color: $value !important;
   }
 }
