@@ -196,5 +196,6 @@ $input-sizes: (
 
 .form-text {
   @include font-content;
+  display: block;
   margin-top: .25rem;
 }
