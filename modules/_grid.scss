@@ -48,4 +48,32 @@
     }
   }
 
+  @include breakpoint-out($breakpoint) {
+    .row-#{$breakpoint}-center {
+      justify-content: center;
+    }
+  }
+
+  @include breakpoint-out($breakpoint) {
+    .row-#{$breakpoint}-right {
+      justify-content: flex-end;
+    }
+  }
+
+  @include breakpoint-out($breakpoint) {
+    .row-#{$breakpoint}-left {
+      justify-content: flex-start;
+    }
+  }
+
+}
+
+.row-center {
+  justify-content: center;
+}
+.row-right {
+  justify-content: flex-end;
+}
+.row-left {
+  justify-content: flex-start;
 }
