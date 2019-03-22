@@ -98,3 +98,7 @@ $map-reversed: ();
     }
   }
 }
+
+.shadow {
+  @include shadow;
+}
