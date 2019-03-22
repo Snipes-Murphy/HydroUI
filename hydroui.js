@@ -50,8 +50,9 @@ $("input.form-radio-button, input.form-check-input").each(function(index) {
   }
 })
 
-$('input.form-radio-button').on("change", function() {
+$('input.form-radio-button, input.form-check-input').on("change", function() {
   $(this).closest("div").parent().closest("div").find('.form-check-label').removeClass('form-check-active');
+  console.log("Shit");
   $(this).closest(".form-check-label").addClass("form-check-active");
   console.log("Check Box change")
 })
