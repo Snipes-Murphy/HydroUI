@@ -40,3 +40,28 @@ $('.dropdown-complex-item').hover(function() {
     $(this).closest(".dropdown").find(".complex-list").toggleClass('complex-list-active');
     var complexitemid = $('.dropdown-complex-item').attr('id');
 })
+
+// Radio/Checkboxes
+
+$("input.form-radio-button, input.form-check-input").each(function(index) {
+  if ($(this).is(':checked')) {
+    $(this).closest(".form-check-label").addClass("form-check-active");
+    console.log("Check Box change")
+  }
+})
+
+$('input.form-radio-button').on("change", function() {
+  $(this).closest(".radio-section").find('.form-check-label').removeClass('form-check-active');
+  $(this).closest(".form-check-label").addClass("form-check-active");
+  console.log("Check Box change")
+})
+
+$('input.form-check-input').on("change", function() {
+  if ($(this).is(':checked')) {
+    $(this).closest(".form-check-label").addClass("form-check-active");
+    console.log("Check Box on")
+  } else {
+    $(this).closest(".form-check-label").removeClass("form-check-active");
+  }
+  console.log("Check Box change")
+})
