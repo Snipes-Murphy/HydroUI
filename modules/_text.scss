@@ -47,10 +47,10 @@
 }
 
 $text-aligns: (
-  "l": left,
-  "c": center,
-  "r": right,
-  "j": justify
+  "left": left,
+  "center": center,
+  "right": right,
+  "justify": justify
 );
 
 @each $text-align, $text-value in $text-aligns {
