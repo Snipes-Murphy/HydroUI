@@ -168,3 +168,17 @@
     }
   }
 }
+
+.dropdown-invert {
+  .dropdown-content {
+    right: 0;
+    left: auto;
+    top: 100%;
+    display: inline-block;
+
+    &::before {
+      left: auto;
+      right: 20px;
+    }
+  }
+}
