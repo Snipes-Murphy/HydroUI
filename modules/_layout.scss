@@ -52,13 +52,13 @@ $widths: (
 }
 
 $pull-modes: (
-  "right",
-  "left"
+  "right": right,
+  "left": left
 );
 
-@each $mode in $pull-modes {
+@each $mode, $value in $pull-modes {
   .pull-#{$mode} {
-    float: $mode;
+    float: $value;
   }
 }
 
