@@ -55,6 +55,45 @@
       &:focus {
         box-shadow: 0 0 0 3px rgba($value, 0.5);
       }
+
+      @if ifMap($bright-colors, $class) {
+        &.btn-soft {
+          background-color: lighten($value, 30%);
+          border: lighten($value, 40%);
+          color: darken($value, 10%);
+        }
+      } @else if ifMap($ultra-bright-colors, $class) {
+        &.btn-soft {
+          @if $class == 'neutral' {
+            background-color: lighten($value, 1%);
+          } @else {
+            background-color: lighten($value, 9%);
+          }
+          border: none;
+          color: darken($value, 10%);
+        }
+      } @else {
+        &.btn-soft {
+          background-color: lighten($value, 40%);
+          border: lighten($value, 10%);
+          color: darken($value, 10%);
+        }
+      }
+      &.btn-soft {
+        &:hover {
+          color: white;
+          background-color: darken($value, $color-set-hover-intensity);
+          border-color: darken($value, $color-set-hover-intensity);
+        }
+        &:active {
+          background-color: darken($value, $color-set-click-intensity);
+          border-color: darken($value, $color-set-hover-intensity);
+          color: white;
+        }
+        &:focus {
+          box-shadow: 0 0 0 3px rgba($value, 0.5);
+        }
+      }
     }
 
   }
@@ -69,10 +108,17 @@
 
 .btn-bar-group {
   display: flex;
+  z-index: 10;
   padding: 4px 0;
   button {
+    position: relative;
     margin: 0;
     border-radius: 0;
+    z-index: 1;
+
+    &:hover, &:active, &:focus {
+      z-index: 2;
+    }
   }
   button:first-child {
     border-radius: 4px 0 0 4px;
@@ -86,6 +132,12 @@
   .btn-round:last-child {
     border-radius: 0 100px 100px 0;
   }
+  .btn-square:first-child {
+    border-radius: 0 0 0 0;
+  }
+  .btn-square:last-child {
+    border-radius: 0 0 0 0;
+  }
 }
 
 .btn-no-highlight {
@@ -95,6 +147,8 @@
   }
 }
 
+// Button Variations
+
 .btn-square {
   @include box-none-border;
 }
@@ -102,6 +156,8 @@
 .btn-round {
   @include box-full-border;
 }
+
+// Button sizes
 
 .btn-sm {
   padding: 5px 14px;
@@ -111,4 +167,51 @@
 .btn-lg {
   padding: 15px 24px;
   font-size: 19px;
+}
+
+.btn-wide {
+  min-width: 10em;
+}
+
+// Button Effects
+
+.btn-effect-float {
+  transition: 200ms;
+  bottom: 0;
+  &:hover {
+    bottom: 3px;
+    @include shadow;
+  }
+}
+
+// Button Specials
+
+.btn-app {
+  display: inline-block;
+  min-height: 4em;
+
+  .btn-content {
+    width: 14em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      flex-basis: 32px;
+      width: 32px;
+      margin-right: 20px;
+    }
+    .sub-heading {
+      display: inline-block;
+      width: calc(100% - 32px - 12px);
+      font-size: 12px;
+    }
+    .heading {
+      line-height: 1.2em;
+      display: inline-block;
+      width: calc(100% - 32px - 12px);
+      @include font-weight-bold;
+      font-size: 18px;
+    }
+  }
 }
