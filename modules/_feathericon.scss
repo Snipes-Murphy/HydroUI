@@ -12,7 +12,17 @@
 top: .20em; //realignment as icons are slightly up
 }
 
-.f-small {
+.f-small, .f-sm {
   width: 18px;
   height: 18px;
+}
+
+.f-medium, .f-md {
+  width: 24px;
+  height: 24px;
+}
+
+.f-large, .f-lg {
+  width: 32px;
+  height: 32px;
 }
