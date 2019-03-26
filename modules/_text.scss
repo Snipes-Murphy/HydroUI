@@ -30,6 +30,9 @@
 .text-bold {
   @include font-weight-bold;
 }
+.text-semibold {
+  @include font-weight-semibold;
+}
 .text-normal {
   @include font-weight-normal;
 }
