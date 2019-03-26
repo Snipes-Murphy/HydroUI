@@ -42,6 +42,7 @@
 
 @mixin mx-btn($value) {
   @include box-medium-border;
+  position: relative;
   letter-spacing: 0.01em;
   outline: none;
   color: white;
@@ -75,6 +76,10 @@
 
 @mixin font-weight-bold {
   font-weight: 700 !important;
+}
+
+@mixin font-weight-semibold {
+  font-weight: 500 !important;
 }
 
 @mixin font-weight-normal {
