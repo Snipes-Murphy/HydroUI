@@ -29,3 +29,7 @@
 @function autoCalc($calculation) {
   @return $calculation;
 }
+
+@function ifMap($list, $var) {
+    @return (null != index($list, $var));
+}
