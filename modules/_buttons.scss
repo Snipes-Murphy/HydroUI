@@ -56,6 +56,24 @@
         box-shadow: 0 0 0 3px rgba($value, 0.5);
       }
 
+      &.btn-text {
+        background-color: $white;
+        border: $white;
+        color: $value;
+        transition: 200ms;
+        bottom: 0;
+        @include shadow-small;
+
+        &:hover {
+          bottom: 3px;
+          @include shadow-small-float;
+        }
+
+        &:focus {
+        @include shadow;
+        }
+      }
+
       @if ifMap($bright-colors, $class) {
         &.btn-soft {
           background-color: lighten($value, 30%);
@@ -77,21 +95,20 @@
           background-color: lighten($value, 40%);
           border: lighten($value, 10%);
           color: darken($value, 10%);
-        }
-      }
-      &.btn-soft {
-        &:hover {
-          color: white;
-          background-color: darken($value, $color-set-hover-intensity);
-          border-color: darken($value, $color-set-hover-intensity);
-        }
-        &:active {
-          background-color: darken($value, $color-set-click-intensity);
-          border-color: darken($value, $color-set-hover-intensity);
-          color: white;
-        }
-        &:focus {
-          box-shadow: 0 0 0 3px rgba($value, 0.5);
+
+          &:hover {
+            color: white;
+            background-color: darken($value, $color-set-hover-intensity);
+            border-color: darken($value, $color-set-hover-intensity);
+          }
+          &:active {
+            background-color: darken($value, $color-set-click-intensity);
+            border-color: darken($value, $color-set-hover-intensity);
+            color: white;
+          }
+          &:focus {
+            box-shadow: 0 0 0 3px rgba($value, 0.5);
+          }
         }
       }
     }
@@ -121,10 +138,10 @@
     }
   }
   button:first-child {
-    border-radius: 4px 0 0 4px;
+    border-radius: $btn-border-radius 0 0 $btn-border-radius;
   }
   button:last-child {
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 $btn-border-radius $btn-border-radius 0;
   }
   .btn-round:first-child {
     border-radius: 100px 0 0 100px;
@@ -175,7 +192,7 @@
 
 // Button Effects
 
-.btn-effect-float {
+.btn-float {
   transition: 200ms;
   bottom: 0;
   &:hover {

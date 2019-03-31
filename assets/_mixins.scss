@@ -23,7 +23,7 @@
 // Shadows
 
 @mixin shadow-none {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 @mixin shadow-small {
@@ -41,7 +41,7 @@
 // Button Mixins
 
 @mixin mx-btn($value) {
-  @include box-medium-border;
+  border-radius: $btn-border-radius;
   position: relative;
   letter-spacing: 0.01em;
   outline: none;
