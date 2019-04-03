@@ -79,6 +79,20 @@
           background-color: lighten($value, 30%);
           border: lighten($value, 40%);
           color: darken($value, 10%);
+
+          &:hover {
+            color: white;
+            background-color: darken($value, $color-set-hover-intensity);
+            border-color: darken($value, $color-set-hover-intensity);
+          }
+          &:active {
+            background-color: darken($value, $color-set-click-intensity);
+            border-color: darken($value, $color-set-hover-intensity);
+            color: white;
+          }
+          &:focus {
+            box-shadow: 0 0 0 3px rgba($value, 0.5);
+          }
         }
       } @else if ifMap($ultra-bright-colors, $class) {
         &.btn-soft {
@@ -89,6 +103,20 @@
           }
           border: none;
           color: darken($value, 10%);
+
+          &:hover {
+            color: white;
+            background-color: darken($value, $color-set-hover-intensity);
+            border-color: darken($value, $color-set-hover-intensity);
+          }
+          &:active {
+            background-color: darken($value, $color-set-click-intensity);
+            border-color: darken($value, $color-set-hover-intensity);
+            color: white;
+          }
+          &:focus {
+            box-shadow: 0 0 0 3px rgba($value, 0.5);
+          }
         }
       } @else {
         &.btn-soft {
