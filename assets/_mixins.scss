@@ -31,7 +31,11 @@
 }
 
 @mixin shadow-small-float {
-  box-shadow: 0 6px 12px 0 $shadow;
+  box-shadow: 0 2px 6px 0 $float-shadow;
+}
+
+@mixin shadow-medium-float {
+  box-shadow: 0 6px 12px 0 $float-shadow;
 }
 
 @mixin shadow {

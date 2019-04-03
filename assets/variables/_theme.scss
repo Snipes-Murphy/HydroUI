@@ -143,7 +143,8 @@ $dark-colors: (
 
 // Shadows
 
-$shadow: rgba(#5d6367, 0.5) !default;
+$float-shadow: rgba(#5d6367, 0.4) !default;
+$shadow: rgba(#5d6367, 0.1) !default;
 
 $bg-shadow-angles: (
   "top",
