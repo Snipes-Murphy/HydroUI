@@ -36,7 +36,6 @@ $tooltip-offset: 15px;
     height: 12px;
     content: '';
     transform: rotate(-45deg);
-    @include box-medium-border;
     background: $grey-8;
     box-shadow: 4px -4px 10px -5px $shadow;
   }
