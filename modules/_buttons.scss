@@ -66,11 +66,11 @@
 
         &:hover, &:active {
           bottom: 3px;
-          @include shadow-small-float;
+          @include shadow-medium-float;
         }
 
         &:focus {
-        @include shadow;
+          @include shadow-medium-float;
         }
       }
 
