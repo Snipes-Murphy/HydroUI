@@ -1,0 +1,21 @@
+.progress-bar {
+  height: 14px;
+  background-color: $grey-1;
+  position: relative;
+  @include box-full-border;
+  .progress-bar-fill {
+    display: block;
+    background-color: $grey-2;
+    height: 100%;
+    @include box-full-border;
+  }
+  .progress-bar-caption {
+    @include font-content;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
