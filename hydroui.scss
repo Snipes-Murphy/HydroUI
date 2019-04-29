@@ -17,6 +17,7 @@ body {
 @import "assets/variables/_theme";
 @import "assets/_mixins";
 @import "assets/functions/_main";
+@import "_config";
 
 // Modules
 
@@ -37,6 +38,7 @@ body {
 @import "modules/_popouts";
 @import "modules/_form";
 @import "modules/_accordions";
+@import "modules/_progressbars";
 
 // Extensions
 // Custom SCSS files goes here, read documentation for details.
