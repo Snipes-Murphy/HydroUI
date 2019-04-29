@@ -38,16 +38,9 @@
   }
 }
 
-$widths: (
-  '25': 25%,
-  '50': 50%,
-  '75': 75%,
-  '100': 100%
-);
-
-@each $width, $percent in $widths {
+@for $width from 1 through 100 {
   .w-#{$width} {
-    width: $percent;
+    width: percentage($width/100);
   }
 }
 
