@@ -2,15 +2,15 @@
   @each $margin, $margin-value in $margins {
     @if $magin-side == "x" {
       .m#{$magin-side}-#{$margin} {
-        margin: 0 $margin-value;
+        margin: 0 $margin-value !important;
       }
     } @else if $magin-side == "y" {
       .m#{$magin-side}-#{$margin} {
-        margin: $margin-value 0;
+        margin: $margin-value 0 !important;
       }
     } @else {
       .m#{$magin-side}-#{$margin} {
-        margin-#{$m-value}: $margin-value;
+        margin-#{$m-value}: $margin-value !important;
       }
     }
   }
@@ -22,15 +22,15 @@
       @each $margin, $margin-value in $margins {
         @if $magin-side == "x" {
           .m#{$magin-side}-#{$margin}-#{$breakpoint} {
-            margin: 0 $margin-value;
+            margin: 0 $margin-value !important;
           }
         } @else if $magin-side == "y" {
           .m#{$magin-side}-#{$margin}-#{$breakpoint} {
-            margin: $margin-value 0;
+            margin: $margin-value 0 !important;
           }
         } @else {
           .m#{$magin-side}-#{$margin}-#{$breakpoint} {
-            margin-#{$m-value}: $margin-value;
+            margin-#{$m-value}: $margin-value !important;
           }
         }
       }
@@ -38,7 +38,7 @@
   }
 }
 
-@for $width from 1 through 100 {
+@for $width from 0 through 100 {
   .w-#{$width} {
     width: percentage($width/100);
   }
