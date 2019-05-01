@@ -1,9 +1,11 @@
 .progress-bar {
   height: 14px;
+  margin: 8px 0;
   background-color: $grey-1;
   position: relative;
   @include box-full-border;
   .progress-bar-fill {
+    transition: width 400ms $ease-swing;
     display: block;
     background-color: $grey-2;
     height: 100%;

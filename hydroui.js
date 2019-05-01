@@ -52,7 +52,6 @@ $("input.form-radio-button, input.form-check-input").each(function(index) {
 
 $('input.form-radio-button, input.form-check-input').on("change", function() {
   $(this).closest("div").parent().closest("div").find('.form-check-label').removeClass('form-check-active');
-  console.log("Shit");
   $(this).closest(".form-check-label").addClass("form-check-active");
   console.log("Check Box change")
 })
@@ -65,4 +64,18 @@ $('input.form-check-input').on("change", function() {
     $(this).closest(".form-check-label").removeClass("form-check-active");
   }
   console.log("Check Box change")
+})
+
+// Progress Bars
+
+$(".progress-update-white").each(function(index) {
+  if ((  parseInt($(this).closest('.progress-bar').find('.progress-bar-fill').css('width'), 10) / parseInt($(this).closest('.progress-bar').css('width'), 10) * 100) >= 50) {
+    $(this).css('color', 'white')
+  }
+})
+
+$(".progress-echo").each(function(index) {
+  if (( parseInt($(this).closest('.progress-bar').find('.progress-bar-fill').css('width'), 10) / parseInt($(this).closest('.progress-bar').css('width'), 10) * 100) >= 50) {
+    $(this).append( Math.round(( parseInt($(this).closest('.progress-bar').find('.progress-bar-fill').css('width'), 10) / parseInt($(this).closest('.progress-bar').css('width'), 10) * 100)) + '%' );
+  }
 })
