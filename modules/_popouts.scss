@@ -13,12 +13,13 @@ $tooltip-offset: 15px;
     white-space: nowrap;
     font-size: 14px;
     position: absolute;
-    transition: 50ms;
+    transition: 100ms;
     opacity: 0;
     visibility: hidden;
     content: attr(tooltip);
-    color: white;
-    background-color: $grey-8;
+    color: $grey-4;
+    background-color: $white;
+    @include shadow-full;
     padding: 3px 15px;
     @include box-medium-border;
   }
@@ -26,18 +27,15 @@ $tooltip-offset: 15px;
   &::after {
     position: absolute;
     transition: 50ms;
-    z-index: -1;
+    z-index: 1;
     opacity: 0;
     visibility: hidden;
     bottom: 100%;
     left: 20px;
     display: block;
-    width: 12px;
-    height: 12px;
+    width: 0;
+    height: 0;
     content: '';
-    transform: rotate(-45deg);
-    background: $grey-8;
-    box-shadow: 4px -4px 10px -5px $shadow;
   }
 }
 
@@ -50,9 +48,10 @@ $tooltip-offset: 15px;
   }
 
   &::after {
-    bottom: calc(-50% - 2px);
+    bottom: calc(-50% + 6px);
     left: 50%;
-    transform: translateX(-50%) rotate(-45deg);
+    transform: translateX(-50%);
+    @include arrow-top(6px, $white);
   }
 }
 
@@ -65,9 +64,10 @@ $tooltip-offset: 15px;
   }
 
   &::after {
-    top: calc(-50% - 2px);
+    top: calc(-50% + 5px);
     left: 50%;
-    transform: translateX(-50%) rotate(-45deg);
+    transform: translateX(-50%);
+    @include arrow-down(6px, $white);
   }
 }
 
@@ -80,9 +80,10 @@ $tooltip-offset: 15px;
   }
 
   &::after {
-    left: calc(-100% + 4px);
+    left: calc(-100% + 12px);
     top: 50%;
-    transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%);
+    @include arrow-right(6px, $white);
   }
 }
 
@@ -95,8 +96,9 @@ $tooltip-offset: 15px;
   }
 
   &::after {
-    left: calc(100% + 9px);
+    left: calc(100% + 3px);
     top: 50%;
-    transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%);
+    @include arrow-left(6px, $white);
   }
 }
