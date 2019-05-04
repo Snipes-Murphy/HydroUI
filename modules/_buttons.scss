@@ -151,6 +151,23 @@
   }
 }
 
+.btn-list {
+  @include btn-reset;
+  transition: 200ms;
+  display: block;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  padding: 6px 12px;
+  color: $grey-6;
+  font-size: 14px;
+
+  &:hover {
+    color: $grey-8;
+    padding: 6px 0 6px 20px;
+  }
+}
+
 .btn-bar-group {
   display: flex;
   z-index: 10;
