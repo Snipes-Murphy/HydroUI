@@ -95,3 +95,13 @@ $map-reversed: ();
 .shadow {
   @include shadow;
 }
+
+@each $radius, $value in $border-radius {
+  .box-radius-#{$radius} {
+    border-radius: $value;
+  }
+}
+
+.no-overflow {
+  overflow: hidden !important;
+}

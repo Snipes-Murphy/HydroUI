@@ -155,3 +155,12 @@ $bg-shadow-angles: (
 $text-dark: rgb(60, 65, 68) !default;
 $text-lightdark: rgb(106, 115, 124)!default;
 $text-light: rgb(159, 165, 171) !default;
+
+$border-radius: (
+  "xsm": 2px,
+  "sm": 4px,
+  "md": 8px,
+  "lg": 16px,
+  "xlg": 32px,
+  "max": 100000000px
+)
