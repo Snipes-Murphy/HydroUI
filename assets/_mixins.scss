@@ -156,7 +156,7 @@
 }
 
 @mixin card($card-title) {
-  .card.#{$card-title} {
+  .card.card-#{$card-title} {
     @content;
   }
 }
