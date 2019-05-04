@@ -27,6 +27,14 @@
       top: 50%;
       transform: translateY(-50%);
     }
+
+    .card-accordion-icon {
+      transition: 300ms;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 
   .card-accordion-content {
