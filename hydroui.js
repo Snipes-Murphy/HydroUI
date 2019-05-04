@@ -82,7 +82,7 @@ $(".progress-echo").each(function(index) {
 
 // Accordion
 
-$(".card-accordion-heading").on('click', function(index) {
+$(document).on('click', '.card-accordion-heading', function(index) {
   var accordionBtn = $(this)
   var accordionContent = $(this).closest('.card-accordion').find('.card-accordion-content')
   if (!(accordionContent.hasClass("loading") || accordionContent.hasClass("unloading"))) {
