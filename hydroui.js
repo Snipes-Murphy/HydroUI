@@ -79,3 +79,37 @@ $(".progress-echo").each(function(index) {
     $(this).append( Math.round(( parseInt($(this).closest('.progress-bar').find('.progress-bar-fill').css('width'), 10) / parseInt($(this).closest('.progress-bar').css('width'), 10) * 100)) + '%' );
   }
 })
+
+// Accordion
+
+$(".card-accordion-heading").on('click', function(index) {
+  var accordionBtn = $(this)
+  var accordionContent = $(this).closest('.card-accordion').find('.card-accordion-content')
+  if (!(accordionContent.hasClass("loading") || accordionContent.hasClass("unloading"))) {
+    if (accordionContent.hasClass("active")) { // Accordion Closed
+      accordionBtn.find('.card-accordion-icon-flip').css('transform', 'translateY(-50%)')
+      accordionContent.removeClass("active");
+      var heightCalc = $(this).closest('.card-accordion').find('.card-accordion-content').css('height', 'auto').height();
+      accordionContent.height(heightCalc);
+      accordionContent.innerHeight(0);
+      accordionContent.addClass("unloading")
+      window.setTimeout(function() {
+        accordionContent.removeClass("unloading");
+        accordionContent.removeAttr("style");
+      }, 300);
+    } else { // Accordion Expanded
+      var heightCalc = $(this).closest('.card-accordion').find('.card-accordion-content').css('height', 'auto').innerHeight();
+      accordionBtn.find('.card-accordion-icon-flip').css('transform', 'rotate(180deg) translateY(50%)')
+      accordionContent.innerHeight(0);
+      accordionContent.innerHeight(heightCalc + 20);
+      accordionContent.addClass("loading")
+      window.setTimeout(function() {
+        accordionContent.addClass("active");
+        accordionContent.removeClass("loading");
+        accordionContent.removeAttr("style");
+      }, 300);
+    }
+  }
+
+
+})

@@ -1,3 +1,55 @@
 @include card(accordion) {
   background-color: white;
+  box-shadow: 0 2px 6px 0 $shadow;
+  margin: 4px;
+  @include box-medium-border;
+
+  .card-accordion-heading {
+    position: relative;
+    background: $grey-0;
+    @include box-medium-border;
+    cursor: pointer;
+    margin: 0;
+    padding: 4px 15px;
+
+    &:hover {
+      background-color: darken($grey-0, 1%)
+    }
+
+    &:active {
+      background-color: darken($grey-0, 2%)
+    }
+
+    .card-accordion-icon-flip {
+      transition: 300ms;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .card-accordion-content {
+    margin: 0;
+    padding: 0 15px;
+    transition: 300ms;
+    overflow: hidden;
+    height: 0;
+
+    & p {
+      margin: 0;
+    }
+
+    &.loading {
+      padding: 10px 15px;
+    }
+
+    &.unloading {
+    }
+
+    &.active {
+      padding: 10px 15px;
+      height: auto !important;
+    }
+  }
 }
