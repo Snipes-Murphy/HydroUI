@@ -1,0 +1,15 @@
+.fade-in-left {
+  position: relative;
+  animation: fade-in-left 1000ms $ease-swing;
+}
+
+@keyframes fade-in-left {
+  0% {
+    left: -100px;
+    opacity: 0;
+  }
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
