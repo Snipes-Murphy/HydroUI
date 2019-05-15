@@ -96,6 +96,30 @@ $map-reversed: ();
   @include shadow;
 }
 
+.shadow-full {
+  @include shadow-full;
+}
+
+.no-shadow, .shadow-none {
+  @include shadow-none;
+}
+
+.shadow-sm {
+  @include shadow-small;
+}
+
+.shadow-sm-float {
+  @include shadow-small-float;
+}
+
+.shadow-md {
+  @include shadow-medium;
+}
+
+.shadow-md-float {
+  @include shadow-medium-float;
+}
+
 @each $radius, $value in $border-radius {
   .box-radius-#{$radius} {
     border-radius: $value;

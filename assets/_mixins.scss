@@ -30,12 +30,12 @@
   box-shadow: 0 2px 6px 0 $shadow;
 }
 
-@mixin shadow-medium {
-  box-shadow: 0 6px 8px 0 $shadow;
-}
-
 @mixin shadow-small-float {
   box-shadow: 0 2px 6px 0 $float-shadow;
+}
+
+@mixin shadow-medium {
+  box-shadow: 0 6px 8px 0 $shadow;
 }
 
 @mixin shadow-medium-float {
