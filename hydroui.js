@@ -30,15 +30,15 @@ $(document).on("click", ".close-btn", function() {
 // Navbar
 
 $('.nav-btn-menu').click(function() {
-    $(this).closest(".navbar").find(".nav-content").toggleClass('active');
+  $(this).closest(".navbar").find(".nav-content").toggleClass('active');
 })
 
 // Dropdown Complex
 
 $('.dropdown-complex-item').hover(function() {
-    $(this).closest(".dropdown").find(".dropdown-complex").toggleClass('dropdown-complex-active');
-    $(this).closest(".dropdown").find(".complex-list").toggleClass('complex-list-active');
-    var complexitemid = $('.dropdown-complex-item').attr('id');
+  $(this).closest(".dropdown").find(".dropdown-complex").toggleClass('dropdown-complex-active');
+  $(this).closest(".dropdown").find(".complex-list").toggleClass('complex-list-active');
+  var complexitemid = $('.dropdown-complex-item').attr('id');
 })
 
 // Radio/Checkboxes
@@ -69,14 +69,14 @@ $('input.form-check-input').on("change", function() {
 // Progress Bars
 
 $(".progress-update-white").each(function(index) {
-  if ((  parseInt($(this).closest('.progress-bar').find('.progress-bar-fill').css('width'), 10) / parseInt($(this).closest('.progress-bar').css('width'), 10) * 100) >= 50) {
+  if ((parseInt($(this).closest('.progress-bar').find('.progress-bar-fill').css('width'), 10) / parseInt($(this).closest('.progress-bar').css('width'), 10) * 100) >= 50) {
     $(this).css('color', 'white')
   }
 })
 
 $(".progress-echo").each(function(index) {
-  if (( parseInt($(this).closest('.progress-bar').find('.progress-bar-fill').css('width'), 10) / parseInt($(this).closest('.progress-bar').css('width'), 10) * 100) >= 50) {
-    $(this).append( Math.round(( parseInt($(this).closest('.progress-bar').find('.progress-bar-fill').css('width'), 10) / parseInt($(this).closest('.progress-bar').css('width'), 10) * 100)) + '%' );
+  if ((parseInt($(this).closest('.progress-bar').find('.progress-bar-fill').css('width'), 10) / parseInt($(this).closest('.progress-bar').css('width'), 10) * 100) >= 50) {
+    $(this).append(Math.round((parseInt($(this).closest('.progress-bar').find('.progress-bar-fill').css('width'), 10) / parseInt($(this).closest('.progress-bar').css('width'), 10) * 100)) + '%');
   }
 })
 
