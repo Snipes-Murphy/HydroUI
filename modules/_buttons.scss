@@ -60,6 +60,26 @@
         background-color: $white;
         border: $white;
         color: $value;
+        font-weight: 500;
+        transition: 200ms;
+        bottom: 0;
+        @include shadow-small;
+
+        &:hover, &:active {
+          bottom: 3px;
+          @include shadow-medium-float;
+        }
+
+        &:focus {
+          @include shadow-medium-float;
+        }
+      }
+
+      &.btn-tone {
+        background-color: $value;
+        border: $value;
+        color: $white;
+        font-weight: 500;
         transition: 200ms;
         bottom: 0;
         @include shadow-small;
