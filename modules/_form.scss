@@ -2,13 +2,14 @@
 }
 
 .form-input-box, .form-control {
-  transition: 200ms box-shadow;
+  transition: 200ms background-color, 200ms box-shadow;
   border: none;
   outline: none;
   padding: 12px 15px;
   font-size: 16px;
   @include box-medium-border;
   box-shadow: 0 2px 6px 0 $shadow;
+  background-color: $grey-0;
   @include font-content;
   color: $text-lightdark;
   box-sizing: border-box;
@@ -18,13 +19,24 @@
   color: $text-light;
   }
 
-  &:hover {
+  &:hover, &:active {
+    background-color: $white;
     box-shadow: 0 4px 8px 0 $shadow;
   }
 
   &:focus {
+    background-color: $white;
     box-shadow: 0 4px 10px 0 $shadow;
   }
+}
+
+.form-controller {
+  position: relative;
+}
+
+.form-icon {
+  position: absolute;
+  bottom: 0;
 }
 
 $input-sizes: (
