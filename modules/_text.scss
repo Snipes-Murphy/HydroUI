@@ -42,6 +42,9 @@
 .text-italic {
   font-style: italic;
 }
+.text-spacing {
+  letter-spacing: 0.035em;
+}
 
 @each $color, $value in $colors-map {
   .color-#{$color}, .text-#{$color} {
