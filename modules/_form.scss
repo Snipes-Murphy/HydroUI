@@ -32,11 +32,18 @@
 
 .form-controller {
   position: relative;
+  display: inline-block;
 }
 
 .form-icon {
   position: absolute;
-  bottom: 0;
+  left: 15px;
+  bottom: 50%;
+  transform: translateY(50%);
+
+  & + .form-input-box, .form-control {
+    padding-left: 44px;
+  }
 }
 
 $input-sizes: (
