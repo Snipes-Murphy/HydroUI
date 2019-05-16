@@ -27,7 +27,6 @@
     &-link-#{$class} {
       @include font-heading;
       @include mx-btn($value);
-      font-size: 16px;
       background-color: transparent;
       color: $value;
       border-color: transparent;
@@ -168,6 +167,13 @@
     .btn-#{$class}, .btn-outline-#{$class}:hover {
       color: black;
     }
+  }
+
+  .link-#{$class} {
+    @include btn-reset;
+    padding: 0;
+    font-size: 14px;
+    color: $value;
   }
 }
 
