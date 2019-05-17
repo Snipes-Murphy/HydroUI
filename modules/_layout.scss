@@ -16,6 +16,24 @@
   }
 }
 
+@each $magin-side, $m-value in $margin-sides {
+  @each $margin, $margin-value in $margins {
+    @if $magin-side == "x" {
+      .p#{$magin-side}-#{$margin} {
+        padding: 0 $margin-value !important;
+      }
+    } @else if $magin-side == "y" {
+      .p#{$magin-side}-#{$margin} {
+        padding: $margin-value 0 !important;
+      }
+    } @else {
+      .p#{$magin-side}-#{$margin} {
+        padding-#{$m-value}: $margin-value !important;
+      }
+    }
+  }
+}
+
 @each $breakpoint, $break-value in $breakpoints {
   @include breakpoint-in($breakpoint) {
     @each $magin-side, $m-value in $margin-sides {
