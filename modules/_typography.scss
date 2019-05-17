@@ -10,6 +10,14 @@ body h1, h2, h3, h4, h5, h6 {
   @include font-heading;
 }
 
+.font-content {
+  @include font-content;
+}
+
+.font-heading {
+  @include font-heading;
+}
+
 .small {
   font-size: .75em;
   padding: .15em .3em;
