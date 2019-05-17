@@ -137,7 +137,11 @@ pre {
 
 // Font sizing
 
-.font-md {
+.font-xsm {
+  font-size: 12px !important;
+}
+
+.font-sm {
   font-size: 14px !important;
 }
 
@@ -146,5 +150,9 @@ pre {
 }
 
 .font-lg {
-  font-size: 20px !important;
+  font-size: 24px !important;
+}
+
+.font-xlg {
+  font-size: 32px !important;
 }
