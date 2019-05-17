@@ -52,6 +52,17 @@
   }
 }
 
+@each $breakpoint, $value in $breakpoints {
+  @each $color, $value in $colors-map {
+    @include breakpoint-in ($breakpoint) {
+      .color-#{$color}-#{$breakpoint}, .text-#{$color}-#{$breakpoint} {
+        color: $value !important;
+      }
+    }
+  }
+}
+
+
 $text-aligns: (
   "left": left,
   "center": center,
