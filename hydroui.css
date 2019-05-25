@@ -107,7 +107,9 @@ cite {
 
 blockquote {
   color: #3c4144;
-  border-left: 2px solid #d4d4d4;
+  border-left: 6px solid #4e8cfe;
+  background-color: #f8f8f8;
+  border-radius: 6px;
   padding: 1em 1em 1em 1.5em;
   margin: 16px 0;
 }
@@ -5238,7 +5240,7 @@ pre {
 }
 
 .btn-square {
-  border-radius: 2px;
+  border-radius: 0px;
 }
 
 .btn-round {
@@ -10762,6 +10764,11 @@ pre {
   justify-content: space-between;
   align-items: center;
   height: 68px;
+}
+.navbar.navbar-fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 .navbar .container, .navbar .container-rs {
   display: flex;
