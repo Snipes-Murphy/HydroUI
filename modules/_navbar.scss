@@ -9,13 +9,16 @@
   .container, .container-rs {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 100%;
   }
 
   .nav-logo {
     display: flex;
     height: 100%;
+
+    &.nav-center {
+      align-items: center;
+    }
   }
 
   .nav-btn {

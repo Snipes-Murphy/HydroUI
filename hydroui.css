@@ -10766,12 +10766,14 @@ pre {
 .navbar .container, .navbar .container-rs {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 100%;
 }
 .navbar .nav-logo {
   display: flex;
   height: 100%;
+}
+.navbar .nav-logo.nav-center {
+  align-items: center;
 }
 .navbar .nav-btn {
   position: relative;
