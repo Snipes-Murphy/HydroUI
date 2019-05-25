@@ -2,31 +2,26 @@
   @each $margin, $margin-value in $margins {
     @if $magin-side == "x" {
       .m#{$magin-side}-#{$margin} {
-        margin: 0 $margin-value !important;
+        margin-left: $margin-value !important;
+        margin-right: $margin-value !important;
+      }
+      .p#{$magin-side}-#{$margin} {
+        padding-left: $margin-value !important;
+        padding-right: $margin-value !important;
       }
     } @else if $magin-side == "y" {
       .m#{$magin-side}-#{$margin} {
-        margin: $margin-value 0 !important;
+        margin-top: $margin-value !important;
+        margin-bottom: $margin-value !important;
+      }
+      .p#{$magin-side}-#{$margin} {
+        padding-top: $margin-value !important;
+        padding-bottom: $margin-value !important;
       }
     } @else {
       .m#{$magin-side}-#{$margin} {
         margin-#{$m-value}: $margin-value !important;
       }
-    }
-  }
-}
-
-@each $magin-side, $m-value in $margin-sides {
-  @each $margin, $margin-value in $margins {
-    @if $magin-side == "x" {
-      .p#{$magin-side}-#{$margin} {
-        padding: 0 $margin-value !important;
-      }
-    } @else if $magin-side == "y" {
-      .p#{$magin-side}-#{$margin} {
-        padding: $margin-value 0 !important;
-      }
-    } @else {
       .p#{$magin-side}-#{$margin} {
         padding-#{$m-value}: $margin-value !important;
       }
@@ -40,15 +35,28 @@
       @each $margin, $margin-value in $margins {
         @if $magin-side == "x" {
           .m#{$magin-side}-#{$margin}-#{$breakpoint} {
-            margin: 0 $margin-value !important;
+            margin-left: $margin-value !important;
+            margin-right: $margin-value !important;
+          }
+          .p#{$magin-side}-#{$margin}-#{$breakpoint} {
+            padding-left: $margin-value !important;
+            padding-right: $margin-value !important;
           }
         } @else if $magin-side == "y" {
           .m#{$magin-side}-#{$margin}-#{$breakpoint} {
-            margin: $margin-value 0 !important;
+            margin-top: $margin-value !important;
+            margin-bottom: $margin-value !important;
+          }
+          .p#{$magin-side}-#{$margin}-#{$breakpoint} {
+            padding-top: $margin-value !important;
+            padding-bottom: $margin-value !important;
           }
         } @else {
           .m#{$magin-side}-#{$margin}-#{$breakpoint} {
             margin-#{$m-value}: $margin-value !important;
+          }
+          .p#{$magin-side}-#{$margin}-#{$breakpoint} {
+            padding-#{$m-value}: $margin-value !important;
           }
         }
       }
