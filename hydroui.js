@@ -131,3 +131,14 @@ $(document).on('click', '.card-accordion-heading', function(index) {
 
   }
 })
+
+// Navbar
+
+$('.navbar-fixed').each(function(index) {
+  var navbarHeight = $(this).height()
+
+  if (!($(this).hasClass('navbar-nohitbox'))) {
+    $('<div class="navbar-hitbox"></div>').insertAfter(this);
+    $('.navbar-hitbox').height(navbarHeight);
+  }
+})
