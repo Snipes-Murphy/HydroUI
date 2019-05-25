@@ -123,6 +123,7 @@ $(document).on('click', '.card-accordion-heading', function(index) {
       accordionContent.addClass("loading")
 
       window.setTimeout(function() {
+        accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active').removeClass('active');
         accordionContent.addClass("active");
         accordionContent.removeClass("loading");
         accordionContent.removeAttr("style");
