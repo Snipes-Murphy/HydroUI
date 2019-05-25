@@ -19,7 +19,7 @@ $tooltip-offset: 15px;
     content: attr(tooltip);
     color: $grey-4;
     background-color: $white;
-    @include shadow-full;
+    @include shadow-float;
     padding: 3px 15px;
     @include box-medium-border;
   }

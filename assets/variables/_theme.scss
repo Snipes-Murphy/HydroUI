@@ -118,7 +118,7 @@ $colors-map: (
 );
 
 $gradient-map: (
-    "primary": (#6f97ef, #215de0),
+    "primary": ($primary, #215de0),
     "secondary": ($secondary, $grey-8),
     "success": ($success, darken($teal, 10%)),
     "error": (lighten($red, 5%), darken($red, 15%)),

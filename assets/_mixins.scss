@@ -46,8 +46,8 @@
   box-shadow: 0 4px 6px 0 $shadow;
 }
 
-@mixin shadow-full {
-  box-shadow: 0 0 12px 0 $float-shadow;
+@mixin shadow-float {
+  box-shadow: 0 10px 35px $float-shadow;
 }
 
 // Button Mixins

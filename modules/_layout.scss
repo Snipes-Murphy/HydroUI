@@ -138,8 +138,8 @@ $map-reversed: ();
   @include shadow;
 }
 
-.shadow-full {
-  @include shadow-full;
+.shadow-float {
+  @include shadow-float;
 }
 
 .no-shadow, .shadow-none {

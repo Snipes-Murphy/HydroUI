@@ -1,4 +1,4 @@
-# HydroUI
+![HydroUI Lightweight CSS Library](https://snipes-murphy.github.io/HydroUI/democontent/banner.svg)
 A lightweight SCSS/CSS library with a seemless modularity implementation; with complex SCSS processes to make you're coding easy.
 
 ## Quick Start (Implementation)

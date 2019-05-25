@@ -8537,8 +8537,8 @@ pre {
   box-shadow: 0 4px 6px 0 rgba(93, 99, 103, 0.1);
 }
 
-.shadow-full {
-  box-shadow: 0 0 12px 0 rgba(93, 99, 103, 0.135);
+.shadow-float {
+  box-shadow: 0 10px 35px rgba(93, 99, 103, 0.135);
 }
 
 .no-shadow, .shadow-none {
@@ -8761,7 +8761,7 @@ pre {
 }
 
 .bg-primary-grad {
-  background: linear-gradient(45deg, #6f97ef, #215de0) !important;
+  background: linear-gradient(45deg, #4e8cfe, #215de0) !important;
 }
 
 .bg-secondary-grad {
@@ -12579,7 +12579,7 @@ pre {
   content: attr(tooltip);
   color: #7d8285;
   background-color: #fff;
-  box-shadow: 0 0 12px 0 rgba(93, 99, 103, 0.135);
+  box-shadow: 0 10px 35px rgba(93, 99, 103, 0.135);
   padding: 3px 15px;
   border-radius: 4px;
 }
