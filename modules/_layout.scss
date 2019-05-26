@@ -171,3 +171,8 @@ $map-reversed: ();
 .no-overflow {
   overflow: hidden !important;
 }
+
+.flex-vcenter {
+  display: flex;
+  align-items: center;
+}
