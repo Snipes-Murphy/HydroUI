@@ -112,13 +112,15 @@ blockquote {
   border-radius: 6px;
   padding: 1em 1em 1em 1.5em;
   margin: 16px 0;
+  font-size: 18px;
 }
 blockquote p {
   color: #3c4144;
-  margin: 0 0 25px 0;
 }
 blockquote cite {
   color: #9fa5ab;
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 kbd, .kbd {
@@ -152,26 +154,6 @@ pre {
   border: 2px solid #b5cfd2;
   color: white;
   background-color: #1b2928;
-}
-
-.ml-s {
-  margin-left: .5em;
-}
-.ml-m {
-  margin-left: .9em;
-}
-.ml-l {
-  margin-left: 1.3em;
-}
-
-.mr-s {
-  margin-right: .5em;
-}
-.mr-m {
-  margin-right: .9em;
-}
-.mr-l {
-  margin-right: 1.3em;
 }
 
 .font-xsm {
@@ -8589,6 +8571,11 @@ pre {
 
 .no-overflow {
   overflow: hidden !important;
+}
+
+.flex-vcenter {
+  display: flex;
+  align-items: center;
 }
 
 .f-icon {
