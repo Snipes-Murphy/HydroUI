@@ -84,11 +84,12 @@ blockquote {
 
   & p {
     color: $text-dark;
-    margin: 0 0 25px 0;
   }
 
   & cite {
     color: $text-light;
+    margin-bottom: 16px;
+    display: inline-block;
   }
 }
 
