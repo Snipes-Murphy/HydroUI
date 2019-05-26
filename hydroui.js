@@ -50,8 +50,14 @@ $("input.form-radio-button, input.form-check-input").each(function(index) {
   }
 })
 
-$('input.form-radio-button, input.form-check-input').on("change", function() {
+$('input.form-radio-button:radio, input.form-check-input:radio').on("change", function() {
   $(this).closest("div").parent().closest("div").find('.form-check-label').removeClass('form-check-active');
+  $(this).closest(".form-check-label").addClass("form-check-active");
+  console.log("Check Box change")
+})
+
+$('input.form-check-input:checkbox').on("change", function() {
+  $(this).closest("div").closest("div").find('.form-check-label').removeClass('form-check-active');
   $(this).closest(".form-check-label").addClass("form-check-active");
   console.log("Check Box change")
 })
@@ -129,7 +135,6 @@ $(document).on('click', '.card-accordion-heading', function(index) {
         accordionContent.removeAttr("style");
       }, 300);
     }
-
   }
 })
 
