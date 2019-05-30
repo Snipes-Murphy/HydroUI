@@ -9032,6 +9032,138 @@ pre {
   color: transparent !important;
 }
 
+.text-glow-primary {
+  text-shadow: 0 0 4px #4e8cfe !important;
+}
+
+.text-glow-secondary {
+  text-shadow: 0 0 4px #7d8285 !important;
+}
+
+.text-glow-success {
+  text-shadow: 0 0 4px #4ed69c !important;
+}
+
+.text-glow-error {
+  text-shadow: 0 0 4px #fb5962 !important;
+}
+
+.text-glow-danger {
+  text-shadow: 0 0 4px #fb5962 !important;
+}
+
+.text-glow-warning {
+  text-shadow: 0 0 4px #fbb258 !important;
+}
+
+.text-glow-info {
+  text-shadow: 0 0 4px #36d5f2 !important;
+}
+
+.text-glow-light {
+  text-shadow: 0 0 4px #eef1f6 !important;
+}
+
+.text-glow-dark {
+  text-shadow: 0 0 4px #2a2d2e !important;
+}
+
+.text-glow-muted {
+  text-shadow: 0 0 4px #9ba0a3 !important;
+}
+
+.text-glow-neutral {
+  text-shadow: 0 0 4px #f8f8f8 !important;
+}
+
+.text-glow-red {
+  text-shadow: 0 0 4px #fb5962 !important;
+}
+
+.text-glow-orange {
+  text-shadow: 0 0 4px #fbb258 !important;
+}
+
+.text-glow-yellow {
+  text-shadow: 0 0 4px #d5c42c !important;
+}
+
+.text-glow-green {
+  text-shadow: 0 0 4px #4ed69c !important;
+}
+
+.text-glow-teal {
+  text-shadow: 0 0 4px #39ab7b !important;
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 4px #36d5f2 !important;
+}
+
+.text-glow-blue {
+  text-shadow: 0 0 4px #4e8cfe !important;
+}
+
+.text-glow-purple {
+  text-shadow: 0 0 4px #791ba4 !important;
+}
+
+.text-glow-pink {
+  text-shadow: 0 0 4px #f12d91 !important;
+}
+
+.text-glow-white {
+  text-shadow: 0 0 4px #fff !important;
+}
+
+.text-glow-grey-0 {
+  text-shadow: 0 0 4px #f8f8f8 !important;
+}
+
+.text-glow-grey-1 {
+  text-shadow: 0 0 4px #eef1f6 !important;
+}
+
+.text-glow-grey-2 {
+  text-shadow: 0 0 4px #bdc2c6 !important;
+}
+
+.text-glow-grey-3 {
+  text-shadow: 0 0 4px #9ba0a3 !important;
+}
+
+.text-glow-grey-4 {
+  text-shadow: 0 0 4px #7d8285 !important;
+}
+
+.text-glow-grey-5 {
+  text-shadow: 0 0 4px #696e70 !important;
+}
+
+.text-glow-grey-6 {
+  text-shadow: 0 0 4px #535759 !important;
+}
+
+.text-glow-grey-7 {
+  text-shadow: 0 0 4px #3f4244 !important;
+}
+
+.text-glow-grey-8 {
+  text-shadow: 0 0 4px #2a2d2e !important;
+}
+
+.text-glow-grey-9 {
+  text-shadow: 0 0 4px #191a1b !important;
+}
+
+.text-glow-black {
+  text-shadow: 0 0 4px #000 !important;
+}
+
+.text-glow-transparent {
+  text-shadow: 0 0 4px transparent !important;
+}
+
 @media screen and (max-width: 375px) {
   .color-primary-xsm, .text-primary-xsm {
     color: #4e8cfe !important;
