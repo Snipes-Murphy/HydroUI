@@ -1,10 +1,12 @@
+# .github
+
 ![HydroUI Logo](https://snipes-murphy.github.io/HydroUI/democontent/banner.svg)
 
 A lightweight SCSS/CSS library with a seamless modularity implementation; with complex SCSS processes to make you're coding easy.
 
-# README
+## README
 
-## Quick Start \(Implementation\)
+### Quick Start \(Implementation\)
 
 Add this into your head for a quick integration.
 
@@ -20,7 +22,7 @@ It should look like this:
 </head>
 ```
 
-### Adding JavaScript functions
+#### Adding JavaScript functions
 
 HydroUI comes with a variety of things, some of which require the JavaScript file. This file is completely optional, but in order to use things such as the modal this file is required. Add this to the bottom of your HTML Document: \(Optional\)
 
@@ -36,9 +38,9 @@ HydroUI comes with a variety of things, some of which require the JavaScript fil
 
 Checkout our demo page [Here](https://snipes-murphy.github.io/HydroUI/demo.html)
 
-## Quick Start \(Template\)
+### Quick Start \(Template\)
 
-Code snippet \(Includes Feather Icons\): 
+Code snippet \(Includes Feather Icons\):
 
 ```markup
 <!DOCTYPE html>
@@ -65,11 +67,11 @@ Code snippet \(Includes Feather Icons\):
 </html>
 ```
 
-## SCSS Integration
+### SCSS Integration
 
 When using SCSS, make sure that you use a precompiler. I recommend using [Koala](http://koala-app.com/)
 
-### Installation
+#### Installation
 
 1. Clone the repository into your project directory, make sure the contents are in the **HydroUI** folder.
 2. Link the **hydroui.css** file to your project pages. If you places the repository in your root directory it should look like this.
@@ -93,7 +95,7 @@ When using SCSS, make sure that you use a precompiler. I recommend using [Koala]
    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
    ```
 
-### Adding SCSS Files
+#### Adding SCSS Files
 
 1. Create a file called **\_customscssfilename.scss** in _modules/extensions/.._. Make sure to keep the \_ before the file name.
 2. Open hydroui.scss in the main folder and add your custom scss file. It should look like this.
@@ -103,3 +105,4 @@ When using SCSS, make sure that you use a precompiler. I recommend using [Koala]
    ```
 
    Make sure you don't add the _.scss_ on the end.
+

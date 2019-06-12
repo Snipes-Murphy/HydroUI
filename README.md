@@ -6,7 +6,7 @@ description: >-
 
 # README
 
-## Quick Start \(Implementation\)
+## Quick Start \(Integration to existing project\)
 
 Add this into your head for a quick integration.
 
