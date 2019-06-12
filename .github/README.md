@@ -1,4 +1,4 @@
-# .github
+# HydroUI
 
 ![HydroUI Logo](https://snipes-murphy.github.io/HydroUI/democontent/banner.svg)
 
