@@ -1,6 +1,6 @@
 ---
 description: >-
-  A lightweight SCSS/CSS library with a seemless modularity implementation; with
+  A lightweight SCSS/CSS library with a seamless modularity implementation; with
   complex SCSS processes to make you're coding easy.
 ---
 
