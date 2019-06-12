@@ -1,3 +1,5 @@
+![HydroUI Logo](https://snipes-murphy.github.io/HydroUI/democontent/banner.svg)
+
 ---
 description: >-
   A lightweight SCSS/CSS library with a seamless modularity implementation; with
