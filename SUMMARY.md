@@ -1,6 +1,6 @@
 # Table of contents
 
-* [README](README.md)
+* [Introduction](README.md)
 * [.github](.github/README.md)
   * [ISSUE\_TEMPLATE](.github/issue_template/README.md)
     * [feature\_request](.github/issue_template/feature_request.md)

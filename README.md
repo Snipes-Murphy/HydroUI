@@ -4,7 +4,7 @@ description: >-
   complex SCSS processes to make you're coding easy.
 ---
 
-# README
+# Introduction
 
 ## Quick Start \(Integration to existing project\)
 
