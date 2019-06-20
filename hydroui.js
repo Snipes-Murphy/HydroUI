@@ -101,7 +101,8 @@ $(document).on('click', '.card-accordion-heading', function(index) {
     console.log("Progress True")
     if (!(accordionDeck.hasClass("loading") || accordionDeck.hasClass("unloading") || accordionContent.hasClass("loading") || accordionContent.hasClass("unloading"))) {
 
-      if (accordionContent.hasClass("active")) { // Accordion Closed
+      if (accordionContent.hasClass("active")) { // Accordion Closing
+        accordionBtn.closest('.deck.card-accordion-radio').find('.active').closest('.card.card-accordion').find('.card-accordion-icon-flip').css('transform', 'translateY(-50%)')
         accordionBtn.find('.card-accordion-icon-flip').css('transform', 'translateY(-50%)')
         accordionContent.removeClass("active");
 
@@ -118,10 +119,11 @@ $(document).on('click', '.card-accordion-heading', function(index) {
           console.log("Progress false closing")
         }, 300);
 
-      } else { // Accordion Expanded
+      } else { // Accordion Expanding
 
         var heightCalc = $(this).closest('.card-accordion').find('.card-accordion-content').css('height', 'auto').innerHeight();
 
+        accordionBtn.closest('.deck.card-accordion-radio').find('.active').closest('.card.card-accordion').find('.card-accordion-icon-flip').css('transform', 'translateY(-50%)')
         accordionBtn.find('.card-accordion-icon-flip').css('transform', 'rotate(180deg) translateY(50%)')
 
         accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active').addClass("unloading")
