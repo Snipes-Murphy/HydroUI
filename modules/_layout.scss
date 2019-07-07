@@ -118,6 +118,10 @@ $map-reversed: ();
   }
 }
 
+.display-flex {
+  display: flex;
+}
+
 .display-inline {
   display: inline;
 }
@@ -170,6 +174,28 @@ $map-reversed: ();
 
 .no-overflow {
   overflow: hidden !important;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Grows the elements inside the parent to fill remanding horizontal space
+.flex-grow-items div {
+  display: flex;
+  flex-grow: 1;
+}
+
+// Grows the element to fill remanding horizontal space
+.flex-grow {
+  display: flex;
+  flex-grow: 1;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
 }
 
 .flex-vcenter {
