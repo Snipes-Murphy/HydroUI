@@ -2,12 +2,13 @@
 
 @each $class, $value in $colors-map {
   .btn {
-    &-outline-#{$class} {
+    &-#{$class}.btn-outline {
       @include font-heading;
       @include mx-btn($value);
       background-color: transparent;
       color: $value;
       border-color: $value;
+      border-width: 1px;
 
       &:hover {
         color: white;
@@ -24,7 +25,7 @@
       }
     }
 
-    &-link-#{$class} {
+    &-#{$class}.btn-link {
       @include font-heading;
       @include mx-btn($value);
       background-color: transparent;
@@ -200,31 +201,31 @@
   padding: 4px 0;
   button {
     position: relative;
-    margin: 0;
-    border-radius: 0;
+    margin: 0 !important;
+    border-radius: 0 !important;
     z-index: 1;
 
     &:hover, &:active, &:focus {
       z-index: 2;
     }
   }
-  button:first-child {
-    border-radius: $btn-border-radius 0 0 $btn-border-radius;
+  button:first-child, a:first-child {
+    border-radius: $btn-border-radius 0 0 $btn-border-radius !important;
   }
-  button:last-child {
-    border-radius: 0 $btn-border-radius $btn-border-radius 0;
+  button:last-child, a:last-child {
+    border-radius: 0 $btn-border-radius $btn-border-radius 0 !important;
   }
   .btn-round:first-child {
-    border-radius: 100px 0 0 100px;
+    border-radius: 100px 0 0 100px !important;
   }
   .btn-round:last-child {
-    border-radius: 0 100px 100px 0;
+    border-radius: 0 100px 100px 0 !important;
   }
   .btn-square:first-child {
-    border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0 !important;
   }
   .btn-square:last-child {
-    border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0 !important;
   }
 }
 
