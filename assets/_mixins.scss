@@ -60,7 +60,7 @@
   color: white;
   transition: background-color 150ms, box-shadow 150ms;
   cursor: pointer;
-  border: 1px solid $value;
+  border: 0px solid $value;
   box-shadow: 0 0 0 0px $value;
   font-weight: 400;
   padding: 9px 20px;
