@@ -32,12 +32,15 @@
       color: $value;
       border-color: transparent;
       &:hover {
+        background-color: transparent;
         color: darken($value, $color-set-hover-intensity);
       }
       &:active {
+        background-color: transparent;
         color: darken($value, $color-set-click-intensity);
       }
       &:focus {
+        background-color: transparent;
         box-shadow: 0 0 0 0px rgba($value, 0.5);
       }
     }
