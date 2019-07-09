@@ -248,12 +248,15 @@ pre {
   border-color: transparent;
 }
 .btn-primary.btn-link:hover {
+  background-color: transparent;
   color: #357cfe;
 }
 .btn-primary.btn-link:active {
+  background-color: transparent;
   color: #1b6bfe;
 }
 .btn-primary.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(78, 140, 254, 0.5);
 }
 .btn-primary {
@@ -399,12 +402,15 @@ pre {
   border-color: transparent;
 }
 .btn-secondary.btn-link:hover {
+  background-color: transparent;
   color: #717578;
 }
 .btn-secondary.btn-link:active {
+  background-color: transparent;
   color: #64686b;
 }
 .btn-secondary.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(125, 130, 133, 0.5);
 }
 .btn-secondary {
@@ -550,12 +556,15 @@ pre {
   border-color: transparent;
 }
 .btn-success.btn-link:hover {
+  background-color: transparent;
   color: #39d190;
 }
 .btn-success.btn-link:active {
+  background-color: transparent;
   color: #2dc484;
 }
 .btn-success.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(78, 214, 156, 0.5);
 }
 .btn-success {
@@ -701,12 +710,15 @@ pre {
   border-color: transparent;
 }
 .btn-error.btn-link:hover {
+  background-color: transparent;
   color: #fa404a;
 }
 .btn-error.btn-link:active {
+  background-color: transparent;
   color: #fa2733;
 }
 .btn-error.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(251, 89, 98, 0.5);
 }
 .btn-error {
@@ -852,12 +864,15 @@ pre {
   border-color: transparent;
 }
 .btn-danger.btn-link:hover {
+  background-color: transparent;
   color: #fa404a;
 }
 .btn-danger.btn-link:active {
+  background-color: transparent;
   color: #fa2733;
 }
 .btn-danger.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(251, 89, 98, 0.5);
 }
 .btn-danger {
@@ -1003,12 +1018,15 @@ pre {
   border-color: transparent;
 }
 .btn-warning.btn-link:hover {
+  background-color: transparent;
   color: #faa73f;
 }
 .btn-warning.btn-link:active {
+  background-color: transparent;
   color: #fa9b26;
 }
 .btn-warning.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(251, 178, 88, 0.5);
 }
 .btn-warning {
@@ -1158,12 +1176,15 @@ pre {
   border-color: transparent;
 }
 .btn-info.btn-link:hover {
+  background-color: transparent;
   color: #1ed0f0;
 }
 .btn-info.btn-link:active {
+  background-color: transparent;
   color: #0fc5e6;
 }
 .btn-info.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(54, 213, 242, 0.5);
 }
 .btn-info {
@@ -1309,12 +1330,15 @@ pre {
   border-color: transparent;
 }
 .btn-light.btn-link:hover {
+  background-color: transparent;
   color: #dde3ed;
 }
 .btn-light.btn-link:active {
+  background-color: transparent;
   color: #cdd6e4;
 }
 .btn-light.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(238, 241, 246, 0.5);
 }
 .btn-light {
@@ -1464,12 +1488,15 @@ pre {
   border-color: transparent;
 }
 .btn-dark.btn-link:hover {
+  background-color: transparent;
   color: #1e2021;
 }
 .btn-dark.btn-link:active {
+  background-color: transparent;
   color: #121313;
 }
 .btn-dark.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(42, 45, 46, 0.5);
 }
 .btn-dark {
@@ -1615,12 +1642,15 @@ pre {
   border-color: transparent;
 }
 .btn-muted.btn-link:hover {
+  background-color: transparent;
   color: #8e9397;
 }
 .btn-muted.btn-link:active {
+  background-color: transparent;
   color: #80878b;
 }
 .btn-muted.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(155, 160, 163, 0.5);
 }
 .btn-muted {
@@ -1766,12 +1796,15 @@ pre {
   border-color: transparent;
 }
 .btn-neutral.btn-link:hover {
+  background-color: transparent;
   color: #ebebeb;
 }
 .btn-neutral.btn-link:active {
+  background-color: transparent;
   color: #dfdfdf;
 }
 .btn-neutral.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(248, 248, 248, 0.5);
 }
 .btn-neutral {
@@ -1921,12 +1954,15 @@ pre {
   border-color: transparent;
 }
 .btn-red.btn-link:hover {
+  background-color: transparent;
   color: #fa404a;
 }
 .btn-red.btn-link:active {
+  background-color: transparent;
   color: #fa2733;
 }
 .btn-red.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(251, 89, 98, 0.5);
 }
 .btn-red {
@@ -2072,12 +2108,15 @@ pre {
   border-color: transparent;
 }
 .btn-orange.btn-link:hover {
+  background-color: transparent;
   color: #faa73f;
 }
 .btn-orange.btn-link:active {
+  background-color: transparent;
   color: #fa9b26;
 }
 .btn-orange.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(251, 178, 88, 0.5);
 }
 .btn-orange {
@@ -2223,12 +2262,15 @@ pre {
   border-color: transparent;
 }
 .btn-yellow.btn-link:hover {
+  background-color: transparent;
   color: #c1b226;
 }
 .btn-yellow.btn-link:active {
+  background-color: transparent;
   color: #ac9e22;
 }
 .btn-yellow.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(213, 196, 44, 0.5);
 }
 .btn-yellow {
@@ -2374,12 +2416,15 @@ pre {
   border-color: transparent;
 }
 .btn-green.btn-link:hover {
+  background-color: transparent;
   color: #39d190;
 }
 .btn-green.btn-link:active {
+  background-color: transparent;
   color: #2dc484;
 }
 .btn-green.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(78, 214, 156, 0.5);
 }
 .btn-green {
@@ -2525,12 +2570,15 @@ pre {
   border-color: transparent;
 }
 .btn-teal.btn-link:hover {
+  background-color: transparent;
   color: #33986d;
 }
 .btn-teal.btn-link:active {
+  background-color: transparent;
   color: #2c855f;
 }
 .btn-teal.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(57, 171, 123, 0.5);
 }
 .btn-teal {
@@ -2676,12 +2724,15 @@ pre {
   border-color: transparent;
 }
 .btn-cyan.btn-link:hover {
+  background-color: transparent;
   color: #1ed0f0;
 }
 .btn-cyan.btn-link:active {
+  background-color: transparent;
   color: #0fc5e6;
 }
 .btn-cyan.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(54, 213, 242, 0.5);
 }
 .btn-cyan {
@@ -2827,12 +2878,15 @@ pre {
   border-color: transparent;
 }
 .btn-blue.btn-link:hover {
+  background-color: transparent;
   color: #357cfe;
 }
 .btn-blue.btn-link:active {
+  background-color: transparent;
   color: #1b6bfe;
 }
 .btn-blue.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(78, 140, 254, 0.5);
 }
 .btn-blue {
@@ -2978,12 +3032,15 @@ pre {
   border-color: transparent;
 }
 .btn-purple.btn-link:hover {
+  background-color: transparent;
   color: #69178e;
 }
 .btn-purple.btn-link:active {
+  background-color: transparent;
   color: #591478;
 }
 .btn-purple.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(121, 27, 164, 0.5);
 }
 .btn-purple {
@@ -3129,12 +3186,15 @@ pre {
   border-color: transparent;
 }
 .btn-pink.btn-link:hover {
+  background-color: transparent;
   color: #ef1584;
 }
 .btn-pink.btn-link:active {
+  background-color: transparent;
   color: #dc0f78;
 }
 .btn-pink.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(241, 45, 145, 0.5);
 }
 .btn-pink {
@@ -3280,12 +3340,15 @@ pre {
   border-color: transparent;
 }
 .btn-white.btn-link:hover {
+  background-color: transparent;
   color: #f2f2f2;
 }
 .btn-white.btn-link:active {
+  background-color: transparent;
   color: #e6e6e6;
 }
 .btn-white.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.5);
 }
 .btn-white {
@@ -3435,12 +3498,15 @@ pre {
   border-color: transparent;
 }
 .btn-grey-0.btn-link:hover {
+  background-color: transparent;
   color: #ebebeb;
 }
 .btn-grey-0.btn-link:active {
+  background-color: transparent;
   color: #dfdfdf;
 }
 .btn-grey-0.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(248, 248, 248, 0.5);
 }
 .btn-grey-0 {
@@ -3586,12 +3652,15 @@ pre {
   border-color: transparent;
 }
 .btn-grey-1.btn-link:hover {
+  background-color: transparent;
   color: #dde3ed;
 }
 .btn-grey-1.btn-link:active {
+  background-color: transparent;
   color: #cdd6e4;
 }
 .btn-grey-1.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(238, 241, 246, 0.5);
 }
 .btn-grey-1 {
@@ -3737,12 +3806,15 @@ pre {
   border-color: transparent;
 }
 .btn-grey-2.btn-link:hover {
+  background-color: transparent;
   color: #afb5ba;
 }
 .btn-grey-2.btn-link:active {
+  background-color: transparent;
   color: #a2a9ae;
 }
 .btn-grey-2.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(189, 194, 198, 0.5);
 }
 .btn-grey-2 {
@@ -3888,12 +3960,15 @@ pre {
   border-color: transparent;
 }
 .btn-grey-3.btn-link:hover {
+  background-color: transparent;
   color: #8e9397;
 }
 .btn-grey-3.btn-link:active {
+  background-color: transparent;
   color: #80878b;
 }
 .btn-grey-3.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(155, 160, 163, 0.5);
 }
 .btn-grey-3 {
@@ -4039,12 +4114,15 @@ pre {
   border-color: transparent;
 }
 .btn-grey-4.btn-link:hover {
+  background-color: transparent;
   color: #717578;
 }
 .btn-grey-4.btn-link:active {
+  background-color: transparent;
   color: #64686b;
 }
 .btn-grey-4.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(125, 130, 133, 0.5);
 }
 .btn-grey-4 {
@@ -4190,12 +4268,15 @@ pre {
   border-color: transparent;
 }
 .btn-grey-5.btn-link:hover {
+  background-color: transparent;
   color: #5d6163;
 }
 .btn-grey-5.btn-link:active {
+  background-color: transparent;
   color: #505456;
 }
 .btn-grey-5.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(105, 110, 112, 0.5);
 }
 .btn-grey-5 {
@@ -4341,12 +4422,15 @@ pre {
   border-color: transparent;
 }
 .btn-grey-6.btn-link:hover {
+  background-color: transparent;
   color: #474a4c;
 }
 .btn-grey-6.btn-link:active {
+  background-color: transparent;
   color: #3a3d3f;
 }
 .btn-grey-6.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(83, 87, 89, 0.5);
 }
 .btn-grey-6 {
@@ -4492,12 +4576,15 @@ pre {
   border-color: transparent;
 }
 .btn-grey-7.btn-link:hover {
+  background-color: transparent;
   color: #333537;
 }
 .btn-grey-7.btn-link:active {
+  background-color: transparent;
   color: #26282a;
 }
 .btn-grey-7.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(63, 66, 68, 0.5);
 }
 .btn-grey-7 {
@@ -4647,12 +4734,15 @@ pre {
   border-color: transparent;
 }
 .btn-grey-8.btn-link:hover {
+  background-color: transparent;
   color: #1e2021;
 }
 .btn-grey-8.btn-link:active {
+  background-color: transparent;
   color: #121313;
 }
 .btn-grey-8.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(42, 45, 46, 0.5);
 }
 .btn-grey-8 {
@@ -4802,12 +4892,15 @@ pre {
   border-color: transparent;
 }
 .btn-grey-9.btn-link:hover {
+  background-color: transparent;
   color: #0d0d0e;
 }
 .btn-grey-9.btn-link:active {
+  background-color: transparent;
   color: #000101;
 }
 .btn-grey-9.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(25, 26, 27, 0.5);
 }
 .btn-grey-9 {
@@ -4957,12 +5050,15 @@ pre {
   border-color: transparent;
 }
 .btn-black.btn-link:hover {
+  background-color: transparent;
   color: black;
 }
 .btn-black.btn-link:active {
+  background-color: transparent;
   color: black;
 }
 .btn-black.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
 }
 .btn-black {
@@ -5108,12 +5204,15 @@ pre {
   border-color: transparent;
 }
 .btn-transparent.btn-link:hover {
+  background-color: transparent;
   color: rgba(0, 0, 0, 0);
 }
 .btn-transparent.btn-link:active {
+  background-color: transparent;
   color: rgba(0, 0, 0, 0);
 }
 .btn-transparent.btn-link:focus {
+  background-color: transparent;
   box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
 }
 .btn-transparent {
@@ -8828,7 +8927,7 @@ pre {
 }
 
 .bg-secondary-grad {
-  background: linear-gradient(45deg, #7d8285, #3b4c52) !important;
+  background: linear-gradient(45deg, #3b4c52, #7d8285) !important;
 }
 
 .bg-success-grad {
@@ -8836,7 +8935,7 @@ pre {
 }
 
 .bg-error-grad {
-  background: linear-gradient(45deg, #ff7078, #ff1b28) !important;
+  background: linear-gradient(45deg, #ff1b28, #ff7078) !important;
 }
 
 .bg-warning-grad {
@@ -8852,7 +8951,7 @@ pre {
 }
 
 .bg-dark-grad {
-  background: linear-gradient(45deg, #27292a, #4d5454) !important;
+  background: linear-gradient(45deg, #2a333b, #505e6b) !important;
 }
 
 .bg-shadow-top {
