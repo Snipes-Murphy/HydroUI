@@ -1,12 +1,32 @@
 @each $color, $hex in $colors-map {
   .bg-#{$color} {
     background-color: $hex !important;
+
+    &.bg-react {
+      transition: 150ms $ease-swing;
+
+      &:hover {
+        background-color: darken($hex, 10%) !important;
+      }
+      &:active {
+        background-color: darken($hex, 20%) !important;
+      }
+    }
   }
 }
 
 @each $item, $gradient in $gradient-map {
   .bg-#{$item}-grad {
     background: linear-gradient(45deg, $gradient) !important;
+
+    &.bg-react {
+      &:hover {
+        background: linear-gradient(45deg, darken(nth($gradient, 1), 10%), darken(nth($gradient, 2), 10%)) !important;
+      }
+      &:active {
+        background: linear-gradient(45deg, darken(nth($gradient, 1), 20%), darken(nth($gradient, 2), 20%)) !important;
+      }
+    }
   }
 }
 
