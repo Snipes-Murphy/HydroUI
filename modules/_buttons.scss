@@ -181,6 +181,57 @@
   }
 }
 
+.btn-selector {
+  position: relative;
+  margin: 4px 5px;
+  padding: 10px;
+  display: block;
+  @include btn-reset;
+  text-align: left;
+  border-radius: 8px;
+  height: 125px;
+  background: linear-gradient(45deg, #1862cf, #709dff) !important;
+  @include disable-drag;
+
+  & h1 {
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1em;
+    font-size: 24px;
+  }
+
+  & h2 {
+    margin: 0;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1em;
+    color: $grey-1;
+    font-size: 16px;
+  }
+
+  & .icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 4px;
+    flex-basis: 100%;
+    width: 100%;
+    text-align: right;
+    @include disable-drag;
+
+    & img {
+      width: 96px;
+      height: 96px;
+      @include disable-drag;
+    }
+
+    &.float {
+      bottom: -34px;
+    }
+  }
+}
+
 .btn-list {
   @include btn-reset;
   transition: 200ms;
