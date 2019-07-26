@@ -63,7 +63,7 @@ h2, .h2 {
   color: #3c4144;
   font-weight: 500;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h3, .h3 {
@@ -71,7 +71,7 @@ h3, .h3 {
   color: #3c4144;
   font-weight: 500;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h4, .h4 {
@@ -79,7 +79,7 @@ h4, .h4 {
   color: #3c4144;
   font-weight: 500;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h5, .h5 {
@@ -87,7 +87,7 @@ h5, .h5 {
   color: #3c4144;
   font-weight: 500;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h6, .h6 {
@@ -95,7 +95,7 @@ h6, .h6 {
   color: #3c4144;
   font-weight: 500;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 code, .code {
@@ -5303,6 +5303,67 @@ pre {
   color: transparent;
 }
 
+.btn-selector {
+  position: relative;
+  margin: 4px 5px;
+  padding: 10px;
+  display: block;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 8px;
+  height: 125px;
+  background: linear-gradient(45deg, #1862cf, #709dff) !important;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+.btn-selector h1 {
+  margin: 0;
+  text-transform: uppercase;
+  color: white;
+  line-height: 1em;
+  font-size: 24px;
+}
+.btn-selector h2 {
+  margin: 0;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 1em;
+  color: #eef1f6;
+  font-size: 16px;
+}
+.btn-selector .icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 4px;
+  flex-basis: 100%;
+  width: 100%;
+  text-align: right;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+.btn-selector .icon img {
+  width: 96px;
+  height: 96px;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+.btn-selector .icon.float {
+  bottom: -34px;
+}
+
 .btn-list {
   border: none;
   background-color: transparent;
@@ -8793,165 +8854,510 @@ pre {
 .bg-primary {
   background-color: #4e8cfe !important;
 }
+.bg-primary.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-primary.bg-react:hover {
+  background-color: #1b6bfe !important;
+}
+.bg-primary.bg-react:active {
+  background-color: #0151e5 !important;
+}
 
 .bg-secondary {
   background-color: #7d8285 !important;
+}
+.bg-secondary.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-secondary.bg-react:hover {
+  background-color: #64686b !important;
+}
+.bg-secondary.bg-react:active {
+  background-color: #4c4f50 !important;
 }
 
 .bg-success {
   background-color: #4ed69c !important;
 }
+.bg-success.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-success.bg-react:hover {
+  background-color: #2dc484 !important;
+}
+.bg-success.bg-react:active {
+  background-color: #249a68 !important;
+}
 
 .bg-error {
   background-color: #fb5962 !important;
+}
+.bg-error.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-error.bg-react:hover {
+  background-color: #fa2733 !important;
+}
+.bg-error.bg-react:active {
+  background-color: #e80612 !important;
 }
 
 .bg-danger {
   background-color: #fb5962 !important;
 }
+.bg-danger.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-danger.bg-react:hover {
+  background-color: #fa2733 !important;
+}
+.bg-danger.bg-react:active {
+  background-color: #e80612 !important;
+}
 
 .bg-warning {
   background-color: #fbb258 !important;
+}
+.bg-warning.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-warning.bg-react:hover {
+  background-color: #fa9b26 !important;
+}
+.bg-warning.bg-react:active {
+  background-color: #e78206 !important;
 }
 
 .bg-info {
   background-color: #36d5f2 !important;
 }
+.bg-info.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-info.bg-react:hover {
+  background-color: #0fc5e6 !important;
+}
+.bg-info.bg-react:active {
+  background-color: #0c9cb6 !important;
+}
 
 .bg-light {
   background-color: #eef1f6 !important;
+}
+.bg-light.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-light.bg-react:hover {
+  background-color: #cdd6e4 !important;
+}
+.bg-light.bg-react:active {
+  background-color: #abbad3 !important;
 }
 
 .bg-dark {
   background-color: #2a2d2e !important;
 }
+.bg-dark.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-dark.bg-react:hover {
+  background-color: #121313 !important;
+}
+.bg-dark.bg-react:active {
+  background-color: black !important;
+}
 
 .bg-muted {
   background-color: #9ba0a3 !important;
+}
+.bg-muted.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-muted.bg-react:hover {
+  background-color: #80878b !important;
+}
+.bg-muted.bg-react:active {
+  background-color: #686d71 !important;
 }
 
 .bg-neutral {
   background-color: #f8f8f8 !important;
 }
+.bg-neutral.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-neutral.bg-react:hover {
+  background-color: #dfdfdf !important;
+}
+.bg-neutral.bg-react:active {
+  background-color: #c5c5c5 !important;
+}
 
 .bg-red {
   background-color: #fb5962 !important;
+}
+.bg-red.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-red.bg-react:hover {
+  background-color: #fa2733 !important;
+}
+.bg-red.bg-react:active {
+  background-color: #e80612 !important;
 }
 
 .bg-orange {
   background-color: #fbb258 !important;
 }
+.bg-orange.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-orange.bg-react:hover {
+  background-color: #fa9b26 !important;
+}
+.bg-orange.bg-react:active {
+  background-color: #e78206 !important;
+}
 
 .bg-yellow {
   background-color: #d5c42c !important;
+}
+.bg-yellow.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-yellow.bg-react:hover {
+  background-color: #ac9e22 !important;
+}
+.bg-yellow.bg-react:active {
+  background-color: #81771a !important;
 }
 
 .bg-green {
   background-color: #4ed69c !important;
 }
+.bg-green.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-green.bg-react:hover {
+  background-color: #2dc484 !important;
+}
+.bg-green.bg-react:active {
+  background-color: #249a68 !important;
+}
 
 .bg-teal {
   background-color: #39ab7b !important;
+}
+.bg-teal.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-teal.bg-react:hover {
+  background-color: #2c855f !important;
+}
+.bg-teal.bg-react:active {
+  background-color: #205f44 !important;
 }
 
 .bg-cyan {
   background-color: #36d5f2 !important;
 }
+.bg-cyan.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-cyan.bg-react:hover {
+  background-color: #0fc5e6 !important;
+}
+.bg-cyan.bg-react:active {
+  background-color: #0c9cb6 !important;
+}
 
 .bg-blue {
   background-color: #4e8cfe !important;
+}
+.bg-blue.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-blue.bg-react:hover {
+  background-color: #1b6bfe !important;
+}
+.bg-blue.bg-react:active {
+  background-color: #0151e5 !important;
 }
 
 .bg-purple {
   background-color: #791ba4 !important;
 }
+.bg-purple.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-purple.bg-react:hover {
+  background-color: #591478 !important;
+}
+.bg-purple.bg-react:active {
+  background-color: #380d4c !important;
+}
 
 .bg-pink {
   background-color: #f12d91 !important;
+}
+.bg-pink.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-pink.bg-react:hover {
+  background-color: #dc0f78 !important;
+}
+.bg-pink.bg-react:active {
+  background-color: #ad0c5e !important;
 }
 
 .bg-white {
   background-color: #fff !important;
 }
+.bg-white.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-white.bg-react:hover {
+  background-color: #e6e6e6 !important;
+}
+.bg-white.bg-react:active {
+  background-color: #cccccc !important;
+}
 
 .bg-grey-0 {
   background-color: #f8f8f8 !important;
+}
+.bg-grey-0.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-grey-0.bg-react:hover {
+  background-color: #dfdfdf !important;
+}
+.bg-grey-0.bg-react:active {
+  background-color: #c5c5c5 !important;
 }
 
 .bg-grey-1 {
   background-color: #eef1f6 !important;
 }
+.bg-grey-1.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-grey-1.bg-react:hover {
+  background-color: #cdd6e4 !important;
+}
+.bg-grey-1.bg-react:active {
+  background-color: #abbad3 !important;
+}
 
 .bg-grey-2 {
   background-color: #bdc2c6 !important;
+}
+.bg-grey-2.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-grey-2.bg-react:hover {
+  background-color: #a2a9ae !important;
+}
+.bg-grey-2.bg-react:active {
+  background-color: #868f97 !important;
 }
 
 .bg-grey-3 {
   background-color: #9ba0a3 !important;
 }
+.bg-grey-3.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-grey-3.bg-react:hover {
+  background-color: #80878b !important;
+}
+.bg-grey-3.bg-react:active {
+  background-color: #686d71 !important;
+}
 
 .bg-grey-4 {
   background-color: #7d8285 !important;
+}
+.bg-grey-4.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-grey-4.bg-react:hover {
+  background-color: #64686b !important;
+}
+.bg-grey-4.bg-react:active {
+  background-color: #4c4f50 !important;
 }
 
 .bg-grey-5 {
   background-color: #696e70 !important;
 }
+.bg-grey-5.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-grey-5.bg-react:hover {
+  background-color: #505456 !important;
+}
+.bg-grey-5.bg-react:active {
+  background-color: #383a3b !important;
+}
 
 .bg-grey-6 {
   background-color: #535759 !important;
+}
+.bg-grey-6.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-grey-6.bg-react:hover {
+  background-color: #3a3d3f !important;
+}
+.bg-grey-6.bg-react:active {
+  background-color: #222324 !important;
 }
 
 .bg-grey-7 {
   background-color: #3f4244 !important;
 }
+.bg-grey-7.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-grey-7.bg-react:hover {
+  background-color: #26282a !important;
+}
+.bg-grey-7.bg-react:active {
+  background-color: #0e0f0f !important;
+}
 
 .bg-grey-8 {
   background-color: #2a2d2e !important;
+}
+.bg-grey-8.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-grey-8.bg-react:hover {
+  background-color: #121313 !important;
+}
+.bg-grey-8.bg-react:active {
+  background-color: black !important;
 }
 
 .bg-grey-9 {
   background-color: #191a1b !important;
 }
+.bg-grey-9.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-grey-9.bg-react:hover {
+  background-color: #000101 !important;
+}
+.bg-grey-9.bg-react:active {
+  background-color: black !important;
+}
 
 .bg-black {
   background-color: #000 !important;
+}
+.bg-black.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-black.bg-react:hover {
+  background-color: black !important;
+}
+.bg-black.bg-react:active {
+  background-color: black !important;
 }
 
 .bg-transparent {
   background-color: transparent !important;
 }
+.bg-transparent.bg-react {
+  transition: 150ms cubic-bezier(0.75, 0.25, 0, 1);
+}
+.bg-transparent.bg-react:hover {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.bg-transparent.bg-react:active {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
 
 .bg-primary-grad {
   background: linear-gradient(45deg, #1862cf, #709dff) !important;
+}
+.bg-primary-grad.bg-react:hover {
+  background: linear-gradient(45deg, #134ca1, #3d7aff) !important;
+}
+.bg-primary-grad.bg-react:active {
+  background: linear-gradient(45deg, #0d3774, #0a57ff) !important;
 }
 
 .bg-secondary-grad {
   background: linear-gradient(45deg, #3b4c52, #7d8285) !important;
 }
+.bg-secondary-grad.bg-react:hover {
+  background: linear-gradient(45deg, #263134, #64686b) !important;
+}
+.bg-secondary-grad.bg-react:active {
+  background: linear-gradient(45deg, #101517, #4c4f50) !important;
+}
 
 .bg-success-grad {
   background: linear-gradient(45deg, #19ae6f, #70f0b9) !important;
+}
+.bg-success-grad.bg-react:hover {
+  background: linear-gradient(45deg, #138153, #42eba2) !important;
+}
+.bg-success-grad.bg-react:active {
+  background: linear-gradient(45deg, #0c5536, #18e28b) !important;
 }
 
 .bg-error-grad {
   background: linear-gradient(45deg, #ff1b28, #ff7078) !important;
 }
+.bg-error-grad.bg-react:hover {
+  background: linear-gradient(45deg, #e7000d, #ff3d48) !important;
+}
+.bg-error-grad.bg-react:active {
+  background: linear-gradient(45deg, #b4000a, #ff0a18) !important;
+}
 
 .bg-warning-grad {
   background: linear-gradient(45deg, #fb5962, #fbb258) !important;
+}
+.bg-warning-grad.bg-react:hover {
+  background: linear-gradient(45deg, #fa2733, #fa9b26) !important;
+}
+.bg-warning-grad.bg-react:active {
+  background: linear-gradient(45deg, #e80612, #e78206) !important;
 }
 
 .bg-info-grad {
   background: linear-gradient(45deg, #2ac6ff, #43f6ff) !important;
 }
+.bg-info-grad.bg-react:hover {
+  background: linear-gradient(45deg, #00b4f6, #10f4ff) !important;
+}
+.bg-info-grad.bg-react:active {
+  background: linear-gradient(45deg, #008fc3, #00d1dc) !important;
+}
 
 .bg-light-grad {
   background: linear-gradient(45deg, #dfe6e6, #f6f6f6) !important;
 }
+.bg-light-grad.bg-react:hover {
+  background: linear-gradient(45deg, #c2d0d0, #dddddd) !important;
+}
+.bg-light-grad.bg-react:active {
+  background: linear-gradient(45deg, #a6b9b9, #c3c3c3) !important;
+}
 
 .bg-dark-grad {
   background: linear-gradient(45deg, #2a333b, #505e6b) !important;
+}
+.bg-dark-grad.bg-react:hover {
+  background: linear-gradient(45deg, #15191d, #3a444e) !important;
+}
+.bg-dark-grad.bg-react:active {
+  background: linear-gradient(45deg, black, #242b31) !important;
 }
 
 .bg-shadow-top {
@@ -13731,6 +14137,10 @@ pre {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.image-white {
+  filter: brightness(0) invert(1);
 }
 
 .fade-in-left {
