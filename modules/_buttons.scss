@@ -283,7 +283,7 @@
   }
 }
 
-.btn-no-highlight {
+.btn-no-highlight, .no-highlight {
   @include shadow-none;
   &:focus {
     @include shadow-none;
