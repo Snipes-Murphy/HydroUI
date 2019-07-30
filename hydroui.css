@@ -5416,10 +5416,10 @@ pre {
   border-radius: 0 0 0 0 !important;
 }
 
-.btn-no-highlight {
+.btn-no-highlight, .no-highlight {
   box-shadow: none !important;
 }
-.btn-no-highlight:focus {
+.btn-no-highlight:focus, .no-highlight:focus {
   box-shadow: none !important;
 }
 
@@ -11485,7 +11485,7 @@ pre {
   display: flex;
   height: 100%;
 }
-.navbar .nav-logo.nav-center {
+.navbar .nav-logo .nav-center, .navbar .nav-logo.nav-center {
   align-items: center;
 }
 .navbar .nav-btn {
