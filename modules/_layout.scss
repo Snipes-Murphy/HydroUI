@@ -176,6 +176,14 @@ $map-reversed: ();
   overflow: hidden !important;
 }
 
+.no-x-overflow {
+  overflow-x: hidden !important;
+}
+
+.no-y-overflow {
+  overflow-y: hidden !important;
+}
+
 .flex-space-between {
   display: flex;
   justify-content: space-between;
