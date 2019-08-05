@@ -1,9 +1,12 @@
 // Default Fonts
 
+* {
+  @include font-content;
+}
+
 body a, p, li, ul, cite, .cite, i, .i, b, .b, strong, .strong, sub, .sub, span, del, .del, abbr, .abbr, u, .u, sup, .sup, s, .s, em, .em, mark, .mark {
   line-height: 1.5em;
   font-size: 16px;
-  @include font-content;
 }
 
 body h1, h2, h3, h4, h5, h6 {
@@ -30,31 +33,37 @@ body h1, h2, h3, h4, h5, h6 {
 h1, .h1 {
   @include heading;
   font-size: 40px;
+  font-weight: 700;
 }
 
 h2, .h2 {
   @include heading;
   font-size: 32px;
+  font-weight: 700;
 }
 
 h3, .h3 {
   @include heading;
   font-size: 28px;
+  font-weight: 700;
 }
 
 h4, .h4 {
   @include heading;
   font-size: 24px;
+  font-weight: 700;
 }
 
 h5, .h5 {
   @include heading;
   font-size: 20px;
+  font-weight: 600;
 }
 
 h6, .h6 {
   @include heading;
   font-size: 18px;
+  font-weight: 500;
 }
 
 code, .code {

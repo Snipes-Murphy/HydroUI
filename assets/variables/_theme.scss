@@ -118,12 +118,14 @@ $colors-map: (
 );
 
 $gradient-map: (
-    "primary": ($primary, #215de0),
-    "secondary": ($secondary, $grey-8),
-    "success": ($success, darken($teal, 10%)),
-    "error": (lighten($red, 5%), darken($red, 15%)),
-    "warning": ($red, $orange),
-    "info": ($info, $blue)
+  "primary": (#1862cf, #709dff),
+  "secondary": (#3b4c52, #7d8285),
+  "success": (#19ae6f, #70f0b9),
+  "error": (#ff1b28, #ff7078),
+  "warning": ($red, $orange),
+  "info": (#2ac6ff, #43f6ff),
+  "light": (#dfe6e6, #f6f6f6),
+  "dark": (#2a333b, #505e6b)
 );
 
 $color-text-invert: (

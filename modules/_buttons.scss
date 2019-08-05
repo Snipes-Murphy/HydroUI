@@ -2,12 +2,13 @@
 
 @each $class, $value in $colors-map {
   .btn {
-    &-outline-#{$class} {
+    &-#{$class}.btn-outline {
       @include font-heading;
       @include mx-btn($value);
       background-color: transparent;
       color: $value;
       border-color: $value;
+      border-width: 1px;
 
       &:hover {
         color: white;
@@ -24,19 +25,22 @@
       }
     }
 
-    &-link-#{$class} {
+    &-#{$class}.btn-link {
       @include font-heading;
       @include mx-btn($value);
       background-color: transparent;
       color: $value;
       border-color: transparent;
       &:hover {
+        background-color: transparent;
         color: darken($value, $color-set-hover-intensity);
       }
       &:active {
+        background-color: transparent;
         color: darken($value, $color-set-click-intensity);
       }
       &:focus {
+        background-color: transparent;
         box-shadow: 0 0 0 0px rgba($value, 0.5);
       }
     }
@@ -177,6 +181,57 @@
   }
 }
 
+.btn-selector {
+  position: relative;
+  margin: 4px 5px;
+  padding: 10px;
+  display: block;
+  @include btn-reset;
+  text-align: left;
+  border-radius: 8px;
+  height: 125px;
+  background: linear-gradient(45deg, #1862cf, #709dff) !important;
+  @include disable-drag;
+
+  & h1 {
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+    line-height: 1em;
+    font-size: 24px;
+  }
+
+  & h2 {
+    margin: 0;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1em;
+    color: $grey-1;
+    font-size: 16px;
+  }
+
+  & .icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 4px;
+    flex-basis: 100%;
+    width: 100%;
+    text-align: right;
+    @include disable-drag;
+
+    & img {
+      width: 96px;
+      height: 96px;
+      @include disable-drag;
+    }
+
+    &.float {
+      bottom: -34px;
+    }
+  }
+}
+
 .btn-list {
   @include btn-reset;
   transition: 200ms;
@@ -200,35 +255,35 @@
   padding: 4px 0;
   button {
     position: relative;
-    margin: 0;
-    border-radius: 0;
+    margin: 0 !important;
+    border-radius: 0 !important;
     z-index: 1;
 
     &:hover, &:active, &:focus {
       z-index: 2;
     }
   }
-  button:first-child {
-    border-radius: $btn-border-radius 0 0 $btn-border-radius;
+  button:first-child, a:first-child {
+    border-radius: $btn-border-radius 0 0 $btn-border-radius !important;
   }
-  button:last-child {
-    border-radius: 0 $btn-border-radius $btn-border-radius 0;
+  button:last-child, a:last-child {
+    border-radius: 0 $btn-border-radius $btn-border-radius 0 !important;
   }
   .btn-round:first-child {
-    border-radius: 100px 0 0 100px;
+    border-radius: 100px 0 0 100px !important;
   }
   .btn-round:last-child {
-    border-radius: 0 100px 100px 0;
+    border-radius: 0 100px 100px 0 !important;
   }
   .btn-square:first-child {
-    border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0 !important;
   }
   .btn-square:last-child {
-    border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0 !important;
   }
 }
 
-.btn-no-highlight {
+.btn-no-highlight, .no-highlight {
   @include shadow-none;
   &:focus {
     @include shadow-none;

@@ -49,16 +49,16 @@
 							</div>
 						</div>
 					</div>
-					<a href="#"><button class="btn-outline-primary btn-round font-md btn-no-highlight">Register</button></a>
-					<a href="#" class="ml-m nav-icon"><i data-feather="twitter" class="f-icon f-small f-stroke-2 f-realign"></i></a>
-					<a href="#" class="ml-s nav-icon"><i data-feather="facebook" class="f-icon f-small f-stroke-2 f-realign"></i></a>
+					<a href="#"><button class="btn-outline btn-primary btn-round font-md btn-no-highlight">Register</button></a>
+					<a href="#" class="ml-sm nav-icon"><i data-feather="twitter" class="f-icon f-small f-stroke-2 f-realign"></i></a>
+					<a href="#" class="ml-sm nav-icon"><i data-feather="facebook" class="f-icon f-small f-stroke-2 f-realign"></i></a>
 				</div>
 				<button class="nav-btn nav-btn-menu"><i data-feather="menu" class="f-icon f-stroke-2"></i></button>
 			</div>
 		</div>
 	</div>
 
-	<div class="container no-overflow">
+	<div class="container">
 
 		<h4>Flex-box Responsive Grid</h4>
 		<div class="row">
@@ -88,25 +88,71 @@
 
 		<div class="row row-lg-center">
 
-			<div class="col-xsm-3 bg-primary">
-				<h2>XSM</h2>
+			<div class="col-xsm-3 pill bg-primary-grad">
+				<span class="color-white">XSM</span>
 			</div>
-			<div class="col-sm-3 bg-primary">
-				<h2>SM</h2>
+			<div class="col-sm-3 pill bg-primary-grad">
+				<span class="color-white">SM</span>
 			</div>
-			<div class="col-md-3 bg-primary">
-				<h2>MD</h2>
+			<div class="col-md-3 pill bg-secondary-grad">
+				<span class="color-white">MD</span>
 			</div>
-			<div class="col-lg-3 bg-primary">
-				<h2 class="my-lg-lg">LG</h2>
+			<div class="col-lg-3 pill bg-success-grad">
+				<span class="color-white">LG</span>
 			</div>
-			<div class="col-xlg-3 bg-warning">
-				<h2>XLG</h2>
+			<div class="col-xlg-3 pill bg-error-grad">
+				<span class="color-white">XLG</span>
 			</div>
-			<div class="col-xxlg-3 bg-warning">
-				<h2>XXLG</h2>
+			<div class="col-xxlg-3 pill bg-error-grad">
+				<span class="color-white">XXLG</span>
 			</div>
 
+		</div>
+
+		<div id="theme">
+			<h1>Theme</h1>
+			<h4></h4>
+			<div class="display-flex flex-space-between flex-grow-items">
+				<div class="pill bg-primary-grad px-lg"></div>
+				<div class="pill bg-secondary-grad px-lg"></div>
+				<div class="pill bg-success-grad px-lg"></div>
+				<div class="pill bg-error-grad px-lg"></div>
+				<div class="pill bg-warning-grad px-lg"></div>
+				<div class="pill bg-info-grad px-lg"></div>
+				<div class="pill bg-light-grad px-lg"></div>
+				<div class="pill bg-dark-grad px-lg"></div>
+			</div>
+			<div class="display-flex flex-space-between flex-grow-items">
+				<div class="pill bg-primary px-lg"></div>
+				<div class="pill bg-secondary px-lg"></div>
+				<div class="pill bg-success px-lg"></div>
+				<div class="pill bg-error px-lg"></div>
+				<div class="pill bg-warning px-lg"></div>
+				<div class="pill bg-info px-lg"></div>
+				<div class="pill bg-light px-lg"></div>
+				<div class="pill bg-dark px-lg"></div>
+			</div>
+			<h4>Reactables</h4>
+			<div class="display-flex flex-space-between flex-grow-items">
+				<div class="pill bg-primary-grad bg-react px-lg"></div>
+				<div class="pill bg-secondary-grad bg-react px-lg"></div>
+				<div class="pill bg-success-grad bg-react px-lg"></div>
+				<div class="pill bg-error-grad bg-react px-lg"></div>
+				<div class="pill bg-warning-grad bg-react px-lg"></div>
+				<div class="pill bg-info-grad bg-react px-lg"></div>
+				<div class="pill bg-light-grad bg-react px-lg"></div>
+				<div class="pill bg-dark-grad bg-react px-lg"></div>
+			</div>
+			<div class="display-flex flex-space-between flex-grow-items">
+				<div class="pill bg-primary bg-react px-lg"></div>
+				<div class="pill bg-secondary bg-react px-lg"></div>
+				<div class="pill bg-success bg-react px-lg"></div>
+				<div class="pill bg-error bg-react px-lg"></div>
+				<div class="pill bg-warning bg-react px-lg"></div>
+				<div class="pill bg-info bg-react px-lg"></div>
+				<div class="pill bg-light bg-react px-lg"></div>
+				<div class="pill bg-dark bg-react px-lg"></div>
+			</div>
 		</div>
 
 		<div id="buttons">
@@ -143,21 +189,36 @@
 				</div>
 			</div>
 			<div>
-				<h5>Outlined Buttons</h5>
-				<button class="btn-outline-primary">Primary</button>
-				<button class="btn-outline-secondary">Secondary</button>
-				<button class="btn-outline-success">Success</button>
-				<button class="btn-outline-error">Error</button>
-				<button class="btn-outline-warning">Warning</button>
-				<button class="btn-outline-info">Info</button>
-				<button class="btn-outline-light">Light</button>
-				<button class="btn-outline-dark">Dark</button>
-				<button class="btn-outline-neutral">Neutral</button>
-				<button class="btn-outline-primary btn-round">Rounded</button>
+				<h5>Gradient</h5>
+				<button class="btn-primary bg-primary-grad">Primary</button>
+				<button class="btn-secondary bg-secondary-grad">Secondary</button>
+				<button class="btn-success bg-success-grad">Success</button>
+				<button class="btn-error bg-error-grad">Error</button>
+				<button class="btn-warning bg-warning-grad">Warning</button>
+				<button class="btn-info bg-info-grad">Info</button>
+				<button class="btn-light bg-light-grad">Light</button>
+				<button class="btn-dark bg-dark-grad">Dark</button>
 				<div class="btn-bar-group">
-					<button class="btn-outline-primary">Item 1</button>
-					<button class="btn-outline-primary">Item 2</button>
-					<button class="btn-outline-primary">Item 3</button>
+					<button class="btn-success bg-success-grad">Yes</button>
+					<button class="btn-error bg-error-grad">No</button>
+				</div>
+			</div>
+			<div>
+				<h5>Outlined Buttons</h5>
+				<button class="btn-outline btn-primary">Primary</button>
+				<button class="btn-outline btn-secondary">Secondary</button>
+				<button class="btn-outline btn-success">Success</button>
+				<button class="btn-outline btn-error">Error</button>
+				<button class="btn-outline btn-warning">Warning</button>
+				<button class="btn-outline btn-info">Info</button>
+				<button class="btn-outline btn-light">Light</button>
+				<button class="btn-outline btn-dark">Dark</button>
+				<button class="btn-outline btn-neutral">Neutral</button>
+				<button class="btn-outline btn-primary btn-round">Rounded</button>
+				<div class="btn-bar-group">
+					<button class="btn-outline btn-primary">Item 1</button>
+					<button class="btn-outline btn-primary">Item 2</button>
+					<button class="btn-outline btn-primary">Item 3</button>
 				</div>
 			</div>
 			<div>
@@ -204,15 +265,15 @@
 			</div>
 			<div>
 				<h5>Link Buttons</h5>
-				<button class="btn-link-primary">Primary</button>
-				<button class="btn-link-secondary">Secondary</button>
-				<button class="btn-link-success">Success</button>
-				<button class="btn-link-error">Error</button>
-				<button class="btn-link-warning">Warning</button>
-				<button class="btn-link-info">Info</button>
-				<button class="btn-link-light">Light</button>
-				<button class="btn-link-dark">Dark</button>
-				<button class="btn-link-neutral">Neutral</button>
+				<button class="btn-link btn-primary">Primary</button>
+				<button class="btn-link btn-secondary">Secondary</button>
+				<button class="btn-link btn-success">Success</button>
+				<button class="btn-link btn-error">Error</button>
+				<button class="btn-link btn-warning">Warning</button>
+				<button class="btn-link btn-info">Info</button>
+				<button class="btn-link btn-light">Light</button>
+				<button class="btn-link btn-dark">Dark</button>
+				<button class="btn-link btn-neutral">Neutral</button>
 			</div>
 			<div>
 				<h5>Sizes</h5>
@@ -220,6 +281,17 @@
 				<button class="btn-primary">Regular</button>
 				<button class="btn-primary btn-lg">Large Button</button>
 				<button class="btn-primary btn-wide">Wide Button</button>
+			</div>
+			<div>
+				<h5>Gradients</h5>
+				<button class="btn-primary">Primary</button>
+				<button class="btn-secondary">Secondary</button>
+				<button class="btn-success">Success</button>
+				<button class="btn-error">Error</button>
+				<button class="btn-warning">Warning</button>
+				<button class="btn-info">Info</button>
+				<button class="btn-light">Light</button>
+				<button class="btn-dark">Dark</button>
 			</div>
 			<div>
 				<h5>Effects</h5>
@@ -252,6 +324,38 @@
 						</span>
 					</div>
 				</button>
+			</div>
+			<div id="selectors">
+				<h5>Selectors</h5>
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="btn-selector bg-primary-grad">
+							<h1>HydroUI</h1>
+							<h2>Default</h2>
+							<div class="icon">
+								<img class="image-white" src="democontent/logo.svg" alt="Logo">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="btn-selector bg-primary-grad">
+							<h1>HydroUI</h1>
+							<h2>Float Icon + Colored Icon</h2>
+							<div class="icon float">
+								<img src="democontent/logo.svg" alt="Logo">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="btn-selector bg-primary-grad btn-float">
+							<h1>HydroUI</h1>
+							<h2>Float Button</h2>
+							<div class="icon float">
+								<img src="democontent/logo.svg" alt="Logo">
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -477,32 +581,13 @@
 			</div>
 		</div>
 
-		<div id="bubbles" style="padding: 25px 0;">
+		<div id="bubbles" class="py-sm">
 			<h4>Pills</h4>
 			<h6>Display Pill</h6>
 			<div class="icon-pill">
 				<i data-feather="git-branch" style="height: 28px; width: 28px;"></i>
 			</div>
-
-			<h6>Gradients</h6>
-			<div class="icon-pill bg-primary-grad">
-				<i data-feather="git-branch" style="height: 28px; width: 28px;"></i>
-			</div>
-			<div class="icon-pill bg-secondary-grad">
-				<i data-feather="git-branch" style="height: 28px; width: 28px;"></i>
-			</div>
-			<div class="icon-pill bg-success-grad">
-				<i data-feather="git-branch" style="height: 28px; width: 28px;"></i>
-			</div>
-			<div class="icon-pill bg-error-grad">
-				<i data-feather="git-branch" style="height: 28px; width: 28px;"></i>
-			</div>
-			<div class="icon-pill bg-warning-grad">
-				<i data-feather="git-branch" style="height: 28px; width: 28px;"></i>
-			</div>
-			<div class="icon-pill bg-info-grad">
-				<i data-feather="git-branch" style="height: 28px; width: 28px;"></i>
-			</div>
+			<div class="pill bg-red"></div>
 		</div>
 
 		<div id="modals">
@@ -526,7 +611,7 @@
 					</div>
 					<div class="modal-options">
 						<button class="btn-primary">Save Changes</button>
-						<button class="btn-link-secondary" id="close-modal">Close</button>
+						<button class="btn-link btn-secondary" id="close-modal">Close</button>
 					</div>
 				</div>
 			</div>
@@ -547,7 +632,7 @@
 						</p>
 					</div>
 					<div class="modal-options">
-						<button class="btn-link-secondary" id="close-modal">Close</button>
+						<button class="btn-link btn-secondary" id="close-modal">Close</button>
 					</div>
 				</div>
 			</div>

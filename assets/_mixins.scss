@@ -17,7 +17,7 @@
 }
 
 @mixin box-full-border {
-  border-radius: 50px;
+  border-radius: 5000px !important;
 }
 
 // Shadows
@@ -50,6 +50,14 @@
   box-shadow: 0 10px 35px $float-shadow;
 }
 
+@mixin disable-drag {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
 // Button Mixins
 
 @mixin mx-btn($value) {
@@ -60,7 +68,7 @@
   color: white;
   transition: background-color 150ms, box-shadow 150ms;
   cursor: pointer;
-  border: 1px solid $value;
+  border: 0px solid $value;
   box-shadow: 0 0 0 0px $value;
   font-weight: 400;
   padding: 9px 20px;
