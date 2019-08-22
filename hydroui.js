@@ -46,7 +46,6 @@ $('.dropdown-complex-item').hover(function() {
 $("input.form-radio-button, input.form-check-input").each(function(index) {
   if ($(this).is(':checked')) {
     $(this).closest(".form-check-label").addClass("form-check-active");
-    console.log("Check Box change")
   }
 })
 
@@ -89,7 +88,6 @@ $(".progress-echo").each(function(index) {
 // Accordion
 
 var inProgress = false;
-console.log("Accordion Progress False")
 
 $(document).on('click', '.card-accordion-heading', function(index) {
   var accordionBtn = $(this)
