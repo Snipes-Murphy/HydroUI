@@ -91,7 +91,10 @@
 }
 
 @mixin font-content {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings:"lnum" 1;
+  font-weight: 400;
 }
 
 @mixin font-weight-bold {
