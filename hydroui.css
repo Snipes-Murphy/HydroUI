@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900|Cabin:200,300,400,600,700,900");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900|Raleway:100,200,300,400,500,600,700,800,900&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -19,7 +19,10 @@ a {
 }
 
 * {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+  font-weight: 400;
 }
 
 body a, p, li, ul, cite, .cite, i, .i, b, .b, strong, .strong, sub, .sub, span, del, .del, abbr, .abbr, u, .u, sup, .sup, s, .s, em, .em, mark, .mark {
@@ -33,7 +36,10 @@ body h1, h2, h3, h4, h5, h6 {
 }
 
 .font-content {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+  font-weight: 400;
 }
 
 .font-heading {
@@ -46,7 +52,10 @@ body h1, h2, h3, h4, h5, h6 {
   padding: .15em .3em;
   background-color: #ebedf2;
   color: #6a737c;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+  font-weight: 400;
   border-radius: 2px;
 }
 
@@ -205,7 +214,7 @@ pre {
   cursor: pointer;
   border: 0px solid #4e8cfe;
   box-shadow: 0 0 0 0px #4e8cfe;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -239,7 +248,7 @@ pre {
   cursor: pointer;
   border: 0px solid #4e8cfe;
   box-shadow: 0 0 0 0px #4e8cfe;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -271,7 +280,7 @@ pre {
   cursor: pointer;
   border: 0px solid #4e8cfe;
   box-shadow: 0 0 0 0px #4e8cfe;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -359,7 +368,7 @@ pre {
   cursor: pointer;
   border: 0px solid #7d8285;
   box-shadow: 0 0 0 0px #7d8285;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -393,7 +402,7 @@ pre {
   cursor: pointer;
   border: 0px solid #7d8285;
   box-shadow: 0 0 0 0px #7d8285;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -425,7 +434,7 @@ pre {
   cursor: pointer;
   border: 0px solid #7d8285;
   box-shadow: 0 0 0 0px #7d8285;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -513,7 +522,7 @@ pre {
   cursor: pointer;
   border: 0px solid #4ed69c;
   box-shadow: 0 0 0 0px #4ed69c;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -547,7 +556,7 @@ pre {
   cursor: pointer;
   border: 0px solid #4ed69c;
   box-shadow: 0 0 0 0px #4ed69c;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -579,7 +588,7 @@ pre {
   cursor: pointer;
   border: 0px solid #4ed69c;
   box-shadow: 0 0 0 0px #4ed69c;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -667,7 +676,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fb5962;
   box-shadow: 0 0 0 0px #fb5962;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -701,7 +710,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fb5962;
   box-shadow: 0 0 0 0px #fb5962;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -733,7 +742,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fb5962;
   box-shadow: 0 0 0 0px #fb5962;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -821,7 +830,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fb5962;
   box-shadow: 0 0 0 0px #fb5962;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -855,7 +864,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fb5962;
   box-shadow: 0 0 0 0px #fb5962;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -887,7 +896,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fb5962;
   box-shadow: 0 0 0 0px #fb5962;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -975,7 +984,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fbb258;
   box-shadow: 0 0 0 0px #fbb258;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1009,7 +1018,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fbb258;
   box-shadow: 0 0 0 0px #fbb258;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1041,7 +1050,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fbb258;
   box-shadow: 0 0 0 0px #fbb258;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1133,7 +1142,7 @@ pre {
   cursor: pointer;
   border: 0px solid #36d5f2;
   box-shadow: 0 0 0 0px #36d5f2;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1167,7 +1176,7 @@ pre {
   cursor: pointer;
   border: 0px solid #36d5f2;
   box-shadow: 0 0 0 0px #36d5f2;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1199,7 +1208,7 @@ pre {
   cursor: pointer;
   border: 0px solid #36d5f2;
   box-shadow: 0 0 0 0px #36d5f2;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1287,7 +1296,7 @@ pre {
   cursor: pointer;
   border: 0px solid #eef1f6;
   box-shadow: 0 0 0 0px #eef1f6;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1321,7 +1330,7 @@ pre {
   cursor: pointer;
   border: 0px solid #eef1f6;
   box-shadow: 0 0 0 0px #eef1f6;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1353,7 +1362,7 @@ pre {
   cursor: pointer;
   border: 0px solid #eef1f6;
   box-shadow: 0 0 0 0px #eef1f6;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1445,7 +1454,7 @@ pre {
   cursor: pointer;
   border: 0px solid #2a2d2e;
   box-shadow: 0 0 0 0px #2a2d2e;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1479,7 +1488,7 @@ pre {
   cursor: pointer;
   border: 0px solid #2a2d2e;
   box-shadow: 0 0 0 0px #2a2d2e;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1511,7 +1520,7 @@ pre {
   cursor: pointer;
   border: 0px solid #2a2d2e;
   box-shadow: 0 0 0 0px #2a2d2e;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1599,7 +1608,7 @@ pre {
   cursor: pointer;
   border: 0px solid #9ba0a3;
   box-shadow: 0 0 0 0px #9ba0a3;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1633,7 +1642,7 @@ pre {
   cursor: pointer;
   border: 0px solid #9ba0a3;
   box-shadow: 0 0 0 0px #9ba0a3;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1665,7 +1674,7 @@ pre {
   cursor: pointer;
   border: 0px solid #9ba0a3;
   box-shadow: 0 0 0 0px #9ba0a3;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1753,7 +1762,7 @@ pre {
   cursor: pointer;
   border: 0px solid #f8f8f8;
   box-shadow: 0 0 0 0px #f8f8f8;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1787,7 +1796,7 @@ pre {
   cursor: pointer;
   border: 0px solid #f8f8f8;
   box-shadow: 0 0 0 0px #f8f8f8;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1819,7 +1828,7 @@ pre {
   cursor: pointer;
   border: 0px solid #f8f8f8;
   box-shadow: 0 0 0 0px #f8f8f8;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1911,7 +1920,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fb5962;
   box-shadow: 0 0 0 0px #fb5962;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1945,7 +1954,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fb5962;
   box-shadow: 0 0 0 0px #fb5962;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -1977,7 +1986,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fb5962;
   box-shadow: 0 0 0 0px #fb5962;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2065,7 +2074,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fbb258;
   box-shadow: 0 0 0 0px #fbb258;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2099,7 +2108,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fbb258;
   box-shadow: 0 0 0 0px #fbb258;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2131,7 +2140,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fbb258;
   box-shadow: 0 0 0 0px #fbb258;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2219,7 +2228,7 @@ pre {
   cursor: pointer;
   border: 0px solid #d5c42c;
   box-shadow: 0 0 0 0px #d5c42c;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2253,7 +2262,7 @@ pre {
   cursor: pointer;
   border: 0px solid #d5c42c;
   box-shadow: 0 0 0 0px #d5c42c;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2285,7 +2294,7 @@ pre {
   cursor: pointer;
   border: 0px solid #d5c42c;
   box-shadow: 0 0 0 0px #d5c42c;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2373,7 +2382,7 @@ pre {
   cursor: pointer;
   border: 0px solid #4ed69c;
   box-shadow: 0 0 0 0px #4ed69c;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2407,7 +2416,7 @@ pre {
   cursor: pointer;
   border: 0px solid #4ed69c;
   box-shadow: 0 0 0 0px #4ed69c;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2439,7 +2448,7 @@ pre {
   cursor: pointer;
   border: 0px solid #4ed69c;
   box-shadow: 0 0 0 0px #4ed69c;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2527,7 +2536,7 @@ pre {
   cursor: pointer;
   border: 0px solid #39ab7b;
   box-shadow: 0 0 0 0px #39ab7b;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2561,7 +2570,7 @@ pre {
   cursor: pointer;
   border: 0px solid #39ab7b;
   box-shadow: 0 0 0 0px #39ab7b;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2593,7 +2602,7 @@ pre {
   cursor: pointer;
   border: 0px solid #39ab7b;
   box-shadow: 0 0 0 0px #39ab7b;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2681,7 +2690,7 @@ pre {
   cursor: pointer;
   border: 0px solid #36d5f2;
   box-shadow: 0 0 0 0px #36d5f2;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2715,7 +2724,7 @@ pre {
   cursor: pointer;
   border: 0px solid #36d5f2;
   box-shadow: 0 0 0 0px #36d5f2;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2747,7 +2756,7 @@ pre {
   cursor: pointer;
   border: 0px solid #36d5f2;
   box-shadow: 0 0 0 0px #36d5f2;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2835,7 +2844,7 @@ pre {
   cursor: pointer;
   border: 0px solid #4e8cfe;
   box-shadow: 0 0 0 0px #4e8cfe;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2869,7 +2878,7 @@ pre {
   cursor: pointer;
   border: 0px solid #4e8cfe;
   box-shadow: 0 0 0 0px #4e8cfe;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2901,7 +2910,7 @@ pre {
   cursor: pointer;
   border: 0px solid #4e8cfe;
   box-shadow: 0 0 0 0px #4e8cfe;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -2989,7 +2998,7 @@ pre {
   cursor: pointer;
   border: 0px solid #791ba4;
   box-shadow: 0 0 0 0px #791ba4;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3023,7 +3032,7 @@ pre {
   cursor: pointer;
   border: 0px solid #791ba4;
   box-shadow: 0 0 0 0px #791ba4;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3055,7 +3064,7 @@ pre {
   cursor: pointer;
   border: 0px solid #791ba4;
   box-shadow: 0 0 0 0px #791ba4;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3143,7 +3152,7 @@ pre {
   cursor: pointer;
   border: 0px solid #f12d91;
   box-shadow: 0 0 0 0px #f12d91;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3177,7 +3186,7 @@ pre {
   cursor: pointer;
   border: 0px solid #f12d91;
   box-shadow: 0 0 0 0px #f12d91;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3209,7 +3218,7 @@ pre {
   cursor: pointer;
   border: 0px solid #f12d91;
   box-shadow: 0 0 0 0px #f12d91;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3297,7 +3306,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fff;
   box-shadow: 0 0 0 0px #fff;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3331,7 +3340,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fff;
   box-shadow: 0 0 0 0px #fff;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3363,7 +3372,7 @@ pre {
   cursor: pointer;
   border: 0px solid #fff;
   box-shadow: 0 0 0 0px #fff;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3455,7 +3464,7 @@ pre {
   cursor: pointer;
   border: 0px solid #f8f8f8;
   box-shadow: 0 0 0 0px #f8f8f8;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3489,7 +3498,7 @@ pre {
   cursor: pointer;
   border: 0px solid #f8f8f8;
   box-shadow: 0 0 0 0px #f8f8f8;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3521,7 +3530,7 @@ pre {
   cursor: pointer;
   border: 0px solid #f8f8f8;
   box-shadow: 0 0 0 0px #f8f8f8;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3609,7 +3618,7 @@ pre {
   cursor: pointer;
   border: 0px solid #eef1f6;
   box-shadow: 0 0 0 0px #eef1f6;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3643,7 +3652,7 @@ pre {
   cursor: pointer;
   border: 0px solid #eef1f6;
   box-shadow: 0 0 0 0px #eef1f6;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3675,7 +3684,7 @@ pre {
   cursor: pointer;
   border: 0px solid #eef1f6;
   box-shadow: 0 0 0 0px #eef1f6;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3763,7 +3772,7 @@ pre {
   cursor: pointer;
   border: 0px solid #bdc2c6;
   box-shadow: 0 0 0 0px #bdc2c6;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3797,7 +3806,7 @@ pre {
   cursor: pointer;
   border: 0px solid #bdc2c6;
   box-shadow: 0 0 0 0px #bdc2c6;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3829,7 +3838,7 @@ pre {
   cursor: pointer;
   border: 0px solid #bdc2c6;
   box-shadow: 0 0 0 0px #bdc2c6;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3917,7 +3926,7 @@ pre {
   cursor: pointer;
   border: 0px solid #9ba0a3;
   box-shadow: 0 0 0 0px #9ba0a3;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3951,7 +3960,7 @@ pre {
   cursor: pointer;
   border: 0px solid #9ba0a3;
   box-shadow: 0 0 0 0px #9ba0a3;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -3983,7 +3992,7 @@ pre {
   cursor: pointer;
   border: 0px solid #9ba0a3;
   box-shadow: 0 0 0 0px #9ba0a3;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4071,7 +4080,7 @@ pre {
   cursor: pointer;
   border: 0px solid #7d8285;
   box-shadow: 0 0 0 0px #7d8285;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4105,7 +4114,7 @@ pre {
   cursor: pointer;
   border: 0px solid #7d8285;
   box-shadow: 0 0 0 0px #7d8285;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4137,7 +4146,7 @@ pre {
   cursor: pointer;
   border: 0px solid #7d8285;
   box-shadow: 0 0 0 0px #7d8285;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4225,7 +4234,7 @@ pre {
   cursor: pointer;
   border: 0px solid #696e70;
   box-shadow: 0 0 0 0px #696e70;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4259,7 +4268,7 @@ pre {
   cursor: pointer;
   border: 0px solid #696e70;
   box-shadow: 0 0 0 0px #696e70;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4291,7 +4300,7 @@ pre {
   cursor: pointer;
   border: 0px solid #696e70;
   box-shadow: 0 0 0 0px #696e70;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4379,7 +4388,7 @@ pre {
   cursor: pointer;
   border: 0px solid #535759;
   box-shadow: 0 0 0 0px #535759;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4413,7 +4422,7 @@ pre {
   cursor: pointer;
   border: 0px solid #535759;
   box-shadow: 0 0 0 0px #535759;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4445,7 +4454,7 @@ pre {
   cursor: pointer;
   border: 0px solid #535759;
   box-shadow: 0 0 0 0px #535759;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4533,7 +4542,7 @@ pre {
   cursor: pointer;
   border: 0px solid #3f4244;
   box-shadow: 0 0 0 0px #3f4244;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4567,7 +4576,7 @@ pre {
   cursor: pointer;
   border: 0px solid #3f4244;
   box-shadow: 0 0 0 0px #3f4244;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4599,7 +4608,7 @@ pre {
   cursor: pointer;
   border: 0px solid #3f4244;
   box-shadow: 0 0 0 0px #3f4244;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4691,7 +4700,7 @@ pre {
   cursor: pointer;
   border: 0px solid #2a2d2e;
   box-shadow: 0 0 0 0px #2a2d2e;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4725,7 +4734,7 @@ pre {
   cursor: pointer;
   border: 0px solid #2a2d2e;
   box-shadow: 0 0 0 0px #2a2d2e;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4757,7 +4766,7 @@ pre {
   cursor: pointer;
   border: 0px solid #2a2d2e;
   box-shadow: 0 0 0 0px #2a2d2e;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4849,7 +4858,7 @@ pre {
   cursor: pointer;
   border: 0px solid #191a1b;
   box-shadow: 0 0 0 0px #191a1b;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4883,7 +4892,7 @@ pre {
   cursor: pointer;
   border: 0px solid #191a1b;
   box-shadow: 0 0 0 0px #191a1b;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -4915,7 +4924,7 @@ pre {
   cursor: pointer;
   border: 0px solid #191a1b;
   box-shadow: 0 0 0 0px #191a1b;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -5007,7 +5016,7 @@ pre {
   cursor: pointer;
   border: 0px solid #000;
   box-shadow: 0 0 0 0px #000;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -5041,7 +5050,7 @@ pre {
   cursor: pointer;
   border: 0px solid #000;
   box-shadow: 0 0 0 0px #000;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -5073,7 +5082,7 @@ pre {
   cursor: pointer;
   border: 0px solid #000;
   box-shadow: 0 0 0 0px #000;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -5161,7 +5170,7 @@ pre {
   cursor: pointer;
   border: 0px solid transparent;
   box-shadow: 0 0 0 0px transparent;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -5195,7 +5204,7 @@ pre {
   cursor: pointer;
   border: 0px solid transparent;
   box-shadow: 0 0 0 0px transparent;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -5227,7 +5236,7 @@ pre {
   cursor: pointer;
   border: 0px solid transparent;
   box-shadow: 0 0 0 0px transparent;
-  font-weight: 400;
+  font-weight: 600;
   padding: 9px 20px;
   margin: 0.4em 0.2em;
   font-size: 14px;
@@ -6115,7 +6124,10 @@ pre {
   height: 27px;
 }
 .modal-wrapper .modal .modal-content {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+  font-weight: 400;
   color: #6a737c;
   font-weight: 300;
   padding: 0 20px;
@@ -11076,7 +11088,10 @@ pre {
   opacity: 0;
   white-space: nowrap;
   border-radius: 4px;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+  font-weight: 400;
 }
 .dropdown .dropdown-content::before {
   position: absolute;
@@ -13383,7 +13398,10 @@ pre {
   border-radius: 4px;
   box-shadow: 0 2px 6px 0 rgba(93, 99, 103, 0.1);
   background-color: #f8f8f8;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+  font-weight: 400;
   color: #6a737c;
   box-sizing: border-box;
   margin: 5px 0;
@@ -14065,7 +14083,10 @@ pre {
 }
 
 .form-text {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+  font-weight: 400;
   display: block;
   margin-top: .25rem;
 }
@@ -14138,7 +14159,10 @@ pre {
   border-radius: 5000px !important;
 }
 .progress-bar .progress-bar-caption {
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+  font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.05em;
   position: absolute;
