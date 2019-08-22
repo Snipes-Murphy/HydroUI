@@ -162,3 +162,21 @@ $('.navbar-fixed').each(function(index) {
     $('.navbar-hitbox').height(navbarHeight);
   }
 })
+
+// Scroll distance mod
+
+$('.scroll-class-mod').each(function(index) {
+  var mainMod = $(this)
+  var distanceMod = parseInt(mainMod.attr("class-mod-dist"))
+  var distanceClasses = mainMod.attr("class-mod-items")
+
+  window.onscroll = function() {
+    console.log(window.pageYOffset, distanceMod, distanceClasses)
+    if (window.pageYOffset > distanceMod) {
+      mainMod.addClass(distanceClasses)
+    } else {
+      mainMod.removeClass(distanceClasses)
+    }
+  }
+
+})
