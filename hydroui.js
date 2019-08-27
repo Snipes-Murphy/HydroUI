@@ -185,6 +185,20 @@ $('.scroll-class-sdet').each(function(index) {
 
 })
 
+// Activator panes
+
+$(document).on('click', '.activator-pane', function() {
+  var activatorPane = $(this).closest('.activator-pane')
+  var tabActive = '.tab-selector.active'
+
+  if (activatorPane.find(tabActive).length == 0) {
+    $(this).addClass('active')
+  } else {
+    activatorPane.find(tabActive).removeClass('active')
+    $(this).addClass('active')
+  }
+})
+
 // Tab panes
 
 $(document).on('click', '.tab-selector', function() {
