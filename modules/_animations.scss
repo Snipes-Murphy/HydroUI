@@ -1,15 +1,70 @@
+.fade-in {
+  position: relative;
+  animation: fade-in-left 500ms $ease-swing;
+}
 .fade-in-left {
   position: relative;
-  animation: fade-in-left 1000ms $ease-swing;
+  animation: fade-in-left 500ms $ease-swing;
+}
+.fade-in-bot {
+  position: relative;
+  animation: fade-in-bottom 500ms $ease-swing;
+}
+.fade-in-right {
+  position: relative;
+  animation: fade-in-right 500ms $ease-swing;
+}
+.fade-in-top {
+  position: relative;
+  animation: fade-in-top 500ms $ease-swing;
 }
 
-@keyframes fade-in-left {
+@keyframes fade-in {
   0% {
-    left: -100px;
     opacity: 0;
   }
   100% {
-    left: 0px;
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-right {
+  0% {
+    transform: translateX(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
     opacity: 1;
   }
 }
