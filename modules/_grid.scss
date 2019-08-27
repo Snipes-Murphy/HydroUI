@@ -12,6 +12,7 @@
   flex-direction:row;
   flex-wrap: wrap;
   flex-basis: 100%;
+  width: 100%;
 
   & > .col {
     @include columns;

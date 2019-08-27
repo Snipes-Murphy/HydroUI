@@ -5562,6 +5562,16 @@ pre {
   box-shadow: 0 2px 6px 0 rgba(93, 99, 103, 0.135);
 }
 
+.btn-effect-scale {
+  transition: 300ms cubic-bezier(0.43, 0.61, 0.47, 0.98);
+}
+.btn-effect-scale:hover {
+  transform: scale(1.05);
+}
+.btn-effect-scale:active, .btn-effect-scale:focus {
+  transform: scale(0.95);
+}
+
 .btn-app {
   display: inline-block;
   min-height: 4em;
@@ -5593,6 +5603,7 @@ pre {
   flex-direction: row;
   flex-wrap: wrap;
   flex-basis: 100%;
+  width: 100%;
 }
 .row > .col-1 {
   flex-basis: 8.3333% !important;

@@ -327,6 +327,16 @@
   }
 }
 
+.btn-effect-scale {
+  transition: 300ms $ease-glide;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active, &:focus {
+    transform: scale(0.95)
+  }
+}
+
 // Button Specials
 
 .btn-app {
