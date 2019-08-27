@@ -71,7 +71,8 @@
   border: 0px solid $value;
   box-shadow: 0 0 0 0px $value;
   font-weight: $font-weight;
-  padding: 9px 20px;
+  padding: 9px 25px;
+  min-width: 70px;
   margin: 0.4em 0.2em;
   font-size: 14px;
 }
