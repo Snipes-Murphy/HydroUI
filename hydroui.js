@@ -187,9 +187,9 @@ $('.scroll-class-sdet').each(function(index) {
 
 // Activator panes
 
-$(document).on('click', '.activator-pane', function() {
+$(document).on('click', '.activator', function() {
   var activatorPane = $(this).closest('.activator-pane')
-  var tabActive = '.tab-selector.active'
+  var tabActive = '.activator.active'
 
   if (activatorPane.find(tabActive).length == 0) {
     $(this).addClass('active')
