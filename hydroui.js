@@ -165,18 +165,36 @@ $('.navbar-fixed').each(function(index) {
 
 // Scroll distance mod
 
-$('.scroll-class-mod').each(function(index) {
+$('.scroll-class-sdet').each(function(index) {
   var mainMod = $(this)
-  var distanceMod = parseInt(mainMod.attr("class-mod-dist"))
-  var distanceClasses = mainMod.attr("class-mod-items")
+  var distanceMod = parseInt(mainMod.attr("sdet-dist"))
+  var distanceClassesAdd = mainMod.attr("sdet-add")
+  var distanceClassesRemove = mainMod.attr("sdet-remove")
 
   window.onscroll = function() {
-    console.log(window.pageYOffset, distanceMod, distanceClasses)
     if (window.pageYOffset > distanceMod) {
-      mainMod.addClass(distanceClasses)
+      mainMod.addClass(distanceClassesAdd)
+
+      mainMod.removeClass(distanceClassesRemove)
     } else {
-      mainMod.removeClass(distanceClasses)
+      mainMod.removeClass(distanceClassesAdd)
+
+      mainMod.addClass(distanceClassesRemove)
     }
   }
+
+})
+
+// Tab panes
+
+$(document).on('click', '.tab-selector', function() {
+  var paneActive = $(this).attr('pane')
+  var navigation = $(this).closest('.tab-navigation')
+  var panes = navigation.parent().find('.tab-pane')
+
+  panes.find('.tab-item.active').removeClass('active');
+  panes.find('#'+paneActive).addClass('active');
+
+  console.log(panes.find('#'+paneActive))
 
 })

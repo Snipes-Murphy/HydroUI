@@ -1,0 +1,7 @@
+.tab-item {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
