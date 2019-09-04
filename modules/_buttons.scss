@@ -366,3 +366,7 @@
     }
   }
 }
+
+.btn-reset {
+  @include btn-reset;
+}
