@@ -212,3 +212,32 @@ $(document).on('click', '.tab-selector', function() {
   console.log(panes.find('#'+paneActive))
 
 })
+
+// Button Hover Effects
+
+
+$('.btn-hoverglow').each(function(index) {
+  $(this).append('<div class="btn-glow-object"></div>')
+})
+
+$(".btn-hoverglow").hover(
+  function () { $(this).addClass('hover'); },
+  function () { $(this).removeClass('hover'); }
+);
+
+
+$(document).on('mouseover', '.btn-hoverglow.hover', function() {
+
+  $('.btn-hoverglow').mousemove(function(e) {
+    var parentOffset = $(this).parent().offset();
+    var glowObject = $(this).find('.btn-glow-object')
+    glowObject.offset({
+      left: e.pageX - (glowObject.width() / 2),
+      top: e.pageY - (glowObject.height() / 2)
+    }, "fast");
+    /*glowObject.css({
+      'left': e.pageX/2 - (glowObject.width() / 2),
+      'top': (e.pageY - parentOffset.top - ( $(this).height()) * 2 ) - (glowObject.height() / 2)
+    });*/
+  })
+})

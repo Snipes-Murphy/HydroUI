@@ -65,11 +65,10 @@
         color: $value;
         font-weight: 500;
         transition: 200ms;
-        bottom: 0;
         @include shadow-small;
 
         &:hover, &:active {
-          bottom: 3px;
+          transform: translateY(-3px);
           @include shadow-medium-float;
         }
 
@@ -84,11 +83,10 @@
         color: $white;
         font-weight: 500;
         transition: 200ms;
-        bottom: 0;
         @include shadow-small;
 
         &:hover, &:active {
-          bottom: 3px;
+          transform: translateY(-3px);
           @include shadow-medium-float;
         }
 
@@ -227,7 +225,7 @@
     }
 
     &.float {
-      bottom: -34px;
+      transform: translateY(-34px);
     }
   }
 }
@@ -320,20 +318,40 @@
 
 .btn-float {
   transition: 200ms;
-  bottom: 0;
   &:hover, &:active, &:focus {
-    bottom: 3px;
+    transform: translateY(-3px);
     @include shadow-small-float;
   }
 }
 
-.btn-effect-scale {
+.btn-scale {
   transition: 300ms $ease-glide;
   &:hover {
     transform: scale(1.05);
   }
   &:active, &:focus {
     transform: scale(0.95)
+  }
+}
+
+.btn-hoverglow {
+  overflow: hidden;
+
+  .btn-glow-object {
+    transition: opacity 200ms;
+    display: block;
+    height: 2048px;
+    width: 2048px;
+    position: absolute;
+    opacity: 0;
+    background-color: red;
+    background: radial-gradient(rgba($white, 0.3), rgba(255,255,255,0.1) 96px);
+  }
+
+  &.hover {
+    .btn-glow-object {
+      opacity: 1;
+    }
   }
 }
 
