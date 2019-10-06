@@ -4598,7 +4598,7 @@ pre {
       -o-user-drag: none;
       user-drag: none; }
     .btn-selector .icon.float {
-      transform: translateY(-34px); }
+      transform: translateY(34px); }
 
 .btn-list {
   border: none;
