@@ -125,7 +125,8 @@ $(document).on('click', '.card-accordion-heading', function(index) {
         accordionBtn.find('.card-accordion-icon-flip').css('transform', 'rotate(180deg) translateY(50%)')
 
         accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active').addClass("unloading")
-        accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active.unloading').height(heightCalc);
+        var heightCalcOld = $(this).closest('.card-accordion-radio').find('.card-accordion-content.unloading').css('height', 'auto').innerHeight();
+        accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active.unloading').innerHeight(heightCalcOld);
         accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active.unloading').removeClass('active')
 
         window.setTimeout(function() {
