@@ -1,5 +1,7 @@
 .badge {
   @include box-full-border;
+  @include font-content;
+  font-weight: 900;
   padding: 2px 7px;
   font-size: 12px;
   text-transform: uppercase;
