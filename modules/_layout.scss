@@ -210,3 +210,7 @@ $map-reversed: ();
   display: flex;
   align-items: center;
 }
+
+.no-min-width {
+  min-width: 0px !important;
+}
