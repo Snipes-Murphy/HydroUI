@@ -10,18 +10,49 @@
       border-color: $value;
       border-width: 1px;
 
-      &:hover {
-        color: white;
-        background-color: darken($value, $color-set-hover-intensity);
-        border-color: darken($value, $color-set-hover-intensity);
-      }
-      &:active {
-        background-color: darken($value, $color-set-click-intensity);
-        border-color: darken($value, $color-set-hover-intensity);
-        color: white;
-      }
-      &:focus {
-        box-shadow: 0 0 0 3px rgba($value, 0.5);
+
+      @if ifMap($ultra-bright-colors, $class) {
+        &:hover {
+          color: $grey-8;
+          background-color: darken($value, $color-set-hover-intensity);
+          border-color: darken($value, $color-set-hover-intensity);
+        }
+        &:active {
+          background-color: darken($value, $color-set-click-intensity);
+          border-color: darken($value, $color-set-hover-intensity);
+          color: $grey-8;
+        }
+        &:focus {
+          box-shadow: 0 0 0 3px rgba($value, 0.5);
+        }
+      } @else if ifMap($bright-colors, $class) {
+        &:hover {
+          color: $grey-8;
+          background-color: darken($value, $color-set-hover-intensity);
+          border-color: darken($value, $color-set-hover-intensity);
+        }
+        &:active {
+          background-color: darken($value, $color-set-click-intensity);
+          border-color: darken($value, $color-set-hover-intensity);
+          color: $grey-8;
+        }
+        &:focus {
+          box-shadow: 0 0 0 3px rgba($value, 0.5);
+        }
+      } @else {
+        &:hover {
+          color: white;
+          background-color: darken($value, $color-set-hover-intensity);
+          border-color: darken($value, $color-set-hover-intensity);
+        }
+        &:active {
+          background-color: darken($value, $color-set-click-intensity);
+          border-color: darken($value, $color-set-hover-intensity);
+          color: white;
+        }
+        &:focus {
+          box-shadow: 0 0 0 3px rgba($value, 0.5);
+        }
       }
     }
 
@@ -340,8 +371,8 @@
   .btn-glow-object {
     transition: opacity 200ms;
     display: block;
-    height: 2048px;
-    width: 2048px;
+    height: autoCalc(100vh * 2);
+    width: autoCalc(100vw * 2);
     position: absolute;
     opacity: 0;
     background-color: red;
