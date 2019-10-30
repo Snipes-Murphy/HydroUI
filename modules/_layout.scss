@@ -64,6 +64,15 @@
   }
 }
 
+@each $margin, $margin-value in $margins {
+  .m-#{$margin} {
+    margin: $margin-value !important;
+  }
+  .p-#{$margin} {
+    padding: $margin-value !important;
+  }
+}
+
 @for $width from 0 through 100 {
   .w-#{$width} {
     width: percentage($width/100);
