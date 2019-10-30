@@ -6794,6 +6794,36 @@ pre {
   .py-xsm-xxxlg {
     padding-top: 10px !important;
     padding-bottom: 10px !important; } }
+.m-xlg {
+  margin: 75px !important; }
+
+.p-xlg {
+  padding: 75px !important; }
+
+.m-lg {
+  margin: 50px !important; }
+
+.p-lg {
+  padding: 50px !important; }
+
+.m-md {
+  margin: 25px !important; }
+
+.p-md {
+  padding: 25px !important; }
+
+.m-sm {
+  margin: 10px !important; }
+
+.p-sm {
+  padding: 10px !important; }
+
+.m-xsm {
+  margin: 10px !important; }
+
+.p-xsm {
+  padding: 10px !important; }
+
 .w-0 {
   width: 0%; }
 
