@@ -48,7 +48,8 @@ $tooltip-offset: 15px;
   }
 
   &::after {
-    bottom: calc(-50% + 6px);
+    position: absolute;
+    bottom: calc(-50% + 3px);
     left: 50%;
     transform: translateX(-50%);
     @include arrow-top(6px, $white);
@@ -64,7 +65,7 @@ $tooltip-offset: 15px;
   }
 
   &::after {
-    top: calc(-50% + 5px);
+    top: calc(-50% + 2px);
     left: 50%;
     transform: translateX(-50%);
     @include arrow-down(6px, $white);
@@ -80,7 +81,7 @@ $tooltip-offset: 15px;
   }
 
   &::after {
-    left: calc(-100% + 12px);
+    left: calc(-100% + 14px);
     top: 50%;
     transform: translateY(-50%);
     @include arrow-right(6px, $white);
