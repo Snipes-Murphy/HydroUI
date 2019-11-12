@@ -225,7 +225,7 @@ $map-reversed: ();
 
 .flex-wrap {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 .no-min-width {
