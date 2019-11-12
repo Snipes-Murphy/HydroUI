@@ -223,6 +223,11 @@ $map-reversed: ();
   align-items: center;
 }
 
+.flex-wrap {
+  display: flex;
+  align-items: center;
+}
+
 .no-min-width {
   min-width: 0px !important;
 }
