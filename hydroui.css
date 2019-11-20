@@ -7585,6 +7585,9 @@ pre {
 .no-min-width {
   min-width: 0px !important; }
 
+.stay-on-line {
+  white-space: nowrap; }
+
 .f-icon {
   position: relative; }
 
