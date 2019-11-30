@@ -171,3 +171,20 @@ pre {
 .font-xxxlg {
   font-size: 64px !important;
 }
+
+.write-tb {
+  writing-mode: horizontal-tb;
+}
+
+.write-lr {
+  writing-mode: vertical-lr;
+}
+
+.write-rl {
+  writing-mode: vertical-rl;
+}
+
+.reverse {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
