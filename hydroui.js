@@ -1,26 +1,16 @@
+// Raw Modals
+
+$(document).on("click", "#btn-modal, .btn-modal, #close-modal, .close-modal, #close-btn, .close-btn, .overlay", function() {
+  $(this).closest(".modal-wrapper, .modal-object").find("#modal").toggleClass("visability");
+  $(this).closest(".modal-wrapper, .modal-object").find(".overlay").toggleClass("visability");
+})
+
 // Modals
 
-$(document).on("click", "#btn-modal", function() {
-  $(this).closest(".modal-wrapper").find("#modal").addClass("visability");
-  $(this).closest(".modal-wrapper").find(".overlay").addClass("visability");
+$(document).on("click", ".btn-modal", function() {
 })
 
-$(document).on("click", ".overlay", function() {
-  $(this).closest(".modal-wrapper").find("#modal").removeClass("visability");
-  $(this).closest(".modal-wrapper").find(".overlay").removeClass("visability");
-})
-
-$(document).on("click", "#close-btn", function() {
-  $(this).closest(".modal-wrapper").find("#modal").removeClass("visability");
-  $(this).closest(".modal-wrapper").find(".overlay").removeClass("visability");
-})
-
-$(document).on("click", "#close-modal", function() {
-  $(this).closest(".modal-wrapper").find("#modal").removeClass("visability");
-  $(this).closest(".modal-wrapper").find(".overlay").removeClass("visability");
-})
-
-// Alerts
+// Raw Alerts
 
 $(document).on("click", ".close-btn", function() {
   console.log("Closed alert")
@@ -156,7 +146,7 @@ $(document).on('click', '.card-accordion-heading', function(index) {
 // Navbar
 
 $('.navbar-fixed').each(function(index) {
-  var navbarHeight = $(this).height()
+  var navbarHeight = $(this).outerHeight()
 
   if (!($(this).hasClass('navbar-nohitbox'))) {
     $('<div class="navbar-hitbox"></div>').insertAfter(this);
