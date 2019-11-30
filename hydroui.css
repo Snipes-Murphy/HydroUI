@@ -168,6 +168,19 @@ pre {
 .font-xxxlg {
   font-size: 64px !important; }
 
+.write-tb {
+  writing-mode: horizontal-tb; }
+
+.write-lr {
+  writing-mode: vertical-lr; }
+
+.write-rl {
+  writing-mode: vertical-rl; }
+
+.reverse {
+  direction: rtl;
+  unicode-bidi: bidi-override; }
+
 .btn-primary.btn-outline {
   font-family: 'Poppins', sans-serif;
   color: #3c4144;
@@ -5132,9 +5145,9 @@ pre {
   margin: 4px;
   padding: 15px 25px; }
 
-.modal-wrapper {
+.modal-wrapper, .modal-object {
   display: inline-block; }
-  .modal-wrapper .overlay {
+  .modal-wrapper .overlay, .modal-object .overlay {
     z-index: 100;
     pointer-events: none;
     transition: opacity 200ms;
@@ -5145,7 +5158,7 @@ pre {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.2); }
-  .modal-wrapper .modal {
+  .modal-wrapper .modal, .modal-object .modal {
     filter: blur(0%);
     z-index: 100;
     pointer-events: none;
@@ -5161,13 +5174,13 @@ pre {
     padding: 0;
     background: #fff;
     border-radius: 4px; }
-    .modal-wrapper .modal .modal-header {
+    .modal-wrapper .modal .modal-header, .modal-object .modal .modal-header {
       padding: 15px 20px 10px;
       width: 100%; }
-      .modal-wrapper .modal .modal-header .title {
+      .modal-wrapper .modal .modal-header .title, .modal-object .modal .modal-header .title {
         display: inline-block;
         font-size: 18px; }
-      .modal-wrapper .modal .modal-header .close-btn {
+      .modal-wrapper .modal .modal-header .close-btn, .modal-object .modal .modal-header .close-btn {
         margin: 4px 0;
         color: #bdc2c6;
         border: none;
@@ -5178,7 +5191,7 @@ pre {
         display: inline-block;
         font-size: 18px;
         height: 27px; }
-    .modal-wrapper .modal .modal-content {
+    .modal-wrapper .modal .modal-content, .modal-object .modal .modal-content {
       font-family: 'rawline', sans-serif;
       font-variant-numeric: lining-nums;
       font-feature-settings: "lnum" 1;
@@ -5186,11 +5199,11 @@ pre {
       color: #6a737c;
       font-weight: 300;
       padding: 0 20px; }
-    .modal-wrapper .modal .modal-options {
+    .modal-wrapper .modal .modal-options, .modal-object .modal .modal-options {
       background-color: #e6e6e6;
       padding: 15px 20px;
       text-align: right; }
-  .modal-wrapper .visability {
+  .modal-wrapper .visability, .modal-object .visability {
     opacity: 1;
     pointer-events: auto; }
 
@@ -11300,6 +11313,9 @@ pre {
 
 .image-white {
   filter: brightness(0) invert(1); }
+
+.frost-glass {
+  backdrop-filter: blur(8px); }
 
 .fade-in {
   position: relative;
