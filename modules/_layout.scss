@@ -64,9 +64,21 @@
   }
 }
 
+@each $margin, $margin-value in $margins {
+  .m-#{$margin} {
+    margin: $margin-value !important;
+  }
+  .p-#{$margin} {
+    padding: $margin-value !important;
+  }
+}
+
 @for $width from 0 through 100 {
   .w-#{$width} {
     width: percentage($width/100);
+  }
+  .flex-#{$width} {
+    flex-basis: percentage($width/100);
   }
 }
 
@@ -211,6 +223,15 @@ $map-reversed: ();
   align-items: center;
 }
 
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .no-min-width {
   min-width: 0px !important;
+}
+
+.stay-on-line {
+  white-space: nowrap;
 }

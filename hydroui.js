@@ -199,9 +199,15 @@ $(document).on('click', '.tab-selector', function() {
 
   panes.find('.tab-item.active').removeClass('active');
   panes.find('#'+paneActive).addClass('active');
+})
 
-  console.log(panes.find('#'+paneActive))
+$(document).on('mouseover', '.tab-selector.tab-hover', function() {
+  var paneActive = $(this).attr('pane')
+  var navigation = $(this).closest('.tab-navigation')
+  var panes = navigation.parent().find('.tab-pane')
 
+  panes.find('.tab-item.active').removeClass('active');
+  panes.find('#'+paneActive).addClass('active');
 })
 
 // Button Hover Effects
