@@ -2,7 +2,6 @@ $tooltip-offset: 15px;
 
 .tooltip {
   position: relative;
-  display: inline;
 
   &:hover::before, &:hover::after {
     opacity: 1;
