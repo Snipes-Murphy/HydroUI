@@ -10919,8 +10919,7 @@ pre {
   .navbar-xxxlg .active {
     display: block; } }
 .tooltip {
-  position: relative;
-  display: inline; }
+  position: relative; }
   .tooltip:hover::before, .tooltip:hover::after {
     opacity: 1;
     visibility: visible; }
