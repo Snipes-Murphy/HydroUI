@@ -7495,6 +7495,9 @@ pre {
 
   .container-rs {
     width: 100%; } }
+.display-inline-flex {
+  display: inline-flex; }
+
 .display-flex {
   display: flex; }
 
