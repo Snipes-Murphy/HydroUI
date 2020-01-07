@@ -205,7 +205,7 @@ $(document).on('click', '.activator', function() {
 $(document).on('click', '.tab-selector', function() {
   var paneActive = $(this).attr('pane')
   var navigation = $(this).closest('.tab-navigation')
-  var panes = $(document).find('.tab-pane')
+  var panes = $(document).find('.tab-pane[tab-name="' + $(this).attr('tab-name') + '"]')
 
   panes.find('#'+paneActive).closest('.tab-pane').find('.tab-item.active').removeClass('active');
   panes.find('#'+paneActive).addClass('active');
