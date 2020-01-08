@@ -254,7 +254,7 @@ pre {
   font-size: 14px;
   background-color: #038ef5; }
   .btn-primary:disabled {
-    background-color: #159afc; }
+    background-color: #c6e6fe; }
   .btn-primary:hover {
     background-color: #037fdc; }
   .btn-primary:active {
@@ -403,7 +403,7 @@ pre {
   font-size: 14px;
   background-color: #7d8285; }
   .btn-secondary:disabled {
-    background-color: #8a8f91; }
+    background-color: #e6e7e8; }
   .btn-secondary:hover {
     background-color: #717578; }
   .btn-secondary:active {
@@ -552,7 +552,7 @@ pre {
   font-size: 14px;
   background-color: #4ed69c; }
   .btn-success:disabled {
-    background-color: #63dba8; }
+    background-color: #f4fcf9; }
   .btn-success:hover {
     background-color: #39d190; }
   .btn-success:active {
@@ -701,7 +701,7 @@ pre {
   font-size: 14px;
   background-color: #fb5962; }
   .btn-error:disabled {
-    background-color: #fc727a; }
+    background-color: white; }
   .btn-error:hover {
     background-color: #fa404a; }
   .btn-error:active {
@@ -850,7 +850,7 @@ pre {
   font-size: 14px;
   background-color: #fb5962; }
   .btn-danger:disabled {
-    background-color: #fc727a; }
+    background-color: white; }
   .btn-danger:hover {
     background-color: #fa404a; }
   .btn-danger:active {
@@ -999,7 +999,7 @@ pre {
   font-size: 14px;
   background-color: #fbb258; }
   .btn-warning:disabled {
-    background-color: #fcbd71; }
+    background-color: white; }
   .btn-warning:hover {
     background-color: #faa73f; }
   .btn-warning:active {
@@ -1151,7 +1151,7 @@ pre {
   font-size: 14px;
   background-color: #36d5f2; }
   .btn-info:disabled {
-    background-color: #4edaf4; }
+    background-color: #f6fdfe; }
   .btn-info:hover {
     background-color: #1ed0f0; }
   .btn-info:active {
@@ -1452,7 +1452,7 @@ pre {
   font-size: 14px;
   background-color: #2a2d2e; }
   .btn-dark:disabled {
-    background-color: #363a3b; }
+    background-color: #8d9497; }
   .btn-dark:hover {
     background-color: #1e2021; }
   .btn-dark:active {
@@ -1601,7 +1601,7 @@ pre {
   font-size: 14px;
   background-color: #9ba0a3; }
   .btn-muted:disabled {
-    background-color: #a8adaf; }
+    background-color: white; }
   .btn-muted:hover {
     background-color: #8e9397; }
   .btn-muted:active {
@@ -1902,7 +1902,7 @@ pre {
   font-size: 14px;
   background-color: #fb5962; }
   .btn-red:disabled {
-    background-color: #fc727a; }
+    background-color: white; }
   .btn-red:hover {
     background-color: #fa404a; }
   .btn-red:active {
@@ -2051,7 +2051,7 @@ pre {
   font-size: 14px;
   background-color: #fbb258; }
   .btn-orange:disabled {
-    background-color: #fcbd71; }
+    background-color: white; }
   .btn-orange:hover {
     background-color: #faa73f; }
   .btn-orange:active {
@@ -2200,7 +2200,7 @@ pre {
   font-size: 14px;
   background-color: #d5c42c; }
   .btn-yellow:disabled {
-    background-color: #d9ca41; }
+    background-color: #f7f4d6; }
   .btn-yellow:hover {
     background-color: #c1b226; }
   .btn-yellow:active {
@@ -2349,7 +2349,7 @@ pre {
   font-size: 14px;
   background-color: #4ed69c; }
   .btn-green:disabled {
-    background-color: #63dba8; }
+    background-color: #f4fcf9; }
   .btn-green:hover {
     background-color: #39d190; }
   .btn-green:active {
@@ -2498,7 +2498,7 @@ pre {
   font-size: 14px;
   background-color: #39ab7b; }
   .btn-teal:disabled {
-    background-color: #3fbe89; }
+    background-color: #c5ecdb; }
   .btn-teal:hover {
     background-color: #33986d; }
   .btn-teal:active {
@@ -2647,7 +2647,7 @@ pre {
   font-size: 14px;
   background-color: #36d5f2; }
   .btn-cyan:disabled {
-    background-color: #4edaf4; }
+    background-color: #f6fdfe; }
   .btn-cyan:hover {
     background-color: #1ed0f0; }
   .btn-cyan:active {
@@ -2796,7 +2796,7 @@ pre {
   font-size: 14px;
   background-color: #038ef5; }
   .btn-blue:disabled {
-    background-color: #159afc; }
+    background-color: #c6e6fe; }
   .btn-blue:hover {
     background-color: #037fdc; }
   .btn-blue:active {
@@ -2945,7 +2945,7 @@ pre {
   font-size: 14px;
   background-color: #791ba4; }
   .btn-purple:disabled {
-    background-color: #891fba; }
+    background-color: #d59cef; }
   .btn-purple:hover {
     background-color: #69178e; }
   .btn-purple:active {
@@ -3094,7 +3094,7 @@ pre {
   font-size: 14px;
   background-color: #f12d91; }
   .btn-pink:disabled {
-    background-color: #f3459e; }
+    background-color: #feecf5; }
   .btn-pink:hover {
     background-color: #ef1584; }
   .btn-pink:active {
@@ -3693,7 +3693,7 @@ pre {
   font-size: 14px;
   background-color: #bdc2c6; }
   .btn-grey-2:disabled {
-    background-color: #cbcfd2; }
+    background-color: white; }
   .btn-grey-2:hover {
     background-color: #afb5ba; }
   .btn-grey-2:active {
@@ -3842,7 +3842,7 @@ pre {
   font-size: 14px;
   background-color: #9ba0a3; }
   .btn-grey-3:disabled {
-    background-color: #a8adaf; }
+    background-color: white; }
   .btn-grey-3:hover {
     background-color: #8e9397; }
   .btn-grey-3:active {
@@ -3991,7 +3991,7 @@ pre {
   font-size: 14px;
   background-color: #7d8285; }
   .btn-grey-4:disabled {
-    background-color: #8a8f91; }
+    background-color: #e6e7e8; }
   .btn-grey-4:hover {
     background-color: #717578; }
   .btn-grey-4:active {
@@ -4140,7 +4140,7 @@ pre {
   font-size: 14px;
   background-color: #696e70; }
   .btn-grey-5:disabled {
-    background-color: #757b7d; }
+    background-color: #d1d3d4; }
   .btn-grey-5:hover {
     background-color: #5d6163; }
   .btn-grey-5:active {
@@ -4289,7 +4289,7 @@ pre {
   font-size: 14px;
   background-color: #535759; }
   .btn-grey-6:disabled {
-    background-color: #5f6466; }
+    background-color: #babdbe; }
   .btn-grey-6:hover {
     background-color: #474a4c; }
   .btn-grey-6:active {
@@ -4438,7 +4438,7 @@ pre {
   font-size: 14px;
   background-color: #3f4244; }
   .btn-grey-7:disabled {
-    background-color: #4b4f51; }
+    background-color: #a4a8ab; }
   .btn-grey-7:hover {
     background-color: #333537; }
   .btn-grey-7:active {
@@ -4590,7 +4590,7 @@ pre {
   font-size: 14px;
   background-color: #2a2d2e; }
   .btn-grey-8:disabled {
-    background-color: #363a3b; }
+    background-color: #8d9497; }
   .btn-grey-8:hover {
     background-color: #1e2021; }
   .btn-grey-8:active {
@@ -4742,7 +4742,7 @@ pre {
   font-size: 14px;
   background-color: #191a1b; }
   .btn-grey-9:disabled {
-    background-color: #252728; }
+    background-color: #7b8085; }
   .btn-grey-9:hover {
     background-color: #0d0d0e; }
   .btn-grey-9:active {
@@ -4894,7 +4894,7 @@ pre {
   font-size: 14px;
   background-color: #000; }
   .btn-black:disabled {
-    background-color: #0d0d0d; }
+    background-color: #666666; }
   .btn-black:hover {
     background-color: black; }
   .btn-black:active {
@@ -5043,7 +5043,7 @@ pre {
   font-size: 14px;
   background-color: transparent; }
   .btn-transparent:disabled {
-    background-color: rgba(13, 13, 13, 0); }
+    background-color: rgba(102, 102, 102, 0); }
   .btn-transparent:hover {
     background-color: rgba(0, 0, 0, 0); }
   .btn-transparent:active {

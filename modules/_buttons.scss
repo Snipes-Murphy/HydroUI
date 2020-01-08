@@ -100,7 +100,7 @@
       @include mx-btn($value);
       background-color: $value;
       &:disabled {
-        background-color: lighten($value, $color-set-hover-intensity);
+        background-color: lighten($value, 40%);
       }
       &:hover {
         background-color: darken($value, $color-set-hover-intensity);
