@@ -12,6 +12,11 @@
 
 
       @if ifMap($ultra-bright-colors, $class) {
+        &:disabled {
+          color: $grey-8;
+          background-color: lighten($value, $color-set-hover-intensity);
+          border-color: lighten($value, $color-set-hover-intensity);
+        }
         &:hover {
           color: $grey-8;
           background-color: darken($value, $color-set-hover-intensity);
@@ -26,6 +31,11 @@
           box-shadow: 0 0 0 3px rgba($value, 0.5);
         }
       } @else if ifMap($bright-colors, $class) {
+        &:disabled {
+          color: $grey-8;
+          background-color: lighten($value, $color-set-hover-intensity);
+          border-color: lighten($value, $color-set-hover-intensity);
+        }
         &:hover {
           color: $grey-8;
           background-color: darken($value, $color-set-hover-intensity);
@@ -40,6 +50,11 @@
           box-shadow: 0 0 0 3px rgba($value, 0.5);
         }
       } @else {
+        &:disabled {
+          color: white;
+          background-color: lighten($value, $color-set-hover-intensity);
+          border-color: lighten($value, $color-set-hover-intensity);
+        }
         &:hover {
           color: white;
           background-color: darken($value, $color-set-hover-intensity);
@@ -62,6 +77,10 @@
       background-color: transparent;
       color: $value;
       border-color: transparent;
+      &:disabled {
+        background-color: transparent;
+        color: lighten($value, $color-set-hover-intensity);
+      }
       &:hover {
         background-color: transparent;
         color: darken($value, $color-set-hover-intensity);
@@ -80,6 +99,9 @@
       @include font-heading;
       @include mx-btn($value);
       background-color: $value;
+      &:disabled {
+        background-color: lighten($value, $color-set-hover-intensity);
+      }
       &:hover {
         background-color: darken($value, $color-set-hover-intensity);
       }
@@ -97,6 +119,10 @@
         font-weight: 500;
         transition: 200ms;
         @include shadow-small;
+
+        &:disabled {
+          background-color: $grey-3;
+        }
 
         &:hover, &:active {
           transform: translateY(-3px);
@@ -116,6 +142,10 @@
         transition: 200ms;
         @include shadow-small;
 
+        &:disabled {
+          background-color: lighten($value, 10%);
+        }
+
         &:hover, &:active {
           transform: translateY(-3px);
           @include shadow-medium-float;
@@ -132,6 +162,11 @@
           border: lighten($value, 40%);
           color: darken($value, 10%);
 
+          &:disabled {
+            color: white;
+            background-color: lighten($value, $color-set-hover-intensity);
+            border-color: lighten($value, $color-set-hover-intensity);
+          }
           &:hover {
             color: white;
             background-color: darken($value, $color-set-hover-intensity);
@@ -156,6 +191,11 @@
           border: none;
           color: darken($value, 10%);
 
+          &:disabled {
+            color: white;
+            background-color: lighten($value, $color-set-hover-intensity);
+            border-color: lighten($value, $color-set-hover-intensity);
+          }
           &:hover {
             color: white;
             background-color: darken($value, $color-set-hover-intensity);
@@ -176,6 +216,11 @@
           border: lighten($value, 10%);
           color: darken($value, 10%);
 
+          &:disabled {
+            color: white;
+            background-color: lighten($value, $color-set-hover-intensity);
+            border-color: lighten($value, $color-set-hover-intensity);
+          }
           &:hover {
             color: white;
             background-color: darken($value, $color-set-hover-intensity);
