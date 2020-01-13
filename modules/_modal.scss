@@ -54,6 +54,8 @@
 
     .modal-content {
       @include font-content;
+      overflow-y: auto;
+      max-height: 78vh;
       color: $text-lightdark;
       font-weight: 300;
       padding: 0 $modal-margin;
