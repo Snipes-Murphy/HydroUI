@@ -6019,6 +6019,8 @@ pre {
       font-variant-numeric: lining-nums;
       font-feature-settings: "lnum" 1;
       font-weight: 400;
+      overflow-y: auto;
+      max-height: 78vh;
       color: #6a737c;
       font-weight: 300;
       padding: 0 20px; }
