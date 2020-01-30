@@ -35,3 +35,7 @@
     background: linear-gradient(to #{$angle}, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   }
 }
+
+.bg-blur {
+  backdrop-filter: blur(10px);
+}
