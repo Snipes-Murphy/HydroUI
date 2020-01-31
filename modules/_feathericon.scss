@@ -8,6 +8,12 @@
   }
 }
 
+@each $color, $value in $colors-map {
+  .f-fill-#{$color}, .svg-fill-#{$color} {
+    fill: $value !important;
+  }
+}
+
 .f-realign {
 top: .20em; //realignment as icons are slightly up
 }
