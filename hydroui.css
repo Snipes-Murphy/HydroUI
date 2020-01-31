@@ -8444,6 +8444,105 @@ pre {
 .f-stroke-4 {
   stroke-width: 4; }
 
+.f-fill-primary, .svg-fill-primary {
+  fill: #038ef5 !important; }
+
+.f-fill-secondary, .svg-fill-secondary {
+  fill: #7d8285 !important; }
+
+.f-fill-success, .svg-fill-success {
+  fill: #4ed69c !important; }
+
+.f-fill-error, .svg-fill-error {
+  fill: #fb5962 !important; }
+
+.f-fill-danger, .svg-fill-danger {
+  fill: #fb5962 !important; }
+
+.f-fill-warning, .svg-fill-warning {
+  fill: #fbb258 !important; }
+
+.f-fill-info, .svg-fill-info {
+  fill: #36d5f2 !important; }
+
+.f-fill-light, .svg-fill-light {
+  fill: #eef1f6 !important; }
+
+.f-fill-dark, .svg-fill-dark {
+  fill: #2a2d2e !important; }
+
+.f-fill-muted, .svg-fill-muted {
+  fill: #9ba0a3 !important; }
+
+.f-fill-neutral, .svg-fill-neutral {
+  fill: #f8f8f8 !important; }
+
+.f-fill-red, .svg-fill-red {
+  fill: #fb5962 !important; }
+
+.f-fill-orange, .svg-fill-orange {
+  fill: #fbb258 !important; }
+
+.f-fill-yellow, .svg-fill-yellow {
+  fill: #d5c42c !important; }
+
+.f-fill-green, .svg-fill-green {
+  fill: #4ed69c !important; }
+
+.f-fill-teal, .svg-fill-teal {
+  fill: #39ab7b !important; }
+
+.f-fill-cyan, .svg-fill-cyan {
+  fill: #36d5f2 !important; }
+
+.f-fill-blue, .svg-fill-blue {
+  fill: #038ef5 !important; }
+
+.f-fill-purple, .svg-fill-purple {
+  fill: #791ba4 !important; }
+
+.f-fill-pink, .svg-fill-pink {
+  fill: #f12d91 !important; }
+
+.f-fill-white, .svg-fill-white {
+  fill: #fff !important; }
+
+.f-fill-grey-0, .svg-fill-grey-0 {
+  fill: #f8f8f8 !important; }
+
+.f-fill-grey-1, .svg-fill-grey-1 {
+  fill: #eef1f6 !important; }
+
+.f-fill-grey-2, .svg-fill-grey-2 {
+  fill: #bdc2c6 !important; }
+
+.f-fill-grey-3, .svg-fill-grey-3 {
+  fill: #9ba0a3 !important; }
+
+.f-fill-grey-4, .svg-fill-grey-4 {
+  fill: #7d8285 !important; }
+
+.f-fill-grey-5, .svg-fill-grey-5 {
+  fill: #696e70 !important; }
+
+.f-fill-grey-6, .svg-fill-grey-6 {
+  fill: #535759 !important; }
+
+.f-fill-grey-7, .svg-fill-grey-7 {
+  fill: #3f4244 !important; }
+
+.f-fill-grey-8, .svg-fill-grey-8 {
+  fill: #2a2d2e !important; }
+
+.f-fill-grey-9, .svg-fill-grey-9 {
+  fill: #191a1b !important; }
+
+.f-fill-black, .svg-fill-black {
+  fill: #000 !important; }
+
+.f-fill-transparent, .svg-fill-transparent {
+  fill: transparent !important; }
+
 .f-realign {
   top: .20em; }
 
@@ -8901,19 +9000,19 @@ pre {
   text-overflow: ellipsis;
   white-space: nowrap; }
 
-.text-bold {
+.text-bold, .font-bold {
   font-weight: 700 !important; }
 
-.text-semibold {
+.text-semibold, .font-semibold {
   font-weight: 500 !important; }
 
-.text-normal {
+.text-normal, .font-normal {
   font-weight: 400 !important; }
 
-.text-light {
+.text-light, .font-light {
   font-weight: 300 !important; }
 
-.text-italic {
+.text-italic, .font-italic {
   font-style: italic; }
 
 .text-spacing {
