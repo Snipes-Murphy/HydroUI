@@ -1,5 +1,4 @@
 // Default Buttons
-
 @each $class, $value in $colors-map {
   .btn {
     &-#{$class}.btn-outline {
@@ -9,47 +8,73 @@
       color: $value;
       border-color: $value;
       border-width: 1px;
-
-
       @if ifMap($ultra-bright-colors, $class) {
+        &:disabled {
+          cursor: default;
+          color: $grey-8;
+          background-color: lighten($value, $color-set-hover-intensity);
+          border-color: lighten($value, $color-set-hover-intensity);
+        }
+
         &:hover {
           color: $grey-8;
           background-color: darken($value, $color-set-hover-intensity);
           border-color: darken($value, $color-set-hover-intensity);
         }
+
         &:active {
           background-color: darken($value, $color-set-click-intensity);
           border-color: darken($value, $color-set-hover-intensity);
           color: $grey-8;
         }
+
         &:focus {
           box-shadow: 0 0 0 3px rgba($value, 0.5);
         }
-      } @else if ifMap($bright-colors, $class) {
+      } @else
+      if ifMap($bright-colors, $class) {
+        &:disabled {
+          cursor: default;
+          color: $grey-8;
+          background-color: lighten($value, $color-set-hover-intensity);
+          border-color: lighten($value, $color-set-hover-intensity);
+        }
+
         &:hover {
           color: $grey-8;
           background-color: darken($value, $color-set-hover-intensity);
           border-color: darken($value, $color-set-hover-intensity);
         }
+
         &:active {
           background-color: darken($value, $color-set-click-intensity);
           border-color: darken($value, $color-set-hover-intensity);
           color: $grey-8;
         }
+
         &:focus {
           box-shadow: 0 0 0 3px rgba($value, 0.5);
         }
       } @else {
+        &:disabled {
+          cursor: default;
+          color: white;
+          background-color: lighten($value, $color-set-hover-intensity);
+          border-color: lighten($value, $color-set-hover-intensity);
+        }
+
         &:hover {
           color: white;
           background-color: darken($value, $color-set-hover-intensity);
           border-color: darken($value, $color-set-hover-intensity);
         }
+
         &:active {
           background-color: darken($value, $color-set-click-intensity);
           border-color: darken($value, $color-set-hover-intensity);
           color: white;
         }
+
         &:focus {
           box-shadow: 0 0 0 3px rgba($value, 0.5);
         }
@@ -62,17 +87,26 @@
       background-color: transparent;
       color: $value;
       border-color: transparent;
+
+      &:disabled {
+        cursor: default;
+        background-color: transparent;
+        color: lighten($value, $color-set-hover-intensity);
+      }
+
       &:hover {
         background-color: transparent;
         color: darken($value, $color-set-hover-intensity);
       }
+
       &:active {
         background-color: transparent;
         color: darken($value, $color-set-click-intensity);
       }
+
       &:focus {
         background-color: transparent;
-        box-shadow: 0 0 0 0px rgba($value, 0.5);
+        box-shadow: 0 0 0 0 rgba($value, 0.5);
       }
     }
 
@@ -80,12 +114,24 @@
       @include font-heading;
       @include mx-btn($value);
       background-color: $value;
+
+      &:disabled {
+        cursor: default;
+        background-color: lighten($value, 40%);
+
+        &:disabled:hover, &:disabled:active {
+          background-color: lighten($value, 40%);
+        }
+      }
+
       &:hover {
         background-color: darken($value, $color-set-hover-intensity);
       }
+
       &:active {
         background-color: darken($value, $color-set-click-intensity);
       }
+
       &:focus {
         box-shadow: 0 0 0 3px rgba($value, 0.5);
       }
@@ -98,7 +144,13 @@
         transition: 200ms;
         @include shadow-small;
 
-        &:hover, &:active {
+        &:disabled {
+          cursor: default;
+          background-color: $grey-3;
+        }
+
+        &:active,
+        &:hover {
           transform: translateY(-3px);
           @include shadow-medium-float;
         }
@@ -116,7 +168,13 @@
         transition: 200ms;
         @include shadow-small;
 
-        &:hover, &:active {
+        &:disabled {
+          cursor: default;
+          background-color: lighten($value, 10%);
+        }
+
+        &:active,
+        &:hover {
           transform: translateY(-3px);
           @include shadow-medium-float;
         }
@@ -125,28 +183,37 @@
           @include shadow-medium-float;
         }
       }
-
       @if ifMap($bright-colors, $class) {
         &.btn-soft {
           background-color: lighten($value, 30%);
           border: lighten($value, 40%);
           color: darken($value, 10%);
 
+          &:disabled {
+            cursor: default;
+            color: white;
+            background-color: lighten($value, $color-set-hover-intensity);
+            border-color: lighten($value, $color-set-hover-intensity);
+          }
+
           &:hover {
             color: white;
             background-color: darken($value, $color-set-hover-intensity);
             border-color: darken($value, $color-set-hover-intensity);
           }
+
           &:active {
             background-color: darken($value, $color-set-click-intensity);
             border-color: darken($value, $color-set-hover-intensity);
             color: white;
           }
+
           &:focus {
             box-shadow: 0 0 0 3px rgba($value, 0.5);
           }
         }
-      } @else if ifMap($ultra-bright-colors, $class) {
+      } @else
+      if ifMap($ultra-bright-colors, $class) {
         &.btn-soft {
           @if $class == 'neutral' {
             background-color: lighten($value, 1%);
@@ -156,16 +223,25 @@
           border: none;
           color: darken($value, 10%);
 
+          &:disabled {
+            cursor: default;
+            color: white;
+            background-color: lighten($value, $color-set-hover-intensity);
+            border-color: lighten($value, $color-set-hover-intensity);
+          }
+
           &:hover {
             color: white;
             background-color: darken($value, $color-set-hover-intensity);
             border-color: darken($value, $color-set-hover-intensity);
           }
+
           &:active {
             background-color: darken($value, $color-set-click-intensity);
             border-color: darken($value, $color-set-hover-intensity);
             color: white;
           }
+
           &:focus {
             box-shadow: 0 0 0 3px rgba($value, 0.5);
           }
@@ -176,28 +252,36 @@
           border: lighten($value, 10%);
           color: darken($value, 10%);
 
+          &:disabled {
+            cursor: default;
+            color: white;
+            background-color: lighten($value, $color-set-hover-intensity);
+            border-color: lighten($value, $color-set-hover-intensity);
+          }
+
           &:hover {
             color: white;
             background-color: darken($value, $color-set-hover-intensity);
             border-color: darken($value, $color-set-hover-intensity);
           }
+
           &:active {
             background-color: darken($value, $color-set-click-intensity);
             border-color: darken($value, $color-set-hover-intensity);
             color: white;
           }
+
           &:focus {
             box-shadow: 0 0 0 3px rgba($value, 0.5);
           }
         }
       }
     }
-
   }
-
   // Color Invert check
   @if index($color-text-invert, $class) {
-    .btn-#{$class}, .btn-outline-#{$class}:hover {
+    .btn-#{$class},
+    .btn-outline-#{$class}:hover {
       color: black;
     }
   }
@@ -282,45 +366,56 @@
   display: flex;
   z-index: 10;
   padding: 4px 0;
+
   button {
     position: relative;
     margin: 0 !important;
     border-radius: 0 !important;
     z-index: 1;
 
-    &:hover, &:active, &:focus {
+    &:active,
+    &:focus,
+    &:hover {
       z-index: 2;
     }
   }
-  button:first-child, a:first-child {
+
+  a:first-child,
+  button:first-child {
     border-radius: $btn-border-radius 0 0 $btn-border-radius !important;
   }
-  button:last-child, a:last-child {
+
+  a:last-child,
+  button:last-child {
     border-radius: 0 $btn-border-radius $btn-border-radius 0 !important;
   }
+
   .btn-round:first-child {
     border-radius: 100px 0 0 100px !important;
   }
+
   .btn-round:last-child {
     border-radius: 0 100px 100px 0 !important;
   }
+
   .btn-square:first-child {
     border-radius: 0 0 0 0 !important;
   }
+
   .btn-square:last-child {
     border-radius: 0 0 0 0 !important;
   }
 }
 
-.btn-no-highlight, .no-highlight {
+.btn-no-highlight,
+.no-highlight {
   @include shadow-none;
+
   &:focus {
     @include shadow-none;
   }
 }
-
 // Button Variations
-
 .btn-square {
   @include box-none-border;
 }
@@ -328,9 +423,7 @@
 .btn-round {
   @include box-full-border;
 }
-
 // Button sizes
-
 .btn-sm {
   padding: 5px 14px;
   font-size: 13px;
@@ -344,12 +437,13 @@
 .btn-wide {
   min-width: 10em;
 }
-
 // Button Effects
-
 .btn-float {
   transition: 200ms;
-  &:hover, &:active, &:focus {
+
+  &:active,
+  &:focus,
+  &:hover {
     transform: translateY(-3px);
     @include shadow-small-float;
   }
@@ -357,11 +451,14 @@
 
 .btn-scale {
   transition: 300ms $ease-glide;
+
   &:hover {
     transform: scale(1.05);
   }
-  &:active, &:focus {
-    transform: scale(0.95)
+
+  &:active,
+  &:focus {
+    transform: scale(0.95);
   }
 }
 
@@ -385,9 +482,7 @@
     }
   }
 }
-
 // Button Specials
-
 .btn-app {
   display: inline-block;
   min-height: 4em;
@@ -403,10 +498,12 @@
       width: 32px;
       margin-right: 20px;
     }
+
     .sub-heading {
       display: block;
       font-size: 12px;
     }
+
     .heading {
       line-height: 1.2em;
       display: block;

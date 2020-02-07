@@ -1,16 +1,16 @@
-// Raw Modals
-
-$(document).on("click", "#btn-modal, .btn-modal, #close-modal, .close-modal, #close-btn, .close-btn, .overlay", function() {
-  $(this).closest(".modal-wrapper, .modal-object").find("#modal").toggleClass("visability");
-  $(this).closest(".modal-wrapper, .modal-object").find(".overlay").toggleClass("visability");
-})
-
 // Modals
 
-$(document).on("click", ".btn-modal", function() {
+$(document).on("click", "#btn-modal", function() {
+  $(this).closest(".modal-wrapper").find("#modal").addClass("visability");
+  $(this).closest(".modal-wrapper").find(".overlay").addClass("visability");
 })
 
-// Raw Alerts
+$(document).on("click", "#close-btn, #close-modal, .overlay, .close-modal", function() {
+  $(this).closest(".modal-wrapper").find("#modal").removeClass("visability");
+  $(this).closest(".modal-wrapper").find(".overlay").removeClass("visability");
+})
+
+// Alerts
 
 $(document).on("click", ".close-btn", function() {
   console.log("Closed alert")
@@ -125,7 +125,7 @@ $(document).on('click', '.card-accordion-heading', function(index) {
         }, 0);
 
         accordionContent.innerHeight(0);
-        accordionContent.innerHeight(heightCalc + parseInt(accordionContent.css('padding-left'), 10));
+        accordionContent.innerHeight(heightCalc + 20);
         accordionContent.addClass("loading")
 
         window.setTimeout(function() {
@@ -146,7 +146,7 @@ $(document).on('click', '.card-accordion-heading', function(index) {
 // Navbar
 
 $('.navbar-fixed').each(function(index) {
-  var navbarHeight = $(this).outerHeight()
+  var navbarHeight = $(this).height()
 
   if (!($(this).hasClass('navbar-nohitbox'))) {
     $('<div class="navbar-hitbox"></div>').insertAfter(this);
@@ -195,7 +195,7 @@ $(document).on('click', '.activator', function() {
 $(document).on('click', '.tab-selector', function() {
   var paneActive = $(this).attr('pane')
   var navigation = $(this).closest('.tab-navigation')
-  var panes = $(document).find('.tab-pane')
+  var panes = $(document).find('.tab-pane[tab-name="' + $(this).attr('tab-name') + '"]')
 
   panes.find('#'+paneActive).closest('.tab-pane').find('.tab-item.active').removeClass('active');
   panes.find('#'+paneActive).addClass('active');

@@ -27,19 +27,19 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.text-bold {
+.text-bold, .font-bold {
   @include font-weight-bold;
 }
-.text-semibold {
+.text-semibold, .font-semibold {
   @include font-weight-semibold;
 }
-.text-normal {
+.text-normal, .font-normal {
   @include font-weight-normal;
 }
-.text-light {
+.text-light, .font-light {
   @include font-weight-light;
 }
-.text-italic {
+.text-italic, .font-italic{
   font-style: italic;
 }
 .text-spacing {
