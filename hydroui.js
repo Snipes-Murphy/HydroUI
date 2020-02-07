@@ -125,7 +125,7 @@ $(document).on('click', '.card-accordion-heading', function(index) {
         }, 0);
 
         accordionContent.innerHeight(0);
-        accordionContent.innerHeight(heightCalc + 20);
+        accordionContent.innerHeight(heightCalc + parseInt(accordionContent.css('padding-left'), 10));
         accordionContent.addClass("loading")
 
         window.setTimeout(function() {
