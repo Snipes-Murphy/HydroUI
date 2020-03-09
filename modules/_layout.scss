@@ -206,12 +206,12 @@ $map-reversed: ();
 }
 
 // Grows the elements inside the parent to fill remanding horizontal space
-.flex-grow-items div {
+.flex-grow-items > div {
   display: flex;
   flex-grow: 1;
 }
 
-// Grows the element to fill remanding horizontal space
+// Grows the element to fill remanding space
 .flex-grow {
   display: flex;
   flex-grow: 1;
