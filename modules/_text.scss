@@ -86,3 +86,12 @@ $text-aligns: (
 
   }
 }
+
+@each $item, $gradient in $gradient-map {
+  .color-#{$item}-grad {
+    background: linear-gradient(45deg, $gradient) !important;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
