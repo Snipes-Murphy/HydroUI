@@ -242,6 +242,16 @@ $map-reversed: ();
   flex-wrap: wrap;
 }
 
+.flex-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .no-min-width {
   min-width: 0px !important;
 }
