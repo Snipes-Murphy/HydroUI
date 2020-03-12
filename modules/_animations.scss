@@ -68,3 +68,15 @@
     opacity: 1;
   }
 }
+
+@each $transition, $value in $transitions {
+  .trans-#{$transition} {
+    transition: $value;
+  }
+
+  @each $ease, $evalue in $eases {
+    .trans-#{$transition}-#{$ease} {
+      transition: $value $ease;
+    }
+  }
+}
