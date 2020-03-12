@@ -76,7 +76,7 @@
 
   @each $ease, $evalue in $eases {
     .trans-#{$transition}-#{$ease} {
-      transition: $value $ease;
+      transition: $value $evalue;
     }
   }
 }
