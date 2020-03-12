@@ -8432,17 +8432,17 @@ pre {
   display: flex;
   flex-direction: column; }
 
-.flex-center {
+.flex-wrap {
   display: flex;
-  justify-content: center; }
+  flex-wrap: wrap; }
 
 .flex-vcenter {
   display: flex;
   align-items: center; }
 
-.flex-wrap {
+.flex-center {
   display: flex;
-  flex-wrap: wrap; }
+  justify-content: center; }
 
 .flex-left {
   display: flex;
@@ -8452,6 +8452,90 @@ pre {
   display: flex;
   justify-content: flex-end; }
 
+@media screen and (max-width: 375px) {
+  .flex-center-xsm {
+    display: flex;
+    justify-content: center; }
+
+  .flex-left-xsm {
+    display: flex;
+    justify-content: flex-start; }
+
+  .flex-right-xsm {
+    display: flex;
+    justify-content: flex-end; } }
+@media screen and (max-width: 500px) {
+  .flex-center-sm {
+    display: flex;
+    justify-content: center; }
+
+  .flex-left-sm {
+    display: flex;
+    justify-content: flex-start; }
+
+  .flex-right-sm {
+    display: flex;
+    justify-content: flex-end; } }
+@media screen and (max-width: 750px) {
+  .flex-center-md {
+    display: flex;
+    justify-content: center; }
+
+  .flex-left-md {
+    display: flex;
+    justify-content: flex-start; }
+
+  .flex-right-md {
+    display: flex;
+    justify-content: flex-end; } }
+@media screen and (max-width: 1000px) {
+  .flex-center-lg {
+    display: flex;
+    justify-content: center; }
+
+  .flex-left-lg {
+    display: flex;
+    justify-content: flex-start; }
+
+  .flex-right-lg {
+    display: flex;
+    justify-content: flex-end; } }
+@media screen and (max-width: 1350px) {
+  .flex-center-xlg {
+    display: flex;
+    justify-content: center; }
+
+  .flex-left-xlg {
+    display: flex;
+    justify-content: flex-start; }
+
+  .flex-right-xlg {
+    display: flex;
+    justify-content: flex-end; } }
+@media screen and (max-width: 1500px) {
+  .flex-center-xxlg {
+    display: flex;
+    justify-content: center; }
+
+  .flex-left-xxlg {
+    display: flex;
+    justify-content: flex-start; }
+
+  .flex-right-xxlg {
+    display: flex;
+    justify-content: flex-end; } }
+@media screen and (max-width: 1750px) {
+  .flex-center-xxxlg {
+    display: flex;
+    justify-content: center; }
+
+  .flex-left-xxxlg {
+    display: flex;
+    justify-content: flex-start; }
+
+  .flex-right-xxxlg {
+    display: flex;
+    justify-content: flex-end; } }
 .no-min-width {
   min-width: 0px !important; }
 
