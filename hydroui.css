@@ -12717,6 +12717,126 @@ pre {
   100% {
     transform: translateY(0px);
     opacity: 1; } }
+.trans-xxsm {
+  transition: 100ms; }
+
+.trans-xxsm-swing {
+  transition: 100ms "swing"; }
+
+.trans-xxsm-glide {
+  transition: 100ms "glide"; }
+
+.trans-xxsm-in {
+  transition: 100ms "in"; }
+
+.trans-xxsm-out {
+  transition: 100ms "out"; }
+
+.trans-xsm {
+  transition: 200ms; }
+
+.trans-xsm-swing {
+  transition: 200ms "swing"; }
+
+.trans-xsm-glide {
+  transition: 200ms "glide"; }
+
+.trans-xsm-in {
+  transition: 200ms "in"; }
+
+.trans-xsm-out {
+  transition: 200ms "out"; }
+
+.trans-sm {
+  transition: 250ms; }
+
+.trans-sm-swing {
+  transition: 250ms "swing"; }
+
+.trans-sm-glide {
+  transition: 250ms "glide"; }
+
+.trans-sm-in {
+  transition: 250ms "in"; }
+
+.trans-sm-out {
+  transition: 250ms "out"; }
+
+.trans-md {
+  transition: 500ms; }
+
+.trans-md-swing {
+  transition: 500ms "swing"; }
+
+.trans-md-glide {
+  transition: 500ms "glide"; }
+
+.trans-md-in {
+  transition: 500ms "in"; }
+
+.trans-md-out {
+  transition: 500ms "out"; }
+
+.trans-lg {
+  transition: 750ms; }
+
+.trans-lg-swing {
+  transition: 750ms "swing"; }
+
+.trans-lg-glide {
+  transition: 750ms "glide"; }
+
+.trans-lg-in {
+  transition: 750ms "in"; }
+
+.trans-lg-out {
+  transition: 750ms "out"; }
+
+.trans-xlg {
+  transition: 1000ms; }
+
+.trans-xlg-swing {
+  transition: 1000ms "swing"; }
+
+.trans-xlg-glide {
+  transition: 1000ms "glide"; }
+
+.trans-xlg-in {
+  transition: 1000ms "in"; }
+
+.trans-xlg-out {
+  transition: 1000ms "out"; }
+
+.trans-xxlg {
+  transition: 1500ms; }
+
+.trans-xxlg-swing {
+  transition: 1500ms "swing"; }
+
+.trans-xxlg-glide {
+  transition: 1500ms "glide"; }
+
+.trans-xxlg-in {
+  transition: 1500ms "in"; }
+
+.trans-xxlg-out {
+  transition: 1500ms "out"; }
+
+.trans-xxxlg {
+  transition: 2000ms; }
+
+.trans-xxxlg-swing {
+  transition: 2000ms "swing"; }
+
+.trans-xxxlg-glide {
+  transition: 2000ms "glide"; }
+
+.trans-xxxlg-in {
+  transition: 2000ms "in"; }
+
+.trans-xxxlg-out {
+  transition: 2000ms "out"; }
+
 .tab-item {
   display: none; }
   .tab-item.active {
