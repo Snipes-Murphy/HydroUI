@@ -227,9 +227,9 @@ $map-reversed: ();
   flex-direction: column;
 }
 
-.flex-center {
+.flex-wrap {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .flex-vcenter {
@@ -237,9 +237,9 @@ $map-reversed: ();
   align-items: center;
 }
 
-.flex-wrap {
+.flex-center {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .flex-left {
@@ -250,6 +250,25 @@ $map-reversed: ();
 .flex-right {
   display: flex;
   justify-content: flex-end;
+}
+
+@each $breakpoint, $break-value in $breakpoints {
+  @include breakpoint-in($breakpoint) {
+    .flex-center-#{$breakpoint} {
+      display: flex;
+      justify-content: center;
+    }
+
+    .flex-left-#{$breakpoint} {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .flex-right-#{$breakpoint} {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
 }
 
 .no-min-width {
