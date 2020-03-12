@@ -17,6 +17,26 @@ $ease-glide: cubic-bezier(.43,.61,.47,.98);
 $ease-in: cubic-bezier(.35,.69,.49,.93);
 $ease-out: cubic-bezier(.56,.24,.92,.6);
 
+$eases: (
+  "swing": $ease-swing,
+  "glide": $ease-glide,
+  "in": $ease-in,
+  "out": $ease-out
+);
+
+// Transitions
+
+$transitions: (
+  "xxsm": 100ms,
+  "xsm": 200ms,
+  "sm": 250ms,
+  "md": 500ms,
+  "lg": 750ms,
+  "xlg": 1000ms,
+  "xxlg": 1500ms,
+  "xxxlg": 2000ms,
+);
+
 // Breakpoints
 
 $breakpoints: (
