@@ -12721,121 +12721,121 @@ pre {
   transition: 100ms; }
 
 .trans-xxsm-swing {
-  transition: 100ms "swing"; }
+  transition: 100ms cubic-bezier(0.75, 0.25, 0, 1); }
 
 .trans-xxsm-glide {
-  transition: 100ms "glide"; }
+  transition: 100ms cubic-bezier(0.43, 0.61, 0.47, 0.98); }
 
 .trans-xxsm-in {
-  transition: 100ms "in"; }
+  transition: 100ms cubic-bezier(0.35, 0.69, 0.49, 0.93); }
 
 .trans-xxsm-out {
-  transition: 100ms "out"; }
+  transition: 100ms cubic-bezier(0.56, 0.24, 0.92, 0.6); }
 
 .trans-xsm {
   transition: 200ms; }
 
 .trans-xsm-swing {
-  transition: 200ms "swing"; }
+  transition: 200ms cubic-bezier(0.75, 0.25, 0, 1); }
 
 .trans-xsm-glide {
-  transition: 200ms "glide"; }
+  transition: 200ms cubic-bezier(0.43, 0.61, 0.47, 0.98); }
 
 .trans-xsm-in {
-  transition: 200ms "in"; }
+  transition: 200ms cubic-bezier(0.35, 0.69, 0.49, 0.93); }
 
 .trans-xsm-out {
-  transition: 200ms "out"; }
+  transition: 200ms cubic-bezier(0.56, 0.24, 0.92, 0.6); }
 
 .trans-sm {
   transition: 250ms; }
 
 .trans-sm-swing {
-  transition: 250ms "swing"; }
+  transition: 250ms cubic-bezier(0.75, 0.25, 0, 1); }
 
 .trans-sm-glide {
-  transition: 250ms "glide"; }
+  transition: 250ms cubic-bezier(0.43, 0.61, 0.47, 0.98); }
 
 .trans-sm-in {
-  transition: 250ms "in"; }
+  transition: 250ms cubic-bezier(0.35, 0.69, 0.49, 0.93); }
 
 .trans-sm-out {
-  transition: 250ms "out"; }
+  transition: 250ms cubic-bezier(0.56, 0.24, 0.92, 0.6); }
 
 .trans-md {
   transition: 500ms; }
 
 .trans-md-swing {
-  transition: 500ms "swing"; }
+  transition: 500ms cubic-bezier(0.75, 0.25, 0, 1); }
 
 .trans-md-glide {
-  transition: 500ms "glide"; }
+  transition: 500ms cubic-bezier(0.43, 0.61, 0.47, 0.98); }
 
 .trans-md-in {
-  transition: 500ms "in"; }
+  transition: 500ms cubic-bezier(0.35, 0.69, 0.49, 0.93); }
 
 .trans-md-out {
-  transition: 500ms "out"; }
+  transition: 500ms cubic-bezier(0.56, 0.24, 0.92, 0.6); }
 
 .trans-lg {
   transition: 750ms; }
 
 .trans-lg-swing {
-  transition: 750ms "swing"; }
+  transition: 750ms cubic-bezier(0.75, 0.25, 0, 1); }
 
 .trans-lg-glide {
-  transition: 750ms "glide"; }
+  transition: 750ms cubic-bezier(0.43, 0.61, 0.47, 0.98); }
 
 .trans-lg-in {
-  transition: 750ms "in"; }
+  transition: 750ms cubic-bezier(0.35, 0.69, 0.49, 0.93); }
 
 .trans-lg-out {
-  transition: 750ms "out"; }
+  transition: 750ms cubic-bezier(0.56, 0.24, 0.92, 0.6); }
 
 .trans-xlg {
   transition: 1000ms; }
 
 .trans-xlg-swing {
-  transition: 1000ms "swing"; }
+  transition: 1000ms cubic-bezier(0.75, 0.25, 0, 1); }
 
 .trans-xlg-glide {
-  transition: 1000ms "glide"; }
+  transition: 1000ms cubic-bezier(0.43, 0.61, 0.47, 0.98); }
 
 .trans-xlg-in {
-  transition: 1000ms "in"; }
+  transition: 1000ms cubic-bezier(0.35, 0.69, 0.49, 0.93); }
 
 .trans-xlg-out {
-  transition: 1000ms "out"; }
+  transition: 1000ms cubic-bezier(0.56, 0.24, 0.92, 0.6); }
 
 .trans-xxlg {
   transition: 1500ms; }
 
 .trans-xxlg-swing {
-  transition: 1500ms "swing"; }
+  transition: 1500ms cubic-bezier(0.75, 0.25, 0, 1); }
 
 .trans-xxlg-glide {
-  transition: 1500ms "glide"; }
+  transition: 1500ms cubic-bezier(0.43, 0.61, 0.47, 0.98); }
 
 .trans-xxlg-in {
-  transition: 1500ms "in"; }
+  transition: 1500ms cubic-bezier(0.35, 0.69, 0.49, 0.93); }
 
 .trans-xxlg-out {
-  transition: 1500ms "out"; }
+  transition: 1500ms cubic-bezier(0.56, 0.24, 0.92, 0.6); }
 
 .trans-xxxlg {
   transition: 2000ms; }
 
 .trans-xxxlg-swing {
-  transition: 2000ms "swing"; }
+  transition: 2000ms cubic-bezier(0.75, 0.25, 0, 1); }
 
 .trans-xxxlg-glide {
-  transition: 2000ms "glide"; }
+  transition: 2000ms cubic-bezier(0.43, 0.61, 0.47, 0.98); }
 
 .trans-xxxlg-in {
-  transition: 2000ms "in"; }
+  transition: 2000ms cubic-bezier(0.35, 0.69, 0.49, 0.93); }
 
 .trans-xxxlg-out {
-  transition: 2000ms "out"; }
+  transition: 2000ms cubic-bezier(0.56, 0.24, 0.92, 0.6); }
 
 .tab-item {
   display: none; }
