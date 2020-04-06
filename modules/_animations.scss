@@ -19,6 +19,14 @@
   animation: fade-in-top 500ms $ease-swing;
 }
 
+.float-on-hover {
+  transition: 100ms;
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
