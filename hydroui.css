@@ -13094,6 +13094,11 @@ pre {
   position: relative;
   animation: fade-in-top 500ms cubic-bezier(0.75, 0.25, 0, 1); }
 
+.float-on-hover {
+  transition: 100ms; }
+  .float-on-hover:hover {
+    transform: translateY(-6px); }
+
 @keyframes fade-in {
   0% {
     opacity: 0; }
