@@ -125,7 +125,11 @@ $(document).on('click', '.card-accordion-heading', function(index) {
         }, 0);
 
         accordionContent.innerHeight(0);
-        accordionContent.innerHeight(heightCalc + 20);
+        if (accordionContent.hasClass('py-none')) {
+          accordionContent.innerHeight(heightCalc);
+        } else {
+          accordionContent.innerHeight(heightCalc + 20);
+        }
         accordionContent.addClass("loading")
 
         window.setTimeout(function() {
