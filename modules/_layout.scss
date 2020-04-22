@@ -278,3 +278,29 @@ $map-reversed: ();
 .stay-on-line {
   white-space: nowrap;
 }
+
+.tree {
+
+  .tree-item {
+    position: relative;
+
+    &:first-of-type {
+
+      &::before {
+        height: 50%;
+        top: 0;
+      }
+    }
+
+    &::before {
+      content: '';
+      height: 100%;
+      width: 20px;
+      border-left: 1px solid $grey-3;
+      border-bottom: 1px solid $grey-3;
+      position: absolute;
+      left: -28px;
+      top: -50%;
+    }
+  }
+}
