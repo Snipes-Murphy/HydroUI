@@ -8711,6 +8711,12 @@ pre {
 .shadow-md-float {
   box-shadow: 0 6px 8px 0 rgba(93, 99, 103, 0.135); }
 
+.shadow-lg {
+  box-shadow: 0 6px 20px 0 rgba(93, 99, 103, 0.1); }
+
+.shadow-lg-float {
+  box-shadow: 0 6px 20px 0 rgba(93, 99, 103, 0.135); }
+
 .box-radius-xsm {
   border-radius: 2px; }
 
