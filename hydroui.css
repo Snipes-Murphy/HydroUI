@@ -5970,7 +5970,7 @@ pre {
   box-shadow: 0 2px 6px 0 rgba(93, 99, 103, 0.135);
   background-color: white;
   border-radius: 100em;
-  display: inline-block;
+  display: inline-flex;
   padding: 15px;
   font-size: 28px; }
 
