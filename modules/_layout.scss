@@ -182,6 +182,14 @@ $map-reversed: ();
   @include shadow-medium-float;
 }
 
+.shadow-lg {
+  @include shadow-large;
+}
+
+.shadow-lg-float {
+  @include shadow-large-float;
+}
+
 @each $radius, $value in $border-radius {
   .box-radius-#{$radius} {
     border-radius: $value;

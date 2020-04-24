@@ -22,6 +22,14 @@
 
 // Shadows
 
+@mixin shadow {
+  box-shadow: 0 4px 6px 0 $shadow;
+}
+
+@mixin shadow-float {
+  box-shadow: 0 10px 35px $float-shadow;
+}
+
 @mixin shadow-none {
   box-shadow: none !important;
 }
@@ -42,12 +50,12 @@
   box-shadow: 0 6px 8px 0 $float-shadow;
 }
 
-@mixin shadow {
-  box-shadow: 0 4px 6px 0 $shadow;
+@mixin shadow-large {
+  box-shadow: 0 6px 20px 0 $shadow;
 }
 
-@mixin shadow-float {
-  box-shadow: 0 10px 35px $float-shadow;
+@mixin shadow-large-float {
+  box-shadow: 0 6px 20px 0 $float-shadow;
 }
 
 @mixin disable-drag {
