@@ -312,3 +312,11 @@ $map-reversed: ();
     }
   }
 }
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.c-default, .c-norm {
+  cursor: default;
+}
