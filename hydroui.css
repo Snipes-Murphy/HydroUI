@@ -8889,6 +8889,12 @@ pre {
     left: -28px;
     top: -50%; }
 
+.c-pointer {
+  cursor: pointer; }
+
+.c-default, .c-norm {
+  cursor: default; }
+
 .f-icon {
   position: relative; }
 
