@@ -314,9 +314,9 @@ $map-reversed: ();
 }
 
 .c-pointer {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .c-default, .c-norm {
-  cursor: default;
+  cursor: default !important;
 }

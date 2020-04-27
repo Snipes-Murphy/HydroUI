@@ -8890,10 +8890,10 @@ pre {
     top: -50%; }
 
 .c-pointer {
-  cursor: pointer; }
+  cursor: pointer !important; }
 
 .c-default, .c-norm {
-  cursor: default; }
+  cursor: default !important; }
 
 .f-icon {
   position: relative; }
