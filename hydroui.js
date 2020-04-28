@@ -246,3 +246,10 @@ $(document).on('mouseover', '.btn-hoverglow.hover', function() {
     });*/
   })
 })
+
+// On hover add active class
+
+$(".active-toggler").hover(
+  function () { $(this).addClass('active'); },
+  function () { $(this).removeClass('active'); }
+);
