@@ -5971,6 +5971,8 @@ pre {
   background-color: white;
   border-radius: 100em;
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 15px;
   font-size: 28px; }
 
