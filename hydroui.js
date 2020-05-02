@@ -81,8 +81,8 @@ var inProgress = false;
 
 $(document).on('click', '.card-accordion-heading', function(index) {
   var accordionBtn = $(this)
-  var accordionContent = $(this).closest('.card-accordion').find('.card-accordion-content')
-  var accordionDeck = $(this).closest('.card-accordion-content').find('.card-accordion-content')
+  var accordionContent = $(this).closest('.card-accordion').find('.card-accordion-content').first()
+  var accordionDeck = $(this).closest('.card-accordion-content').find('.card-accordion-content').first()
 
   if (inProgress == false) {
     inProgress = true;
@@ -94,7 +94,7 @@ $(document).on('click', '.card-accordion-heading', function(index) {
         accordionBtn.find('.card-accordion-icon-flip').css('transform', 'translateY(-50%)')
         accordionContent.removeClass("active");
 
-        var heightCalc = $(this).closest('.card-accordion').find('.card-accordion-content').css('height', 'auto').height();
+        var heightCalc = $(this).closest('.card-accordion').find('.card-accordion-content').first().css('height', 'auto').height();
 
         accordionContent.height(heightCalc);
         accordionContent.innerHeight(0);
@@ -111,7 +111,7 @@ $(document).on('click', '.card-accordion-heading', function(index) {
 
         var heightCalc = $(this).closest('.card-accordion').find('.card-accordion-content').first().css('height', 'auto').innerHeight();
 
-        accordionBtn.closest('.deck.card-accordion-radio').find('.active').closest('.card.card-accordion').find('.card-accordion-icon-flip').css('transform', 'translateY(-50%)')
+        accordionBtn.closest('.deck.card-accordion-radio').find('.active').first().closest('.card.card-accordion').find('.card-accordion-icon-flip').first().css('transform', 'translateY(-50%)')
         accordionBtn.find('.card-accordion-icon-flip').css('transform', 'rotate(180deg) translateY(50%)')
 
         accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active').first().addClass("unloading")
