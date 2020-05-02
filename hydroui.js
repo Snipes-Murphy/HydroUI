@@ -109,19 +109,19 @@ $(document).on('click', '.card-accordion-heading', function(index) {
 
       } else { // Accordion Expanding
 
-        var heightCalc = $(this).closest('.card-accordion').find('.card-accordion-content').css('height', 'auto').innerHeight();
+        var heightCalc = $(this).closest('.card-accordion').find('.card-accordion-content').first().css('height', 'auto').innerHeight();
 
         accordionBtn.closest('.deck.card-accordion-radio').find('.active').closest('.card.card-accordion').find('.card-accordion-icon-flip').css('transform', 'translateY(-50%)')
         accordionBtn.find('.card-accordion-icon-flip').css('transform', 'rotate(180deg) translateY(50%)')
 
-        accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active').addClass("unloading")
-        var heightCalcOld = $(this).closest('.card-accordion-radio').find('.card-accordion-content.unloading').css('height', 'auto').innerHeight();
-        accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active.unloading').innerHeight(heightCalcOld);
-        accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active.unloading').removeClass('active')
+        accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active').first().addClass("unloading")
+        var heightCalcOld = $(this).closest('.card-accordion-radio').find('.card-accordion-content.unloading').first().css('height', 'auto').innerHeight();
+        accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active.unloading').first().innerHeight(heightCalcOld);
+        accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active.unloading').first().removeClass('active')
 
         window.setTimeout(function() {
-          accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.unloading').removeAttr("style");
-          accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.unloading').removeClass("unloading");
+          accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.unloading').first().removeAttr("style");
+          accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.unloading').first().removeClass("unloading");
         }, 0);
 
         accordionContent.innerHeight(0);
@@ -133,7 +133,7 @@ $(document).on('click', '.card-accordion-heading', function(index) {
         accordionContent.addClass("loading")
 
         window.setTimeout(function() {
-          accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active').removeClass('active');
+          accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active').first().removeClass('active');
           accordionContent.addClass("active");
           accordionContent.removeClass("loading");
           accordionContent.removeAttr("style");
