@@ -1,0 +1,45 @@
+table {
+  overflow-x: scroll;
+
+  tr {
+    text-align: left;
+
+    &:first-of-type {
+      border-radius: 16px 16px 0 0;
+
+      & th {
+        border-radius: 8px 8px 0 0;
+      }
+    }
+
+    &:nth-of-type(even) {
+      background-color: $grey-0;
+    }
+
+  }
+
+  th {
+    cursor: pointer;
+    font-weight: bold;
+    color: $grey-6;
+    padding: 10px;
+
+    &:hover {
+      color: $grey-9;
+    }
+
+    &.active {
+      background-color: $grey-0;
+    }
+  }
+
+  td {
+    padding: 10px;
+    color: $grey-5;
+    font-weight: 500;
+
+    &.active {
+      background-color: $grey-0;
+    }
+  }
+}
