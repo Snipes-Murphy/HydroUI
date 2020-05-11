@@ -12,6 +12,14 @@ table {
       }
     }
 
+    &:last-of-type {
+      border-radius: 0 0 16px 16px;
+
+      & th {
+        border-radius: 0 0 8px 8px;
+      }
+    }
+
     &:nth-of-type(even) {
       background-color: $grey-0;
     }

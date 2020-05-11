@@ -13294,6 +13294,10 @@ table {
       border-radius: 16px 16px 0 0; }
       table tr:first-of-type th {
         border-radius: 8px 8px 0 0; }
+    table tr:last-of-type {
+      border-radius: 0 0 16px 16px; }
+      table tr:last-of-type th {
+        border-radius: 0 0 8px 8px; }
     table tr:nth-of-type(even) {
       background-color: #f8fbfe; }
   table th {
