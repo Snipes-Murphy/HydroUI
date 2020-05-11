@@ -269,7 +269,7 @@ $(document).on("click", ".render-table th", function() {
   n = $(this).index()
 
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("pepetable");
+  table = document.getElementById("table");
   switching = true;
   // Set the sorting direction to ascending:
   dir = "asc";
