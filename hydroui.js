@@ -330,3 +330,79 @@ $("#table1searcher").on("keyup", function() {
     }
   })
 })
+
+
+// Tag manager
+
+$.fn.getTags = function() {
+  dataSet = {}
+  if ($(this).hasClass('tag-manager')) {
+    $(this).children('.tag').each(function(index) {
+      dataSet[index] = [
+        value = $.trim($(this).attr('value')),
+        text = $.trim($(this).text())
+      ]
+      if (!($.trim($(this).attr('value')) == undefined)) {
+        dataSet[index] = [
+          value = $.trim($(this).attr('value'))
+        ]
+      }
+    })
+  } else {
+    try {
+      throw new Error('This element is not a .tag-manager, you can only return tags from a tag manager!')
+    } catch (e) {
+      console.error(e.name + ': ' + e.message)
+    }
+  }
+
+  return dataSet;
+
+}
+
+$.fn.clearTagDuplicates = function() {
+  var duplicate = {};
+  $(this).children('.tag').each(function() {
+    var txt = $.trim($(this).text());
+    if (duplicate[txt]) {
+      $(this).remove();
+    } else{
+      duplicate[txt] = true;
+    }
+  });
+}
+
+$('.tag-manager').clearTagDuplicates();
+
+$('.tag-manager').on('keydown', '.new-tag', function(e) {
+  if(e.keyCode == 13) {
+    e.preventDefault();
+    $(this).addClass('tag');
+    $(this).removeClass('new-tag');
+    $(this).append('<i data-feather="x" class="f-icon f-xsm close f-stroke-2"></i>');
+    $(this).closest('.tag-manager').getTags();
+    $(this).closest('.tag-manager').append('<span class="new-tag"></span>');
+    $('.new-tag').attr('contenteditable', 'true')
+    $('.new-tag').focus()
+    $(this).closest('.tag-manager').clearTagDuplicates();
+  }
+	feather.replace()
+})
+
+$('.tag-manager').on('keydown', '.tag', function(e) {
+  if(e.keyCode == 13) {
+    e.preventDefault();
+  }
+})
+
+$('.tag-manager').on('click', '.close', function() {
+  $(this).closest('.tag').remove();
+})
+
+$('.tag-manager .new-tag, .tag-manager .tag').each(function() {
+  $(this).attr('contenteditable', 'true')
+})
+
+$('.tag-manager').on('click', function() {
+  $(this).clearTagDuplicates();
+})

@@ -9014,6 +9014,18 @@ pre {
 .f-realign {
   top: .20em; }
 
+.f-xxx-small, .f-xxxsm {
+  width: 12px;
+  height: 12px; }
+
+.f-xx-small, .f-xxsm {
+  width: 14px;
+  height: 14px; }
+
+.f-x-small, .f-xsm {
+  width: 16px;
+  height: 16px; }
+
 .f-small, .f-sm {
   width: 18px;
   height: 18px; }
@@ -13029,6 +13041,49 @@ pre {
   font-weight: 400;
   display: block;
   margin-top: .25rem; }
+
+.tag-manager {
+  transition: 200ms background-color, 200ms box-shadow;
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px 0 rgba(93, 99, 103, 0.1);
+  padding: 12px 15px;
+  background-color: #f8fbfe;
+  font-family: 'rawline', sans-serif;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
+  font-weight: 400;
+  color: #6a737c;
+  flex-wrap: wrap; }
+  .tag-manager::placeholder {
+    color: #9fa5ab; }
+  .tag-manager:hover, .tag-manager:active {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(93, 99, 103, 0.1); }
+  .tag-manager:focus {
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgba(93, 99, 103, 0.1); }
+  .tag-manager .tag {
+    margin: 2px 5px 2px 0;
+    border-radius: 25px;
+    transition: 100ms;
+    background-color: rgba(3, 142, 245, 0.2);
+    color: #0271c3;
+    font-weight: 700;
+    padding: 2px 10px;
+    display: inline-flex;
+    align-items: center; }
+    .tag-manager .tag:hover {
+      background-color: rgba(3, 142, 245, 0.4); }
+    .tag-manager .tag:active {
+      background-color: rgba(3, 142, 245, 0.5); }
+    .tag-manager .tag .close {
+      color: #7d8285;
+      cursor: pointer;
+      margin-left: 4px; }
+  .tag-manager .new-tag {
+    white-space: nowrap;
+    padding-right: 16px; }
 
 .card.card-accordion {
   background-color: white;

@@ -238,3 +238,60 @@ $input-sizes: (
   display: block;
   margin-top: .25rem;
 }
+
+.tag-manager {
+  transition: 200ms background-color, 200ms box-shadow;
+  display: flex;
+  @include box-medium-border;
+  box-shadow: 0 2px 6px 0 $shadow;
+  padding: 12px 15px;
+  background-color: $grey-0;
+  @include font-content;
+  color: $text-lightdark;
+  flex-wrap: wrap;
+
+  &::placeholder {
+  color: $text-light;
+  }
+
+  &:hover, &:active {
+    background-color: $white;
+    box-shadow: 0 4px 8px 0 $shadow;
+  }
+
+  &:focus {
+    background-color: $white;
+    box-shadow: 0 4px 10px 0 $shadow;
+  }
+
+  .tag {
+    margin: 2px 5px 2px 0;
+    border-radius: 25px;
+    transition: 100ms;
+    background-color: rgba($blue, 0.2);
+    color: darken($blue, 10%);
+    font-weight: 700;
+    padding: 2px 10px;
+    display: inline-flex;
+    align-items: center;
+
+    &:hover {
+      background-color: rgba($blue, 0.4);
+    }
+
+    &:active {
+      background-color: rgba($blue, 0.5);
+    }
+
+    .close {
+      color: $grey-4;
+      cursor: pointer;
+      margin-left: 4px;
+    }
+  }
+
+  .new-tag {
+    white-space: nowrap;
+    padding-right: 16px;
+  }
+}
