@@ -31,6 +31,22 @@ $('.dropdown-complex-item').hover(function() {
   var complexitemid = $('.dropdown-complex-item').attr('id');
 })
 
+// Column attribute rendering
+
+$(".col-render").each(function(index) {
+  // Single column class render
+
+  breakpoints = $(this).attr('column-conf').split(',')
+
+  if (breakpoints.length > 0){
+    for (breakpoint in breakpoints) {
+      $(this).addClass(breakpoints[breakpoint] ? 'col-'+breakpoints[breakpoint] : '' )
+    }
+  } else {
+    $(this).addClass('col')
+  }
+})
+
 // Radio/Checkboxes
 
 $("input.form-radio-button, input.form-check-input").each(function(index) {
@@ -406,3 +422,7 @@ $('.tag-manager .new-tag, .tag-manager .tag').each(function() {
 $('.tag-manager').on('click', function() {
   $(this).clearTagDuplicates();
 })
+
+function rgbToHex(r, g, b) {
+  return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+}
