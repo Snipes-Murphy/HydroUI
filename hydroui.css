@@ -8616,11 +8616,13 @@ pre {
   float: left; }
 
 .container {
+  display: block;
   margin: auto;
   position: relative;
   width: 1350px; }
 
 .container-rs {
+  display: block;
   margin: auto;
   position: relative;
   width: 1150px; }

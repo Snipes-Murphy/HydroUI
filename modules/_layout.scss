@@ -96,12 +96,14 @@ $pull-modes: (
 // Containers
 
 .container {
+  display: block;
   margin: auto;
   position: relative;
   width: map-get($container-widths, 'xxxlg');
 }
 
 .container-rs {
+  display: block;
   margin: auto;
   position: relative;
   width: map-get($container-rs-widths, 'xxxlg');
