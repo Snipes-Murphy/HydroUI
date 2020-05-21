@@ -17,6 +17,7 @@
   & > .col {
     @include columns;
     &,
+    &-none,
     &-lg,
     &-md,
     &-sm,
