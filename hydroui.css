@@ -5466,12 +5466,12 @@ pre {
   display: flex;
   z-index: 10;
   padding: 4px 0; }
-  .btn-bar-group button {
+  .btn-bar-group button, .btn-bar-group a {
     position: relative;
     margin: 0 !important;
     border-radius: 0 !important;
     z-index: 1; }
-    .btn-bar-group button:active, .btn-bar-group button:focus, .btn-bar-group button:hover {
+    .btn-bar-group button:active, .btn-bar-group button:focus, .btn-bar-group button:hover, .btn-bar-group a:active, .btn-bar-group a:focus, .btn-bar-group a:hover {
       z-index: 2; }
   .btn-bar-group a:first-child,
   .btn-bar-group button:first-child {
