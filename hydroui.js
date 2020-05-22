@@ -43,7 +43,11 @@ $(".col-render").each(function(index) {
       $(this).addClass(breakpoints[breakpoint] ? 'col-'+breakpoints[breakpoint] : '' )
     }
   } else {
-    $(this).addClass('col')
+    if ($(this).hasClass('col-render-col-none')) {
+      $(this).addClass('col-none')
+    } else {
+      $(this).addClass('col')
+    }
   }
 })
 
