@@ -100,6 +100,76 @@ $(".progress-echo").each(function(index) {
 var inProgress = false;
 
 $(document).on('click', '.card-accordion-heading', function(index) {
+  if (!($(this).closest('.card-accordion').first().hasClass('card-accordion-deactivator'))) {
+    var accordionBtn = $(this)
+    var accordionContent = $(this).closest('.card-accordion').find('.card-accordion-content').first()
+    var accordionDeck = $(this).closest('.card-accordion-content').find('.card-accordion-content').first()
+
+    if (inProgress == false) {
+      inProgress = true;
+      console.log("Progress True")
+      if (!(accordionDeck.hasClass("loading") || accordionDeck.hasClass("unloading") || accordionContent.hasClass("loading") || accordionContent.hasClass("unloading"))) {
+
+        if (accordionContent.hasClass("active")) { // Accordion Closing
+          accordionBtn.closest('.deck.card-accordion-radio').find('.active').closest('.card.card-accordion').find('.card-accordion-icon-flip').css('transform', 'translateY(-50%)')
+          accordionBtn.find('.card-accordion-icon-flip').css('transform', 'translateY(-50%)')
+          accordionContent.removeClass("active");
+
+          var heightCalc = $(this).closest('.card-accordion').find('.card-accordion-content').first().css('height', 'auto').height();
+
+          accordionContent.height(heightCalc);
+          accordionContent.innerHeight(0);
+          accordionContent.addClass("unloading")
+
+          window.setTimeout(function() {
+            accordionContent.removeClass("unloading");
+            accordionContent.removeAttr("style");
+            inProgress = false;
+            console.log("Progress false closing")
+          }, 300);
+
+        } else { // Accordion Expanding
+
+          var heightCalc = $(this).closest('.card-accordion').find('.card-accordion-content').first().css('height', 'auto').innerHeight();
+
+          accordionBtn.closest('.deck.card-accordion-radio').find('.active').first().closest('.card.card-accordion').find('.card-accordion-icon-flip').first().css('transform', 'translateY(-50%)')
+          accordionBtn.find('.card-accordion-icon-flip').css('transform', 'rotate(180deg) translateY(50%)')
+
+          accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active').first().addClass("unloading")
+          var heightCalcOld = $(this).closest('.card-accordion-radio').find('.card-accordion-content.unloading').first().css('height', 'auto').innerHeight();
+          accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active.unloading').first().innerHeight(heightCalcOld);
+          accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active.unloading').first().removeClass('active')
+
+          window.setTimeout(function() {
+            accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.unloading').first().removeAttr("style");
+            accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.unloading').first().removeClass("unloading");
+          }, 0);
+
+          accordionContent.innerHeight(0);
+          if (accordionContent.hasClass('py-none')) {
+            accordionContent.innerHeight(heightCalc);
+          } else {
+            accordionContent.innerHeight(heightCalc + 20);
+          }
+          accordionContent.addClass("loading")
+
+          window.setTimeout(function() {
+            accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active').first().removeClass('active');
+            accordionContent.addClass("active");
+            accordionContent.removeClass("loading");
+            accordionContent.removeAttr("style");
+            inProgress = false;
+            console.log("Progress false opeing")
+          }, 300);
+
+        }
+      }
+
+    }
+  }
+})
+
+$(document).on('click', '.card-accordion-controller', function(index) {
   var accordionBtn = $(this)
   var accordionContent = $(this).closest('.card-accordion').find('.card-accordion-content').first()
   var accordionDeck = $(this).closest('.card-accordion-content').find('.card-accordion-content').first()
@@ -165,7 +235,7 @@ $(document).on('click', '.card-accordion-heading', function(index) {
     }
 
   }
-})
+});
 
 // Navbar
 
