@@ -344,6 +344,85 @@ $(".active-toggler").hover(
   function () { $(this).removeClass('active'); }
 );
 
+// slideshow
+
+$.fn.renderSlideshow = function() {
+  if ($(this).hasClass('hydro-slideshow') && (!($(this).hasClass('h-slideshow-rendered')))) {
+    slides = $(this).find('.h-slides').children();
+    slideshow = $(this)
+    if ($(this).hasClass('h-slide-ball-nav')) {
+      $(this).append('<div class="navigation"></div>');
+      slides.each(function(index) {
+        activeClass = ""
+        if ($(this).hasClass('active')) {
+          activeClass = " active"
+        }
+        slideshow.find('.navigation').append('<div class="h-slide-nav-orb'+activeClass+'"></div>');
+      })
+    }
+    if (slideshow.find('.h-slide.active').length <= 0) {
+      slideshow.find('.h-slide').first().addClass('active')
+      slideshow.find('.h-slide-nav-orb').first().addClass('active')
+    }
+    slideshow.addClass('h-slideshow-rendered')
+  } else {
+    try {
+      throw new Error('This element is not a .hydro-slideshow, you can only render a slideshow with a .hydro-slideshow element!')
+    } catch (e) {
+      console.error(e.name + ': ' + e.message)
+    }
+  }
+
+  return false;
+
+}
+
+$(document).on('click', '.hydro-slideshow', function() {
+  activeSlide = $(this).find('.h-slide.active').first();
+  activeBall = $(this).find('.h-slide-nav-orb.active').first();
+
+
+  if ($(this).hasClass('h-slide-ball-nav')) {
+    nextOrb = activeBall.next()
+    if (nextOrb.length <= 0) {
+      nextOrb = $(this).find('.h-slide-nav-orb').first();
+    }
+
+    activeBall.removeClass('active')
+    nextOrb.addClass('active')
+  }
+
+  nextSlide = activeSlide.next()
+  if (nextSlide.length <= 0) {
+    nextSlide = $(this).find('.h-slide').first();
+  }
+
+  activeSlide.removeClass('active')
+  nextSlide.addClass('active')
+});
+
+$(document).on('click', '.h-slide-nav-orb', function() {
+  event.stopPropagation();
+
+  activeSlide = $(this).closest('.hydro-slideshow').find('.h-slide.active');
+  activeBall = $(this).closest('.navigation').find('.h-slide-nav-orb.active').first();
+
+  activeSlide.removeClass('active');
+  activeBall.removeClass('active');
+
+  newIndex = $(this).index() - 1;
+
+  newBall = $('.h-slide-nav-orb').eq(newIndex);
+  newSlide = $('.h-slide').eq(newIndex);
+
+  newBall.addClass('active');
+  newSlide.addClass('active');
+});
+
+$('.hydro-slideshow').each(function(index) {
+  $(this).renderSlideshow();
+})
+
 // Table
 
 $(document).on("click", ".render-table th", function() {
@@ -351,7 +430,7 @@ $(document).on("click", ".render-table th", function() {
   console.log(indexVal)
 
   $(".render-table th").removeClass('active')
-  $('.render-table tr td ').removeClass('active')
+  $('.render-table tr td').removeClass('active')
 
   $(this).addClass('active')
   $('.render-table tr td:nth-of-type('+indexVal+')').addClass('active')
