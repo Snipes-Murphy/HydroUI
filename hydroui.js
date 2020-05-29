@@ -386,27 +386,29 @@ $.fn.renderSlideshow = function() {
 }
 
 $(document).on('click', '.hydro-slideshow', function() {
-  activeSlide = $(this).find('.h-slide.active').first();
-  activeBall = $(this).find('.h-slide-nav-orb.active').first();
+  if ($(this).hasClass('h-slide-click-nav')) {
+    activeSlide = $(this).find('.h-slide.active').first();
+    activeBall = $(this).find('.h-slide-nav-orb.active').first();
 
 
-  if ($(this).hasClass('h-slide-ball-nav')) {
-    nextOrb = activeBall.next()
-    if (nextOrb.length <= 0) {
-      nextOrb = $(this).find('.h-slide-nav-orb').first();
+    if ($(this).hasClass('h-slide-ball-nav')) {
+      nextOrb = activeBall.next()
+      if (nextOrb.length <= 0) {
+        nextOrb = $(this).find('.h-slide-nav-orb').first();
+      }
+
+      activeBall.removeClass('active')
+      nextOrb.addClass('active')
     }
 
-    activeBall.removeClass('active')
-    nextOrb.addClass('active')
-  }
+    nextSlide = activeSlide.next()
+    if (nextSlide.length <= 0) {
+      nextSlide = $(this).find('.h-slide').first();
+    }
 
-  nextSlide = activeSlide.next()
-  if (nextSlide.length <= 0) {
-    nextSlide = $(this).find('.h-slide').first();
+    activeSlide.removeClass('active')
+    nextSlide.addClass('active')
   }
-
-  activeSlide.removeClass('active')
-  nextSlide.addClass('active')
 });
 
 $(document).on('click', '.h-slide-nav-orb', function() {
