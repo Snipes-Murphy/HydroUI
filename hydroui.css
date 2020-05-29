@@ -13341,11 +13341,13 @@ pre {
 .hydro-slideshow {
   position: relative;
   height: 290px;
-  overflow: hidden; }
+  overflow: hidden;
+  display: block; }
   .hydro-slideshow .h-slide {
     width: 100%;
     height: 100%;
     position: absolute;
+    display: block;
     top: 0;
     left: 0;
     opacity: 0; }
