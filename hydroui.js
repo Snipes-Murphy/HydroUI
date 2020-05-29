@@ -350,14 +350,22 @@ $.fn.renderSlideshow = function() {
   if ($(this).hasClass('hydro-slideshow') && (!($(this).hasClass('h-slideshow-rendered')))) {
     slides = $(this).find('.h-slides').children();
     slideshow = $(this)
-    if ($(this).hasClass('h-slide-ball-nav')) {
-      $(this).append('<div class="navigation"></div>');
+    if (slideshow.hasClass('h-slide-ball-nav')) {
+      if (slideshow.hasClass('h-slide-custom-nodetag')) {
+        $(this).append('<slide-navigation class="navigation"></slide-navigation>');
+      } else {
+        $(this).append('<div class="navigation"></div>');
+      }
       slides.each(function(index) {
         activeClass = ""
         if ($(this).hasClass('active')) {
           activeClass = " active"
         }
-        slideshow.find('.navigation').append('<div class="h-slide-nav-orb'+activeClass+'"></div>');
+        if (slideshow.hasClass('h-slide-custom-nodetag')) {
+          slideshow.find('.navigation').append('<slide-nav-orb class="h-slide-nav-orb'+activeClass+'"></slide-nav-orb>');
+        } else {
+          slideshow.find('.navigation').append('<div class="h-slide-nav-orb'+activeClass+'"></div>');
+        }
       })
     }
     if (slideshow.find('.h-slide.active').length <= 0) {

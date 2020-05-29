@@ -13357,6 +13357,7 @@ pre {
     .hydro-slideshow.h-slide-fade .h-slide.active {
       opacity: 1; }
   .hydro-slideshow .navigation {
+    display: block;
     position: absolute;
     bottom: 0;
     padding-bottom: 6px;
