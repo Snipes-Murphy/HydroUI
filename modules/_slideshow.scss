@@ -1,8 +1,14 @@
 .hydro-slideshow {
   position: relative;
-  height: 290px;
+  min-height: 100px;
   overflow: hidden;
   display: block;
+
+  .h-slides {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
 
   .h-slide {
     width: 100%;

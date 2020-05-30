@@ -13340,9 +13340,13 @@ pre {
 
 .hydro-slideshow {
   position: relative;
-  height: 290px;
+  min-height: 100px;
   overflow: hidden;
   display: block; }
+  .hydro-slideshow .h-slides {
+    display: block;
+    height: 100%;
+    width: 100%; }
   .hydro-slideshow .h-slide {
     width: 100%;
     height: 100%;
