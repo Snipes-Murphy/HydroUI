@@ -420,7 +420,7 @@ $(document).on('click', '.h-slide-nav-orb', function() {
   activeSlide.removeClass('active');
   activeBall.removeClass('active');
 
-  newIndex = $(this).index() - 1;
+  newIndex = $(this).index();
 
   newBall = $('.h-slide-nav-orb').eq(newIndex);
   newSlide = $('.h-slide').eq(newIndex);
