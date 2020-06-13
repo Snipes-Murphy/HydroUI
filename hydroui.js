@@ -295,7 +295,7 @@ $(document).on('click', '.tab-selector', function() {
   var navigation = $(this).closest('.tab-navigation')
   var panes = $(document).find('.tab-pane[tab-name="' + $(this).attr('tab-name') + '"]')
 
-  panes.find('#'+paneActive).closest('.tab-pane').find('.tab-item.active').first().removeClass('active');
+  panes.find('#'+paneActive).closest('.tab-pane').find('.tab-item.active').removeClass('active');
   panes.find('#'+paneActive).addClass('active');
 })
 
@@ -304,7 +304,7 @@ $(document).on('mouseover', '.tab-selector.tab-hover', function() {
   var navigation = $(this).closest('.tab-navigation')
   var panes = navigation.parent().find('.tab-pane')
 
-  panes.find('.tab-item.active').first().removeClass('active');
+  panes.find('.tab-item.active').removeClass('active');
   panes.find('#'+paneActive).addClass('active');
 })
 
