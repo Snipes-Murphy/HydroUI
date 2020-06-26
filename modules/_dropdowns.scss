@@ -2,6 +2,12 @@
   position: relative;
   display: inline-block;
 
+  &.active > .dropdown-content {
+    margin-top: 0;
+    pointer-events: auto;
+    opacity: 1;
+  }
+
   .dropdown-content {
     font-size: 16px;
     padding: 0;
@@ -127,7 +133,7 @@
       pointer-events: auto;
       opacity: 1;
     }
-    
+
     &.active + .dropdown-content {
       margin-top: 0;
       pointer-events: auto;
