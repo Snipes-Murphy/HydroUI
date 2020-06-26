@@ -10636,6 +10636,10 @@ pre {
       margin-top: 0;
       pointer-events: auto;
       opacity: 1; }
+    .dropdown .dropdown-item.active + .dropdown-content {
+      margin-top: 0;
+      pointer-events: auto;
+      opacity: 1; }
   .navbar .dropdown .dropdown-grid {
     padding: 0 !important;
     display: inline-flex;
