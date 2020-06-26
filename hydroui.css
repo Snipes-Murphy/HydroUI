@@ -10526,6 +10526,10 @@ pre {
 .dropdown {
   position: relative;
   display: inline-block; }
+  .dropdown.active > .dropdown-content {
+    margin-top: 0;
+    pointer-events: auto;
+    opacity: 1; }
   .dropdown .dropdown-content {
     font-size: 16px;
     padding: 0;
