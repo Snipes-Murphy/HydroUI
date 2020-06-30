@@ -13380,14 +13380,14 @@ pre {
     left: 50%;
     transform: translateX(-50%); }
     .hydro-slideshow .navigation .h-slide-nav-orb {
-      background-color: rgba(105, 110, 112, 0.5);
+      background-color: rgba(238, 241, 246, 0.5);
       width: 12px;
       height: 12px;
       border-radius: 64px;
       margin: 0 5px;
       display: inline-block; }
       .hydro-slideshow .navigation .h-slide-nav-orb.active {
-        background-color: rgba(105, 110, 112, 0.95); }
+        background-color: rgba(238, 241, 246, 0.95); }
 
 .tab-item {
   display: none; }

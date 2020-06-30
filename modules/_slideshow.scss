@@ -44,7 +44,7 @@
     transform: translateX(-50%);
 
     .h-slide-nav-orb {
-      background-color: rgba($grey-5, 0.5);
+      background-color: rgba($grey-1, 0.5);
       width: 12px;
       height: 12px;
       border-radius: 64px;
@@ -52,7 +52,7 @@
       display: inline-block;
 
       &.active {
-        background-color: rgba($grey-5, 0.95);
+        background-color: rgba($grey-1, 0.95);
       }
     }
   }
