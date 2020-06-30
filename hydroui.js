@@ -385,6 +385,36 @@ $.fn.renderSlideshow = function() {
 
 }
 
+$('.h-slide-autoplay').ready(function() {
+  $('.h-slide-autoplay').each(function() {
+    slideshow = $(this)
+    setInterval(function () {
+      console.log(slideshow.attr('h-autoplay'))
+      activeSlide = slideshow.find('.h-slide.active').first();
+      activeBall = slideshow.find('.h-slide-nav-orb.active').first();
+
+
+      if (slideshow.hasClass('h-slide-ball-nav')) {
+        nextOrb = activeBall.next()
+        if (nextOrb.length <= 0) {
+          nextOrb = slideshow.find('.h-slide-nav-orb').first();
+        }
+
+        activeBall.removeClass('active')
+        nextOrb.addClass('active')
+      }
+
+      nextSlide = activeSlide.next()
+      if (nextSlide.length <= 0) {
+        nextSlide = slideshow.find('.h-slide').first();
+      }
+
+      activeSlide.removeClass('active')
+      nextSlide.addClass('active')
+    }, slideshow.attr('h-autoplay'));
+  })
+})
+
 $(document).on('click', '.hydro-slideshow', function() {
   if ($(this).hasClass('h-slide-click-nav')) {
     activeSlide = $(this).find('.h-slide.active').first();
