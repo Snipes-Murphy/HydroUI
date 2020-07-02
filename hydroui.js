@@ -389,7 +389,7 @@ $('.h-slide-autoplay').ready(function() {
   $('.h-slide-autoplay').each(function() {
     slideshow = $(this)
     setInterval(function () {
-      console.log(slideshow.attr('h-autoplay'))
+      // console.log(slideshow.attr('h-autoplay'))
       activeSlide = slideshow.find('.h-slide.active').first();
       activeBall = slideshow.find('.h-slide-nav-orb.active').first();
 
