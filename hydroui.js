@@ -531,7 +531,7 @@ $(document).on("click", ".render-table th", function() {
   }
 });
 
-$("#table1searcher").on("keyup", function() {
+$(document).on("keyup", "#table1searcher", function() {
   var value = $(this).val().toLowerCase();
   $("table[table-search-id='"+$(this).attr('id')+"'] tr").filter(function() {
     if ($(this).find('th').length <= 0) {
