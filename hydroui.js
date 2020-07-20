@@ -13,7 +13,6 @@ $(document).on("click", ".close-modal", function() {
 // Alerts
 
 $(document).on("click", ".close-btn", function() {
-  console.log("Closed alert")
   $(this).closest(".alert").remove();
 })
 
@@ -62,23 +61,19 @@ $("input.form-radio-button, input.form-check-input").each(function(index) {
 $(document).on("change", 'input.form-radio-button:radio, input.form-check-input:radio', function() {
   $(this).closest("div").parent().closest("div").find('.form-check-label').removeClass('form-check-active');
   $(this).closest(".form-check-label").addClass("form-check-active");
-  console.log("Check Box change")
 })
 
 $(document).on("change", 'input.form-check-input:checkbox', function() {
   $(this).closest("div").closest("div").find('.form-check-label').removeClass('form-check-active');
   $(this).closest(".form-check-label").addClass("form-check-active");
-  console.log("Check Box change")
 })
 
 $(document).on("change", 'input.form-check-input', function() {
   if ($(this).is(':checked')) {
     $(this).closest(".form-check-label").addClass("form-check-active");
-    console.log("Check Box on")
   } else {
     $(this).closest(".form-check-label").removeClass("form-check-active");
   }
-  console.log("Check Box change")
 })
 
 // Progress Bars
@@ -107,7 +102,6 @@ $(document).on('click', '.card-accordion-heading', function(index) {
 
     if (inProgress == false) {
       inProgress = true;
-      console.log("Progress True")
       if (!(accordionDeck.hasClass("loading") || accordionDeck.hasClass("unloading") || accordionContent.hasClass("loading") || accordionContent.hasClass("unloading"))) {
 
         if (accordionContent.hasClass("active")) { // Accordion Closing
@@ -125,7 +119,6 @@ $(document).on('click', '.card-accordion-heading', function(index) {
             accordionContent.removeClass("unloading");
             accordionContent.removeAttr("style");
             inProgress = false;
-            console.log("Progress false closing")
           }, 300);
 
         } else { // Accordion Expanding
@@ -159,7 +152,6 @@ $(document).on('click', '.card-accordion-heading', function(index) {
             accordionContent.removeClass("loading");
             accordionContent.removeAttr("style");
             inProgress = false;
-            console.log("Progress false opeing")
           }, 300);
 
         }
@@ -176,7 +168,6 @@ $(document).on('click', '.card-accordion-controller', function(index) {
 
   if (inProgress == false) {
     inProgress = true;
-    console.log("Progress True")
     if (!(accordionDeck.hasClass("loading") || accordionDeck.hasClass("unloading") || accordionContent.hasClass("loading") || accordionContent.hasClass("unloading"))) {
 
       if (accordionContent.hasClass("active")) { // Accordion Closing
@@ -194,7 +185,6 @@ $(document).on('click', '.card-accordion-controller', function(index) {
           accordionContent.removeClass("unloading");
           accordionContent.removeAttr("style");
           inProgress = false;
-          console.log("Progress false closing")
         }, 300);
 
       } else { // Accordion Expanding
@@ -228,7 +218,6 @@ $(document).on('click', '.card-accordion-controller', function(index) {
           accordionContent.removeClass("loading");
           accordionContent.removeAttr("style");
           inProgress = false;
-          console.log("Progress false opeing")
         }, 300);
 
       }
@@ -389,7 +378,6 @@ $('.h-slide-autoplay').ready(function() {
   $('.h-slide-autoplay').each(function() {
     slideshow = $(this)
     setInterval(function () {
-      // console.log(slideshow.attr('h-autoplay'))
       activeSlide = slideshow.find('.h-slide.active').first();
       activeBall = slideshow.find('.h-slide-nav-orb.active').first();
 
@@ -467,7 +455,6 @@ $('.hydro-slideshow').each(function(index) {
 
 $(document).on("click", ".render-table th", function() {
   indexVal = $(this).index() + 1
-  console.log(indexVal)
 
   $(".render-table th").removeClass('active')
   $('.render-table tr td').removeClass('active')
