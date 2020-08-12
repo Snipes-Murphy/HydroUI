@@ -30,6 +30,28 @@ $('.dropdown-complex-item').hover(function() {
   var complexitemid = $('.dropdown-complex-item').attr('id');
 })
 
+// Dropdown collisions
+
+function offsetDropdownContent() {
+  $('.dropdown').each(function() {
+    var dropdown = $(this);
+    var dropdownContent = dropdown.find('.dropdown-content');
+    var overflow = (dropdownContent.get(0).getBoundingClientRect().left + (window.pageXOffset || document.documentElement.scrollLeft || 0) + dropdownContent.width()) - $(window).width()
+    console.log(overflow)
+    if (overflow > 0) {
+      dropdownContent
+      console.log(dropdownContent)
+      dropdownContent.css('left', "calc(50% - "+overflow+"px)")
+    }
+  })
+}
+
+offsetDropdownContent();
+
+$( window ).resize(function() {
+  offsetDropdownContent();
+})
+
 // Column attribute rendering
 
 $(".col-render").each(function(index) {
