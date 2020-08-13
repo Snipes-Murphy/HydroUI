@@ -39,7 +39,6 @@ function offsetDropdownContent() {
     var overflow = (dropdownContent.get(0).getBoundingClientRect().left + (window.pageXOffset || document.documentElement.scrollLeft || 0) + dropdownContent.width()) - $(window).width()
     var leftOverflow = dropdownContent.get(0).getBoundingClientRect().left
     if (overflow > 0) {
-      dropdownContent
       leftVal = "calc(50% - "+overflow+"px)"
       dropdownContent.css('left', leftVal)
     } else if (leftOverflow < 0) {
