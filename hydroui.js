@@ -18,7 +18,7 @@ $(document).on("click", ".close-btn", function() {
 
 // Navbar
 
-$('.nav-btn-menu').click(function() {
+$(document).on('click', '.nav-btn-menu', function() {
   $(this).closest(".navbar").find(".nav-content").toggleClass('active');
 })
 
@@ -265,6 +265,19 @@ $('.navbar-fixed').each(function(index) {
   if (!($(this).hasClass('navbar-nohitbox'))) {
     $('<div class="navbar-hitbox"></div>').insertAfter(this);
     $('.navbar-hitbox').height(navbarHeight);
+  }
+})
+
+// Navbar responsive auto icon menu
+$('.navbar-auto-f-icon').each(function(index) {
+  var icon = $(this).attr('bp-icon')
+  if (typeof icon !== typeof undefined && icon !== false) {
+    if ($(this).find('.container').length > 0) {
+      $(this).find('.container').first().append('<button class="nav-btn nav-btn-menu"><i data-feather="'+icon+'" class="f-icon f-stroke-2"></i></button>');
+    } else {
+      $(this).append('<button class="nav-btn nav-btn-menu"><i data-feather="'+icon+'" class="f-icon f-stroke-2"></i></button>');
+    }
+    feather.replace();
   }
 })
 
