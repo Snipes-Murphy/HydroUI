@@ -43,7 +43,7 @@ function offsetDropdownContent() {
       dropdownContent.css('left', leftVal)
     } else if (leftOverflow < 0) {
       leftOverflow = leftOverflow * -1
-      leftVal = "calc(50% - "+leftOverflow+"px)"
+      leftVal = "calc(50% + "+leftOverflow+"px)"
       dropdownContent.css('left', leftVal)
     }
   })
