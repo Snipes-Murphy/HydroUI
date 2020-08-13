@@ -37,16 +37,15 @@ function offsetDropdownContent() {
     var dropdown = $(this);
     var dropdownContent = dropdown.find('.dropdown-content');
     var overflow = (dropdownContent.get(0).getBoundingClientRect().left + (window.pageXOffset || document.documentElement.scrollLeft || 0) + dropdownContent.width()) - $(window).width()
-    console.log(dropdown, overflow)
+    var leftOverflow = dropdownContent.get(0).getBoundingClientRect().left
     if (overflow > 0) {
       dropdownContent
-      console.log(dropdownContent)
-      dropdownContent.css('left', "calc(50% - "+overflow+"px)")
-    }
-    var leftOverflow = dropdownContent.get(0).getBoundingClientRect().left
-    if (leftOverflow < 0) {
-      leftOverflow = leftOverflow * 1
-      dropdownContent.css('left', "calc(50% - "+leftOverflow+"px)")
+      leftVal = "calc(50% - "+overflow+"px)"
+      dropdownContent.css('left', leftVal)
+    } else if (leftOverflow < 0) {
+      leftOverflow = leftOverflow * -1
+      leftVal = "calc(50% - "+leftOverflow+"px)"
+      dropdownContent.css('left', leftVal)
     }
   })
 }
