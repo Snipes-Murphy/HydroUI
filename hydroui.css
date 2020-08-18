@@ -10722,6 +10722,9 @@ pre {
     left: auto;
     right: 20px; }
 
+.dropdown-offset-collision {
+  transform: none !important; }
+
 .alert-primary {
   display: flex;
   align-items: center;

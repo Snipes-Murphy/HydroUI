@@ -40,7 +40,7 @@ function offsetDropdownContent() {
     var leftOverflow = dropdownContent.get(0).getBoundingClientRect().left - (window.pageXOffset || document.documentElement.scrollLeft || 0)
     if (leftOverflow < 0 || overflow > 0) {
       console.log(overflow, leftOverflow)
-      dropdownContent.css("transform", "none");
+      dropdownContent.addClass("dropdown-offset-collision");
     }
     var overflow = (dropdownContent.get(0).getBoundingClientRect().left + (window.pageXOffset || document.documentElement.scrollLeft || 0) + dropdownContent.width()) - $(window).width()
     var leftOverflow = dropdownContent.get(0).getBoundingClientRect().left - (window.pageXOffset || document.documentElement.scrollLeft || 0)
