@@ -57,9 +57,10 @@ function offsetDropdownContent() {
 
 offsetDropdownContent();
 
-$( window ).resize(function() {
+// todo: Needs more refactoring
+/*$( window ).resize(function() {
   offsetDropdownContent();
-})
+})*/
 
 // Column attribute rendering
 
