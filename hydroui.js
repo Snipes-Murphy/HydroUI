@@ -36,7 +36,12 @@ function offsetDropdownContent() {
   $('.dropdown').each(function() {
     var dropdown = $(this);
     var dropdownContent = dropdown.find('.dropdown-content');
-    dropdownContent.css("transform", "none");
+    var overflow = (dropdownContent.get(0).getBoundingClientRect().left + (window.pageXOffset || document.documentElement.scrollLeft || 0) + dropdownContent.width()) - $(window).width()
+    var leftOverflow = dropdownContent.get(0).getBoundingClientRect().left - (window.pageXOffset || document.documentElement.scrollLeft || 0)
+    if (leftOverflow < 0 || overflow > 0) {
+      console.log(overflow, leftOverflow)
+      dropdownContent.css("transform", "none");
+    }
     var overflow = (dropdownContent.get(0).getBoundingClientRect().left + (window.pageXOffset || document.documentElement.scrollLeft || 0) + dropdownContent.width()) - $(window).width()
     var leftOverflow = dropdownContent.get(0).getBoundingClientRect().left - (window.pageXOffset || document.documentElement.scrollLeft || 0)
     if (leftOverflow < 0) { // Goes to left side of screen
