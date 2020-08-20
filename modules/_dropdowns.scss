@@ -2,6 +2,10 @@
   position: relative;
   display: inline-block;
 
+  &.dropdown-triggered-collision {
+    position: static;
+  }
+
   &.active > .dropdown-content {
     margin-top: 0;
     pointer-events: auto;
@@ -256,6 +260,7 @@
   }
 }
 
-.dropdown-offset-collision {
-  transform: none !important;
+.navbar .dropdown .dropdown-offset-collision {
+  transform: none;
+  left: 0;
 }
