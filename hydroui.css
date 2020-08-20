@@ -10526,6 +10526,8 @@ pre {
 .dropdown {
   position: relative;
   display: inline-block; }
+  .dropdown.dropdown-triggered-collision {
+    position: static; }
   .dropdown.active > .dropdown-content {
     margin-top: 0;
     pointer-events: auto;
@@ -10722,8 +10724,9 @@ pre {
     left: auto;
     right: 20px; }
 
-.dropdown-offset-collision {
-  transform: none !important; }
+.navbar .dropdown .dropdown-offset-collision {
+  transform: none;
+  left: 0; }
 
 .alert-primary {
   display: flex;
