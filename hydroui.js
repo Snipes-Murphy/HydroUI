@@ -19,7 +19,22 @@ $(document).on("click", ".close-btn", function() {
 // Navbar
 
 $(document).on('click', '.nav-btn-menu', function() {
-  $(this).closest(".navbar").find(".nav-content").toggleClass('active');
+  var navbar = $(this).closest('.navbar')
+  if (navbar.find('.nav-content-primary').length > 0) {
+    // Navbar Dropdown Content Responsiveness
+    var dropdownContent = navbar.find('.nav-content');
+    var stuff = dropdownContent.children();
+  
+    dropdownContent.children().remove();
+    
+    stuff.appendTo('.nav-content-primary')
+
+    // Expands Navbar Dropdown
+    navbar.find(".nav-content.nav-content-primary").toggleClass('active');
+  } else {
+    navbar.find(".nav-content").toggleClass('active');
+  }
+
 })
 
 // Dropdown Complex
