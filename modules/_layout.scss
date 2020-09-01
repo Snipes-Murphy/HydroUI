@@ -278,6 +278,30 @@ $map-reversed: ();
       display: flex;
       justify-content: flex-end;
     }
+
+    .display-inline-flex-#{$breakpoint} {
+      display: inline-flex !important;
+    }
+    
+    .display-flex-#{$breakpoint} {
+      display: flex !important;
+    }
+    
+    .display-inline-#{$breakpoint} {
+      display: inline !important;
+    }
+    
+    .display-inline-block-#{$breakpoint} {
+      display: inline-block !important;
+    }
+    
+    .display-block-#{$breakpoint} {
+      display: block;
+    }
+    
+    .display-none-#{$breakpoint} {
+      display: none;
+    }
   }
 }
 
