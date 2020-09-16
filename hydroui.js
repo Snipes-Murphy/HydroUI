@@ -309,26 +309,23 @@ $('.navbar-auto-f-icon').each(function(index) {
 
 // Scroll distance mod
 
-$('.scroll-class-sdet').each(function(index) {
-  var mainMod = $(this)
-  var distanceMod = parseInt(mainMod.attr("sdet-dist"))
-  var distanceClassesAdd = mainMod.attr("sdet-add")
-  var distanceClassesRemove = mainMod.attr("sdet-remove")
+window.onscroll = function() {
+  $('.scroll-class-sdet').each(function(index) {
+    var mainMod = $(this)
+    var distanceMod = parseInt(mainMod.attr("sdet-dist"))
+    var distanceClassesAdd = mainMod.attr("sdet-add")
+    var distanceClassesRemove = mainMod.attr("sdet-remove")
 
-  window.onscroll = function() {
-    if (window.pageYOffset > distanceMod) {
-      mainMod.addClass(distanceClassesAdd)
+      if (window.pageYOffset > distanceMod) {
+        mainMod.addClass(distanceClassesAdd)
+        mainMod.removeClass(distanceClassesRemove)
+      } else {
+        mainMod.removeClass(distanceClassesAdd)
+        mainMod.addClass(distanceClassesRemove)
+      }
 
-      mainMod.removeClass(distanceClassesRemove)
-    } else {
-      mainMod.removeClass(distanceClassesAdd)
-
-      mainMod.addClass(distanceClassesRemove)
-    }
-  }
-
-})
-
+  })
+}
 // Activator panes
 
 $(document).on('click', '.activator', function() {
