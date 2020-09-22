@@ -296,11 +296,11 @@ $map-reversed: ();
     }
     
     .display-block-#{$breakpoint} {
-      display: block;
+      display: block !important;
     }
     
     .display-none-#{$breakpoint} {
-      display: none;
+      display: none !important;
     }
   }
 }
