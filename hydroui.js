@@ -111,6 +111,12 @@ $("input.form-radio-button, input.form-check-input").each(function(index) {
   }
 })
 
+$(document).on('change', 'input.form-radio-button, input.form-check-input', function(index) {
+  if ($(this).is(':checked')) {
+    $(this).closest(".form-check-label").addClass("form-check-active");
+  }
+})
+
 $(document).on("change", 'input.form-radio-button:radio, input.form-check-input:radio', function() {
   $(this).closest("div").parent().closest("div").find('.form-check-label').removeClass('form-check-active');
   $(this).closest(".form-check-label").addClass("form-check-active");
