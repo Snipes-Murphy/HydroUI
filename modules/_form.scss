@@ -133,6 +133,31 @@ $input-sizes: (
   & input:checked + .slider::before {
     transform: translateX(100%);
   }
+
+  &.form-droplet-sm {
+    width: 50px;
+    height: 28px;
+
+    .slider::before {
+      width: 20px;
+      height: 20px;
+    }
+
+    .icon {
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      transition: 300ms $ease-in;
+    }
+  
+    & input:checked + .slider {
+  
+      .icon {
+        transform: translateX(100%);
+        left: 10px;
+      }
+    }
+  }
 }
 
 @each $color, $hex in $colors-map {
