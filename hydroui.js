@@ -111,7 +111,7 @@ $("input.form-radio-button, input.form-check-input").each(function(index) {
   }
 })
 
-$(document).on('change', 'input.form-radio-button, input.form-check-input', function(index) {
+$(document).on('change', 'input.form-radio-button, input.form-check-input, input.form-check-label', function(index) {
   if ($(this).is(':checked')) {
     $(this).closest(".form-check-label").addClass("form-check-active");
   }
