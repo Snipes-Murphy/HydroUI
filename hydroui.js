@@ -631,9 +631,9 @@ $.fn.clearTagDuplicates = function() {
   });
 }
 
-$('.tag-manager').clearTagDuplicates();
+$(document).find('.tag-manager').clearTagDuplicates();
 
-$('.tag-manager').on('keydown', '.new-tag', function(e) {
+$(document).find('.tag-manager').on('keydown', '.new-tag', function(e) {
   if(e.keyCode == 13) {
     e.preventDefault();
     $(this).addClass('tag');
@@ -648,21 +648,21 @@ $('.tag-manager').on('keydown', '.new-tag', function(e) {
 	feather.replace()
 })
 
-$('.tag-manager').on('keydown', '.tag', function(e) {
+$(document).find('.tag-manager').on('keydown', '.tag', function(e) {
   if(e.keyCode == 13) {
     e.preventDefault();
   }
 })
 
-$('.tag-manager').on('click', '.close', function() {
+$(document).find('.tag-manager').on('click', '.close', function() {
   $(this).closest('.tag').remove();
 })
 
-$('.tag-manager .new-tag, .tag-manager .tag').each(function() {
+$(document).find('.tag-manager .new-tag, .tag-manager .tag').each(function() {
   $(this).attr('contenteditable', 'true')
 })
 
-$('.tag-manager').on('click', function() {
+$(document).find('.tag-manager').on('click', function() {
   $(this).clearTagDuplicates();
 })
 
