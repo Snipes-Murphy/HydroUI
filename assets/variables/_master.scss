@@ -59,6 +59,16 @@ $container-paddings: ( // Containers padding once size is 100%
   'xxxlg': 0
 );
 
+$container-rs-widths: (
+  'xsm': 100%,
+  'sm': 100%,
+  'md': 500px,
+  'lg': 650px,
+  'xlg': 900px,
+  'xxlg': 1000px,
+  'xxxlg': 1150px
+);
+
 $container-widths: (
   'xsm': 100%,
   'sm': 100%,
@@ -69,14 +79,14 @@ $container-widths: (
   'xxxlg': 1350px
 );
 
-$container-rs-widths: (
+$container-lg-widths: (
   'xsm': 100%,
   'sm': 100%,
-  'md': 500px,
-  'lg': 650px,
-  'xlg': 900px,
-  'xxlg': 1000px,
-  'xxxlg': 1150px
+  'md': 100%,
+  'lg': 900px,
+  'xlg': 1200px,
+  'xxlg': 1400px,
+  'xxxlg': 1600px
 );
 
 $margins: (

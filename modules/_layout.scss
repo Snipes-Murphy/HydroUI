@@ -95,6 +95,13 @@ $pull-modes: (
 
 // Containers
 
+.container-rs, .container-sm {
+  display: block;
+  margin: auto;
+  position: relative;
+  width: map-get($container-rs-widths, 'xxxlg');
+}
+
 .container {
   display: block;
   margin: auto;
@@ -102,11 +109,11 @@ $pull-modes: (
   width: map-get($container-widths, 'xxxlg');
 }
 
-.container-rs {
+.container-lg {
   display: block;
   margin: auto;
   position: relative;
-  width: map-get($container-rs-widths, 'xxxlg');
+  width: map-get($container-lg-widths, 'xxxlg');
 }
 
 $keys: map-keys($breakpoints);
@@ -121,13 +128,17 @@ $map-reversed: ();
 
 @each $breakpoint, $value in $map-reversed {
   @include breakpoint-in($breakpoint) {
+    .container-rs, .container-sm {
+      width: map-get($container-rs-widths, $breakpoint);
+    }
+
     .container {
       padding: 0 map-get($container-paddings, $breakpoint);
       width: map-get($container-widths, $breakpoint);
     }
 
-    .container-rs {
-      width: map-get($container-rs-widths, $breakpoint);
+    .container-lg {
+      width: map-get($container-lg-widths, $breakpoint);
     }
   }
 }
