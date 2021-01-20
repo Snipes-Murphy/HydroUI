@@ -12036,7 +12036,7 @@ pre {
     position: fixed;
     width: 100%;
     z-index: 100; }
-  .navbar .container, .navbar .container-rs {
+  .navbar .container, .navbar .container-rs, .navbar .container-lg {
     display: flex;
     justify-content: space-between;
     height: 100%; }
