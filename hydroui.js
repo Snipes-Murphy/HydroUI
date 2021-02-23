@@ -148,7 +148,7 @@ $(".progress-echo").each(function(index) {
 var inProgress = false;
 
 $(document).on('click', '.card-accordion-heading', function(index) {
-  if (!($(this).closest('.card-accordion').first().hasClass('card-accordion-deactivator'))) {
+  if ((!($(this).closest('.card-accordion').first().hasClass('card-accordion-deactivator'))) & (!($(this).closest('.card-accordion').first().is('.card-accordion-non-closable.active')))) {
     var accordionBtn = $(this)
     var accordionContent = $(this).closest('.card-accordion').find('.card-accordion-content').first()
     var accordionDeck = $(this).closest('.card-accordion-content').find('.card-accordion-content').first()
@@ -160,6 +160,7 @@ $(document).on('click', '.card-accordion-heading', function(index) {
         if (accordionContent.hasClass("active")) { // Accordion Closing
           accordionBtn.closest('.deck.card-accordion-radio').find('.active').closest('.card.card-accordion').find('.card-accordion-icon-flip').css('transform', 'translateY(-50%)')
           accordionBtn.find('.card-accordion-icon-flip').css('transform', 'translateY(-50%)')
+          accordionContent.closest('.card-accordion').first().removeClass("active");
           accordionContent.removeClass("active");
 
           var heightCalc = $(this).closest('.card-accordion').find('.card-accordion-content').first().css('height', 'auto').height();
@@ -184,6 +185,7 @@ $(document).on('click', '.card-accordion-heading', function(index) {
           accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active').first().addClass("unloading")
           var heightCalcOld = $(this).closest('.card-accordion-radio').find('.card-accordion-content.unloading').first().css('height', 'auto').innerHeight();
           accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active.unloading').first().innerHeight(heightCalcOld);
+          accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active.unloading').closest('.card-accordion').first().removeClass('active')
           accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active.unloading').first().removeClass('active')
 
           window.setTimeout(function() {
@@ -201,6 +203,7 @@ $(document).on('click', '.card-accordion-heading', function(index) {
 
           window.setTimeout(function() {
             accordionBtn.closest('.deck.card-accordion-radio').find('.card-accordion-content.active').first().removeClass('active');
+            accordionContent.closest('.card-accordion').first().addClass("active");
             accordionContent.addClass("active");
             accordionContent.removeClass("loading");
             accordionContent.removeAttr("style");
