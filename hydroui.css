@@ -126,8 +126,14 @@ kbd, .kbd {
   background-color: #29363b;
   color: white; }
 
+i, .i {
+  font-style: italic; }
+
 sup, .sup {
   margin-left: .2em; }
+
+b, strong, .b, .strong {
+  font-weight: 700; }
 
 em, .em {
   color: #6a737c; }

@@ -110,7 +110,7 @@ kbd, .kbd {
 }
 
 i, .i {
-
+  font-style: italic;
 }
 
 sup, .sup {
@@ -118,6 +118,7 @@ sup, .sup {
 }
 
 b, strong, .b, .strong {
+  font-weight: 700;
 }
 
 em, .em {
